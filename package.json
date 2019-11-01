@@ -1,0 +1,19 @@
+{
+  "name": "begin-app",
+  "version": "0.0.0",
+  "description": "Begin basic Hello World! app",
+  "scripts": {
+    "lint": "eslint src --ignore-pattern node_modules --fix",
+    "start": "cross-env NODE_ENV=testing npx sandbox",
+    "test": "cross-env NODE_ENV=testing PORT=6666 tape test/*-test.js ./test/**/*-test.js | tap-spec"
+  },
+  "devDependencies": {
+    "@architect/sandbox": "latest",
+    "@begin/data": "latest",
+    "cross-env": "^5.2.1",
+    "eslint": "^6.3.0",
+    "tap-spec": "^5.0.0",
+    "tape": "^4.11.0",
+    "tiny-json-http": "^7.1.2"
+  }
+}
