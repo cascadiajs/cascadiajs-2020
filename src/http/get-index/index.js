@@ -25,6 +25,8 @@ let body = `
       Your <a href="https://begin.com" class="link" target="_blank">Begin</a> app is ready to go!
     </p>
 
+    <p><img src="${process.env.BEGIN_STATIC_ORIGIN}/banner-sunriver.jpg"></p>
+
   </body>
 </html>
 `
