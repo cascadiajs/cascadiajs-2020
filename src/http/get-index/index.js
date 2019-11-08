@@ -10,22 +10,19 @@ let body = `
 <html lang=en>
   <head>
     <meta charset=utf-8>
-    <title>Hi!</title>
+    <title>CascadiaJS 2020</title>
     <link rel="stylesheet" href="https://static.begin.app/starter/default.css">
     <link href="data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" rel="icon" type="image/x-icon">
   </head>
   <body>
 
     <h1 class="center-text">
-      <!-- ↓ Change "Hello world!" to something else and head on back to Begin! -->
-      Hello world!
+      Get Excited for CascadiaJS 2020!
     </h1>
 
-    <p class="center-text">
-      Your <a href="https://begin.com" class="link" target="_blank">Begin</a> app is ready to go!
-    </p>
+    <p><img width="100%" src="${process.env.BEGIN_STATIC_ORIGIN}/banner-sunriver.jpg"></p>
 
-    <p><img src="${process.env.BEGIN_STATIC_ORIGIN}/banner-sunriver.jpg"></p>
+    <p class="center-text">Information on tickets, location, lodging and more coming soon! See you in Cascadia!</p>
 
   </body>
 </html>
