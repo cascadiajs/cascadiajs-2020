@@ -24,6 +24,8 @@ let body = `
 
     <p class="center-text">Information on tickets, location, lodging and more coming soon! See you in Cascadia!</p>
 
+    <p class="center-text">Sign-up for our <a href="http://eepurl.com/dPmCkT">mailing list</a> to hear about Early Bird tickets when they go on sale!</p>
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-153510023-1"></script>
     <script>
