@@ -24,6 +24,16 @@ let body = `
 
     <p class="center-text">Information on tickets, location, lodging and more coming soon! See you in Cascadia!</p>
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-153510023-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-153510023-1');
+    </script>
+
   </body>
 </html>
 `
