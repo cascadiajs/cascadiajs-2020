@@ -72,10 +72,6 @@ footer li {
 /* layout styles */
 
 #root {
-	display: grid;
-	min-height: 100%;
-	grid-template-columns: 100%;
-    grid-template-rows: auto 1fr auto;
     padding: 10px;
 }
 
@@ -96,11 +92,15 @@ th, td {
 
 @media only screen and (min-width: 768px) {
 
-	#root {
-		width: 700px;
+    #root {
+        width: 700px;
         margin: 16px auto;
+        display: grid;
+        min-height: 100%;
+        grid-template-columns: 100%;
+        grid-template-rows: auto 1fr auto;
     }
-    
+
     footer {
         display: flex;
         margin-bottom: 16px;

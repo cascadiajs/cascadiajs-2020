@@ -11,6 +11,7 @@ module.exports = async function Layout ({title, content}) {
     <link rel="stylesheet" href="${assetPath}/styles/normalize.css">
     <link rel="stylesheet" href="${assetPath}/styles/main.css">
     <script src="https://kit.fontawesome.com/439d39b111.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
     <div id="root">
