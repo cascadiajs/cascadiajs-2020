@@ -17,10 +17,10 @@ let content = `
         <tbody>
             <tr><td>11/8/2019</td><td>CascadiaJS 2020 - location & dates</td></tr>
             <tr><td>12/4/2019</td><td>Super Early Bird tickets available</td></tr>
-            <tr><td>1/31/2019</td><td>Early Bird tickets go on sale</td></tr>
-            <tr><td>1/31/2019</td><td>Call for Presenters (CFP) opens</td></tr>
-            <tr><td>3/20/2019</td><td>Regular Bird tickets go on sale</td></tr>
-            <tr><td>3/20/2019</td><td>CFP closes</td></tr>
+            <tr><td>1/31/2020</td><td>Early Bird tickets go on sale</td></tr>
+            <tr><td>1/31/2020</td><td>Call for Presenters (CFP) opens</td></tr>
+            <tr><td>3/20/2020</td><td>Regular Bird tickets go on sale</td></tr>
+            <tr><td>3/20/2020</td><td>CFP closes</td></tr>
             <tr><td>4/6/2020</td><td>Start announcing speakers</td></tr>
             <tr><td>6/1/2020</td><td>Scholarship applications open</td></tr>
             <tr><td>7/3/2020</td><td>Scholarship applications close</td></tr>
