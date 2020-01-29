@@ -8,11 +8,26 @@ html, body {
 
 body {
     font-family: canada-type-gibson, sans-serif;
+    font-size: 1em;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: rift-soft;
-    margin: 0;
+    margin: 16px 0 16px 0;
+}
+
+h1 { font-size: 2.2em }
+
+h2 { font-size: 1.8em }
+
+h3 { font-size: 1.4em }
+
+img {
+    max-width: 100%;
+}
+
+p {
+    line-height: 1.5;
 }
 
 /* header styles */
@@ -89,6 +104,24 @@ th, td {
     padding: 8px;
 }
 
+#root svg.svg-inline--fa {
+    width: 25px;
+}
+
+.cta {
+	font-size: 1.5em;
+	font-weight: 500;
+  	padding: 16px;
+  	border-radius: 3px;
+  	text-decoration: none;
+	display: inline-block;
+	background-color: #ef3e4a;
+	color: #e6e8f5;
+}
+
+a.cta:hover {
+	text-decoration: underline;
+}
 
 @media only screen and (min-width: 768px) {
 

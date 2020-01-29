@@ -19,6 +19,7 @@ module.exports = async function Layout ({title, content}) {
         <nav>
           <a href="/"><i class="fas fa-home"></i>Home</a>
           <a href="/tickets"><i class="fas fa-ticket-alt"></i>Tickets</a>
+          <a href="/coc"><i class="fas fa-book-heart"></i>Code of Conduct</a>
           <!--a href="/schedule"><i class="fas fa-calendar"></i>Schedule</a>
           <a href="/speakers"><i class="fas fa-microphone"></i>Speakers</a>
           <a href="/jobs"><i class="fas fa-briefcase"></i>Jobs</a>
@@ -28,8 +29,8 @@ module.exports = async function Layout ({title, content}) {
           <a href="/venue"><i class="fas fa-home"></i>Venue</a>
           <a href="/scholarships"><i class="fas fa-user-graduate"></i>Scholarships</a>
           <a href="/sponsor"><i class="fas fa-hand-holding-seedling"></i>Sponsor Us</a>
-          <a href="/accessibility"><i class="fab fa-accessible-icon"></i>Accessibility</a>
-          <a href="/code-of-conduct"><i class="fas fa-dove"></i>Code of Conduct</a-->
+          <a href="/accessibility"><i class="fab fa-accessible-icon"></i>Accessibility</a-->
+          
         </nav>
       </header>
       <div id="content">
