@@ -123,6 +123,20 @@ a.cta:hover {
 	text-decoration: underline;
 }
 
+.warning {
+    background-color: rgb(255, 228, 160);
+    padding: 8px;
+    border-radius: 4px;
+}
+
+tr.sold-out td {
+    color: #aaa;
+}
+
+tr.on-sale {
+    background-color: rgb(255, 228, 160);
+}
+
 @media only screen and (min-width: 768px) {
 
     #root {

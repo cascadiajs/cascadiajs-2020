@@ -4,15 +4,7 @@
 
 For those of you who don't live near Sunriver, OR we have put together information on how to get there and where to stay.
 
-## Schedule
-
-In order to best plan your stay, here is a rough schedule of events. Note that there are optional workshop scheduled before/after the conference:
-
-* Mon - React Workshop
-* Tue - Conference Day One 
-* Wed - Conference Day Two
-* Thu - JavaScript Workshop
-* Fri - Node.js Workshop
+Please make sure you check the [schedule](/schedule) before booking travel or accommodations so that you don't miss out on any of the fun!
 
 ## Lodging
 
@@ -22,11 +14,11 @@ The conference and all workshops are taking place at Sunriver Resort and we have
 
 <table id="lodging-rates">
     <thead>
-        <tr><th>Room Type</th><th>Beds</th><th>Rate</th><th>More Info</th></tr>
+        <tr><th>Room Type</th><th>Beds</th><th>Rate</th></tr>
     </thead>
     <tbody>
-        <tr><td>Lodge Village Guest Room</td><td>Single King &amp; Double Queens</td><td>$209 + tax</td><td><a href="https://www.destinationhotels.com/sunriver-resort/hotel/bend-oregon-lodging/oregon-lodging">Link</a></td></tr>
-        <tr><td>Lodge Village Suite</td><td>Double Queens</td><td>$259 + tax</td><td><a href="https://www.destinationhotels.com/sunriver-resort/hotel/bend-oregon-lodging/central-oregon-lodging">Link</a></td></tr>
+        <tr><td><a href="https://www.destinationhotels.com/sunriver-resort/hotel/bend-oregon-lodging/oregon-lodging" target="_new">Lodge Village Guest Room</a></td><td>Single King &amp; Double Queens</td><td>$209 + tax / night</td></tr>
+        <tr><td><a href="https://www.destinationhotels.com/sunriver-resort/hotel/bend-oregon-lodging/central-oregon-lodging" target="_new">Lodge Village Suite</a></td><td>Double Queens</td><td>$259 + tax / night</td></tr>
     </tbody>
 </table>
 
