@@ -28,7 +28,7 @@ We are also looking for stories from folks who belong to underrepresented groups
 
 Please review our [Code of Conduct](/coc). Everyone who participates in our conference agrees to the enforcement of our CoC, and includes our friends, speakers, staff, sponsors, and attendees.
 
-## Perks
+## What we take care of
 
 If we accept your proposal to speak, the following items are taken care of by us:
 

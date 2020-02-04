@@ -17,7 +17,7 @@ Ryan Florence and the folks at [React Training](https://reacttraining.com) will 
 
 ## The Conference (Sep 1 - 2)
 
-<p class="warning">
+<p class="warning highlight">
     We are currently running our <a href="/cfp">Call for Presenters</a>. Once the CFP closes (March 20) we will spend the next couple of weeks reviewing the proposals and finalizing our line-up. We expect to start announcing speakers in early April.
 </p>
 

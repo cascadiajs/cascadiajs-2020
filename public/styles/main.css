@@ -60,12 +60,6 @@ footer li {
     list-style: none;
 }
 
-#when-where {
-    font-family: rift-soft;
-    font-size: 1.8em;
-    margin-bottom: 10px;
-}
-
 /* responsive Youtube embed styles */
 
 .video-container {
@@ -90,6 +84,16 @@ footer li {
     padding: 10px;
 }
 
+#root header nav a {
+    display: block;
+    margin: 4px;
+}
+
+#root header nav a.buy {
+    display: inline-block;
+}
+
+
 footer {
     margin-top: 32px;
 }
@@ -109,12 +113,14 @@ th, td {
 }
 
 .cta {
-	font-size: 1.5em;
+    display: block;
+	font-size: 1.25em;
 	font-weight: 500;
-  	padding: 8px;
-  	border-radius: 3px;
+    padding: 8px;
+    margin: 4px;
+    text-align: center;
+  	border-radius: 4px;
   	text-decoration: none;
-	display: inline-block;
 	background-color: #ef3e4a;
 	color: #e6e8f5;
 }
@@ -123,10 +129,45 @@ a.cta:hover {
 	text-decoration: underline;
 }
 
+
+.highlight {
+    padding: 2px;
+    border-radius: 4px;
+}
+
+.small {
+    font-size: 0.8em;
+}
+
 .warning {
     background-color: rgb(255, 228, 160);
-    padding: 8px;
-    border-radius: 4px;
+}
+
+.buy {
+    /*background-color: #b1ecb5;
+    border: 1px solid #469047;*/
+    background-color: #469047;
+    color: #fff !important;
+}
+
+.sponsor-includes {
+    background-color: #ddd;
+}
+
+.sponsor-marketing {
+    background-color: #b1ecb5;
+}
+
+.sponsor-hiring {
+    background-color: #e1bae1
+}
+
+.sponsor-community {
+    background-color: #b3cfff;
+}
+
+table {
+    font-size: 0.8em;
 }
 
 tr.sold-out td {
@@ -135,6 +176,58 @@ tr.sold-out td {
 
 tr.on-sale {
     background-color: rgb(255, 228, 160);
+}
+
+/* Carousel widget on sponsorship page */
+
+#carousel {
+    position:relative;
+    height:321px;
+    width:600px;
+    margin:0 auto;
+}
+
+#carousel img {
+    position:absolute;
+    left:0;
+}
+  
+@keyframes fadeInOut {
+    0% {
+      opacity:1;
+    }
+    17% {
+      opacity:1;
+    }
+    25% {
+      opacity:0;
+    }
+    92% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+}
+
+#carousel img {
+    animation-name: fadeInOut;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 16s;
+}
+  
+#carousel img:nth-of-type(1) {
+    animation-delay: 12s;
+}
+#carousel img:nth-of-type(2) {
+    animation-delay: 8s;
+}
+#carousel img:nth-of-type(3) {
+    animation-delay: 4s;
+}
+#carousel img:nth-of-type(4) {
+    animation-delay: 0;
 }
 
 @media only screen and (min-width: 768px) {
@@ -146,6 +239,23 @@ tr.on-sale {
         min-height: 100%;
         grid-template-columns: 100%;
         grid-template-rows: auto 1fr auto;
+    }
+
+    #root header nav a {
+        display: inline;
+    }
+
+    table {
+        font-size: 1em;
+    }
+
+    .cta {
+        display: inline-block;
+        text-align: left;
+    }
+
+    .highlight {
+        padding: 4px;
     }
 
     footer {

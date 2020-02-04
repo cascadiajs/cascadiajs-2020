@@ -4,9 +4,13 @@ let assetPath = process.env.BEGIN_STATIC_ORIGIN
 let content = `
     <h1>CascadiaJS - a JSConf for the PacNW</h1>
     <p><img src="${assetPath}/images/banner-sunriver.jpg" alt="beautiful Bend, OR"/></p>
+    <p>
+        <a class="cta" href="/tickets">Ticket Info</a>
+        <a class="cta" href="/cfp">Apply to Speak</a>
+        <a class="cta" href="/sponsor">Sponsor Us</a>
+    </p>
     <h2>Early Bird Tickets are ON SALE</h2>
-    <p>Early Bird tickets are now on sale. We only sell a limited quantity of these tickets, so please act fast.</p> 
-    <p><a class="cta" href="/tickets">More Ticket Info</a></p>
+    <p>Early Bird tickets are now on sale. We only sell a limited quantity of these tickets, so please act fast. You can find more information about pricing and deadlines on our <a href="/tickets">Ticketing page</a>.</p> 
     <h2>Call for Presenters is OPEN</h2>
     <p>
         If you've ever thought about speaking at a conference, we strongly encourage you to check out our <a href="/cfp">Call for Presenters</a>.
