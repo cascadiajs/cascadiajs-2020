@@ -182,8 +182,8 @@ tr.on-sale {
 
 #carousel {
     position:relative;
-    height:321px;
-    width:600px;
+    height:160px;
+    width:300px;
     margin:0 auto;
 }
 
@@ -256,6 +256,11 @@ tr.on-sale {
 
     .highlight {
         padding: 4px;
+    }
+
+    #carousel {
+        height:321px;
+        width:600px;
     }
 
     footer {
