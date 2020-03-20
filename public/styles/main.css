@@ -100,6 +100,10 @@ footer {
 
 /* page/content styles */
 
+.page li {
+    padding: 4px;
+}
+
 table {
     margin: 16px 0;
 }
@@ -131,17 +135,25 @@ a.cta:hover {
 
 
 .highlight {
-    padding: 2px;
     border-radius: 4px;
+}
+
+span.highlight {
+    padding: 2px;
+}
+
+div.highlight {
+    padding: 8px;
+}
+
+.warning {
+    background-color: rgb(255, 228, 160);
 }
 
 .small {
     font-size: 0.8em;
 }
 
-.warning {
-    background-color: rgb(255, 228, 160);
-}
 
 .buy {
     /*background-color: #b1ecb5;

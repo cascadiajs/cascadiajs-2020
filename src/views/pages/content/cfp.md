@@ -2,11 +2,13 @@
 
 ![Aaron Turner CascadiaJS 2019 speaker](${STATIC}/images/aaron-2019.jpg)
 
+<div class="highlight warning">UPDATE: We have extended the deadline to April 27, 2020</div>
+
 Thank you for your interest in speaking at CascadiaJS 🌲. Here are a few important notes before you continue:
 
 <i class="fas fa-clock"></i> Talks are 25 minutes long.
 
-<i class="fas fa-calendar-alt"></i>  CFP closes on <span class="exclaim">March 20, 2020</span>.
+<i class="fas fa-calendar-alt"></i>  CFP closes on <span class="exclaim"><span style="color:#ccc;text-decoration:line-through">March 20, 2020</span> April 27, 2020</span>.
 
 <i class="fas fa-plane-arrival"></i>  We cover all travel expenses and arrange for lodging at Sunriver Resort.
 
@@ -99,6 +101,6 @@ If you are a new speaker, once your talk has been accepted we will commit to wor
 
 ## The selection process
 
-Submissions close on <span class="exclaim">March 20, 2020</span>. We will get back to all speakers as soon as possible. We will email all speakers at roughly the same time, so everyone will hear back on the same day.
+Submissions close on <span class="highlight warning">April 27, 2020</span>. We will get back to all speakers as soon as possible. We will email all speakers at roughly the same time, so everyone will hear back on the same day.
 
 <a class="cta" href="https://cascadiajs.typeform.com/to/ACsPPl">Submit Proposal</a>

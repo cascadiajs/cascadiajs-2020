@@ -1,9 +1,16 @@
 let Layout = require('../layout')
 let assetPath = process.env.BEGIN_STATIC_ORIGIN
 
-let content = `
+let content = /*html*/`
     <h1>CascadiaJS - a JSConf for the PacNW</h1>
     <p><img src="${assetPath}/images/banner-sunriver.jpg" alt="beautiful Bend, OR"/></p>
+    <div class="highlight warning">
+        <div style="padding:8px">
+            Please read our <a href="/covid-19">COVID-19</a> update before purchasing a ticket. 
+            We will keep this document up-to-date as the situation evolves. 
+            You can also <a href="http://eepurl.com/dPmCkT">subscribe to our mailing list</a> to get notified of important updates.
+        </div>
+    </div>
     <p>
         <a class="cta" href="/tickets">Ticket Info</a>
         <a class="cta" href="/cfp">Apply to Speak</a>
@@ -27,9 +34,9 @@ let content = `
         <tbody>
             <tr><td>1/31/2020</td><td>Early Bird tickets go on sale</td></tr>
             <tr><td>1/31/2020</td><td>Call for Presenters (CFP) opens</td></tr>
-            <tr><td>3/20/2020</td><td>CFP closes</td></tr>
-            <tr><td>4/3/2020</td><td>Regular Bird tickets go on sale</td></tr>
-            <tr><td>4/6/2020</td><td>Start announcing speakers</td></tr>
+            <tr><td>4/17/2020</td><td>CFP closes</td></tr>
+            <tr><td>4/27/2020</td><td>Regular Bird tickets go on sale</td></tr>
+            <tr><td>4/27/2020</td><td>Start announcing speakers</td></tr>
             <tr><td>6/1/2020</td><td>Scholarship applications open</td></tr>
             <tr><td>7/3/2020</td><td>Scholarship applications close</td></tr>
             <tr><td>7/31/2020</td><td>Late Bird tickets go on sale</td></tr>
