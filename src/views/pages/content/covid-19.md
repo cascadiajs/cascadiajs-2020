@@ -1,8 +1,8 @@
 # COVID-19 Updates
 
-In light of the dynamic, rapidly evolving COVID-19 situation around the world, we wanted to share an update and FAQ with the CascadiaJS community so that you all can plan appropriately. The CascadiaJS organizers are currently monitoring the COVID-19 situation daily to ensure the safety of our attendees, speakers, and staff. With this mind, we plan on updating this page on a regular basis.
+In light of the dynamic, rapidly evolving COVID-19 situation around the world, we&#39;re sharing an update and FAQ with the CascadiaJS community so that you all can plan appropriately. The CascadiaJS organizers are monitoring the COVID-19 situation daily to ensure the safety of our attendees, speakers, and staff. We plan on updating this page on a regular basis.
 
-First and foremost, we are still planning on holding CascadiaJS 2020 at Sunriver Resort on Sept 1-2. We are in constant contact with Sunriver Resort and they are publishing information on the [actions they are taking](https://www.destinationhotels.com/sunriver-resort/resort/coronavirus-actions) to make sure that guests are safe when they visit. At the moment they are closed until May 15.
+First and foremost, we are still planning on holding CascadiaJS 2020 at Sunriver Resort on September 1-2. We are in constant contact with Sunriver Resort and they are publishing information on the [actions they are taking](https://www.destinationhotels.com/sunriver-resort/resort/coronavirus-actions) to make sure that guests are safe when they visit. At the moment they are closed until May 15.
 
 ## Is the conference still happening?
 
@@ -14,9 +14,9 @@ At a minimum we will:
 
 * Work with health care professionals and the venue to ensure a safe experience for everyone.
 * Have hand sanitizer stationed at throughout the conference.
-* Will be actively sanitizing all speaker microphones between talks.
-* Ask that anyone that believes they may have been exposed to the Coronavirus or is feeling sick to refrain from attending in person for the safety of other attendees.
-* We will send emails to registered event participants with health updates, leading up to the conference event. 
+* Sanitize all speaker microphones between talks.
+* Ask that anyone who believes they may have been exposed to the Coronavirus or is feeling sick to refrain from attending in person for the safety of other attendees.
+* Email health updates to registered participants, leading up to the conference. 
 
 ## Will there be a way to attend the conference virtually?
 
@@ -51,7 +51,7 @@ No, we will either execute on-time, postpone to a later date or go virtual in 20
 
 ## Does this affect the Call for Presenters?
 
-Yes, we have decided to extend the [CFP](/cfp) deadline to <span class="highlight warning">April 27</span>.
+Yes, we have extended the [CFP](/cfp) deadline to <span class="highlight warning">April 27</span>.
 
 
 
