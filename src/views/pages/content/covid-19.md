@@ -51,7 +51,7 @@ No, we will either execute on-time, postpone to a later date or go virtual in 20
 
 ## Does this affect the Call for Presenters?
 
-Yes, we have extended the [CFP](/cfp) deadline to <span class="highlight warning">April 27</span>.
+Yes, we have extended the [CFP](/cfp) deadline to <span class="highlight warning">April 17</span>.
 
 
 
