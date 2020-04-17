@@ -34,9 +34,11 @@ Please review our [Code of Conduct](/coc). Everyone who participates in our conf
 
 If we accept your proposal to speak, the following items are taken care of by us:
 
-<i class="fas fa-ticket-alt"></i> One ticket to the conference
+<i class="fas fa-ticket-alt"></i> Full access to the online conference & all activities
 
-<i class="fas fa-gifts"></i> A few surprises
+<i class="fas fa-video"></i> A high-quality webcam &amp; microphone sent to you
+
+<i class="fas fa-gifts"></i> A few surprises!
 
 ## Topics
 
