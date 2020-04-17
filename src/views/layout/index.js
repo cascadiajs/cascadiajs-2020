@@ -1,7 +1,7 @@
 let assetPath = process.env.BEGIN_STATIC_ORIGIN
 
 module.exports = async function Layout ({title, content}) {
-    return `
+    return /*html*/`
 <!doctype html>
 <html lang=en>
   <head>
@@ -19,7 +19,7 @@ module.exports = async function Layout ({title, content}) {
         <nav>
           <a href="/"><i class="fas fa-home"></i>Home</a>
           <a href="/schedule"><i class="fas fa-calendar"></i>Schedule</a>
-          <a href="/travel"><i class="fas fa-suitcase"></i>Travel</a>
+          <a href="/covid-19"><i class="fas fa-medkit"></i>COVID-19</a>
           <a href="/coc"><i class="fas fa-book-heart"></i>Code of Conduct</a>
           <a href="/tickets" class="buy highlight"><i class="fas fa-ticket-alt"></i>Buy Tickets</a>
         </nav>

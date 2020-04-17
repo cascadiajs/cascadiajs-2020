@@ -2,15 +2,15 @@
 
 ![Aaron Turner CascadiaJS 2019 speaker](${STATIC}/images/aaron-2019.jpg)
 
-<div class="highlight warning">UPDATE: We have extended the deadline to April 17, 2020</div>
+<div class="highlight warning">UPDATE: We have extended the deadline to May 15, 2020</div>
 
 Thank you for your interest in speaking at CascadiaJS 🌲. Here are a few important notes before you continue:
 
 <i class="fas fa-clock"></i> Talks are 25 minutes long.
 
-<i class="fas fa-calendar-alt"></i>  CFP closes on <span class="exclaim"><span style="color:#ccc;text-decoration:line-through">March 20, 2020</span> April 17, 2020</span>.
+<i class="fas fa-calendar-alt"></i>  CFP closes on May 15, 2020</span>.
 
-<i class="fas fa-plane-arrival"></i>  We cover all travel expenses and arrange for lodging at Sunriver Resort.
+<i class="fas fa-globe"></i>  Talks will done remotely via Zoom (or similar)
 
 <i class="fas fa-hand-heart"></i>  We provide support and mentorship for new speakers.
 
@@ -35,10 +35,6 @@ Please review our [Code of Conduct](/coc). Everyone who participates in our conf
 If we accept your proposal to speak, the following items are taken care of by us:
 
 <i class="fas fa-ticket-alt"></i> One ticket to the conference
-
-<i class="fas fa-hotel"></i> Lodging for 3 nights at Sunriver Resort
-
-<i class="fas fa-plane-departure"></i> Travel to/from Sunriver
 
 <i class="fas fa-gifts"></i> A few surprises
 
@@ -71,7 +67,7 @@ A great talk tells a story -- it can address issues that developers struggle wit
 
 ## How to submit a proposal
 
-First, make sure you're available to attend the conference. It will be held on **September 1-2, 2020**.
+First, make sure you're available to speak a the conference. It will be held on **September 1-2, 2020**.
 
 Talk submissions are done as **2 minute videos**. Your goal here is not to produce a perfectly executed mini-talk, it is to describe your talk idea informally. What's the topic? How do you want to approach it? Why is it interesting?
 
@@ -101,6 +97,6 @@ If you are a new speaker, once your talk has been accepted we will commit to wor
 
 ## The selection process
 
-Submissions close on <span class="highlight warning">April 17, 2020</span>. We will get back to all speakers as soon as possible. We will email all speakers at roughly the same time, so everyone will hear back on the same day.
+Submissions close on <span class="highlight warning">May 15, 2020</span>. We will get back to all speakers as soon as possible. We will email all speakers at roughly the same time, so everyone will hear back on the same day.
 
 <a class="cta" href="https://cascadiajs.typeform.com/to/ACsPPl">Submit Proposal</a>
