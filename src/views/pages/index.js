@@ -23,7 +23,7 @@ module.exports = async function Page (req) {
                  .replace(/\$\{STATIC\}/g, assetPath)
 
   let title = doc.split('\n')[0].replace('# ', '')
-  let content = `<div class="page">${md(doc)}</div>`
+  let content = `<div id="page">${md(doc)}</div>`
 
   page = {
     title,

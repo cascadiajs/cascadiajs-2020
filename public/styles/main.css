@@ -13,7 +13,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: rift-soft;
+    font-family: mono45-headline, monospace;
     margin: 16px 0 16px 0;
 }
 
@@ -34,22 +34,35 @@ p {
 /* header styles */
 
 header {
-    padding: 10px 0;
+    margin: 0;
+    background-color: #112378;
+}
+
+nav a {
+    display: block;
+    margin: 4px;
+    font-family: mono45-headline, monospace;
+    font-size: 24px;
+    font-weight: 500;
+    padding-right: 5px;
 }
 
 nav a, nav a:visited {
-    color: #000;
-    font-weight: 600;
-    padding-right: 5px;
+    color: #17C37B;
 }
 
-nav svg.svg-inline--fa {
-    padding-right: 5px;
+nav a.buy, nav a.buy:visited {
+    background: #FFD007 0% 0% no-repeat padding-box;
+    font-size: 32px;
+    color: #112378;
+    padding: 24px 36px;
+    display: inline-block;
 }
 
 /* footer styles */
 
 footer {
+    background-color: #112378;
     border-top: 1px solid #000;
     padding-top: 8px;
 }
@@ -83,26 +96,17 @@ footer li {
 /* layout styles */
 
 #root {
-    padding: 10px;
-}
-
-#root header nav a {
-    display: block;
-    margin: 4px;
-}
-
-#root header nav a.buy {
-    display: inline-block;
+    margin: 0;
 }
 
 
 footer {
-    margin-top: 32px;
+    margin: 0;
 }
 
 /* page/content styles */
 
-.page li {
+#page li {
     padding: 4px;
 }
 
@@ -157,14 +161,6 @@ div.highlight {
     font-size: 0.8em;
 }
 
-
-.buy {
-    /*background-color: #b1ecb5;
-    border: 1px solid #469047;*/
-    background-color: #469047;
-    color: #fff !important;
-}
-
 .sponsor-includes {
     background-color: #ddd;
 }
@@ -192,6 +188,25 @@ tr.sold-out td {
 tr.on-sale {
     background-color: rgb(255, 228, 160);
 }
+
+/* Landing page */
+
+#hero, #attend {
+    
+}
+
+#hero {
+    background-color: #112378;
+}
+
+#attend, #workshops, #coc {
+    background-color: #17C37B;
+}
+
+#cfp, #schedule {
+    background-color: #ccc;
+}
+
 
 /* Carousel widget on sponsorship page */
 
@@ -248,15 +263,26 @@ tr.on-sale {
 @media only screen and (min-width: 768px) {
 
     #root {
-        width: 700px;
-        margin: 16px auto;
         display: grid;
         min-height: 100%;
         grid-template-columns: 100%;
         grid-template-rows: auto 1fr auto;
     }
 
-    #root header nav a {
+    nav, #page {
+        margin: 0 auto;
+    }
+
+    nav {
+        width: 90%;
+        text-align:center;
+    }
+
+    #page {
+        width: 960px;
+    }
+
+    header nav a {
         display: inline;
     }
 
@@ -280,7 +306,6 @@ tr.on-sale {
 
     footer {
         display: flex;
-        margin-bottom: 16px;
     }
 
     footer #when-where {

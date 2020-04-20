@@ -17,11 +17,11 @@ module.exports = async function Layout ({title, content}) {
     <div id="root">
       <header>
         <nav>
-          <a href="/"><i class="fas fa-home"></i>Home</a>
-          <a href="/schedule"><i class="fas fa-calendar"></i>Schedule</a>
-          <a href="/covid-19"><i class="fas fa-medkit"></i>COVID-19</a>
-          <a href="/coc"><i class="fas fa-book-heart"></i>Code of Conduct</a>
-          <a href="/tickets" class="buy highlight"><i class="fas fa-ticket-alt"></i>Buy Tickets</a>
+          <a href="/">Home</a>
+          <a href="/schedule">Schedule</a>
+          <a href="/covid-19">COVID-19</a>
+          <a href="/coc">Code of Conduct</a>
+          <a href="/tickets" class="buy">Tickets</a>
         </nav>
       </header>
       <div id="content">
