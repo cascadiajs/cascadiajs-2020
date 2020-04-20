@@ -1,6 +1,6 @@
 {
   "name": "begin-app",
-  "version": "0.0.16",
+  "version": "0.0.17",
   "description": "Begin basic Hello World! app",
   "scripts": {
     "lint": "eslint src --ignore-pattern node_modules --fix",
