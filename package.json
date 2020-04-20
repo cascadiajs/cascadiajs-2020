@@ -9,7 +9,7 @@
     "prod": "npm version patch && git push origin master"
   },
   "devDependencies": {
-    "@architect/sandbox": "latest",
+    "@architect/sandbox": "^1.9.5",
     "@begin/data": "latest",
     "cross-env": "^5.2.1",
     "eslint": "^6.3.0",

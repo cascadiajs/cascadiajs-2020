@@ -10,11 +10,13 @@ html, body {
 body {
     font-family: canada-type-gibson, sans-serif;
     font-size: 1em;
+    background-color: #112378;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: mono45-headline, monospace;
-    margin: 16px 0 16px 0;
+    margin: 32px 0 16px 0;
+    font-weight: 500;
 }
 
 h1 { font-size: 2.2em }
@@ -29,42 +31,52 @@ img {
 
 p {
     line-height: 1.5;
+    margin: 0 0 10px 0;
 }
 
 /* header styles */
 
 header {
-    margin: 0;
-    background-color: #112378;
+    padding: 32px 0;
+    text-align: center;
 }
 
-nav a {
-    display: block;
+nav a, a.buy {
+    display: inline-block;
     margin: 4px;
     font-family: mono45-headline, monospace;
     font-size: 24px;
     font-weight: 500;
+    text-decoration: none;
     padding-right: 5px;
 }
 
-nav a, nav a:visited {
+nav a, nav a:visited  {
     color: #17C37B;
 }
 
-nav a.buy, nav a.buy:visited {
+a.buy, a.buy:visited {
     background: #FFD007 0% 0% no-repeat padding-box;
-    font-size: 32px;
     color: #112378;
-    padding: 24px 36px;
-    display: inline-block;
+    padding: 16px;
 }
 
 /* footer styles */
 
 footer {
-    background-color: #112378;
-    border-top: 1px solid #000;
-    padding-top: 8px;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    padding: 32px;
+}
+
+#when-where h2 {
+    color: #17C37B;
+    font-size: 32px;
+}
+
+footer h2 {
+    font-size: 16px;
 }
 
 footer ul {
@@ -73,6 +85,11 @@ footer ul {
 
 footer li {
     list-style: none;
+}
+
+footer a, footer a:visited {
+    color: #fff;
+    text-decoration: none;
 }
 
 /* responsive Youtube embed styles */
@@ -96,15 +113,22 @@ footer li {
 /* layout styles */
 
 #root {
-    margin: 0;
+
 }
 
+#content {
+    background-color: #fff;
+}
 
 footer {
-    margin: 0;
+   
 }
 
 /* page/content styles */
+
+#page {
+
+}
 
 #page li {
     padding: 4px;
@@ -122,20 +146,22 @@ th, td {
     width: 25px;
 }
 
-.cta {
-    display: block;
-	font-size: 1.25em;
-	font-weight: 600;
-    padding: 8px;
-    margin: 4px;
+div.cta {
+    font-family: mono45-headline, monospace;
+	font-size: 32px;
+    padding: 16px 44px;
     text-align: center;
-  	border-radius: 4px;
-  	text-decoration: none;
-	background-color: #ef3e4a;
-	color: #e6e8f5;
+	background-color: #0033FF;
+    border: 4px solid #fff;
+    margin: 16px 0;
 }
 
-a.cta:hover {
+.cta a, .cta a:visited {
+    color: #e6e8f5;
+  	text-decoration: none;
+}
+
+.cta a:hover {
 	text-decoration: underline;
 }
 
@@ -191,8 +217,47 @@ tr.on-sale {
 
 /* Landing page */
 
-#hero, #attend {
-    
+#landing {
+    font-size: 24px;
+}
+
+#landing h1, #landing h2, #landing h3 {
+    margin: 0 0 32px 0;
+}
+
+#landing .cta {
+    margin: 32px 0 0 0;
+}    
+
+#landing>div  {
+    padding: 32px 16px;
+}
+
+#hero img {
+
+}
+
+#hero .buy, #hero .cta {
+    font-size: 40px;
+}
+
+#hero .buy {
+    margin-top: 64px;
+}
+
+#hero .cta {
+	background-color: #112378;
+    color: #17C37B;
+    border: 4px solid #17C37B;
+}
+
+#hero .cta a {
+    color: #17C37B;
+}
+
+
+#attend img {
+    border: 2px solid #fff;
 }
 
 #hero {
@@ -201,10 +266,11 @@ tr.on-sale {
 
 #attend, #workshops, #coc {
     background-color: #17C37B;
+    color: #fff;
 }
 
 #cfp, #schedule {
-    background-color: #ccc;
+    background-color: #fff;
 }
 
 
@@ -269,21 +335,38 @@ tr.on-sale {
         grid-template-rows: auto 1fr auto;
     }
 
-    nav, #page {
+    .narrow {
         margin: 0 auto;
+        width: 40%;
     }
 
-    nav {
-        width: 90%;
-        text-align:center;
+    .wide {
+        margin: 0 auto;
+        width: 70%;
+    }
+
+    img#hero-badge {
+        width: 392px;
     }
 
     #page {
         width: 960px;
+        margin: 0 auto;
+        margin-bottom: 64px;
     }
 
-    header nav a {
-        display: inline;
+    nav {
+        display: flex;
+        align-items: center;
+    }
+
+    /* this class makes me want to puke :( */
+    nav .spacer {
+        margin-left: 32px;
+    }
+
+    .push {
+        margin-left: auto;
     }
 
     table {
@@ -308,12 +391,34 @@ tr.on-sale {
         display: flex;
     }
 
-    footer #when-where {
+    #when-where, #stay-connected, #past-events {
+        text-align: left;
+    }
+
+    #when-where {
         flex: 1;
     }
 
     footer #stay-connected {
         margin-right: 16px;
+    }
+
+    #landing {
+        text-align: center;
+    }
+    
+    #landing .container {
+        display: flex;
+    }
+
+    #landing .left {
+        width: 500px;
+    }
+
+    #landing .right {
+        margin-left: 32px;
+        text-align: left;
+        flex: 1;
     }
 
 }

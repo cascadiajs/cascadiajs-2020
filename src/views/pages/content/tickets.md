@@ -9,11 +9,13 @@ Each ticket includes the following:
 * access to our Opening and Closing parties, which will include movies, magic and karaoke!
 * a Goodie Box with a hoodie, stickers and other fun stuff **shipped to you**
 
+<div class="cta"><a href="https://ti.to/event-loop/cascadiajs-2020">Buy Conference Ticket</a></div>
+
 ## Workshops (Sep 3-4)
 
 Following the conference we are hosting 2 awesome programming workshops! 
 
-<table id="workshops">
+<table>
     <thead>
         <tr><th>Workshop</th><th>Date</th><th>Instructor</th><th>Price</th></tr>
     </thead>
@@ -24,7 +26,7 @@ Following the conference we are hosting 2 awesome programming workshops!
     </tbody>
 </table>
 
-<a class="cta" href="https://ti.to/event-loop/cascadiajs-2020">Buy Tickets</a>
+<div class="cta"><a href="https://ti.to/event-loop/cascadiajs-2020">Buy Workshop Ticket</a></div>
 
 ## FAQ
 

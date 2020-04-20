@@ -15,23 +15,24 @@ module.exports = async function Layout ({title, content}) {
   </head>
   <body>
     <div id="root">
-      <header>
+      <header class="wide">
         <nav>
-          <a href="/">Home</a>
-          <a href="/schedule">Schedule</a>
-          <a href="/covid-19">COVID-19</a>
-          <a href="/coc">Code of Conduct</a>
-          <a href="/tickets" class="buy">Tickets</a>
+          <div id="logo"><a href="/"><img src="${assetPath}/images/icon.svg" alt="logo"/></a></div>
+          <div><span><a href="/">CascadiaJS</a></span></div>
+          <div class="push"><a href="/schedule">Schedule</a></div>
+          <div class="spacer"><a href="/covid-19">COVID-19</a></div>
+          <div class="spacer"><a href="/coc">Code of Conduct</a></div>
+          <div class="spacer"><a href="/tickets" class="buy">Tickets</a></div>
         </nav>
       </header>
       <div id="content">
       ${content}
       </div>
-      <footer>
+      <footer class="wide">
         <section id="when-where">
-          <h2>CascadiaJS<br/>Sep 1-2, 2020<br/>Sunriver, OR</h2>
+          <h2>CascadiaJS<br/>Sep 1-2, 2020<br/>Cyberspace</h2>
         </section>
-        <section id="stay-connected">
+        <section id="stay-connected" class="push">
           <h2>Stay Connected</h2>
           <ul>
             <li><a href="http://eepurl.com/dPmCkT">Sign-up for our Newsletter</a></li>
