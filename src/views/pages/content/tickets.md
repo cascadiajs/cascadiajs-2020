@@ -9,6 +9,19 @@ Each ticket includes the following:
 * access to our Opening and Closing parties, which will include movies, magic and karaoke!
 * a Goodie Box with a hoodie, stickers and other fun stuff **shipped to you**
 
+<table id="ticket-info">
+    <thead>
+        <tr><th>Release</th><th>Dates</th><th>Price</th></tr>
+    </thead>
+    <tbody>
+        <tr class="on-sale"><td>Early Bird</td><td>Apr 20 - May 25</td><td>$99</td></tr>
+        <tr><td>Regular Bird</td><td>May 25 - July 31</td><td>$129</td></tr>
+        <tr><td>Late Bird *</td><td>July 31 - Sept 1</td><td>$129</td></tr>
+    </tbody>
+</table>
+
+<small>* Late Bird tickets will not receive a CascadiaJS 2020 hoodie</small>
+
 <div class="cta"><a href="https://ti.to/event-loop/cascadiajs-2020">Buy Conference Ticket</a></div>
 
 ## Workshops (Sep 3-4)

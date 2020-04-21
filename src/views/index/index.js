@@ -43,7 +43,7 @@ let content = /*html*/`
                 <h2>Workshops</h2> 
                 <h3>JavaScript: The Recent Parts</h3>
                 <h4>Sept 3</h4>
-                <p>Kyle Simpson will walk us through the newest additions to JavaScript, including: spread/rest, destructuring, template literals, iterators, generators, Array.includes, string padding, async-await, RegExp improvements, async generators/iteration and more.</p>
+                <p style="margin-bottom: 32px">Kyle Simpson will walk us through the newest additions to JavaScript, including: spread/rest, destructuring, template literals, iterators, generators, Array.includes, string padding, async-await, RegExp improvements, async generators/iteration and more.</p>
                 <h3>Digging Into Node</h3>
                 <h4>Sept 4</h4>
                 <p>Kyle Simpson will spend a day Digging Into Node, including: building CLI tools (parameters, I/O, etc), file system operations, async, streams, HTTP handling, Express.js routing, SQLite databases, child processes and more.</p>

@@ -127,7 +127,7 @@ footer {
 /* page/content styles */
 
 #page {
-
+    padding: 16px;
 }
 
 #page li {
@@ -204,7 +204,11 @@ div.highlight {
 }
 
 table {
-    font-size: 0.8em;
+    width: 100%;
+}
+
+table th { 
+    text-align:left;
 }
 
 tr.sold-out td {
@@ -350,7 +354,7 @@ tr.on-sale {
     }
 
     #page {
-        width: 960px;
+        width: 50%;
         margin: 0 auto;
         margin-bottom: 64px;
     }
