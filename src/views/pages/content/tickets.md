@@ -1,5 +1,6 @@
-# Tickets
-
+---
+title: Tickets
+---
 ## CascadiaJS Conference (Sep 1-2)
 
 Each ticket includes the following:

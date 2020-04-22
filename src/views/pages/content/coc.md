@@ -1,5 +1,6 @@
-# The CascadiaJS Code of Conduct
-
+---
+title: Code of Conduct
+---
 ![pronoun stickers](https://begin-static-p6uw2-production.s3.us-west-2.amazonaws.com/forest-1dg/images/2018-pronoun-stickers.jpg)
 
 Everyone - including attendees, sponsors, speakers, and organizers - is required to agree to and follow this Code of Conduct. Inappropriate behavior or harassment of any kind is not tolerated.

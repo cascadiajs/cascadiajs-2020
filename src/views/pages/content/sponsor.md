@@ -1,5 +1,6 @@
-# Sponsor CascadiaJS 2020
-
+---
+title: Sponsor CascadiaJS 2020
+---
 ![Amazon at CascadiaJS](https://pbs.twimg.com/media/DtM87aIU0AMyD94.jpg:large)
 
 The most important thing we do as a conference is bring developers together to meet, build relationships and learn from one another. Many of the attendees who come to CascadiaJS do so because they are trying to learn new skills, become better engineers, build their professional network or find a new job. 
@@ -15,7 +16,7 @@ Here are a few data points on the reach of our conference:
 * YouTube: 1200+ subscribers and 8k+ views (last 12 months)
 * Twitch: 2190 viewers during the 2019 live stream
 * Twitter: 3000+ followers and 45k impressions (last 28 days)
-* Expected number of attendees for the 2020 online event = 1000
+* Expected number of attendees for the 2020 online event = 1000 ticket holders, 3000 total stream viewers
 
 <div id="carousel">
   <img src="${STATIC}/images/testimonial-1.png" />

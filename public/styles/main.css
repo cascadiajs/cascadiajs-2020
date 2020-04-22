@@ -14,16 +14,24 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: mono45-headline, monospace;
+    font-family: ibm-plex-mono, sans-serif;
     margin: 32px 0 16px 0;
-    font-weight: 500;
+    color: #112378;
 }
 
-h1 { font-size: 2.2em }
+h1, h2 {
+    font-weight: 800
+}
 
-h2 { font-size: 1.8em }
+h3, h4, h5, h6 {
+    font-weight: 700
+}
 
-h3 { font-size: 1.4em }
+h1 { font-size: 40px; }
+
+h2 { font-size: 32px; }
+
+h3 { font-size: 24px; }
 
 img {
     max-width: 100%;
@@ -77,6 +85,9 @@ footer {
 
 footer h2 {
     font-size: 16px;
+    font-family: mono45-headline, monospace;
+    font-weight: 500;
+    color: #fff;
 }
 
 footer ul {
@@ -85,6 +96,7 @@ footer ul {
 
 footer li {
     list-style: none;
+    margin-bottom: 8px;
 }
 
 footer a, footer a:visited {
@@ -126,7 +138,18 @@ footer {
 
 /* page/content styles */
 
-#page {
+#page-title {
+    background-color: #17C37B;
+    padding: 32px 0;
+}
+
+#page-title h1 {
+    font-family: mono45-headline, monospace;
+    font-weight: 500;
+    color: #fff;
+}
+
+#page-body {
     padding: 16px;
 }
 
@@ -225,8 +248,26 @@ tr.on-sale {
     font-size: 24px;
 }
 
-#landing h1, #landing h2, #landing h3 {
+#landing h2 {
+    font-family: mono45-headline, monospace;
+    font-weight: 500;
+    font-size: 48px;
     margin: 0 0 32px 0;
+}
+
+#landing h3 { 
+    font-size: 40px; 
+    color: #112378;
+    font-weight: 700;
+    font-style: italic;
+    margin-bottom: 0;
+}
+
+#landing h4 {
+    font-size: 32px; 
+    color: #fff;
+    font-weight: 400;
+    margin-top: 4px;
 }
 
 #landing .cta {
@@ -268,12 +309,13 @@ tr.on-sale {
     background-color: #112378;
 }
 
-#attend, #workshops, #coc {
+#attend, #attend h2, #workshops, #workshops h2, #coc, #coc h2 {
     background-color: #17C37B;
     color: #fff;
 }
 
-#cfp, #schedule {
+#cfp, #cfp h2, #schedule, #schedule h2 {
+    color: #000;
     background-color: #fff;
 }
 
@@ -353,9 +395,12 @@ tr.on-sale {
         width: 392px;
     }
 
-    #page {
+    #page-body, #page-title h1 {
         width: 50%;
         margin: 0 auto;
+    }
+
+    #page {
         margin-bottom: 64px;
     }
 
@@ -404,7 +449,7 @@ tr.on-sale {
     }
 
     footer #stay-connected {
-        margin-right: 16px;
+        margin-right: 40px;
     }
 
     #landing {

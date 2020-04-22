@@ -52,8 +52,22 @@ let content = /*html*/`
         </div>
         <div id="schedule">
             <div class="wide">
-                <h2>Schedule</h2> 
-                <p>CascadiaJS is more than just a 2-day conference. We are planning a full week of fun events. Stay tuned!</p>
+                <h2>Sponsors</h2> 
+                <div class="container">
+                    <div class="left"><img src="https://pbs.twimg.com/media/DtM87aIU0AMyD94.jpg:large" alt="Amazon sponsorship"/></div>
+                    <div class="right">
+                        <p>
+                            It is our mission to create an online event that
+                            brings our community together, levels everyone up on building for the Web and helps everyone meet new people, 
+                            try out new products and start thinking about what's next in their career. 
+                        </p>
+                        <p>
+                            This is a big lift and we can't do it without the support of sponsors. If your company is interested in
+                            supporting our community please reach out!
+                        </p>
+                    </div>
+                </div>
+                <div class="cta"><a href="/sponsor">Sponsor Info</a></div>
             </div>
         </div>
         <div id="coc">

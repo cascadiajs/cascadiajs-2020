@@ -1,5 +1,6 @@
-# COVID-19 Updates
-
+---
+title: COVID-19 Updates
+---
 ## April 17, 2020 Update
 
 Due to the uncertain situation regarding COVID-19 we have decided to transition CascadiaJS 2020 to a <span class="highlight warning">fully on-line virtual event</span>. 

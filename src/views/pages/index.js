@@ -2,6 +2,7 @@ let fs = require('fs')
 let exists = fs.existsSync
 let read = fs.readFileSync
 let md = require('marked')
+let fm = require('front-matter')
 let join = require('path').join
 let assetPath = process.env.BEGIN_STATIC_ORIGIN
 let Layout = require('../layout')
@@ -22,8 +23,9 @@ module.exports = async function Page (req) {
   doc = read(doc).toString()
                  .replace(/\$\{STATIC\}/g, assetPath)
 
-  let title = doc.split('\n')[0].replace('# ', '')
-  let content = `<div id="page">${md(doc)}</div>`
+  let { attributes, body } = fm(doc)
+  let title = attributes.title
+  let content = `<div id="page"><div id="page-title"><h1>${title}</h1></div><div id="page-body">${md(body)}</div></div>`
 
   page = {
     title,

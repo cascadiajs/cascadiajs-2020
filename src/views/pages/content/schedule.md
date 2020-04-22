@@ -1,5 +1,6 @@
-# Schedule
-
+---
+title: Schedule
+---
 CascadiaJS is more than just a 2-day conference. We are planning a full week of fun events. Here is a rough schedule of what we have planned so far:
 
 * Tue - Conference Day One 
