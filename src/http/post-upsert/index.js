@@ -12,14 +12,15 @@ async function auth(req) {
 /** write to begin/data */
 async function upsert(req) {
 
-  if (!req.body.key) 
+  if (!req.body.key)
     req.body.key = req.body.name.toLowerCase().replace(/ /, '-')
 
-  req.body.pronouns = req.body.pronouns.split(" ")
+  req.body.pronouns = req.body.pronouns.split(",")
+  req.body.topics = req.body.topics.split(",")
 
-  await data.set({ 
-    table: 'speakers', 
-    ...req.body 
+  await data.set({
+    table: 'speakers',
+    ...req.body
   })
 
   return { location: '/admin.php' }
