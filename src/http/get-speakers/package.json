@@ -1,0 +1,17 @@
+{
+  "name": "get-speakers",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "@architect/functions": "^3.10.1",
+    "@begin/data": "^1.2.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "@dam",
+  "license": "Apache-2.0"
+}

@@ -8,6 +8,7 @@ folder public
 get /
 get /admin.php
 get /api
+get /speakers
 post /login
 post /upsert
 
