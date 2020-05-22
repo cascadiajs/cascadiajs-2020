@@ -1,5 +1,3 @@
-let assetPath = process.env.BEGIN_STATIC_ORIGIN
-
 module.exports = async function Layout ({title, content}) {
     return /*html*/`
 <!doctype html>
@@ -8,17 +6,17 @@ module.exports = async function Layout ({title, content}) {
     <meta charset=utf-8>
     <title>CascadiaJS 2020${ title ? ' - ' + title : '' }</title>
     <link rel="stylesheet" href="https://use.typekit.net/fro6sah.css">
-    <link rel="stylesheet" href="${assetPath}/styles/normalize.css">
-    <link rel="stylesheet" href="${assetPath}/styles/main.css">
+    <link rel="stylesheet" href="/_static/styles/normalize.css">
+    <link rel="stylesheet" href="/_static/styles/main.css">
     <script src="https://kit.fontawesome.com/439d39b111.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="${assetPath}/images/icon.svg">
+    <link rel="icon" href="/_static/images/icon.svg">
   </head>
   <body>
     <div id="root">
       <header class="wide">
         <nav>
-          <div id="logo"><a href="/"><img src="${assetPath}/images/icon.svg" alt="logo"/></a></div>
+          <div id="logo"><a href="/"><img src="/_static/images/icon.svg" alt="logo"/></a></div>
           <div><span><a href="/">CascadiaJS</a></span></div>
           <div class="push"><a href="/schedule">Schedule</a></div>
           <div class="spacer"><a href="/covid-19">COVID-19</a></div>

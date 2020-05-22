@@ -4,7 +4,7 @@ let read = fs.readFileSync
 let md = require('marked')
 let fm = require('front-matter')
 let join = require('path').join
-let assetPath = process.env.BEGIN_STATIC_ORIGIN
+let assetPath = '/_static/'
 let Layout = require('../layout')
 
 /**
