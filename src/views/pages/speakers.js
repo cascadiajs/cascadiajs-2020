@@ -4,14 +4,16 @@ const Topic = require('../ui/item-topic')
 module.exports = function Speakers(props) {
   props = props || {}
   let speakers = (props.speakers || [])
-    .map(s => Speaker(s))
+    .map(s => Speaker(s)).join('')
+  let selectedTopics = props.selectedTopics || []
   let topics = (props.topics || [])
-    .map(t => Topic(t))
+    .map(t => Topic({ name:t, checked: selectedTopics.includes(t) })).join('')
   return `
-<form action="/topics" method="POST">
+<div>
   ${ topics }
-</form>
-<ul id="cjs-speakers">
+  <a href="/speakers">clear</a>
+</div>
+<ul>
   ${ speakers }
 </ul>
   `

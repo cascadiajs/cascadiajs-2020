@@ -6,8 +6,8 @@ module.exports = function TopicItem(props) {
     : ''
   return `
 <label for="topic">
-  <input type="checkbox" ${checked}>
-  ${ name }
+  <input type="checkbox" ${ checked }>
+  <a href="?topics=${ name }">${ name }</a>
 </label>
   `
 }

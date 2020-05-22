@@ -1,17 +1,18 @@
-const arc = require('@architect/functions')
 const data = require('@begin/data')
 const Speakers = require('@architect/views/pages/speakers')
 
-exports.handler = async function http (req) {
+exports.handler = async function http(req) {
   let speakers = await data.get({ table: 'speakers' })
+  let topics = speakers.reduce((a, r) => [...new Set(a.concat(r.topics))].sort(), [])
   let params = req.queryStringParameters || {}
-  console.log('PARAMS: ', params)
-  let topic = params.topic
-  if (topic) {
+  let selectedTopics = params.topics &&
+    params.topics.split(',')
+      .map(t => t.trim())
+
+  if (selectedTopics) {
     speakers = speakers.filter(s => {
-      console.log('TOPIC: ', topic)
-      console.log('SPEAKER TOPICS: ', s.topics, s.topics.includes(topic))
-      return s.topics.includes(topic)
+      let speakerTopics = s.topics || []
+      return speakerTopics.some(speakerTopic => selectedTopics.some(selectedTopic => speakerTopic === selectedTopic))
     })
   }
 
@@ -20,6 +21,10 @@ exports.handler = async function http (req) {
       'cache-control': 'no-cache, no-store, must-revalidate, max-age=0, s-maxage=0',
       'content-type': 'text/html; charset=utf8'
     },
-    body: Speakers({ speakers })
+    body: Speakers({
+      speakers,
+      selectedTopics,
+      topics
+    })
   }
 }
