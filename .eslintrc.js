@@ -5,7 +5,8 @@ module.exports = {
   },
   extends: 'eslint:recommended',
   parserOptions: {
-    ecmaVersion: 2018
+    ecmaVersion: 6,
+    sourceType: 'module'
   },
   rules: {
     semi: ['error', 'never'],

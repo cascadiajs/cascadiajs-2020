@@ -1,5 +1,6 @@
 const data = require('@begin/data')
 const Speakers = require('@architect/views/pages/speakers')
+const isXHR = require('@architect/shared/utils/is-xhr')
 
 exports.handler = async function http(req) {
   let speakers = await data.get({ table: 'speakers' })
@@ -16,15 +17,31 @@ exports.handler = async function http(req) {
     })
   }
 
-  return {
-    headers: {
-      'cache-control': 'no-cache, no-store, must-revalidate, max-age=0, s-maxage=0',
-      'content-type': 'text/html; charset=utf8'
-    },
-    body: Speakers({
-      speakers,
-      selectedTopics,
-      topics
-    })
+  if (isXHR(req)) {
+    return {
+      headers: {
+        'content-type': 'application/json; charset=utf8'
+      },
+      body: JSON.stringify({
+        speakers,
+        selectedTopics,
+        topics
+      })
+    }
+  } else {
+    return {
+      headers: {
+        'cache-control': 'no-cache, no-store, must-revalidate, max-age=0, s-maxage=0',
+        'content-type': 'text/html; charset=utf8'
+      },
+      body: `
+        ${Speakers({
+          speakers,
+          selectedTopics,
+          topics
+        })}
+        <script src=_static/speakers.js type=module crossorigin></script>
+      `
+    }
   }
 }

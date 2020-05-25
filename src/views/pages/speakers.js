@@ -7,7 +7,7 @@ module.exports = function Speakers(props) {
     .map(s => Speaker(s)).join('')
   let selectedTopics = props.selectedTopics || []
   let topics = (props.topics || [])
-    .map(t => Topic({ name:t, checked: selectedTopics.includes(t) })).join('')
+    .map(t => Topic({ name:t, checked: selectedTopics.includes(t), selectedTopics })).join('')
   return `
 <div>
   ${ topics }
