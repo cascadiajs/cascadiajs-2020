@@ -5,7 +5,8 @@
   "main": "index.js",
   "dependencies": {
     "@architect/functions": "^3.10.1",
-    "@begin/data": "^1.2.2"
+    "@begin/data": "^1.2.2",
+    "esm": "^3.2.25"
   },
   "devDependencies": {},
   "scripts": {

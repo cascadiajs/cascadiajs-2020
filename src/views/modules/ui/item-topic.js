@@ -1,4 +1,4 @@
-module.exports = function TopicItem(props) {
+export default function TopicItem(props) {
   props = props || {}
   let selectedTopics = props.selectedTopics || []
   let name = props.name || ''

@@ -1,5 +1,5 @@
 /* global window document */
-import Speakers from '/modules/speakers.js'
+import Speakers from '../pages/speakers.js'
 
 export default function Main() {
   let selectedTopics = []
@@ -29,9 +29,9 @@ export default function Main() {
   }
 
   function update(data) {
-    let container = document.getElementByID('js-speakers')
+    let container = document.getElementById('js-speakers')
     if (container) {
-      container.innerHTML = Speakers(data)
+      container.innerHTML = Speakers(JSON.parse(data))
     }
   }
 
