@@ -31,7 +31,7 @@ export default function Main() {
   function update(data) {
     let container = document.getElementById('js-speakers')
     if (container) {
-      container.innerHTML = Speakers(JSON.parse(data))
+      container.innerHTML = Speakers(data)
     }
   }
 
