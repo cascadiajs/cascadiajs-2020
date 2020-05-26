@@ -5,12 +5,7 @@ module.exports = function TopicItem(props) {
   let checked = props.checked
     ? 'checked="checked"'
     : ''
-  let href = checked
-    ? selectedTopics.length === 1
-      ? '/speakers'
-      : `?topics=${selectedTopics.filter(t => t !== name).join(',')}`
-    : `?topics=${selectedTopics.concat([name]).join(',')}`
-
+  let href = getHref(checked, selectedTopics, name)
   return `
 <a
   href="${ href }"
@@ -22,4 +17,12 @@ module.exports = function TopicItem(props) {
   ${ name }
 </a>
   `
+}
+
+function getHref(checked,selectedTopics, name) {
+  return checked
+    ? selectedTopics.length === 1
+      ? '/speakers'
+      : `?topics=${selectedTopics.filter(t => t !== name).join(',')}`
+    : `?topics=${selectedTopics.concat([name]).join(',')}`
 }
