@@ -6,7 +6,7 @@ let content = /*html*/`
             <div class="wide">
                 <img id="hero-badge" src="/_static/images/hero-badge.svg" alt="hero image"/>
                 <div>
-                <div><a href="/tickets" class="buy">Early Bird Tickets on Sale Now</a></div>
+                <div><a href="/tickets" class="buy">Tickets on Sale Now</a></div>
                 <div class="cta"><a href="/covid-19">COVID-19 Update</a></div>
             </div>
             </div>
