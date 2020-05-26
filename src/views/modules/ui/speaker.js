@@ -1,6 +1,6 @@
-const SpeakerTopic = require('./speaker-topic')
+import SpeakerTopic from './speaker-topic'
 
-module.exports = function Speaker(props) {
+export default function Speaker(props) {
   props = props || {}
   let name = props.name || ''
   let topics = (props.topics || [])

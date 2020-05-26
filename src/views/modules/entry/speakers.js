@@ -1,12 +1,13 @@
 /* global window document */
-// import Speakers from '/modules/speakers.js'
+import Speakers from '../pages/speakers.js'
+
 export default function Main() {
   let selectedTopics = []
   let topics = document.querySelectorAll('.js-topic')
   Array.prototype.forEach.call(
     topics,
     t => t.onclick = e => {
-      // e.preventDefault()
+      e.preventDefault()
       let data = t.dataset || {}
       let topic = data.topic
       let action = selectedTopics.includes(topic)
@@ -14,8 +15,7 @@ export default function Main() {
         : addTopic
       selectedTopics = action(selectedTopics, topic)
       let url = window.location.pathname + getTopicParams(selectedTopics)
-      console.log('URL: ', url)
-//      getData(url)
+      getData(url)
     }
   )
 
@@ -29,7 +29,10 @@ export default function Main() {
   }
 
   function update(data) {
-
+    let container = document.getElementById('js-speakers')
+    if (container) {
+      container.innerHTML = Speakers(data)
+    }
   }
 
   function addTopic(topics, topic) {

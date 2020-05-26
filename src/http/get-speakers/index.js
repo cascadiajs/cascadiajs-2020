@@ -1,5 +1,6 @@
+require = require('esm')(module)
 const data = require('@begin/data')
-const Speakers = require('@architect/views/pages/speakers')
+const Speakers = require('@architect/views/modules/pages/speakers.js').default
 const isXHR = require('@architect/shared/utils/is-xhr')
 
 exports.handler = async function http(req) {
@@ -39,12 +40,14 @@ exports.handler = async function http(req) {
         'content-type': 'text/html; charset=utf8'
       },
       body: `
+      <div id=js-speakers>
         ${Speakers({
           speakers,
           selectedTopics,
           topics
         })}
-        <script src=_static/speakers.js type=module crossorigin></script>
+      </div>
+        <script src=modules/entry/speakers.js type=module crossorigin></script>
       `
     }
   }

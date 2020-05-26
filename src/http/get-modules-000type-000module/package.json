@@ -1,0 +1,8 @@
+{
+  "name": "get-modules-000type-000module",
+  "version": "1.0.0",
+  "dependencies": {
+    "@begin/data": "^1.2.2",
+    "rollup": "^2.10.9"
+  }
+}
