@@ -4,7 +4,6 @@ let read = fs.readFileSync
 let md = require('marked')
 let fm = require('front-matter')
 let join = require('path').join
-let assetPath = '/_static/'
 let Layout = require('../layout')
 
 /**
@@ -21,7 +20,6 @@ module.exports = async function Page (req) {
 
   // Set up view content
   doc = read(doc).toString()
-                 .replace(/\$\{STATIC\}/g, assetPath)
 
   let { attributes, body } = fm(doc)
   let title = attributes.title
@@ -29,8 +27,7 @@ module.exports = async function Page (req) {
 
   page = {
     title,
-    content,
-    assetPath
+    content
   }
   let html = await Layout(page)
   return {
