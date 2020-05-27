@@ -16,6 +16,7 @@ async function upsert(req) {
     req.body.key = req.body.name.toLowerCase().replace(/ /, '-')
 
   req.body.pronouns = req.body.pronouns.split(",")
+    .map(t => t.trim())
   req.body.topics = req.body.topics.split(",")
     // fixes case of spaces in topics 'a,  b,  c , d'
     .map(t => t.trim())

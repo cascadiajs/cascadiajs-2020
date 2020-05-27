@@ -5,16 +5,18 @@
   "scripts": {
     "lint": "eslint src --ignore-pattern node_modules --fix",
     "start": "cross-env NODE_ENV=testing npx sandbox",
-    "test": "cross-env NODE_ENV=testing PORT=6666 tape test/*-test.js ./test/**/*-test.js | tap-spec",
+    "test": "cross-env NODE_ENV=testing PORT=6666 tape test/*-test.js | tap-spec",
     "prod": "npm version patch && git push origin master"
   },
   "devDependencies": {
     "@architect/sandbox": "^1.12.0",
-    "@begin/data": "latest",
     "cross-env": "^7.0.2",
     "eslint": "^6.8.0",
     "tap-spec": "^5.0.0",
-    "tape": "^4.13.2",
-    "tiny-json-http": "^7.1.2"
+    "tape": "^4.13.2"
+  },
+  "dependencies": {
+    "@begin/data": "^1.2.2",
+    "npm-run-all": "^4.1.5"
   }
 }
