@@ -1,23 +1,9 @@
 /* global window document */
 import Speakers from '../pages/speakers.js'
 
-export default function Main() {
+(function Main() {
   let selectedTopics = []
-  let topics = document.querySelectorAll('.js-topic')
-  Array.prototype.forEach.call(
-    topics,
-    t => t.onclick = e => {
-      e.preventDefault()
-      let data = t.dataset || {}
-      let topic = data.topic
-      let action = selectedTopics.includes(topic)
-        ? removeTopic
-        : addTopic
-      selectedTopics = action(selectedTopics, topic)
-      let url = window.location.pathname + getTopicParams(selectedTopics)
-      getData(url)
-    }
-  )
+  addEventHandlers()
 
   async function getData(url) {
     let data = await(await fetch(url, {
@@ -32,7 +18,26 @@ export default function Main() {
     let container = document.getElementById('js-speakers')
     if (container) {
       container.innerHTML = Speakers(data)
+      addEventHandlers()
     }
+  }
+
+  function addEventHandlers() {
+    let topics = document.querySelectorAll('.js-topic')
+    Array.prototype.forEach.call(
+      topics,
+      t => t.onclick = e => {
+        e.preventDefault()
+        let data = t.dataset || {}
+        let topic = data.topic
+        let action = selectedTopics.includes(topic)
+          ? removeTopic
+          : addTopic
+        selectedTopics = action(selectedTopics, topic)
+        let url = window.location.pathname + getTopicParams(selectedTopics)
+        getData(url)
+      }
+    )
   }
 
   function addTopic(topics, topic) {
@@ -51,6 +56,4 @@ export default function Main() {
       ? `?topics=${selectedTopics.join(',')}`
       : ''
   }
-}
-
-Main()
+}())

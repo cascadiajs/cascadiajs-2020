@@ -1,28 +1,24 @@
+import getSelectedTopicsHref from '../utils/get-selected-topic-href.js'
+
 export default function TopicItem(props) {
   props = props || {}
   let selectedTopics = props.selectedTopics || []
-  let name = props.name || ''
-  let checked = props.checked
+  let topic = props.topic || ''
+  let selected = props.selected
+  let checked = props.selected
     ? 'checked="checked"'
     : ''
-  let href = getHref(checked, selectedTopics, name)
+  let href = getSelectedTopicsHref(selected, selectedTopics, topic)
   return `
 <a
   href="${ href }"
   class="js-topic"
-  data-topic="${ name }"
-  data-selected="${ checked }"
+  data-topic="${ topic }"
+  data-selected="${ selected }"
 >
   <input type="checkbox" ${ checked }>
-  ${ name }
+  ${ topic }
 </a>
   `
 }
 
-function getHref(checked,selectedTopics, name) {
-  return checked
-    ? selectedTopics.length === 1
-      ? '/speakers'
-      : `?topics=${selectedTopics.filter(t => t !== name).join(',')}`
-    : `?topics=${selectedTopics.concat([name]).join(',')}`
-}

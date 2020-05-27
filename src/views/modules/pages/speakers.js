@@ -3,11 +3,15 @@ import Topic from '../ui/item-topic.js'
 
 export default function Speakers(props) {
   props = props || {}
-  let speakers = (props.speakers || [])
-    .map(s => Speaker(s)).join('')
   let selectedTopics = props.selectedTopics || []
+  let speakers = (props.speakers || [])
+    .map(speaker => Speaker({ speaker, selectedTopics })).join('')
   let topics = (props.topics || [])
-    .map(t => Topic({ name:t, checked: selectedTopics.includes(t), selectedTopics })).join('')
+    .map(topic => Topic({
+      topic,
+      selected: selectedTopics.includes(topic),
+      selectedTopics
+    })).join('')
   return `
 <div>
   ${ topics }
