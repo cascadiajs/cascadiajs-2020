@@ -19,10 +19,10 @@ Here are a few data points on the reach of our conference:
 * Expected number of attendees for the 2020 online event = 1000 ticket holders, 3000 total stream viewers
 
 <div id="carousel">
-  <img src="${STATIC}/images/testimonial-1.png" />
-  <img src="${STATIC}/images/testimonial-2.png" />
-  <img src="${STATIC}/images/testimonial-3.png" />
-  <img src="${STATIC}/images/testimonial-4.png" />
+  <img src="/_static/images/testimonial-1.png" />
+  <img src="/_static/images/testimonial-2.png" />
+  <img src="/_static/images/testimonial-3.png" />
+  <img src="/_static/images/testimonial-4.png" />
 </div>
 
 Check out our [testimonial page](/testimonials) for more examples of what our speakers and attendees think of CascadiaJS!

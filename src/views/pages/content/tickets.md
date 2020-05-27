@@ -15,8 +15,8 @@ Each ticket includes the following:
         <tr><th>Release</th><th>Dates</th><th>Price</th></tr>
     </thead>
     <tbody>
-        <tr class="on-sale"><td>Early Bird</td><td>Apr 20 - May 25</td><td>$99</td></tr>
-        <tr><td>Regular Bird</td><td>May 25 - July 31</td><td>$129</td></tr>
+        <tr class="sold-out"><td>Early Bird</td><td>Apr 20 - May 25</td><td>$99</td></tr>
+        <tr class="on-sale"><td>Regular Bird</td><td>May 25 - July 31</td><td>$129</td></tr>
         <tr><td>Late Bird *</td><td>July 31 - Sept 1</td><td>$129</td></tr>
     </tbody>
 </table>
