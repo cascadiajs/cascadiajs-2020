@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-global-assign
 require = require('esm')(module)
 const data = require('@begin/data')
 const Speakers = require('@architect/views/modules/pages/speakers.js').default

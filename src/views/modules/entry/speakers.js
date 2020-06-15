@@ -6,7 +6,7 @@ import Speakers from '../pages/speakers.js'
   addEventHandlers()
 
   async function getData(url) {
-    let data = await(await fetch(url, {
+    let data = await(await window.fetch(url, {
       headers: {
         'Content-Type': 'application/json'
       },

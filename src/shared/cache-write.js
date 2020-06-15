@@ -24,7 +24,7 @@ module.exports = async function write({ name, source }) {
   else {
     // write to s3
     let s3 = new aws.S3
-    let result = await s3.putObject({
+    await s3.putObject({
       ACL: 'public-read',
       Bucket: process.env.ARC_STATIC_BUCKET,
       Key: `${ process.env.ARC_STATIC_FOLDER }/bundled/${ fingerprint }`,
