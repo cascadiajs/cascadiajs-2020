@@ -16,9 +16,11 @@ async function upsert(req) {
     req.body.key = req.body.name.toLowerCase().replace(/ /, '-')
 
   req.body.pronouns = req.body.pronouns.split(",")
+    .map(t => t.trim())
   req.body.topics = req.body.topics.split(",")
     // fixes case of spaces in topics 'a,  b,  c , d'
-    .map(t => t.trim())
+    // allows for spaces in topic names like 'machine learning'
+   .map(t => t.trim().replace(/ /, '-'))
 
   await data.set({
     table: 'speakers',
