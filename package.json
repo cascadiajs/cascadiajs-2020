@@ -1,7 +1,7 @@
 {
-  "name": "begin-app",
+  "name": "cascadiajs-2020",
   "version": "0.0.20",
-  "description": "Begin basic Hello World! app",
+  "description": "CascadiaJS 2020 website",
   "scripts": {
     "lint": "eslint src --ignore-pattern node_modules --fix",
     "start": "cross-env NODE_ENV=testing npx sandbox",
