@@ -10,9 +10,7 @@ CascadiaJS is more than just a 2-day conference. We are planning a full week of 
 
 ## The Conference (Sep 1 - 2)
 
-<p class="warning highlight">
-    We are currently running our <a href="/cfp">Call for Presenters</a>. Once the CFP closes on May 15 we will spend the next couple of weeks reviewing the proposals and finalizing our line-up. We expect to start announcing speakers in early April.
-</p>
+Stay tuned for more information on our speakers and other activities taking place on Sept 1 and Sept 2!
 
 ## JavaScript Workshop (Sep 3)
 

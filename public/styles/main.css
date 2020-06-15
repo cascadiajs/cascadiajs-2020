@@ -9,8 +9,7 @@ html, body {
 
 body {
     font-family: canada-type-gibson, sans-serif;
-    font-size: 1em;
-    background-color: #112378;
+    font-size: 1.125em;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -47,6 +46,7 @@ p {
 header {
     padding: 32px 0;
     text-align: center;
+    background-color: #17C37B;
 }
 
 nav a, a.buy {
@@ -60,7 +60,7 @@ nav a, a.buy {
 }
 
 nav a, nav a:visited  {
-    color: #17C37B;
+    color: #112378;
 }
 
 a.buy, a.buy:visited {
@@ -139,14 +139,18 @@ footer {
 /* page/content styles */
 
 #page-title {
-    background-color: #17C37B;
-    padding: 32px 0;
+    background-color: #112378;
 }
 
-#page-title h1 {
+#page-title div {
+    padding: 16px;
+}
+
+#page-title div h1 {
     font-family: mono45-headline, monospace;
     font-weight: 500;
     color: #fff;
+    margin: 8px 0;
 }
 
 #page-body {
@@ -244,10 +248,6 @@ tr.on-sale {
 
 /* Landing page */
 
-#landing {
-    font-size: 24px;
-}
-
 #landing h2 {
     font-family: mono45-headline, monospace;
     font-weight: 500;
@@ -256,7 +256,7 @@ tr.on-sale {
 }
 
 #landing h3 { 
-    font-size: 40px; 
+    font-size: 32px; 
     color: #112378;
     font-weight: 700;
     font-style: italic;
@@ -264,7 +264,7 @@ tr.on-sale {
 }
 
 #landing h4 {
-    font-size: 32px; 
+    font-size: 28px; 
     color: #fff;
     font-weight: 400;
     margin-top: 4px;
@@ -278,8 +278,8 @@ tr.on-sale {
     padding: 32px 16px;
 }
 
-#hero img {
-
+#hero-logo {
+    margin-bottom: 8px;
 }
 
 #hero .buy, #hero .cta {
@@ -306,19 +306,23 @@ tr.on-sale {
 }
 
 #hero {
-    background-color: #112378;
+    background-color: #17C37B;
 }
 
-#attend, #attend h2, #workshops, #workshops h2, #coc, #coc h2 {
+#workshops, #workshops h2, #coc, #coc h2 {
     background-color: #17C37B;
     color: #fff;
 }
 
-#cfp, #cfp h2, #schedule, #schedule h2 {
+#attend, #attend h2, #schedule, #schedule h2 {
     color: #000;
     background-color: #fff;
 }
 
+footer {
+    color:  #fff;
+    background-color: #112378;
+}
 
 /* Carousel widget on sponsorship page */
 
@@ -395,7 +399,7 @@ tr.on-sale {
         width: 392px;
     }
 
-    #page-body, #page-title h1 {
+    #page-body, #page-title div {
         width: 50%;
         margin: 0 auto;
     }
@@ -436,7 +440,7 @@ tr.on-sale {
         width:600px;
     }
 
-    footer {
+    footer div {
         display: flex;
     }
 
@@ -470,4 +474,10 @@ tr.on-sale {
         flex: 1;
     }
 
+    #hero-images {
+        display: flex;
+        justify-content: center;
+        width: 95%;
+        margin: 0 auto;
+    }
 }

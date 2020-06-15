@@ -3,12 +3,10 @@ let Layout = require('../layout')
 let content = /*html*/`
     <div id="landing">
         <div id="hero">
-            <div class="wide">
-                <img id="hero-badge" src="/_static/images/hero-badge.svg" alt="hero image"/>
-                <div>
-                <div><a href="/tickets" class="buy">Tickets on Sale Now</a></div>
-                <div class="cta"><a href="/covid-19">COVID-19 Update</a></div>
-            </div>
+            <div id="hero-logo"><img src="/_static/images/hero-logo.svg" alt="logo"/></div>
+            <div id="hero-images">
+                <div><img src="/_static/images/hero-illustration-01.svg" alt="list of talks #1"/></div>
+                <div><img src="/_static/images/hero-illustration-02.svg" alt="list of talks #2"/></div>
             </div>
         </div>
         <div id="attend">
@@ -21,20 +19,6 @@ let content = /*html*/`
                     </div>
                 </div>
                 <div class="cta"><a href="/tickets">Ticket Info</a></div>
-            </div>
-        </div>
-        <div id="cfp">
-            <div class="wide">
-                <h2>Call for Speakers</h2>
-                <div class="container">
-                    <div class="left"><img src="/_static/images/photo-yuraima.jpg" alt="Photo of Yuraima"/></div>
-                    <div class="right">
-                        <p>Every developer has a story. We'd love to hear yours.</p>
-                        <p> Our CFP is open to both experienced speakers and those who have never given a big conference talk. The criteria we will use for evaluating submissions will be the same, and no added weight will be awarded to anyone just because they've spoken before. Some of the best talks given at past CascadiaJS events have come from first-time conference speakers.</p>
-                        <p> Submissions close on May 15, 2020.</p>
-                    </div>
-                </div>
-                <div class="cta"><a href="/cfp">Tell Your Story</a></div>
             </div>
         </div>
         <div id="workshops">

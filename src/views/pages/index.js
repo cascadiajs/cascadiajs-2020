@@ -23,7 +23,7 @@ module.exports = async function Page (req) {
 
   let { attributes, body } = fm(doc)
   let title = attributes.title
-  let content = `<div id="page"><div id="page-title"><h1>${title}</h1></div><div id="page-body">${md(body)}</div></div>`
+  let content = `<div id="page"><div id="page-title"><div><h1>${title}</h1></div></div><div id="page-body">${md(body)}</div></div>`
 
   page = {
     title,

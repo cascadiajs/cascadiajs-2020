@@ -17,7 +17,7 @@ Each ticket includes the following:
     <tbody>
         <tr class="sold-out"><td>Early Bird</td><td>Apr 20 - May 25</td><td>$99</td></tr>
         <tr class="on-sale"><td>Regular Bird</td><td>May 25 - July 31</td><td>$129</td></tr>
-        <tr><td>Late Bird *</td><td>July 31 - Sept 1</td><td>$129</td></tr>
+        <tr><td>Late Bird *</td><td>July 31 - Sept 1</td><td>$149</td></tr>
     </tbody>
 </table>
 
@@ -46,7 +46,7 @@ Following the conference we are hosting 2 awesome programming workshops!
 
 ### When will speakers be announced?
 
-We are currently running our [Call for Presenters](/cfp) which closes on May 15. We expect to start announcing speakers in late May.
+We will begin announcing speakers shortly!
 
 ### Will there be a Scholarship Program?
 
