@@ -7,7 +7,7 @@ module.exports = async function lookup({ name }) {
   if (!debug) {
     let cached = await read({ name })
     entry = cached
-      ? `/_static/${ cached }`
+      ? `/_static/bundled/${ cached }`
       : module
   } else {
     entry = module
