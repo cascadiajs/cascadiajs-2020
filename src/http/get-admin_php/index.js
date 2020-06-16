@@ -42,7 +42,7 @@ function speaker(person) {
     <input type=date name=reveal value="${ person ? person.reveal : '' }" required>
     <input type=text name=topics value="${ person && person.topics && person.topics.length > 0 ? person.topics.join(',') : '' }" placeholder="Topics (comma-delimited)" required>
     <input type=email name=email value="${ person ? person.email : '' }" placeholder="foo@bar.buzz" required>
-    <input type=text name=pronouns value="${ person && person.pronouns && person.pronouns.length > 0 ? person.pronouns.join(',') : '' }" placeholder="Pronouns (comma-delimited)" required>
+    <input type=text name=pronouns value="${ person ? person.pronouns : '' }" placeholder="Pronouns (comma-delimited)" required>
     <input type=text name=twitter value="${ person ? person.twitter : ''}" placeholder="Twitter" required>
     <input type=text name=url value="${ person ? person.url  : ''}" placeholder="URL" required>
     <input type=text name=company value="${ person ? person.company  : ''}" placeholder="Company" required>
