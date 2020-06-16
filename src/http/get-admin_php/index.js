@@ -35,6 +35,7 @@ function speaker(person) {
   <summary>${ person ? person.name : 'new speaker' }</summary>
   <form action=/upsert method=post>
     <input type=hidden name=key value="${ person ? person.key : '' }">
+    <input type=text name=pixelated placeholder="pixelated hash value" value="${ person ? person.pixelated : ''}" required>
     <input type=text name=name placeholder="Name" value="${ person ? person.name : ''}" required>
     <input type=text name=location value="${ person ? person.location : '' }" placeholder="Location (eg. Los Angeles, CA)" required>
     <input type=text name=title value="${ person ? person.title : '' }" placeholder="Talk title" required>
@@ -48,6 +49,10 @@ function speaker(person) {
     <input type=text name=track value="${ person ? person.track : '' }" placeholder="Track (eg. main)" required>
     <textarea name=abstract value="${ person ? person.abstract : '' }" placeholder="VB.NET and C# go on a date with Java and JavaScript …" required>${ person ? person.abstract : '' }</textarea>
     <button>Save</button>
+  </form>
+  <form action=/delete method=post>
+  <input type=hidden name=key value="${ person ? person.key : '' }">
+  <button>Delete</button>
   </form>
 </details>`
 }

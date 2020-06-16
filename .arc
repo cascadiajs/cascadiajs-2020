@@ -12,6 +12,7 @@ get /modules/:type/:module
 get /speakers
 post /login
 post /upsert
+post /delete
 
 @tables
 data
