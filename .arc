@@ -3,6 +3,7 @@ climb-h93
 
 @static
 folder public
+fingerprint true
 
 @http
 get /

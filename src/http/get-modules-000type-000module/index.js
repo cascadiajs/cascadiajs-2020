@@ -22,7 +22,7 @@ exports.handler = async function http(req) {
         file = await bundle({ name })
       }
       // redirect to the file
-      return redirect(`/_static/${ file }`)
+      return redirect(`/_static/bundled/${ file }`)
     }
   } catch(err) {
     if (err.name.startsWith('not_found')) {
