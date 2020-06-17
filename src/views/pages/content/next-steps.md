@@ -1,7 +1,7 @@
 ---
 title: You're Coming to CascadiaJS 2020!
 ---
-![CascadiaJS 2019 family photo](/_static/images/cjs19-family.jpg)
+![CascadiaJS 2019 family photo](/images/cjs19-family.jpg)
 
 Thanks for buying a ticket to CascadiaJS 2020. We're so excited that you're going to join us. We know it's weird that things have moved on-line, but we ask you to **trust us**. We are going to make this online edition of CascadiaJS amazing for you, we promise!
 

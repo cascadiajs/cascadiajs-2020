@@ -3,7 +3,7 @@ title: Sponsor CascadiaJS 2020
 ---
 ![Amazon at CascadiaJS](https://pbs.twimg.com/media/DtM87aIU0AMyD94.jpg:large)
 
-The most important thing we do as a conference is bring developers together to meet, build relationships and learn from one another. Many of the attendees who come to CascadiaJS do so because they are trying to learn new skills, become better engineers, build their professional network or find a new job. 
+The most important thing we do as a conference is bring developers together to meet, build relationships and learn from one another. Many of the attendees who come to CascadiaJS do so because they are trying to learn new skills, become better engineers, build their professional network or find a new job.
 
 For companies that are focused on <span class="sponsor-hiring highlight">hiring</span>, <span class="sponsor-marketing highlight">building developer tools</span> or <span class="sponsor-community highlight">supporting the community</span>, we have sponsorships that can help you achieve your goals.
 
@@ -19,10 +19,10 @@ Here are a few data points on the reach of our conference:
 * Expected number of attendees for the 2020 online event = 1000 ticket holders, 3000 total stream viewers
 
 <div id="carousel">
-  <img src="/_static/images/testimonial-1.png" />
-  <img src="/_static/images/testimonial-2.png" />
-  <img src="/_static/images/testimonial-3.png" />
-  <img src="/_static/images/testimonial-4.png" />
+  <img src="/images/testimonial-1.png" />
+  <img src="/images/testimonial-2.png" />
+  <img src="/images/testimonial-3.png" />
+  <img src="/images/testimonial-4.png" />
 </div>
 
 Check out our [testimonial page](/testimonials) for more examples of what our speakers and attendees think of CascadiaJS!
@@ -70,12 +70,12 @@ Closing out Day Two of CascadiaJS, as tradition demands, we will host a Karaoke 
 <!--
 <h3 id="magic-show"><i class="fas fa-wand-magic"></i> Magic Show - $5k (1 available)</h3>
 
-We are going to put on a magic show! Seriously! 
+We are going to put on a magic show! Seriously!
 -->
 
 <h3 id="captions"><i class="fas fa-closed-captioning"></i> Captioning - $3k (1 available</h3>
 
-We will be live captioning all talks. Your logo will be included on the site we use to display the captioning as well as the videos that we produce and upload to YouTube. 
+We will be live captioning all talks. Your logo will be included on the site we use to display the captioning as well as the videos that we produce and upload to YouTube.
 
 ## Community Tier
 

@@ -3,17 +3,17 @@ let Layout = require('../layout')
 let content = /*html*/`
     <div id="landing">
         <div id="hero">
-            <div id="hero-logo"><img src="/_static/images/hero-logo.svg" alt="logo"/></div>
+            <div id="hero-logo"><img src="/images/hero-logo.svg" alt="logo"/></div>
             <div id="hero-images">
-                <div><img src="/_static/images/hero-illustration-01.svg" alt="list of talks #1"/></div>
-                <div><img src="/_static/images/hero-illustration-02.svg" alt="list of talks #2"/></div>
+                <div><img src="/images/hero-illustration-01.svg" alt="list of talks #1"/></div>
+                <div><img src="/images/hero-illustration-02.svg" alt="list of talks #2"/></div>
             </div>
         </div>
         <div id="attend">
             <div class="wide">
                 <h2>Attend</h2>
                 <div class="container">
-                    <div class="left"><img src="/_static/images/cyberspace.jpg" alt="Cyberspace"/></div>
+                    <div class="left"><img src="/images/cyberspace.jpg" alt="Cyberspace"/></div>
                     <div class="right">
                         <p>Tickets to the Cyberspace Edition™ of CascadiaJS are on sale. In order to ensure a great experience for everyone, we will cap the number of tickets that we sell. You can find more information about pricing and what comes with your ticket on our Ticketing page.</p>
                     </div>

@@ -1,7 +1,7 @@
 ---
 title: Conference Directory
 ---
-![conference directory](/_static/images/cjs19-directory.png)
+![conference directory](/images/cjs19-directory.png)
 
 Just like [last year](https://2019.cascadiajs.com/directory) we are going to build a Conference Directory that displays who's coming to CascadiaJS 2020 and support filtering based on things like "lives in Vancouver, BC" or "builds apps using VueJS". Our goal is to help attendees connect before, during and after the conference.
 

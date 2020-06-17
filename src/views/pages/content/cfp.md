@@ -1,7 +1,7 @@
 ---
 title: Call for Presenters
 ---
-![Aaron Turner CascadiaJS 2019 speaker](/_static/images/aaron-2019.jpg)
+![Aaron Turner CascadiaJS 2019 speaker](/images/aaron-2019.jpg)
 
 <div class="highlight warning">UPDATE: We have extended the deadline to May 15, 2020</div>
 

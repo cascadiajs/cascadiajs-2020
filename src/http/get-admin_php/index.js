@@ -3,7 +3,7 @@ let arc = require('@architect/functions')
 
 let layout = body=> `<!doctype>
 <html>
-<link rel=stylesheet href=/_static/styles/admin.css>
+<link rel=stylesheet href=/styles/admin.css>
 <body>${ body }</body>
 </html>`
 

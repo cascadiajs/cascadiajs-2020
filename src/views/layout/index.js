@@ -6,18 +6,18 @@ module.exports = async function Layout ({title, content}) {
     <meta charset=utf-8>
     <title>CascadiaJS 2020${ title ? ' - ' + title : '' }</title>
     <link rel="stylesheet" href="https://use.typekit.net/fro6sah.css">
-    <link rel="stylesheet" href="/_static/styles/normalize.css">
-    <link rel="stylesheet" href="/_static/styles/main.css">
+    <link rel="stylesheet" href="/styles/normalize.css">
+    <link rel="stylesheet" href="/styles/main.css">
     <script src="https://kit.fontawesome.com/439d39b111.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="/_static/images/icon.svg">
+    <link rel="icon" href="/images/icon.svg">
   </head>
   <body>
     <div id="root">
       <header>
         <div class="wide">
         <nav>
-          <div id="logo"><a href="/"><img src="/_static/images/icon.svg" alt="logo"/></a></div>
+          <div id="logo"><a href="/"><img src="/images/icon.svg" alt="logo"/></a></div>
           <div><span><a href="/">CascadiaJS</a></span></div>
           <div class="push"><a href="/schedule">Schedule</a></div>
           <div class="spacer"><a href="/covid-19">COVID-19</a></div>
