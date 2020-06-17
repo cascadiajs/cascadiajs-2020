@@ -1,5 +1,4 @@
 .arc-env
 .DS_Store
 node_modules
-public/bundled/*.js
 public/static.json
