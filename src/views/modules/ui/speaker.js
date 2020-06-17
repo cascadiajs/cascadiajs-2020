@@ -1,4 +1,4 @@
-import SpeakerTopic from './speaker-topic'
+import SpeakerTopic from './speaker-topic.js'
 
 export default function Speaker(props) {
   props = props || {}

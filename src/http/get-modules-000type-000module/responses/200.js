@@ -3,18 +3,9 @@ const fs = require('fs')
 const readFile = promisify(fs.readFile)
 const join = require('path').join
 
-module.exports = async function redirect(req) {
-  let type = req.pathParameters.type
-  let module = req.pathParameters.module
-  let requested = join(
-    process.cwd(),
-    'node_modules',
-    '@architect',
-    'views',
-    'modules',
-    type,
-    module
-  )
+module.exports = async function ok (req) {
+  let { type, module: mod } = req.pathParameters
+  let requested = join(process.cwd(), 'node_modules', '@architect', 'views', 'modules', type, mod)
   let js = await readFile(requested)
 
   return {
@@ -25,4 +16,3 @@ module.exports = async function redirect(req) {
     body: js.toString()
   }
 }
-
