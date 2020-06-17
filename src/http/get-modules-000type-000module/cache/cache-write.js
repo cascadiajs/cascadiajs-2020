@@ -1,7 +1,7 @@
 const data = require('@begin/data')
 const crypto = require('crypto')
 
-module.exports = async function write({ key, body, type }) {
+module.exports = async function write ({ key, body, type }) {
 
   // fingerprint it
   console.time('fingerprint')
