@@ -2,8 +2,8 @@ let arc = require('@architect/functions')
 let staticAssets = require('@architect/shared/static.json')
 
 /**
- * Looks for requests for static assets
- * Found assets will be upgraded to fingerprinted files
+ * Looks out for static asset requests
+ * Found assets will be upgraded to fingerprinted URLs
  */
 module.exports = async function getAssets (req) {
   let path = req.path
