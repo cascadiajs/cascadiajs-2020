@@ -3,7 +3,7 @@ const crypto = require('crypto')
 
 module.exports = async function write ({ key, body, type }) {
 
-  // fingerprint it
+  // Fingerprint it
   console.time('fingerprint')
   let hash = crypto.createHash('sha1')
   hash.update(Buffer.from(body))
@@ -12,13 +12,22 @@ module.exports = async function write ({ key, body, type }) {
   let filename = `${ file }-${ sha }.${ extension }`
   console.timeEnd('fingerprint')
 
+  // Cache it
   console.time('begin-data-cache')
-  let table = 'module-cache'
-  let headers = {
-    'content-type': `text/${ extension === 'js' ? 'javascript' : 'css' }; charset=UTF-8`,
-    'cache-control': 'max-age=315360000'
+  let bundle = {
+    table: 'module-cache',
+    key,
+    type,
+    filename,
+    body,
+    headers: {
+      'content-type': `text/${ extension === 'js' ? 'javascript' : 'css' }; charset=UTF-8`,
+      'cache-control': 'max-age=315360000'
+    },
   }
-  await data.set({ table, key, type, filename, headers, body })
+  let build = process.env.BEGIN_BUILD_COMMIT_SHA
+  if (build) bundle.build = build
+  await data.set(bundle)
   console.timeEnd('begin-data-cache')
 
   return filename
