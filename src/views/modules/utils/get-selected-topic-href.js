@@ -5,4 +5,3 @@ export default function getSelectedTopicsHref(selected, selectedTopics, topic) {
       : `?topics=${selectedTopics.filter(t => t !== topic).join(',')}`
     : `?topics=${selectedTopics.concat([topic]).join(',')}`
 }
-

@@ -12,11 +12,17 @@ module.exports = async function read({ type, mod }) {
   let file = cache.length && cache.find(f => mod === f.filename && type === f.type) || false
 
   // Non-fingerprinted requests
-  let upgrade = cache.find(f => key === f.key)
-  upgrade = upgrade && upgrade.filename || false
+  let forward = cache.find(f => key === f.key)
+  let upgrade = false
+  if (forward && forward.filename) {
+    // If the build changed (or working locally) kick off a bundle
+    let build = process.env.BEGIN_BUILD_COMMIT_SHA
+    if (!build || (forward.build !== build)) return {}
+    upgrade = forward.filename
+  }
 
   // Look for the entry file on the filesystem to ensure validity
-  if (!file && existsSync(path(key)) === false)
+  if (!file && !existsSync(path(key)))
     throw ReferenceError(`not_found: ${ key }`)
 
   return { file, upgrade }
