@@ -13,7 +13,7 @@ let Template = function(props) {
                 <div><img src="/images/hero-illustration-02.svg" alt="list of talks #2"/></div>
             </div>
         </div>
-        <div id="attend">
+        <!--div id="attend">
             <div class="wide">
                 <h2>Attend</h2>
                 <div class="container">
@@ -28,8 +28,8 @@ let Template = function(props) {
                 </div>
                 <div class="cta"><a href="/tickets">Ticket Info</a></div>
             </div>
-        </div>
-        ${ speakersContainer ? `<div id="speakers">${ speakersContainer }</div>` : ``} 
+        </div-->
+        ${ speakersContainer ? `<div id="speakers"><h2>Speakers</h2>${ speakersContainer }</div>` : ``} 
         <div id="workshops">
             <div class="narrow">
                 <h2>Workshops</h2>

@@ -14,11 +14,11 @@ export default function Speakers(props) {
       selectedTopics
     })).join('')
   return `
-  <div>
+  <div id=topic-list>
     ${ topics }
-    <a href="/speakers">clear</a>
+    <a id=js-topics-clear class="js-topic" href="?clear">view all</a>
   </div>
-  <div id="speaker-list">
+  <div id=speaker-list>
     ${ speakers }
   </div>
   `

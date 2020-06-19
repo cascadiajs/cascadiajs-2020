@@ -24,6 +24,7 @@ import SpeakerList from '../ui/speaker-list.js'
 
   function addEventHandlers() {
     let topics = document.querySelectorAll('.js-topic')
+    // attach add/remove topic handlers
     Array.prototype.forEach.call(
       topics,
       t => t.onclick = e => {
@@ -36,8 +37,18 @@ import SpeakerList from '../ui/speaker-list.js'
         selectedTopics = action(selectedTopics, topic)
         let url = '/speakers' + getTopicParams(selectedTopics)
         getData(url)
+        window.history.pushState('', '', window.location.pathname + getTopicParams(selectedTopics))
       }
     )
+    // attach clear topics handler
+    let clear = document.getElementById('js-topics-clear')
+    clear.onclick = e => {
+      e.preventDefault()
+      selectedTopics = []
+      let url = '/speakers'
+      getData(url)
+      window.history.pushState('', '', window.location.pathname)
+    }
   }
 
   function addTopic(topics, topic) {

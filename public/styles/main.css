@@ -429,6 +429,39 @@ footer {
 	color: #112378;
 }
 
+#topic-list {
+    display: flex;
+    flex-wrap: wrap;
+	align-items: center;
+  	justify-content: center;
+    margin: 8px;
+    padding: 8px;
+}
+
+.js-topic {
+    display: inline-block;
+    background-color:#0033FF;
+    color: #fff;
+    text-decoration: none;
+    margin:3px;
+    padding:8px;
+}
+
+#js-topics-clear {
+    background-color:#fff;
+    color: #0033FF;
+    border: 1px solid #0033FF;
+}
+
+.js-topic:hover {
+    text-decoration: underline;
+}
+
+.topic-selected {
+    background-color: #FFD007;
+    color: #0033FF;
+}
+
 @media only screen and (min-width: 768px) {
 
     #root {

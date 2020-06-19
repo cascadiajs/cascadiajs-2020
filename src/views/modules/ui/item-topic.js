@@ -5,20 +5,15 @@ export default function TopicItem(props) {
   let selectedTopics = props.selectedTopics || []
   let topic = props.topic || ''
   let selected = props.selected
-  let checked = props.selected
-    ? 'checked="checked"'
-    : ''
   let href = getSelectedTopicsHref(selected, selectedTopics, topic)
   return `
 <a
   href="${ href }"
-  class="js-topic"
+  class="js-topic ${ selected ? 'topic-selected' : '' }"
   data-topic="${ topic }"
   data-selected="${ selected }"
 >
-  <input type="checkbox" ${ checked }>
   ${ topic }
 </a>
   `
 }
-
