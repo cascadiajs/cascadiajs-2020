@@ -5,11 +5,12 @@ module.exports = async function populate() {
     let speakers = await data.set([
       {
         table: 'speakers',
-        key: '',
-        name: 'Carter Rabasa',
+        key: 'test',
+        pixelated: 'cb56752477cae6405f85b131872c60d21b967c6a',
+        name: 'Aha Aha',
         location: 'Starship Earth',
         title: 'How to make the best conference ever',
-        reveal: '2020-07-15',
+        reveal: '2020-06-18T14:22:00-07:00',
         topics: ['people', 'fun', 'laughter', 'learning', 'yellow-possum'],
         email: 'carter@fizbuz.com',
         pronouns: ['he', 'him'],
@@ -21,11 +22,12 @@ module.exports = async function populate() {
       },
       {
         table: 'speakers',
-        key: '',
-        name: 'Nicholas Cage',
+        key: 'asp',
+        pixelated: '5a7351cbc341ee86247c69489a37f7b1d2574d4e',
+        name: 'Ahoo Hoo',
         location: 'The Pacific North West',
         title: 'Cheddar Goblin',
-        reveal: '2020-07-15',
+        reveal: '2020-06-19T13:30:00-07:00',
         topics: ['chainsaw', 'laughter', 'vodka'],
         email: 'nick@loggers.com',
         pronouns: ['he', 'him'],
@@ -38,10 +40,11 @@ module.exports = async function populate() {
       {
         table: 'speakers',
         key: '',
+        pixelated: '79bd990d98b39128a4b6bd3bf03b777cfbd4128f',
         name: 'El Barbón',
         location: 'Iceland',
         title: 'Turing for fun and profit',
-        reveal: '2020-07-15',
+        reveal: '2020-06-20T13:30:00-07:00',
         topics: ['ai', 'dancing', 'machine-learning'],
         email: 'nathan@bluebook.com',
         pronouns: ['he', 'him'],
@@ -50,22 +53,6 @@ module.exports = async function populate() {
         company: 'Blue Book',
         track: 'main',
         abstract: 'Isn\'t it strange, to create something that hates you?'
-      },
-      {
-        table: 'speakers',
-        key: '',
-        name: 'Officer K',
-        location: 'Las Angeles, CA',
-        title: 'Realistic AI interactions',
-        reveal: '2020-07-15',
-        topics: ['Joi', 'hover-cars', 'ai'],
-        email: 'ok@LAPD.com',
-        pronouns: ['they', 'them'],
-        twitter: '@ok-lapd',
-        url: 'https://lapd.com',
-        company: 'LAPD',
-        track: 'main',
-        abstract: 'How to know when you\'ve left the uncanny valley'
       }
     ])
     console.log('Added speakers: \n', speakers)

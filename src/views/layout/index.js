@@ -1,5 +1,9 @@
-module.exports = async function Layout ({title, content}) {
-    return /*html*/`
+function script(source) {
+  return `<script src=${source} type=module crossorigin></script>`
+}
+
+module.exports = async function Layout ({title, content, scripts = []}) {
+  return /*html*/`
 <!doctype html>
 <html lang=en>
   <head>
@@ -66,6 +70,7 @@ module.exports = async function Layout ({title, content}) {
       gtag('js', new Date());
       gtag('config', 'UA-153510023-1');
     </script>
+    ${ scripts.map(s => script(s)) }
   </body>
 </html>
 `

@@ -34,12 +34,12 @@ function speaker(person) {
   return `<details>
   <summary>${ person ? person.name : 'new speaker' }</summary>
   <form action=/upsert method=post>
-    <input type=hidden name=key value="${ person ? person.key : '' }">
+    <input type=${ person ? 'text' : 'hidden' } name=key value="${ person ? person.key : '' }">
     <input type=text name=pixelated placeholder="pixelated hash value" value="${ person ? person.pixelated : ''}" required>
     <input type=text name=name placeholder="Name" value="${ person ? person.name : ''}" required>
     <input type=text name=location value="${ person ? person.location : '' }" placeholder="Location (eg. Los Angeles, CA)" required>
     <input type=text name=title value="${ person ? person.title : '' }" placeholder="Talk title" required>
-    <input type=date name=reveal value="${ person ? person.reveal : '' }" required>
+    <input type=text name=reveal value="${ person ? person.reveal : '' }" required>
     <input type=text name=topics value="${ person && person.topics && person.topics.length > 0 ? person.topics.join(',') : '' }" placeholder="Topics (comma-delimited)" required>
     <input type=email name=email value="${ person ? person.email : '' }" placeholder="foo@bar.buzz" required>
     <input type=text name=pronouns value="${ person ? person.pronouns : '' }" placeholder="Pronouns (comma-delimited)" required>

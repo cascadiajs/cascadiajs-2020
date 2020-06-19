@@ -1,5 +1,5 @@
 /* global window document */
-import Speakers from '../pages/speakers.js'
+import SpeakerList from '../ui/speaker-list.js'
 
 (function Main() {
   let selectedTopics = []
@@ -15,9 +15,9 @@ import Speakers from '../pages/speakers.js'
   }
 
   function update(data) {
-    let container = document.getElementById('js-speakers')
+    let container = document.getElementById('js-speaker-list')
     if (container) {
-      container.innerHTML = Speakers(data)
+      container.innerHTML = SpeakerList(data)
       addEventHandlers()
     }
   }
@@ -34,7 +34,7 @@ import Speakers from '../pages/speakers.js'
           ? removeTopic
           : addTopic
         selectedTopics = action(selectedTopics, topic)
-        let url = window.location.pathname + getTopicParams(selectedTopics)
+        let url = '/speakers' + getTopicParams(selectedTopics)
         getData(url)
       }
     )

@@ -1,6 +1,10 @@
-let Layout = require('../layout')
 
-let content = /*html*/`
+let Layout = require('../layout')
+let SpeakerContainer = require('../components/speakers')
+
+let Template = function(props) {
+    let { speakersContainer } = props
+    return /*html*/`
     <div id="landing">
         <div id="hero">
             <div id="hero-logo"><img src="/images/hero-logo.svg" alt="logo"/></div>
@@ -15,12 +19,17 @@ let content = /*html*/`
                 <div class="container">
                     <div class="left"><img src="/images/cyberspace.jpg" alt="Cyberspace"/></div>
                     <div class="right">
-                        <p>Tickets to the Cyberspace Edition™ of CascadiaJS are on sale. In order to ensure a great experience for everyone, we will cap the number of tickets that we sell. You can find more information about pricing and what comes with your ticket on our Ticketing page.</p>
+                        <p>
+                            Tickets to the Cyberspace Edition™ of CascadiaJS are on sale.
+                            In order to ensure a great experience for everyone, we will cap the number of tickets that we sell.
+                            You can find more information about pricing and what comes with your ticket on our <a href="/tickets">Ticketing page</a>.
+                        </p>
                     </div>
                 </div>
                 <div class="cta"><a href="/tickets">Ticket Info</a></div>
             </div>
         </div>
+        ${ speakersContainer ? `<div id="speakers">${ speakersContainer }</div>` : ``} 
         <div id="workshops">
             <div class="narrow">
                 <h2>Workshops</h2>
@@ -62,13 +71,11 @@ let content = /*html*/`
         </div>
     </div>
 `
+}
 
-module.exports = async function Index(req) {
-    if (req.path === '/') {
-        let html = await Layout({content})
-        return {
-            html
-        }
-    }
-    else return
+module.exports = async function Index({ speakers, topics, selectedTopics }) {
+    let speakersContainer = await SpeakerContainer({ speakers, topics, selectedTopics })
+    let content = await Template({ speakersContainer })
+    let html = await Layout({content, scripts: ['modules/entry/speakers.js']})
+    return { html }
 }

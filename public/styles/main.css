@@ -376,6 +376,59 @@ footer {
     animation-delay: 0;
 }
 
+/*  speaker list components  */
+
+#speaker-list {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+  	justify-content: center;
+}
+
+#speaker-list .speaker {
+	height: 333px;
+	width: 250px;
+	display:flex;
+	flex-direction: column;
+	margin-right: 8px;
+	margin-bottom: 8px;
+}
+
+#speaker-list .speaker a, #speaker-list .speaker img, #speaker-list .speaker .no-image {
+	height: 250px;
+	width: 250px;
+}
+
+#speaker-list .speaker .no-image {
+	background-color:#000;
+}
+
+#speaker-list .speaker-info {
+    flex: 1;
+    text-align: left;
+	padding: 8px;
+	display: flex;
+    flex-direction: column;
+    color: #112378;
+}
+
+#speaker-list .speaker:hover .speaker-info, #speaker-list .speaker:hover .speaker-name, #speaker-list .speaker:hover .speaker-misc {
+	color: #0033FF;
+}
+
+#speaker-list h3.speaker-name {
+    font-style: normal !important;
+    font-size: 28px;
+    margin: 0;
+	color: #112378;
+	flex-grow: 1
+}
+
+#speaker-list .speaker-misc {
+	font-size: 16px;
+	color: #112378;
+}
+
 @media only screen and (min-width: 768px) {
 
     #root {
@@ -465,7 +518,7 @@ footer {
     }
 
     #landing .left {
-        width: 500px;
+        width: 600px;
     }
 
     #landing .right {

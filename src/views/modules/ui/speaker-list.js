@@ -1,10 +1,11 @@
-import Speaker from '../ui/speaker.js'
-import Topic from '../ui/item-topic.js'
+import Speaker from './speaker.js'
+import Topic from './item-topic.js'
 
 export default function Speakers(props) {
   props = props || {}
   let selectedTopics = props.selectedTopics || []
   let speakers = (props.speakers || [])
+    .sort((a,b) => new Date(a.reveal) - new Date(b.reveal))
     .map(speaker => Speaker({ speaker, selectedTopics })).join('')
   let topics = (props.topics || [])
     .map(topic => Topic({
@@ -13,12 +14,12 @@ export default function Speakers(props) {
       selectedTopics
     })).join('')
   return `
-<div>
-  ${ topics }
-  <a href="/speakers">clear</a>
-</div>
-<ul>
-  ${ speakers }
-</ul>
+  <div>
+    ${ topics }
+    <a href="/speakers">clear</a>
+  </div>
+  <div id="speaker-list">
+    ${ speakers }
+  </div>
   `
 }
