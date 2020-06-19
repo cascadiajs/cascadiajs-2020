@@ -1,5 +1,5 @@
 let data = require('@begin/data')
-let speakers = require('../data/test/speakers.json')
+let speakers = require('../data/testing/speakers.json')
 
 module.exports = async function populate() {
   try {

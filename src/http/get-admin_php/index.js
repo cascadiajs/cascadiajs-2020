@@ -41,12 +41,10 @@ function speaker(person) {
     <input type=text name=title value="${ person ? person.title : '' }" placeholder="Talk title" required>
     <input type=text name=reveal placeholder="2020-06-20T13:30:00-07:00" value="${ person ? person.reveal : '' }" required>
     <input type=text name=topics value="${ person && person.topics && person.topics.length > 0 ? person.topics.join(',') : '' }" placeholder="Topics (comma-delimited)" required>
-    <input type=email name=email value="${ person ? person.email : '' }" placeholder="foo@bar.buzz" required>
-    <input type=text name=pronouns value="${ person ? person.pronouns : '' }" placeholder="Pronouns (comma-delimited)" required>
-    <input type=text name=twitter value="${ person ? person.twitter : ''}" placeholder="Twitter" required>
+    <input type=text name=pronouns value="${ person ? person.pronouns : '' }" placeholder="she/her" required>
+    <input type=text name=twitter value="${ person ? person.twitter : ''}" placeholder="Twitter (no @ symbol)" required>
     <input type=text name=url value="${ person ? person.url  : ''}" placeholder="URL" required>
     <input type=text name=company value="${ person ? person.company  : ''}" placeholder="Company" required>
-    <input type=text name=track value="${ person ? person.track : '' }" placeholder="Track (eg. main)" required>
     <textarea name=abstract value="${ person ? person.abstract : '' }" placeholder="VB.NET and C# go on a date with Java and JavaScript …" required>${ person ? person.abstract : '' }</textarea>
     <button>Save</button>
   </form>

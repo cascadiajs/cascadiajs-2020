@@ -14,6 +14,7 @@ get /speakers
 post /login
 post /upsert
 post /delete
+post /upload
 
 @tables
 data
