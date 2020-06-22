@@ -2,7 +2,7 @@ function script(source) {
   return `<script src=${source} type=module crossorigin></script>`
 }
 
-module.exports = async function Layout ({title, content, scripts = []}) {
+module.exports = async function Layout ({title, content, meta = '', scripts = []}) {
   return /*html*/`
 <!doctype html>
 <html lang=en>
@@ -14,6 +14,7 @@ module.exports = async function Layout ({title, content, scripts = []}) {
     <link rel="stylesheet" href="/styles/main.css">
     <script src="https://kit.fontawesome.com/439d39b111.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    ${ meta }
     <link rel="icon" href="/images/icon.svg">
   </head>
   <body>
