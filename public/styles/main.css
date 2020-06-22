@@ -464,6 +464,19 @@ footer {
     color: #0033FF;
 }
 
+#speaker h3 {
+    margin: 8px 0 8px 0;
+}
+
+#speaker .speaker-photo {
+	width: 300px;
+	margin-right: 16px;
+}
+
+#speaker .abstract {
+	margin: 16px 0 16px 0;
+}
+
 @media only screen and (min-width: 768px) {
 
     #root {
@@ -568,4 +581,9 @@ footer {
         width: 95%;
         margin: 0 auto;
     }
+
+    #speaker .speaker-info {
+        display: flex;
+    }
+    
 }

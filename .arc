@@ -11,6 +11,7 @@ get /admin.php
 get /api
 get /modules/:type/:module
 get /speakers
+get /speakers/:key
 post /login
 post /upsert
 post /delete

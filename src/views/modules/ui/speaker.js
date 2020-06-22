@@ -25,12 +25,12 @@ export default function Speaker(props) {
     name = speaker.name
     photoUrl = `https://create-4jr-staging.begin.app/_static/2020/${ speaker.key }.jpg`
   }
-  console.log(key)
+  //console.log(key)
   return `
     <div class="speaker">
     ${ revealed
-      // ? `<a href="/speakers/${key}"><img src="${ photoUrl }" alt="photo of ${name}"/></a>`
-      ? `<img src="${ photoUrl }" alt="photo of ${ name }"/>`
+      ? `<a href="/speakers/${key}"><img src="${ photoUrl }" alt="photo of ${name}"/></a>`
+      //? `<img src="${ photoUrl }" alt="photo of ${ name }"/>`
       : `<img src="${ photoUrl }" alt="photo of ${ name }"/>` }
       <div class="speaker-info">
         <div class="speaker-name">${ name }</div>
