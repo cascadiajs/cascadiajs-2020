@@ -31,7 +31,7 @@ export default function Speaker(props) {
       ? `<a href="/speakers/${key}"><img src="${ photoUrl }" alt="photo of ${name}"/></a>`
       : `<img src="${ photoUrl }" alt="photo of ${name}"/>` }
       <div class="speaker-info">
-        <h3 class="speaker-name">${name}</h3>
+        <div class="speaker-name">${name}</div>
         <div class="speaker-misc">
           ${ revealed
             ? `${speaker.company}<br/>${speaker.location}`

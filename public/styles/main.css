@@ -391,7 +391,7 @@ footer {
 	display:flex;
 	flex-direction: column;
 	margin-right: 8px;
-	margin-bottom: 8px;
+	margin-bottom: 16px;
 }
 
 #speaker-list .speaker a, #speaker-list .speaker img, #speaker-list .speaker .no-image {
@@ -416,8 +416,10 @@ footer {
 	color: #0033FF;
 }
 
-#speaker-list h3.speaker-name {
-    font-style: normal !important;
+#speaker-list .speaker-name {
+    font-family: mono45-headline, monospace;
+    font-weight: 300;
+    line-height: 1.4em;
     font-size: 28px;
     margin: 0;
 	color: #112378;
@@ -425,7 +427,7 @@ footer {
 }
 
 #speaker-list .speaker-misc {
-	font-size: 16px;
+    font-size: 16px;
 	color: #112378;
 }
 
@@ -551,11 +553,11 @@ footer {
     }
 
     #landing .left {
-        width: 600px;
+        width: 60%;
+        margin-right: 16px;
     }
 
     #landing .right {
-        margin-left: 32px;
         text-align: left;
         flex: 1;
     }
