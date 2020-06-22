@@ -23,7 +23,7 @@ async function unauthenticated(req) {
 
 /** render the speaker list/form */
 async function authenticated(req) {
-  let result = await data.get({ table: 'speakers' })
+  let result = await data.get({ table: 'speakers', limit: 24 })
   let form = speaker()
   let rows =  result.map(speaker).join('')//'<pre>'+JSON.stringify(result, null, 2)
   let html = layout(form + rows)
