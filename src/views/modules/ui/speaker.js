@@ -25,6 +25,7 @@ export default function Speaker(props) {
     name = speaker.name
     photoUrl = `https://create-4jr-staging.begin.app/_static/2020/${ speaker.key }.jpg`
   }
+  console.log(key)
   return `
     <div class="speaker">
     ${ revealed
