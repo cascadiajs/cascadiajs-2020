@@ -394,6 +394,19 @@ footer {
 	margin-bottom: 16px;
 }
 
+#speaker-list .speaker .speaker-photo {
+    height: 250px;
+    width: 250px;
+    background-size: cover;
+    background-blend-mode:screen;
+    background-size:cover;
+}
+
+#speaker-list .speaker .speaker-photo:hover {
+    background-color: #112378;
+    background-blend-mode: screen;
+}
+
 #speaker-list .speaker a, #speaker-list .speaker img, #speaker-list .speaker .no-image {
 	height: 250px;
 	width: 250px;
@@ -414,6 +427,11 @@ footer {
 
 #speaker-list .speaker:hover .speaker-info, #speaker-list .speaker:hover .speaker-name, #speaker-list .speaker:hover .speaker-misc {
 	color: #0033FF;
+}
+
+#speaker-list .speaker img:hover {
+    background-color: #112378;
+    background-blend-mode: screen;
 }
 
 #speaker-list .speaker-name {
