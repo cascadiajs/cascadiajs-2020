@@ -1,7 +1,7 @@
 const data = require('@begin/data')
 
 module.exports = async function GetSpeakerData (req) {
-  let speakers = await data.get({ table: 'speakers' })
+  let speakers = await data.get({ table: 'speakers', limit: 24 })
   // Collect all the speakers topics into an array with no duplicate topics
   let topics = speakers.reduce((a, r) => [...new Set(a.concat(r.topics))].sort(), [])
   let params = req.queryStringParameters || {}
