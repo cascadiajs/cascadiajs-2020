@@ -43,8 +43,7 @@ let Template = function(speaker) {
                 <div class="speaker-info">
                     <div class="speaker-photo" style="background-image:url('${ assetPath }/${ key }.jpg'), linear-gradient(45deg, #112378, #17C37B);"></div>
                     <div class="speaker-more">
-                        <h3>Pronouns</h3>
-                        <p>${ pronouns }</p>
+                        ${ pronouns ? `<h3>Pronouns</h3><p>${ pronouns }</p>` : '' }
                         <h3>Location</h3>
                         <p>${ location }</p>
                         <h3>Company</h3>
