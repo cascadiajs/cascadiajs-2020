@@ -381,12 +381,11 @@ footer {
 #speaker-list {
 	display: flex;
 	flex-wrap: wrap;
-	align-items: center;
+	align-items: flex-start;
   	justify-content: center;
 }
 
 #speaker-list .speaker {
-	/*height: 333px;*/
 	width: 250px;
 	display:flex;
 	flex-direction: column;
