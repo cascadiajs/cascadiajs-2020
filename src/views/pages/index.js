@@ -29,7 +29,7 @@ module.exports = async function Page (req) {
     title,
     content
   }
-  let html = await Layout(page)
+  let html = Layout(page)
   return {
     html
   }

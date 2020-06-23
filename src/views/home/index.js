@@ -76,8 +76,8 @@ let Template = function(props) {
 module.exports = async function Index({ speakers, topics, selectedTopics }) {
     let speakersContainer
     if (speakers && speakers.length >= 1)
-        speakersContainer = await SpeakerContainer({ speakers, topics, selectedTopics })
-    let content = await Template({ speakersContainer })
-    let html = await Layout({content, scripts: ['modules/entry/speakers.js']})
+        speakersContainer = SpeakerContainer({ speakers, topics, selectedTopics })
+    let content = Template({ speakersContainer })
+    let html = Layout({content, scripts: ['modules/entry/speakers.js']})
     return { html }
 }

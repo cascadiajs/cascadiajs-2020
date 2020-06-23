@@ -2,7 +2,7 @@ function script(source) {
   return `<script src=${source} type=module crossorigin></script>`
 }
 
-module.exports = async function Layout ({title, content, meta = '', scripts = []}) {
+module.exports = function Layout ({title, content, meta = '', scripts = []}) {
   return /*html*/`
 <!doctype html>
 <html lang=en>
