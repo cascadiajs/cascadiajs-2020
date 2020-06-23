@@ -386,7 +386,7 @@ footer {
 }
 
 #speaker-list .speaker {
-	height: 333px;
+	/*height: 333px;*/
 	width: 250px;
 	display:flex;
 	flex-direction: column;
@@ -444,7 +444,7 @@ footer {
 #speaker-list .speaker-name {
     font-family: mono45-headline, monospace;
     font-weight: 300;
-    line-height: 1.4em;
+    line-height: 1em;
     font-size: 28px;
     margin: 0;
 	color: #112378;
