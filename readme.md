@@ -1,5 +1,6 @@
-# Begin basic Hello World! app
+# CascadiaJS 2020
 
+This website is built on [arc.codes](http://arc.codes) and hosted on [Begin](https://begin.com).
 
 ## Getting started
 - Start the local dev server: `npm start`
