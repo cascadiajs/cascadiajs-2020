@@ -29,7 +29,7 @@ let SocialTemplate = function(speaker) {
 }
 
 let Template = function(speaker) {
-    const { key, name, location, company, /*url, twitter,*/ title, topics, pronouns, abstract } = speaker
+    const { key, name, location, company, url, twitter, title, topics, pronouns, abstract } = speaker
     return /*html*/`
     <div id="page">
         <div id="page-title">
@@ -48,6 +48,9 @@ let Template = function(speaker) {
                         <p>${ location }</p>
                         <h3>Company</h3>
                         <p>${ company }</p>
+                        <h3>Links</h3>
+                        ${ twitter ? `<i class="fab fa-twitter"></i> <a href="https://twitter.com/${ twitter }">@${ twitter }</a> ` : '' }
+                        ${ url ? `<i class="fa fa-globe"></i> <a href="${ url }">${ url.split("://")[1] }</a></p>` : '' }
                     </div>
                 </div>
                 <h2>Talk: ${ title }</h2>
