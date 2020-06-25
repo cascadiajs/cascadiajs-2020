@@ -5,12 +5,19 @@ let md = require('marked')
 let fm = require('front-matter')
 let join = require('path').join
 let Layout = require('../layout')
+let SocialLayout = require('../layout/social')
+
+function Template({title, body}) {
+  return `<div id="page"><div id="page-title"><div><h1>${title}</h1></div></div><div id="page-body">${md(body)}</div></div>`
+
+}
 
 /**
  * Page view: catchall for all other pages, authored either in markdown or HTML
  */
 module.exports = async function Page (req) {
   let page = req.path.substr(1)
+  let { social } = req.queryStringParameters
   let doc = join(__dirname, 'content', `${page}.md`)
   if (!exists(doc))
     doc = join(__dirname, 'content', `${page}.html`)
@@ -23,13 +30,26 @@ module.exports = async function Page (req) {
 
   let { attributes, body } = fm(doc)
   let title = attributes.title
-  let content = `<div id="page"><div id="page-title"><div><h1>${title}</h1></div></div><div id="page-body">${md(body)}</div></div>`
+  let html
 
-  page = {
-    title,
-    content
+  if (social !== undefined) {
+    let excerpt = attributes.excerpt
+    let image = attributes.image
+    let header = title
+    html = SocialLayout({ image, header, excerpt })
   }
-  let html = Layout(page)
+  else {
+    let content = Template({ title, body })
+    //console.log(req)
+    let socialUrl = `https://${ process.env.NODE_ENV === 'staging' ? 'staging.' : '' }2020.cascadiajs.com/images/social/${ page }-share.png`
+    let meta = `<meta property="og:image" content="${ socialUrl }" />
+    <meta name="twitter:image" content="${ socialUrl }">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@cascadiajs">
+    <meta name="twitter:title" content="CascadiaJS 2020 | ${ title }">`
+    html = Layout({ title, content, meta })
+  }
+
   return {
     html
   }

@@ -393,7 +393,7 @@ footer {
 	margin-bottom: 16px;
 }
 
-.speaker-photo {
+.speaker-photo, #social-image {
     background-size: cover;
     background-blend-mode:screen;
 }
@@ -501,13 +501,19 @@ footer {
 	margin: 16px 0 16px 0;
 }
 
-#speaker-share .speaker-photo {
+/* Social sharing styles */
+
+#social-share {
+    display: flex;
+}
+
+#social-image {
     height: 628px;
 	width: 628px;
 	margin-right: 0;
 }
 
-#speaker-share-info {
+#social-info {
     width: 574px;
     border: 10px solid #17C37B;
     padding: 24px;
@@ -515,15 +521,16 @@ footer {
     flex-direction: column;
 }
 
-#speaker-share-name {
+#social-header {
     font-family: mono45-headline, monospace;
     text-transform: uppercase;
     font-size: 80px;
+    line-height: 80px;
     color: #112378;
     margin-bottom: 32px;
 }
 
-#speaker-share-title {
+#social-excerpt {
     font-family: canada-type-gibson, sans-serif;
     font-size: 50px;
     font-weight: 500;
@@ -531,12 +538,12 @@ footer {
     flex: 1;
 }
 
-#speaker-share-footer {
+#social-footer {
     display: flex;
     align-items: flex-end;
 }
 
-#speaker-share-event {
+#social-event {
     flex: 1;
     font-family: mono45-headline, monospace;
     font-size: 32px;

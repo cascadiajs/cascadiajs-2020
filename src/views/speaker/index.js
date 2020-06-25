@@ -3,31 +3,6 @@ let Layout = require('../layout')
 let SocialLayout = require('../layout/social')
 let assetPath = 'https://create-4jr-staging.begin.app/_static/2020'
 
-let SocialTemplate = function(speaker) {
-    const { key, name, title } = speaker
-    return /*html*/`
-    <div id="speaker-share">
-        <div class="speaker-info">
-            <div class="speaker-photo" style="background-image:url('${ assetPath }/${ key }.jpg'), linear-gradient(45deg, #112378, #17C37B);"></div>
-            <div id="speaker-share-info">
-                <div id="speaker-share-name">${ name }</div>
-                <div id="speaker-share-title">${ title }</div>
-                <div id="speaker-share-footer">
-                    <div id="speaker-share-event">
-                        CascadiaJS<br/>
-                        Sept 1-2, 2020<br/>
-                        Cyberspace
-                    </div>
-                    <div id="speaker-share-logo">
-                        <img src="/images/icon-green.svg" height="103" width="91" alt="logo"/>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-`
-}
-
 let Template = function(speaker) {
     const { key, name, location, company, url, twitter, title, topics, pronouns, abstract } = speaker
     return /*html*/`
@@ -65,8 +40,9 @@ let Template = function(speaker) {
 module.exports = async function Speaker({speaker, social}) {
     let html
     if (social !== undefined) {
-        let content = SocialTemplate(speaker)
-        html = SocialLayout({content})
+        const { key, name: header, title: excerpt } = speaker
+        const image = `${ assetPath }/${ key }.jpg`
+        html = SocialLayout({ image, header, excerpt })
     }
     else {
         let content = Template(speaker)

@@ -1,5 +1,7 @@
 ---
 title: Diversity Scholarships
+image: https://pbs.twimg.com/media/CfSwy1aUIAA7E6Q.jpg:large
+excerpt: Help us make this the most diverse and inclusive CascadiaJS yet!
 ---
 
 ![human hugs bear](https://pbs.twimg.com/media/CfSwy1aUIAA7E6Q.jpg:large)
