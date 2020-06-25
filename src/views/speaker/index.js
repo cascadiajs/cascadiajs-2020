@@ -28,7 +28,7 @@ let Template = function(speaker) {
                         ${ url ? `<i class="fa fa-globe"></i> <a href="${ url }">${ url.split("://")[1] }</a></p>` : '' }
                     </div>
                 </div>
-                <h2>Talk: ${ title }</h2>
+                <h2>${ title }</h2>
                 <div class="topics">${ topics.map(t => `<div class=js-topic>${ t }</div>`).join('') }</div>
                 <div class="abstract">${ abstract }</div>
             </section>

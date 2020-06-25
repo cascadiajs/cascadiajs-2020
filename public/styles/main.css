@@ -183,6 +183,14 @@ div.cta {
     margin: 16px 0;
 }
 
+span.cta {
+    font-family: mono45-headline, monospace;
+	font-size: 18px;
+    padding: 8px;
+	background-color: #0033FF;
+    /*border: 2px solid #fff;*/
+}
+
 .cta a, .cta a:visited {
     color: #e6e8f5;
   	text-decoration: none;

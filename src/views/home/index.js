@@ -26,7 +26,7 @@ let Template = function(props) {
                         </p>
                     </div>
                 </div>
-                <div class="cta"><a href="/tickets">Ticket Info</a></div>
+                <div class="cta"><a href="">Ticket Info</a></div>
             </div>
         </div-->
         ${ speakersContainer ? `<div id="speakers"><h2>Speakers</h2>${ speakersContainer }</div>` : ``} 
@@ -35,11 +35,17 @@ let Template = function(props) {
                 <h2>Workshops</h2>
                 <h3>JavaScript: The Recent Parts</h3>
                 <h4>Sept 3</h4>
-                <p style="margin-bottom: 32px">Kyle Simpson will walk us through the newest additions to JavaScript, including: spread/rest, destructuring, template literals, iterators, generators, Array.includes, string padding, async-await, RegExp improvements, async generators/iteration and more.</p>
+                <p>Kyle Simpson will walk us through the newest additions to JavaScript, including: spread/rest, destructuring, template literals, iterators, generators, Array.includes, string padding, async-await, RegExp improvements, async generators/iteration and more.</p>
                 <h3>Digging Into Node</h3>
                 <h4>Sept 4</h4>
                 <p>Kyle Simpson will spend a day Digging Into Node, including: building CLI tools (parameters, I/O, etc), file system operations, async, streams, HTTP handling, Express.js routing, SQLite databases, child processes and more.</p>
-                <div class="cta"><a href="/tickets">Reserve Your Spot</a></div>
+                <h3>React: Beyond the Basics</h3>
+                <h4>Sept 8</h4>
+                <p>Eve Porcello will cover the following in this intermediate React.js workshop: Hooks, Creating Custom Hooks, State Machines, Suspense Preview and Ecosystem APIs like React Router, Next.js, and more!</p>
+                <h3>GraphQL: The Next Steps</h3>
+                <h4>Sept 9</h4>
+                <p>Eve Porcello will cover the following in this intermediate GraphQL workshop: Unions & Interfaces, Error Handling, Microservices with Apollo Federation, Graph Manager and Relay.</p>
+                <div class="cta"><a href="/workshops">Workshops Info</a></div>
             </div>
         </div>
         <div id="schedule">
