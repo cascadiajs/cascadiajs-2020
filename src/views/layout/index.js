@@ -25,7 +25,7 @@ module.exports = function Layout ({title, content, meta = '', scripts = []}) {
           <div id="logo"><a href="/"><img src="/images/icon.svg" alt="logo"/></a></div>
           <div><span><a href="/">CascadiaJS</a></span></div>
           <div class="push"><a href="/schedule">Schedule</a></div>
-          <div class="spacer"><a href="/covid-19">COVID-19</a></div>
+          <div class="spacer"><a href="/scholarships">Scholarships</a></div>
           <div class="spacer"><a href="/coc">Code of Conduct</a></div>
           <div class="spacer"><a href="https://ti.to/event-loop/cascadiajs-2020/" class="buy">Tickets</a></div>
         </nav>
