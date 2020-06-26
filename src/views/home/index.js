@@ -13,23 +13,38 @@ let Template = function(props) {
                 <div><img src="/images/hero-illustration-02.svg" alt="list of talks #2"/></div>
             </div>
         </div>
-        <!--div id="attend">
-            <div class="wide">
-                <h2>Attend</h2>
-                <div class="container">
-                    <div class="left"><img src="/images/cyberspace.jpg" alt="Cyberspace"/></div>
-                    <div class="right">
-                        <p>
-                            Tickets to the Cyberspace Edition™ of CascadiaJS are on sale.
-                            In order to ensure a great experience for everyone, we will cap the number of tickets that we sell.
-                            You can find more information about pricing and what comes with your ticket on our <a href="/tickets">Ticketing page</a>.
-                        </p>
+        ${ speakersContainer ? `<div id="speakers"><h2>Speakers</h2>${ speakersContainer }</div>` : ``} 
+        <div id="attend">
+            <div class="container">
+                <div id="karaoke"><img src="/images/karaoke.svg" alt="There WILL be karaoke!"/></div>
+                <div id="why">
+                    <div class="headline">CascadiaJS has always been about bringing together an amazing group of web developers from across the Pacific Northwest (and beyond) to hear great talks, meet amazing people, and have fun.</div>
+                    <div class="benefits">
+                        When you buy a ticket, you get:
+                        <ul>
+                            <li><i class="fas fa-tv"></i> Access to the live stream of talks</li>
+                            <li><i class="fas fa-microphone"></i> Access to speaker Q&A</li>
+                            <li><i class="fas fa-briefcase"></i> Access to the Job Fair on August 31st</li>
+                            <li><i class="fas fa-music"></i> Access to both evening social events (Karaoke Night &amp; Game Night)</li>
+                            <li><i class="fas fa-gift"></i> A Goodie Box <u>shipped to you</u> that will include:
+                                <ul>
+                                    <li><i class="fas fa-tshirt"></i> CascadiaJS hoodie</li>
+                                    <li><i class="fas fa-cat"></i> Stickers</li>
+                                    <li><i class="fas fa-smile-wink"></i> Extra surprises!</li>
+                                </ul>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-                <div class="cta"><a href="">Ticket Info</a></div>
             </div>
-        </div-->
-        ${ speakersContainer ? `<div id="speakers"><h2>Speakers</h2>${ speakersContainer }</div>` : ``} 
+        </div>
+        <div id="coc">
+            <div class="narrow">
+                <h2>Code of Conduct</h2>
+                <p>Everyone , including attendees, sponsors, speakers, and organizers - is required to agree to and follow our Code of Conduct. Inappropriate behavior or harassment of any kind is not tolerated. If you feel uncomfortable, are being harassed, notice that someone else is being harassed, or have any other concerns, please contact a member of conference staff immediately. Conference Staff are identified by red STAFF badges. You can also send an email to info@cascadiajs.com.</p>
+                <div class="cta"><a href="/coc">Read the Code of Conduct</a></div>
+            </div>
+        </div>
         <div id="workshops">
             <div class="narrow">
                 <h2>Workshops</h2>
@@ -66,13 +81,6 @@ let Template = function(props) {
                     </div>
                 </div>
                 <div class="cta"><a href="/sponsor">Sponsor Info</a></div>
-            </div>
-        </div>
-        <div id="coc">
-            <div class="narrow">
-                <h2>Code of Conduct</h2>
-                <p>Everyone , including attendees, sponsors, speakers, and organizers - is required to agree to and follow our Code of Conduct. Inappropriate behavior or harassment of any kind is not tolerated. If you feel uncomfortable, are being harassed, notice that someone else is being harassed, or have any other concerns, please contact a member of conference staff immediately. Conference Staff are identified by red STAFF badges. You can also send an email to info@cascadiajs.com.</p>
-                <div class="cta"><a href="/coc">Read the Code of Conduct</a></div>
             </div>
         </div>
     </div>

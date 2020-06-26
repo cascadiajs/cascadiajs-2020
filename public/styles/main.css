@@ -33,7 +33,8 @@ h2 { font-size: 32px; }
 h3 { font-size: 24px; }
 
 img {
-    max-width: 100%;
+    height: 100%;
+    width: 100%;
 }
 
 p {
@@ -308,21 +309,12 @@ tr.on-sale {
     color: #17C37B;
 }
 
-
-#attend img {
-    border: 2px solid #fff;
-}
-
-#hero {
-    background-color: #17C37B;
-}
-
-#workshops, #workshops h2, #coc, #coc h2 {
+#hero, #attend, #workshops, #workshops h2 {
     background-color: #17C37B;
     color: #fff;
 }
 
-#attend, #attend h2, #schedule, #schedule h2 {
+#schedule, #schedule h2 {
     color: #000;
     background-color: #fff;
 }
@@ -509,6 +501,35 @@ footer {
 	margin: 16px 0 16px 0;
 }
 
+#attend {
+    text-align: left;
+}
+
+#why .headline {
+    font: canada-type-gibson, sans-serif;
+    font-size: 32px;
+    line-height: 1.4em;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+#why .benefits {
+    font-size: 22px;
+}
+
+#why .benefits li {
+    list-style: none;
+    margin: 0 0 16px 0;
+}
+
+#why .benefits li svg {
+    padding-right: 8px;
+}
+
+#why .benefits ul li ul {
+    margin: 24px 0 0 24px;
+}
+
 /* Social sharing styles */
 
 #social-share {
@@ -657,6 +678,11 @@ footer {
         flex: 1;
     }
 
+    #hero-logo {
+        width: 670px;
+        margin: 0 auto;
+    }
+
     #hero-images {
         display: flex;
         justify-content: center;
@@ -664,8 +690,33 @@ footer {
         margin: 0 auto;
     }
 
+    #hero-logo img {
+        min-height: 50px;
+    }
+
+    #hero-images img {
+        min-height: 300px;
+    }
+
+    #attend .container {
+        width: 80vw;
+        margin: 0 auto;
+        display: flex;
+    }
+
+    #karaoke {
+        width: 471px; 
+    }
+
+    #why {
+        flex: 1;
+    }
+
     .speaker-info {
         display: flex;
     }
     
+    #attend {
+        display: flex;
+    }
 }

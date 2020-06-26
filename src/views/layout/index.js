@@ -12,7 +12,6 @@ module.exports = function Layout ({title, content, meta = '', scripts = []}) {
     <link rel="stylesheet" href="https://use.typekit.net/fro6sah.css">
     <link rel="stylesheet" href="/styles/normalize.css">
     <link rel="stylesheet" href="/styles/main.css">
-    <script src="https://kit.fontawesome.com/439d39b111.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     ${ meta }
     <link rel="icon" href="/images/icon.svg">
@@ -81,6 +80,7 @@ module.exports = function Layout ({title, content, meta = '', scripts = []}) {
     twq('track','PageView');
     </script>
     <!-- End Twitter universal website tag code -->
+    <script src="https://kit.fontawesome.com/439d39b111.js" crossorigin="anonymous" async></script>
     ${ scripts.map(s => script(s)) }
   </body>
 </html>
