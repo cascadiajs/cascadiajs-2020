@@ -24,8 +24,10 @@ let Template = function(speaker) {
                         <h3>Company</h3>
                         <p>${ company }</p>
                         <h3>Links</h3>
-                        ${ twitter ? `<i class="fab fa-twitter"></i> <a href="https://twitter.com/${ twitter }">@${ twitter }</a> ` : '' }
-                        ${ url ? `<i class="fa fa-globe"></i> <a href="${ url }">${ url.split("://")[1] }</a></p>` : '' }
+                        <div class="speaker-links">
+                        ${ twitter ? `<div><i class="fab fa-twitter"></i> <a href="https://twitter.com/${ twitter }">@${ twitter }</a></div>` : '' }
+                        ${ url ? `<div><i class="fa fa-globe"></i> <a href="${ url }">${ url.split("://")[1] }</a></div>` : '' }
+                        </div>
                     </div>
                 </div>
                 <h2>${ title }</h2>

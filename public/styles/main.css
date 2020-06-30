@@ -501,6 +501,10 @@ footer {
 	margin: 16px 0 16px 0;
 }
 
+.speaker-links > div {
+    margin-bottom: 8px;
+}
+
 #attend {
     text-align: left;
 }
@@ -712,8 +716,12 @@ footer {
         flex: 1;
     }
 
-    .speaker-info {
+    .speaker-info, .speaker-links {
         display: flex;
+    }
+
+    .speaker-links > div {
+        margin-right: 8px;
     }
     
     #attend {
