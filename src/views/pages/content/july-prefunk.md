@@ -5,9 +5,7 @@ excerpt: Join us for our first ever CascadiaJS pre-conf meetup featuring ⚡️ 
 ---
 <img src="/images/july-prefunk.jpg" alt="Brian Leroux and James Quick" style="height:400px;width:400px"/>
 
-## CascadiaJS July Pre-Funk
-
-Join us for our **first ever** CascadiaJS pre-conference meetup! Hangout with fellow conference attendees and enjoy two awesome Lightning Talks by our friends Brian Leroux and James Quick.
+Join us for our **first ever** CascadiaJS pre-conference meetup! Hangout with fellow conference attendees and enjoy two awesome Lightning Talks by our friends Brian Leroux and James Quick. Like CascadiaJS 2020, this event will take place in... Cyberspace!
 
 * **Date:** Wed, July 15th
 * **Time:** 5pm - 7:30pm PST
