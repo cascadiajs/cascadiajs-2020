@@ -44,10 +44,20 @@ p {
 
 /* header styles */
 
-header {
-    padding: 32px 0;
+header nav {
+    padding: 8px 0;
     text-align: center;
-    background-color: #17C37B;
+    background-color: #112378;
+}
+
+header>section.alert {
+    background-color: #FFD007;
+    padding: 8px;
+    font-family: mono45-headline, monospace;
+    font-weight: 500;
+    color: #112378;
+    text-align: center;
+    font-size: 24px;
 }
 
 nav a, a.buy {
@@ -61,13 +71,21 @@ nav a, a.buy {
 }
 
 nav a, nav a:visited  {
-    color: #112378;
+    color: #17C37B;
+}
+
+nav a:hover  {
+    color: #fff;
 }
 
 a.buy, a.buy:visited {
     background: #FFD007 0% 0% no-repeat padding-box;
     color: #112378;
     padding: 16px;
+}
+
+a.buy:hover {
+    background: #fff;
 }
 
 /* footer styles */
@@ -593,6 +611,12 @@ footer {
         grid-template-rows: auto 1fr auto;
     }
 
+    header {
+        position: sticky;
+        /*width: 100%;*/
+        top: 0;
+    }
+
     .narrow {
         margin: 0 auto;
         width: 40%;
@@ -616,7 +640,7 @@ footer {
         margin-bottom: 64px;
     }
 
-    nav {
+    nav>div {
         display: flex;
         align-items: center;
     }
