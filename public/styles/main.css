@@ -449,7 +449,7 @@ footer {
     color: #112378;
 }
 
-#speaker-list .speaker:hover .speaker-info, #speaker-list .speaker:hover .speaker-name, #speaker-list .speaker:hover .speaker-misc {
+#speaker-list .speaker:hover .speaker-info, #speaker-list .speaker:hover .speaker-name, #speaker-list .speaker:hover .speaker-name a, #speaker-list .speaker:hover .speaker-misc {
 	color: #0033FF;
 }
 
@@ -466,6 +466,11 @@ footer {
     margin: 0;
 	color: #112378;
 	flex-grow: 1
+}
+
+.speaker-name a, .speaker-name a:visited {
+    color: #112378;
+    text-decoration: none;
 }
 
 #speaker-list .speaker-misc {
@@ -497,7 +502,7 @@ footer {
     border: 1px solid #0033FF;
 }
 
-.js-topic:hover {
+a.js-topic:hover {
     text-decoration: underline;
 }
 

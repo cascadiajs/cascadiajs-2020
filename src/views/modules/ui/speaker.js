@@ -32,7 +32,7 @@ export default function Speaker(props) {
       ? `<a href="/speakers/${key}"><div class="speaker-photo" style="background-image:url('${ photoUrl }'), linear-gradient(45deg, #112378, #17C37B);"></div></a>`
       : `<div class="speaker-photo" style="background-image:url('${ photoUrl }'), linear-gradient(45deg, #112378, #17C37B);"></div>` }
       <div class="speaker-info">
-        <div class="speaker-name">${ name }</div>
+        <div class="speaker-name">${ revealed ? `<a href="/speakers/${key}">${ name} </a>` : name }</div>
         <div class="speaker-misc">
           ${ revealed
             ? `${ speaker.company }<br/>${ speaker.location }`
