@@ -92,6 +92,7 @@ a.buy, a.buy:visited {
 
 a.buy:hover {
     background: #fff;
+    color: #112378;
 }
 
 /* footer styles */
@@ -164,7 +165,7 @@ footer {
 /* page/content styles */
 
 #page-title {
-    background-color: #112378;
+    background-color: #17C37B;
 }
 
 #page-title div {
@@ -658,7 +659,7 @@ a.js-topic:hover {
 
     /* this class makes me want to puke :( */
     nav .spacer {
-        margin-left: 32px;
+        margin-left: 16px;
     }
 
     .push {
