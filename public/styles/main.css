@@ -42,6 +42,12 @@ p {
     margin: 0 0 10px 0;
 }
 
+blockquote {
+	margin: 0;
+	border-left: 2px solid #aaa;
+	padding-left: 18px;
+}
+
 /* header styles */
 
 header nav {
