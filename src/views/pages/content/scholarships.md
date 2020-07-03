@@ -1,12 +1,12 @@
 ---
-title: Diversity Scholarships
+title: Opportunity Scholarships
 image: https://pbs.twimg.com/media/CfSwy1aUIAA7E6Q.jpg:large
 excerpt: Help us make this the most diverse and inclusive CascadiaJS yet!
 ---
 
 ![human hugs bear](https://pbs.twimg.com/media/CfSwy1aUIAA7E6Q.jpg:large)
 
-CascadiaJS exists to educate and grow the JavaScript community in the Pacific Northwest. We're constantly seeking new ways to make our community broader and more inclusive, so we're excited to work with our community to fund this year's Diversity Scholarship Program.
+CascadiaJS exists to educate and grow the JavaScript community in the Pacific Northwest. We're constantly seeking new ways to make our community broader and more inclusive, so we're excited to work with our community to fund this year's Opportunity Scholarship Program.
 
 ## Requirements
 
