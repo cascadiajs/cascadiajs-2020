@@ -13,12 +13,12 @@ Join us for our **first ever** CascadiaJS pre-conference meetup! Hangout with fe
 
 ### Agenda
 
-* 17:00 - Meet and Greet
-* 17:45 - Brian Leroux: Intro to Deno
+* 17:00 - Greetings & Kick-off
+* 17:15 - Brian Leroux: Intro to Deno
+* 17:30 - Q&A
+* 17:45 - James Quick: Static Sites and Serverless Functions - A Dynamic Combination
 * 18:00 - Q&A
-* 18:15 - James Quick: Static Sites and Serverless Functions - A Dynamic Combination
-* 18:30 - Q&A
-* 18:45 - Social Hour
+* 18:15 - Socialize & Network
 * 19:30 - End
 
 <div class="cta"><a href="https://ti.to/event-loop/cjs20-july-prefunk">RSVP to Meetup</a></div>
