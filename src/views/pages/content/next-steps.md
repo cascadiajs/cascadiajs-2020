@@ -7,6 +7,7 @@ Thanks for buying a ticket to CascadiaJS 2020. We're so excited that you're goin
 
 Here are a few more tips to help you gear up for a 💯conference experience:
 
+1. [RSVP](/july-prefunk) for the July 15 CascadiaJS Pre-Conf Meetup.
 1. [Help us spread the word!](https://2020.cascadiajs.com/email-templates#friend-or-colleague-email)
 2. Offer your friends a [10% discount](https://ti.to/event-loop/cascadiajs-2020/discount/BFF) with code **BFF**.
 3. Let folks know know about our [Scholarship Program](https://2020.cascadiajs.com/scholarships).
