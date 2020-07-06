@@ -9,7 +9,7 @@ Join us for our **first ever** CascadiaJS pre-conference meetup! Hangout with fe
 
 * **Date:** Wed, July 15th
 * **Time:** 5pm - 7:30pm PST
-* **RSVP:** Open to everyone with a ticket to CascadiaJS 2020!
+* **RSVP:** [Open to everyone](https://ti.to/event-loop/cjs20-july-prefunk)
 
 ### Agenda
 
