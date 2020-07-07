@@ -2,18 +2,25 @@ function script(source) {
   return `<script src=${source} type=module crossorigin></script>`
 }
 
-module.exports = function Layout ({title, content, meta = '', scripts = []}) {
+module.exports = function Layout ({title, content, socialUrl = '/images/cjs19-family.jpg', scripts = []}) {
+  // expand title
+  title = `CascadiaJS 2020${ title ? ' - ' + title : '' }`
+
   return /*html*/`
 <!doctype html>
 <html lang=en>
   <head>
     <meta charset=utf-8>
-    <title>CascadiaJS 2020${ title ? ' - ' + title : '' }</title>
+    <title>${ title }</title>
     <link rel="stylesheet" href="https://use.typekit.net/fro6sah.css">
     <link rel="stylesheet" href="/styles/normalize.css">
     <link rel="stylesheet" href="/styles/main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    ${ meta }
+    <meta property="og:image" content="${ socialUrl }" />
+    <meta name="twitter:image" content="${ socialUrl }">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@cascadiajs">
+    <meta name="twitter:title" content="${ title }">
     <link rel="icon" href="/images/icon.svg">
   </head>
   <body>

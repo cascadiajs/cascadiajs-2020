@@ -1,5 +1,7 @@
 ---
-title: Sponsor CascadiaJS 2020
+title: Sponsor CascadiaJS
+image: https://pbs.twimg.com/media/DtM87aIU0AMyD94.jpg:large
+excerpt: Help support this event and our community!
 ---
 ![Amazon at CascadiaJS](https://pbs.twimg.com/media/DtM87aIU0AMyD94.jpg:large)
 

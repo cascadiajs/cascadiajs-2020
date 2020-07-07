@@ -42,12 +42,7 @@ module.exports = async function Page (req) {
     let content = Template({ title, body })
     //console.log(req)
     let socialUrl = `https://${ process.env.NODE_ENV === 'staging' ? 'staging.' : '' }2020.cascadiajs.com/images/social/${ page }-share.png`
-    let meta = `<meta property="og:image" content="${ socialUrl }" />
-    <meta name="twitter:image" content="${ socialUrl }">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@cascadiajs">
-    <meta name="twitter:title" content="CascadiaJS 2020 | ${ title }">`
-    html = Layout({ title, content, meta })
+    html = Layout({ title, content, socialUrl })
   }
 
   return {

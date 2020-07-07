@@ -49,12 +49,8 @@ module.exports = async function Speaker({speaker, social}) {
     else {
         let content = Template(speaker)
         let socialUrl = `${ assetPath }/${ speaker.key }-social.png`
-        let meta = `<meta property="og:image" content="${ socialUrl }" />
-        <meta name="twitter:image" content="${ socialUrl }">
-        <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:site" content="@cascadiajs">
-        <meta name="twitter:title" content="CascadiaJS 2020 | ${ speaker.name } | ${ speaker.title }">`
-        html = Layout({ content, meta })
+        let title = `${ speaker.name } | ${ speaker.title }`
+        html = Layout({ content, title, socialUrl })
     }
 
     return { html }
