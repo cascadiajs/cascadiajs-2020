@@ -1,6 +1,5 @@
 ---
 title: Opportunity Scholarships
-image: /images/cjs19-party.jpg
 excerpt: Help us make this the most diverse and inclusive CascadiaJS yet!
 ---
 
