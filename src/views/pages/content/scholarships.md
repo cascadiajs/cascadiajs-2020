@@ -3,7 +3,7 @@ title: Opportunity Scholarships
 excerpt: Help us make this the most diverse and inclusive CascadiaJS yet!
 ---
 
-![human hugs bear](/images/cjs19-party.jpg)
+![conference family photo](/images/cjs19-family.jpg)
 
 CascadiaJS exists to educate and grow the JavaScript community in the Pacific Northwest. We're constantly seeking new ways to make our community broader and more inclusive, so we're excited to work with our community to fund this year's Opportunity Scholarship Program.
 
