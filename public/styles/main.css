@@ -50,6 +50,10 @@ blockquote {
 
 /* header styles */
 
+header {
+    z-index: 2;
+}
+
 header nav {
     padding: 8px 0;
     text-align: center;
@@ -252,7 +256,7 @@ div.highlight {
     background-color: #ddd;
 }
 
-.sponsor-marketing {
+.sponsor-marketing, .info {
     background-color: #b1ecb5;
 }
 
@@ -356,6 +360,7 @@ footer {
     height:160px;
     width:300px;
     margin:0 auto;
+    
 }
 
 #carousel img {
