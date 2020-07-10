@@ -63,23 +63,95 @@ let Template = function(props) {
                 <div class="cta"><a href="/workshops">Workshops Info</a></div>
             </div>
         </div>
-        <div id="schedule">
+        <div id="organizers">
             <div class="wide">
-                <h2>Sponsors</h2>
-                <div class="container">
-                    <div class="left"><img src="https://pbs.twimg.com/media/DtM87aIU0AMyD94.jpg:large" alt="Amazon sponsorship"/></div>
-                    <div class="right">
-                        <p>
-                            It is our mission to create an online event that
-                            brings our community together, levels everyone up on building for the Web and helps everyone meet new people,
-                            try out new products and start thinking about what's next in their career.
-                        </p>
-                        <p>
-                            This is a big lift and we can't do it without the support of sponsors. If your company is interested in
-                            supporting our community please reach out!
-                        </p>
+                <h2>Organizers</h2>
+                <div id="organizer-list">
+                    <div class="organizer">
+                        <div class="organizer-photo" style="background-image:url('/images/organizers/carter-rabasa.jpg'), linear-gradient(45deg, #112378, #17C37B);"></div></a>
+                        <div class="organizer-info">
+                            <div class="organizer-name">Carter Rabasa</div>
+                            <div class="organizer-misc">
+                                Lead Organizer<br/>Seattle, WA
+                            </div>
+                        </div>
+                    </div>
+                    <div class="organizer">
+                        <div class="organizer-photo" style="background-image:url('/images/organizers/carrie-rabasa.jpg'), linear-gradient(45deg, #112378, #17C37B);"></div></a>
+                        <div class="organizer-info">
+                            <div class="organizer-name">Carrie Rabasa</div>
+                            <div class="organizer-misc">
+                                Lead Designer<br/>Seattle, WA
+                            </div>
+                        </div>
+                    </div>
+                    <div class="organizer">
+                        <div class="organizer-photo" style="background-image:url('/images/organizers/jessica-west.jpg'), linear-gradient(45deg, #112378, #17C37B);"></div></a>
+                        <div class="organizer-info">
+                            <div class="organizer-name">Jessica West</div>
+                            <div class="organizer-misc">
+                                Speaker Lead<br/>Seattle, WA
+                            </div>
+                        </div>
+                    </div>
+                    <div class="organizer">
+                        <div class="organizer-photo" style="background-image:url('/images/organizers/jim-liu.jpg'), linear-gradient(45deg, #112378, #17C37B);"></div></a>
+                        <div class="organizer-info">
+                            <div class="organizer-name">Jim Liu</div>
+                            <div class="organizer-misc">
+                                Community Lead<br/>Seattle, WA
+                            </div>
+                        </div>
+                    </div>
+                    <div class="organizer">
+                        <div class="organizer-photo" style="background-image:url('/images/organizers/brenden-niedermeyer.jpg'), linear-gradient(45deg, #112378, #17C37B);"></div></a>
+                        <div class="organizer-info">
+                            <div class="organizer-name">Brenden Niedermeyer</div>
+                            <div class="organizer-misc">
+                                New Speaker Support<br/>Seattle, WA
+                            </div>
+                        </div>
+                    </div>
+                    <div class="organizer">
+                        <div class="organizer-photo" style="background-image:url('/images/organizers/heidi-laursen.jpg'), linear-gradient(45deg, #112378, #17C37B);"></div></a>
+                        <div class="organizer-info">
+                            <div class="organizer-name">Heidi Laursen</div>
+                            <div class="organizer-misc">
+                                Speaker Wrangler<br/>Seattle, WA
+                            </div>
+                        </div>
+                    </div>
+                    <div class="organizer">
+                        <div class="organizer-photo" style="background-image:url('/images/organizers/gabi-dombrowski.jpg'), linear-gradient(45deg, #112378, #17C37B);"></div></a>
+                        <div class="organizer-info">
+                            <div class="organizer-name">Gabi Dombrowski</div>
+                            <div class="organizer-misc">
+                                Mentorship Lead<br/>Kansas City, MO
+                            </div>
+                        </div>
                     </div>
                 </div>
+            </div>
+        </div>
+        <div id="sponsors">
+            <div>
+                <h2>Sponsors</h2>
+                <div id="sponsor-container">
+                    <section id="sponsors-platinum">
+                        <a href="https://fizbuz.com"><img src="/images/sponsors/fizbuz.svg" alt="Fizbuz logo"/></a>
+                    </section>
+                    <section id="sponsors-gold">
+                        <a href="http://begin.com/"><img src="/images/sponsors/begin.svg" alt="Begin logo"/></a>
+                        <a href="https://developer.microsoft.com/en-us/advocates/"><img src="/images/sponsors/microsoft.svg"/></a>
+                    </section>
+                    <section id="sponsors-silver">
+                        <a href="https://mozilla.com"><img src="/images/sponsors/mozilla.svg"/></a>
+                    </section>
+                </div>
+                <section id="sponsors-community">    
+                    <a href="http://seattlejs.com/"><img src="/images/sponsors/seattlejs.svg" alt="SeattleJS logo"/></a>
+                    <a href="https://www.meetup.com/ReactJS-Vancouver-Meetup/"><img src="/images/sponsors/reactvancouver.svg" alt="React Vancouver logo"/></a>
+                </section>
                 <div class="cta"><a href="/sponsor">Sponsor Info</a></div>
             </div>
         </div>
