@@ -42,12 +42,15 @@ import SpeakerList from '../ui/speaker-list.js'
     )
     // attach clear topics handler
     let clear = document.getElementById('js-topics-clear')
-    clear.onclick = e => {
-      e.preventDefault()
-      selectedTopics = []
-      let url = '/speakers'
-      getData(url)
-      window.history.pushState('', '', window.location.pathname)
+    // if no topics have been selected, the clear button does not render
+    if (clear) {
+      clear.onclick = e => {
+        e.preventDefault()
+        selectedTopics = []
+        let url = '/speakers'
+        getData(url)
+        window.history.pushState('', '', window.location.pathname)
+      }
     }
   }
 
