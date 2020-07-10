@@ -633,6 +633,22 @@ a.js-topic:hover {
     color: #17C37B;
 }
 
+#attendees-pics {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#attendees a {
+    display: block;
+    margin: 8px;
+}
+
+#attendees img {
+    height: 100px;
+}
+
 @media only screen and (min-width: 768px) {
 
     #root {
@@ -817,5 +833,5 @@ a.js-topic:hover {
         height: 50px;
         max-width: 100%;
         margin: 24px;
-	}
+    }
 }

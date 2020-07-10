@@ -155,6 +155,11 @@ let Template = function(props) {
                 <div class="cta"><a href="/sponsor">Sponsor Info</a></div>
             </div>
         </div>
+        <div id="attendees">
+            <h2>Who's Coming?</h2>
+            <div id="attendees-pics"></div>
+            <div><a href="/directory">Add your profile to the Conference Directory</a></div>
+        </div>
     </div>
 `
 }
@@ -164,6 +169,6 @@ module.exports = async function Index({ speakers, topics, selectedTopics }) {
     if (speakers && speakers.length >= 1)
         speakersContainer = SpeakerContainer({ speakers, topics, selectedTopics })
     let content = Template({ speakersContainer })
-    let html = Layout({content, scripts: ['modules/entry/speakers.js']})
+    let html = Layout({content, scripts: ['modules/entry/speakers.js', '/js/attendees.js']})
     return { html }
 }
