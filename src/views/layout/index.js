@@ -63,7 +63,7 @@ module.exports = function Layout ({title, content, socialUrl = '/images/cjs19-fa
             <ul>
               <li><a href="https://2019.cascadiajs.com">2019</a></li>
               <li><a href="https://2018.cascadiajs.com">2018</a></li>
-              <li><a href="https://2016.cascadiafest.org">2016</a></li>
+              <li><a href="https://2016.cascadiajs.com">2016</a></li>
               <li><a href="https://2015.cascadiajs.com">2015</a></li>
               <li><a href="https://2014.cascadiajs.com">2014</a></li>
               <li><a href="https://2013.cascadiajs.com">2013</a></li>
