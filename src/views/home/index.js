@@ -138,13 +138,15 @@ let Template = function(props) {
                 <h2>Sponsors</h2>
                 <div id="sponsor-container">
                     <section id="sponsors-platinum">
-                        <a href="https://fizbuz.com"><img src="/images/sponsors/fizbuz.svg" alt="Fizbuz logo"/></a>
+                        <a href="https://developer.salesforce.com"><img src="/images/sponsors/sfdc.svg"/></a>
                     </section>
                     <section id="sponsors-gold">
                         <a href="http://begin.com/"><img src="/images/sponsors/begin.svg" alt="Begin logo"/></a>
-                        <a href="https://developer.microsoft.com/en-us/advocates/"><img src="/images/sponsors/microsoft.svg"/></a>
+                        <a href="https://fizbuz.com"><img src="/images/sponsors/fizbuz.svg" alt="Fizbuz logo"/></a>
+                       
                     </section>
                     <section id="sponsors-silver">
+                        <a href="https://developer.microsoft.com/en-us/advocates/"><img src="/images/sponsors/microsoft.svg"/></a>
                         <a href="https://mozilla.com"><img src="/images/sponsors/mozilla.svg"/></a>
                     </section>
                 </div>
