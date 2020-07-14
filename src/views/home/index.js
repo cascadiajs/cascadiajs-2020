@@ -151,7 +151,7 @@ let Template = function(props) {
                     </section>
                 </div>
                 <section id="sponsors-community">    
-                    <a href="http://seattlejs.com/"><img src="/images/sponsors/seattlejs.svg" alt="SeattleJS logo"/></a>
+                    <a href="http://seattlejs.com/"><img src="/images/sponsors/seattlejs.png" alt="SeattleJS logo"/></a>
                     <a href="https://www.meetup.com/ReactJS-Vancouver-Meetup/"><img src="/images/sponsors/reactvancouver.svg" alt="React Vancouver logo"/></a>
                 </section>
                 <div class="cta"><a href="/sponsor">Sponsor Info</a></div>
