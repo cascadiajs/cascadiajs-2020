@@ -1,9 +1,10 @@
 
 let Layout = require('../layout')
 let SpeakerContainer = require('../components/speakers')
+let OrganizerContainer = require('../components/organizers')
 
 let Template = function(props) {
-    let { speakersContainer } = props
+    let { speakersContainer, organizerContainer } = props
     return /*html*/`
     <div id="landing">
         <div id="hero">
@@ -66,71 +67,7 @@ let Template = function(props) {
         <div id="organizers">
             <div class="wide">
                 <h2>Organizers</h2>
-                <div id="organizer-list">
-                    <div class="organizer">
-                        <div class="organizer-photo" style="background-image:url('/images/organizers/carter-rabasa.jpg'), linear-gradient(45deg, #112378, #17C37B);"></div></a>
-                        <div class="organizer-info">
-                            <div class="organizer-name">Carter Rabasa</div>
-                            <div class="organizer-misc">
-                                Lead Organizer<br/>Seattle, WA
-                            </div>
-                        </div>
-                    </div>
-                    <div class="organizer">
-                        <div class="organizer-photo" style="background-image:url('/images/organizers/carrie-rabasa.jpg'), linear-gradient(45deg, #112378, #17C37B);"></div></a>
-                        <div class="organizer-info">
-                            <div class="organizer-name">Carrie Rabasa</div>
-                            <div class="organizer-misc">
-                                Lead Designer<br/>Seattle, WA
-                            </div>
-                        </div>
-                    </div>
-                    <div class="organizer">
-                        <div class="organizer-photo" style="background-image:url('/images/organizers/jessica-west.jpg'), linear-gradient(45deg, #112378, #17C37B);"></div></a>
-                        <div class="organizer-info">
-                            <div class="organizer-name">Jessica West</div>
-                            <div class="organizer-misc">
-                                Speaker Lead<br/>Seattle, WA
-                            </div>
-                        </div>
-                    </div>
-                    <div class="organizer">
-                        <div class="organizer-photo" style="background-image:url('/images/organizers/jim-liu.jpg'), linear-gradient(45deg, #112378, #17C37B);"></div></a>
-                        <div class="organizer-info">
-                            <div class="organizer-name">Jim Liu</div>
-                            <div class="organizer-misc">
-                                Community Lead<br/>Seattle, WA
-                            </div>
-                        </div>
-                    </div>
-                    <div class="organizer">
-                        <div class="organizer-photo" style="background-image:url('/images/organizers/brenden-niedermeyer.jpg'), linear-gradient(45deg, #112378, #17C37B);"></div></a>
-                        <div class="organizer-info">
-                            <div class="organizer-name">Brenden Niedermeyer</div>
-                            <div class="organizer-misc">
-                                New Speaker Support<br/>Seattle, WA
-                            </div>
-                        </div>
-                    </div>
-                    <div class="organizer">
-                        <div class="organizer-photo" style="background-image:url('/images/organizers/heidi-laursen.jpg'), linear-gradient(45deg, #112378, #17C37B);"></div></a>
-                        <div class="organizer-info">
-                            <div class="organizer-name">Heidi Laursen</div>
-                            <div class="organizer-misc">
-                                Speaker Wrangler<br/>Seattle, WA
-                            </div>
-                        </div>
-                    </div>
-                    <div class="organizer">
-                        <div class="organizer-photo" style="background-image:url('/images/organizers/gabi-dombrowski.jpg'), linear-gradient(45deg, #112378, #17C37B);"></div></a>
-                        <div class="organizer-info">
-                            <div class="organizer-name">Gabi Dombrowski</div>
-                            <div class="organizer-misc">
-                                Mentorship Lead<br/>Kansas City, MO
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                ${ organizerContainer }
             </div>
         </div>
         <div id="sponsors">
@@ -167,10 +104,11 @@ let Template = function(props) {
 }
 
 module.exports = async function Index({ speakers, topics, selectedTopics }) {
+    let organizerContainer = OrganizerContainer()
     let speakersContainer
     if (speakers && speakers.length >= 1)
         speakersContainer = SpeakerContainer({ speakers, topics, selectedTopics })
-    let content = Template({ speakersContainer })
+    let content = Template({ speakersContainer, organizerContainer })
     let html = Layout({content, scripts: ['modules/entry/speakers.js', '/js/attendees.js']})
     return { html }
 }
