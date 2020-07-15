@@ -62,7 +62,6 @@ A few tips on getting the most out of the event:
 - Remember the two feet rule: feel free to leave a table whenever you like.
 - Remember the Pacman rule: always try to leave a chair open at your table, if possible.
 
-<div class="cta"><a href="https://live.remo.co/e/cascadiajs-july-2020-pre-funk">Go to Remo</a></div>
 
 #### Rambly
 
@@ -70,4 +69,6 @@ Rambly is an 8-bit universe where you pick an avatar and walk around having audi
 
 ![Rambly](/images/rambly.png)
 
-<div class="cta"><a href="http://ramb.ly/cjs20-july-prefunk">Go to Rambly</a></div>
+#### Links
+
+Links to both Remo and Rambly were emailed to everyone who registered for this event. Please check your inbox and possibly your Promotions/Social/Spam folder if it's not there. 
