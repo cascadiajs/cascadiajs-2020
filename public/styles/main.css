@@ -168,6 +168,14 @@ footer {
 
 /* page/content styles */
 
+#not-found {
+    font-family: ibm-plex-mono, sans-serif;
+    color: #17C37B;
+    font-size: 5em;
+    font-weight: 700;
+    text-align: center;
+}
+
 #page-title {
     background-color: #17C37B;
 }
@@ -649,6 +657,41 @@ a.js-topic:hover {
     height: 100px;
 }
 
+#live iframe {
+    width: 100%;
+}
+
+/* Slackview styles */
+
+#chat-slackview {
+    padding: 8px;
+    height: 200px;
+    overflow-y: scroll;
+}
+
+.sv-message {
+    margin-bottom: 4px;
+    background-color: #fff;
+    padding: 4px;
+    border-radius: 4px;
+}
+
+.sv-img-wrapper {
+
+}
+
+.sv-name {
+
+}
+
+.sv-timestamp {
+
+}
+
+.sv-body {
+
+}
+
 @media only screen and (min-width: 768px) {
 
     #root {
@@ -833,5 +876,21 @@ a.js-topic:hover {
         height: 50px;
         max-width: 100%;
         margin: 24px;
+    }
+
+    #live {
+        display: flex;
+    }
+
+    #live #stream {
+        width: 65%;
+        margin: 8px;
+    }
+
+    #live #chat {
+        flex: 1;
+        padding: 8px;
+        background-color: #17C37B;
+        
     }
 }

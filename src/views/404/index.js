@@ -1,7 +1,9 @@
-// TODO make a nice 404 page here!
+let Layout = require('../layout')
+
 module.exports = function notFound () {
     // Return 404
-    let html = "404, sorry!"
+    let content = `<div id="not-found">404, not found :(</div>`
+    let html = Layout({ content })
     return {
       html,
       status: 404
