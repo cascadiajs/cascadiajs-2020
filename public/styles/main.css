@@ -657,8 +657,21 @@ a.js-topic:hover {
     height: 100px;
 }
 
-#live iframe {
+/*#live iframe {
     width: 100%;
+}*/
+
+#live-more {
+    padding:16px;
+}
+
+#live-more ul {
+    font-family: monospace;
+    font-size: 1.25em;
+}
+
+#live-more li {
+    margin: 8px;
 }
 
 /* Slackview styles */
