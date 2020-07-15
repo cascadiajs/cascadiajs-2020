@@ -11,7 +11,7 @@ Join us for our **first ever** CascadiaJS pre-conference meetup! Hangout with fe
 * **Time:** 5pm - 7:30pm PST
 * **RSVP:** Open to everyone
 
-### Agenda
+## Agenda
 
 * 17:00 - Greetings & Kick-off
 * 17:15 - Brian Leroux: Intro to Deno
@@ -25,9 +25,9 @@ Join us for our **first ever** CascadiaJS pre-conference meetup! Hangout with fe
 
 <div class="cta"><a href="https://ti.to/event-loop/cascadiajs-2020/">Buy Conference Ticket</a></div>
 
-### How to Participate
+## How to Participate
 
-#### Part 1: The Live Stream
+### Part 1: The Live Stream
 
 The first portion of the meetup will be live streamed.
 
@@ -40,9 +40,11 @@ For your convenience, we will also be displaying the Slack chat conversation on 
 ![Using Slack while watching the live stream](/images/stream-slack.png)
 [(full-size image)](/images/stream-slack.png)
 
-#### Part 2: Hanging out in Remo
+### Part 2: Hanging out
 
-Following the conclusion of the talks and Q&A, we will be asking everyone to join us over on Remo. 
+Following the conclusion of the talks and Q&A, there are two options for hanging out and chatting:
+
+#### Remo
 
 Remo is a virtual event platform that allow us to create a floor that has tables and chairs. Each table can accommodate a maximum of 6 people, and once you "sit down" you will be in a video chat (video + audio) with the other people seated at that table.
 
@@ -60,4 +62,12 @@ A few tips on getting the most out of the event:
 - Remember the two feet rule: feel free to leave a table whenever you like.
 - Remember the Pacman rule: always try to leave a chair open at your table, if possible.
 
-<div class="cta"><a href="https://live.remo.co/e/cascadiajs-july-2020-pre-funk">Enter Social Hour</a></div>
+<div class="cta"><a href="https://live.remo.co/e/cascadiajs-july-2020-pre-funk">Go to Remo</a></div>
+
+#### Rambly
+
+Rambly is an 8-bit universe where you pick an avatar and walk around having audio-only conversations. 
+
+![Rambly](/images/rambly.png)
+
+<div class="cta"><a href="http://ramb.ly/cjs20-july-prefunk">Go to Rambly</a></div>
