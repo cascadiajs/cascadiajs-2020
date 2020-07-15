@@ -27,7 +27,7 @@ module.exports = function Layout ({title, content, socialUrl = '/images/cjs19-fa
     <div id="root">
       <header>
         <section class="alert">
-          <i class="fas fa-hand-point-right"></i> The deadline to register &amp; recieve a Goodie Box in the mail is JULY 24th! <i class="fas fa-hand-point-left"></i>
+          <i class="fas fa-hand-point-right"></i> The deadline to register &amp; receive a Goodie Box in the mail is JULY 24th! <i class="fas fa-hand-point-left"></i>
         </section>
         <nav>
           <div class="wide">
