@@ -24,6 +24,7 @@ async function upload(req) {
       }))
     )
   }
+
   console.log(grouped)
 
   for (let group of grouped) {
