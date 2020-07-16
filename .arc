@@ -16,6 +16,8 @@ post /login
 post /upsert
 post /delete
 post /upload
+post /orders
+post /codes
 
 @tables
 data
