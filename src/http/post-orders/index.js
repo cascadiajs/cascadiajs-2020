@@ -1,8 +1,8 @@
-let arc = require('@architect/functions')
+/*let arc = require('@architect/functions')
 let data = require('@begin/data')
 let crypto = require("crypto")
 
-let releaseSlugsForHoodies = ["wmg4ibcq-zk", "uvup7alttr8", "du8rpnvpqeg", "jmdds5wxi4y", "7j-cyjllimi", "h-ksr70mfng"]
+let releaseSlugsForHoodies = ["wmg4ibcq-zk", "uvup7alttr8", "du8rpnvpqeg", "jmdds5wxi4y", "7j-cyjllimi", "h-ksr70mfng"]*/
 
 //exports.handler = arc.http.async(auth, order)
 
@@ -16,7 +16,7 @@ async function test(req) {
   }
 }
 
-async function auth(req) {
+/*async function auth(req) {
   // authenticate the token passed in the header
   console.log(req.body)
   let titoSig = req.headers['Tito-Signature']
@@ -30,7 +30,7 @@ async function auth(req) {
   }
 }
 
-/** write to begin/data */
+// write to begin/data
 async function order(req) {
   let titoOrder = req.body
 
@@ -67,4 +67,4 @@ async function order(req) {
     statusCode: 201,
     body: JSON.stringify({success: true})
   }
-}
+}*/
