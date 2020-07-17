@@ -28,7 +28,7 @@ exports.handler = async function(req) {
     let ticketRefs = []
     for (let ticket of titoOrder.tickets) {
       // write ticket into DB
-      await data.set({ key: ticket.reference, ticket: ticket.release_title })
+      await data.set({ table: 'tickets', key: ticket.reference, ticket: ticket.release_title })
       if (releaseSlugsForHoodies.includes(ticket.release_slug)) {
         ticketRefs.push(ticket.reference)
       }
