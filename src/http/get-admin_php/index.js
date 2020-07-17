@@ -23,11 +23,21 @@ async function unauthenticated(req) {
 
 /** render the speaker list/form */
 async function authenticated(req) {
-  let result = await data.get({ table: 'speakers', limit: 24 })
-  let form = speaker()
-  let rows =  result.map(speaker).join('')//'<pre>'+JSON.stringify(result, null, 2)
-  let html = layout(form + rows)
+  let speakerData = await data.get({ table: 'speakers', limit: 24 })
+  let codeData = await data.get( {table: 'codes', limit: 1000 })
+  let newSpeaker = speaker()
+  let speakers =  speakerData.map(speaker).join('')
+  let codesTable = codes(codeData)
+  let html = layout(newSpeaker + speakers + codesTable)
   return { html }
+}
+
+function codes(data) {
+  return `<table><tr><th>Code</th><th>TicketRef</th></tr>${ data.map(code).join('') }</table>`
+}
+
+function code(c) {
+  return `<tr><td>${ c.key }</td><td>${ c.ticketRef }</td></tr>`
 }
 
 function speaker(person) {
