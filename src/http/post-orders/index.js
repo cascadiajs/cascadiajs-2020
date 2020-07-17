@@ -33,6 +33,11 @@ exports.handler = async function(req) {
       console.log('processing ticket.completed or ticket.updated webhook')
       return ticketCompletedOrUpdated(req)
     }
+    // delete voided tickets
+    else if (action === 'ticket.voided') {
+      console.log('processing ticket.voided webhook')
+      return ticketVoided(req)
+    }
     else {
       console.log('unsupported webhook')
       console.log(parseBody(req))
@@ -96,6 +101,25 @@ async function ticketCompletedOrUpdated(req) {
   // update the name associated with this ticket
   let doc = await data.get({ table: 'tickets', key })
   await data.set({ ...doc, fullName })
+  return {
+    statusCode: 200,
+    body: JSON.stringify({success: true})
+  }
+}
+
+async function ticketVoided(req) {
+  let titoTicket = parseBody(req)
+  let key = titoTicket.reference
+  // delete the ticket
+  await data.destroy({ table: 'tickets', key })
+  // see if a redemption code was assigned to this ticket
+  let codes = await data.get({table: 'codes', limit: 1000})
+  let code = codes.find(c => c.ticketRef === key)
+  if (code) {
+    // free up the redemption code
+    delete code.ticketRef
+    await data.set(code)
+  }
   return {
     statusCode: 200,
     body: JSON.stringify({success: true})
