@@ -25,31 +25,31 @@ exports.handler = async function(req) {
     console.log('processing webhook!')
     let titoOrder = parseBody(req)
     // see if this order contains a ticket that includes a hoodie
-    let ticketRefs = []
+    let hoodieTickets = []
     for (let ticket of titoOrder.tickets) {
       // write ticket into DB
-      await data.set({ table: 'tickets', key: ticket.reference, ticket: ticket.release_title })
+      let ticketDoc = await data.set({ table: 'tickets', key: ticket.reference, ticket: ticket.release_title })
       if (releaseSlugsForHoodies.includes(ticket.release_slug)) {
-        ticketRefs.push(ticket.reference)
+        hoodieTickets.push(ticketDoc)
       }
     }
-    console.log('tickets that include a free hoodie', ticketRefs)
+    console.log('tickets that include a free hoodie', hoodieTickets)
 
     // if so find a redemption code that is free, and assign it to this ticket id
-    if (ticketRefs.length > 0) {
+    if (hoodieTickets.length > 0) {
       let codes = await data.get({table: 'codes', limit: 1000})
       let freeCodes = codes.filter(c => c.ticketRef === undefined)
       console.log('Number of free codes available: ', freeCodes.length)
       // loop through each ticket that qualifies for a hoodie
-      for (let i in ticketRefs) {
-        let ticketRef = ticketRefs[i]
+      for (let i in hoodieTickets) {
+        let ticket = hoodieTickets[i]
         let free = freeCodes[i]
         if (free) {
-          console.log('Assigning code to ticket ref', free.key, ticketRef)
+          console.log('Assigning code to ticket ref', free.key, ticket.key)
           // update the codes table to mark this code as used
-          await data.set({...free, ticketRef})
+          await data.set({...free, ticketRef: ticket.key})
           // update the tickets table to reference the assigned code
-          await data.set({table: 'tickets', key: ticketRef, code: free.key })
+          await data.set({ ...ticket, code: free.key })
         }
         else {
           // FUCK
