@@ -40,6 +40,9 @@ function ticket(t) {
       <summary>${ t.key } ${ t.ticket } ${ t.fullName } ${ t.conference === 'Y' ? '[Conf]' : '' } ${ t.hoodie === 'Y' ? '[Hoodie]' : '' }</summary>
       <form action=/ticket method=post>
         <input type=hidden name=key value="${ t.key }">
+        <input type=text name=fullName value="${ t.fullName || '' }">
+        <input type=text name=conference value="${ t.conference || '' }">
+        <input type=text name=hoodie value="${ t.hoodie || '' }">
         <input type=text name=code value="${ t.code || '' }">
         <button>Save</button>
       </form>

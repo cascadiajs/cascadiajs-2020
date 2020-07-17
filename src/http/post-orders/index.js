@@ -49,7 +49,7 @@ exports.handler = async function(req) {
           // update the codes table to mark this code as used
           await data.set({...free, ticketRef: ticket.key})
           // update the tickets table to reference the assigned code
-          await data.set({ ...ticket, code: free.key })
+          await data.set({ ...ticket, code: free.key, conference: 'Y', hoodie: 'Y' })
         }
         else {
           // FUCK
