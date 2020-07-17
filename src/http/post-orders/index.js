@@ -4,7 +4,17 @@ let crypto = require("crypto")
 
 let releaseSlugsForHoodies = ["wmg4ibcq-zk", "uvup7alttr8", "du8rpnvpqeg", "jmdds5wxi4y", "7j-cyjllimi", "h-ksr70mfng"]
 
-exports.handler = arc.http.async(auth, order)
+//exports.handler = arc.http.async(auth, order)
+
+exports.handler = test
+
+async function test(req) {
+  console.log(req)
+  return {
+    statusCode: 200,
+    body: "success"
+  }
+}
 
 async function auth(req) {
   // authenticate the token passed in the header
