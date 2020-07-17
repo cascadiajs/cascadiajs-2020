@@ -8,7 +8,7 @@ exports.handler = arc.http.async(auth, order)
 
 async function auth(req) {
   // authenticate the token passed in the header
-  console.log(req)
+  console.log(req.body)
   let titoSig = req.headers['Tito-Signature']
   let hash = crypto.createHmac("sha256", "qd-TFXvwAHuljC_WpKG6sw").update(JSON.stringify(req.body)).digest("base64")
   if (hash !== titoSig) {
