@@ -35,6 +35,7 @@ exports.handler = async function(req) {
     }
     else {
       console.log('unsupported webhook')
+      console.log(parseBody(req))
       return {
         statusCode: 400,
         body: JSON.stringify({message: "unsupported webhook"})
