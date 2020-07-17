@@ -25,12 +25,25 @@ async function unauthenticated(req) {
 async function authenticated(req) {
   let speakerData = await data.get({ table: 'speakers', limit: 24 })
   let codeData = await data.get( {table: 'codes', limit: 1000 })
+  let ticketData = await data.get( {table: 'tickets', limit: 1000 })
   let newSpeaker = speaker()
   let speakers =  speakerData.map(speaker).join('')
   let speakersSection = `<h2>Speakers</h2>${ newSpeaker + speakers }`
+  let ticketsSection = `<h2>Tickets</h2>${ ticketData.map(ticket).join('') }`
   let codesSection = `<h2>Redemption Codes</h2>${ codeData.map(code).join('') }`
-  let html = layout(speakersSection + codesSection)
+  let html = layout(speakersSection + ticketsSection + codesSection)
   return { html }
+}
+
+function ticket(t) {
+  return `<details>
+      <summary>${ t.key } ${ t.ticket } ${ t.fullName } ${ t.conference === 'Y' ? '[Conf]' : '' } ${ t.hoodie === 'Y' ? '[Hoodie]' : '' }</summary>
+      <form action=/ticket method=post>
+        <input type=hidden name=key value="${ t.key }">
+        <input type=text name=code value="${ t.code || '' }">
+        <button>Save</button>
+      </form>
+    </details>`
 }
 
 function code(c) {

@@ -12,6 +12,7 @@ get /api
 get /modules/:type/:module
 get /speakers
 get /speakers/:key
+get /home
 post /login
 post /upsert
 post /delete
@@ -19,6 +20,9 @@ post /upload
 post /orders
 post /codes
 post /code
+post /home
+post /tickets
+post /ticket
 
 @tables
 data

@@ -27,6 +27,8 @@ exports.handler = async function(req) {
     // see if this order contains a ticket that includes a hoodie
     let ticketRefs = []
     for (let ticket of titoOrder.tickets) {
+      // write ticket into DB
+      await data.set({ key: ticket.reference, ticket: ticket.release_title })
       if (releaseSlugsForHoodies.includes(ticket.release_slug)) {
         ticketRefs.push(ticket.reference)
       }
@@ -44,7 +46,10 @@ exports.handler = async function(req) {
         let free = freeCodes[i]
         if (free) {
           console.log('Assigning code to ticket ref', free.key, ticketRef)
+          // update the codes table to mark this code as used
           await data.set({...free, ticketRef})
+          // update the tickets table to reference the assigned code
+          await data.set({table: 'tickets', key: ticketRef, code: free.key })
         }
         else {
           // FUCK
