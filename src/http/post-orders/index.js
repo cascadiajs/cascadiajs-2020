@@ -1,5 +1,6 @@
-/*let arc = require('@architect/functions')
-let data = require('@begin/data')
+let arc = require('@architect/functions')
+let parseBody = arc.http.helpers.bodyParser
+/*let data = require('@begin/data')
 let crypto = require("crypto")
 
 let releaseSlugsForHoodies = ["wmg4ibcq-zk", "uvup7alttr8", "du8rpnvpqeg", "jmdds5wxi4y", "7j-cyjllimi", "h-ksr70mfng"]*/
@@ -9,7 +10,11 @@ let releaseSlugsForHoodies = ["wmg4ibcq-zk", "uvup7alttr8", "du8rpnvpqeg", "jmdd
 exports.handler = test
 
 async function test(req) {
-  console.log(req)
+  let titoSig = req.headers['Tito-Signature'] || req.headers['tito-signature']
+  console.log(titoSig)
+  console.log(req.body)
+  let body = parseBody(req)
+  console.log(body)
   return {
     statusCode: 200,
     body: "success"
