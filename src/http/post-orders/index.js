@@ -29,12 +29,9 @@ exports.handler = async function(req) {
       return registrationFinished(req)
     }
     // update the full name associated with ticket(s)
-    else if (action === 'ticket.completed' || action === 'ticket.updated' || action === 'registration.updated') {
-      console.log(req.body)
-      return {
-        statusCode: 200,
-        body: JSON.stringify({message: "OK"})
-      }
+    else if (action === 'ticket.completed' || action === 'ticket.updated') {
+      console.log('processing ticket.completed or ticket.updated webhook')
+      return ticketCompletedOrUpdated(req)
     }
     else {
       console.log('unsupported webhook')
@@ -87,6 +84,19 @@ async function registrationFinished(req) {
 
   return {
     statusCode: 201,
+    body: JSON.stringify({success: true})
+  }
+}
+
+async function ticketCompletedOrUpdated(req) {
+  let titoTicket = parseBody(req)
+  let key = titoTicket.reference
+  let fullName = titoTicket.name
+  // update the name associated with this ticket
+  let doc = await data.get({ table: 'tickets', key })
+  await data.set({ ...doc, fullName })
+  return {
+    statusCode: 200,
     body: JSON.stringify({success: true})
   }
 }
