@@ -22,48 +22,71 @@ exports.handler = async function(req) {
   }
   // else, let's process the webhook!
   else {
-    console.log('processing webhook!')
-    let titoOrder = parseBody(req)
-    // see if this order contains a ticket that includes a hoodie
-    let hoodieTickets = []
-    for (let ticket of titoOrder.tickets) {
-      // write ticket into DB
-      let ticketDoc = await data.set({ table: 'tickets', key: ticket.reference, ticket: ticket.release_title })
-      if (releaseSlugsForHoodies.includes(ticket.release_slug)) {
-        hoodieTickets.push(ticketDoc)
-      }
+    let action = req.headers['x-webhook-name'] || req.headers['X-Webhook-Name']
+    // payment for the ticket has occurred
+    if (action === 'registration.finished') {
+      console.log('processing registration.finished webhook')
+      return registrationFinished(req)
     }
-    console.log('tickets that include a free hoodie', hoodieTickets)
-
-    // if so find a redemption code that is free, and assign it to this ticket id
-    if (hoodieTickets.length > 0) {
-      let codes = await data.get({table: 'codes', limit: 1000})
-      let freeCodes = codes.filter(c => c.ticketRef === undefined)
-      console.log('Number of free codes available: ', freeCodes.length)
-      // loop through each ticket that qualifies for a hoodie
-      for (let i in hoodieTickets) {
-        let ticket = hoodieTickets[i]
-        let free = freeCodes[i]
-        if (free) {
-          console.log('Assigning code to ticket ref', free.key, ticket.key)
-          // update the codes table to mark this code as used
-          await data.set({...free, ticketRef: ticket.key})
-          // update the tickets table to reference the assigned code
-          await data.set({ ...ticket, code: free.key, conference: 'Y', hoodie: 'Y' })
-        }
-        else {
-          // FUCK
-          console.log('We have run out of available codes!!!')
-        }
+    // update the full name associated with ticket(s)
+    else if (action === 'ticket.completed' || action === 'ticket.updated' || action === 'registration.updated') {
+      console.log(req.body)
+      return {
+        statusCode: 200,
+        body: JSON.stringify({message: "OK"})
       }
     }
     else {
-      console.log(`No hoodies associated with tickets for order ${ titoOrder.reference }`)
+      console.log('unsupported webhook')
+      return {
+        statusCode: 400,
+        body: JSON.stringify({message: "unsupported webhook"})
+      }
     }
+  }
+}
 
-    return {
-      statusCode: 201,
-      body: JSON.stringify({success: true})
+async function registrationFinished(req) {
+  let titoOrder = parseBody(req)
+  // see if this order contains a ticket that includes a hoodie
+  let hoodieTickets = []
+  for (let ticket of titoOrder.tickets) {
+    // write ticket into DB
+    let ticketDoc = await data.set({ table: 'tickets', key: ticket.reference, ticket: ticket.release_title })
+    if (releaseSlugsForHoodies.includes(ticket.release_slug)) {
+      hoodieTickets.push(ticketDoc)
     }
+  }
+  console.log('tickets that include a free hoodie', hoodieTickets)
+
+  // if so find a redemption code that is free, and assign it to this ticket id
+  if (hoodieTickets.length > 0) {
+    let codes = await data.get({table: 'codes', limit: 1000})
+    let freeCodes = codes.filter(c => c.ticketRef === undefined)
+    console.log('Number of free codes available: ', freeCodes.length)
+    // loop through each ticket that qualifies for a hoodie
+    for (let i in hoodieTickets) {
+      let ticket = hoodieTickets[i]
+      let free = freeCodes[i]
+      if (free) {
+        console.log('Assigning code to ticket ref', free.key, ticket.key)
+        // update the codes table to mark this code as used
+        await data.set({...free, ticketRef: ticket.key})
+        // update the tickets table to reference the assigned code
+        await data.set({ ...ticket, code: free.key, conference: 'Y', hoodie: 'Y' })
+      }
+      else {
+        // FUCK
+        console.log('We have run out of available codes!!!')
+      }
+    }
+  }
+  else {
+    console.log(`No hoodies associated with tickets for order ${ titoOrder.reference }`)
+  }
+
+  return {
+    statusCode: 201,
+    body: JSON.stringify({success: true})
   }
 }
