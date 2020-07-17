@@ -18,6 +18,7 @@ post /delete
 post /upload
 post /orders
 post /codes
+post /code
 
 @tables
 data

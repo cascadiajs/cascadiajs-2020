@@ -27,17 +27,21 @@ async function authenticated(req) {
   let codeData = await data.get( {table: 'codes', limit: 1000 })
   let newSpeaker = speaker()
   let speakers =  speakerData.map(speaker).join('')
-  let codesTable = codes(codeData)
-  let html = layout(newSpeaker + speakers + codesTable)
+  let speakersSection = `<h2>Speakers</h2>${ newSpeaker + speakers }`
+  let codesSection = `<h2>Redemption Codes</h2>${ codeData.map(code).join('') }`
+  let html = layout(speakersSection + codesSection)
   return { html }
 }
 
-function codes(data) {
-  return `<table><tr><th>Code</th><th>TicketRef</th></tr>${ data.map(code).join('') }</table>`
-}
-
 function code(c) {
-  return `<tr><td>${ c.key }</td><td>${ c.ticketRef }</td></tr>`
+  return `<details>
+      <summary>${ c.key } ${ c.ticketRef }</summary>
+      <form action=/code method=post>
+        <input type=hidden name=key value="${ c.key }">
+        <input type=text name=ticketRef value="${ c.ticketRef || '' }">
+        <button>Save</button>
+      </form>
+    </details>`
 }
 
 function speaker(person) {
