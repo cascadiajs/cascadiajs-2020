@@ -22,6 +22,7 @@ exports.handler = async function(req) {
   }
   // else, let's process the webhook!
   else {
+    console.log('processing webhook!')
     let titoOrder = parseBody(req)
     // see if this order contains a ticket that includes a hoodie
     let ticketRefs = []
@@ -30,16 +31,19 @@ exports.handler = async function(req) {
         ticketRefs.push(ticket.reference)
       }
     }
+    console.log('tickets that include a free hoodie', ticketRefs)
 
     // if so find a redemption code that is free, and assign it to this ticket id
     if (ticketRefs.length > 0) {
-      let codes = await data.get({table: 'codes', limit: 500})
-      console.log(codes)
+      let codes = await data.get({table: 'codes', limit: 1000})
+      let freeCodes = codes.filter(c => c.ticketRef === undefined)
+      console.log('Number of free codes available: ', freeCodes.length)
       // loop through each ticket that qualifies for a hoodie
-      for (let ticketRef of ticketRefs) {
-        // find the first code that doesn't have a ticketRef associated with it
-        let free = codes.find(c => c.ticketRef === undefined)
+      for (let i in ticketRefs) {
+        let ticketRef = ticketRefs[i]
+        let free = freeCodes[i]
         if (free) {
+          console.log('Assigning code to ticket ref', free.key, ticketRef)
           await data.set({...free, ticketRef})
         }
         else {
