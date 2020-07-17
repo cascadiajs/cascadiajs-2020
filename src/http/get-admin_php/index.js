@@ -40,10 +40,10 @@ function ticket(t) {
       <summary>${ t.key } ${ t.ticket } ${ t.fullName } ${ t.conference === 'Y' ? '[Conf]' : '' } ${ t.hoodie === 'Y' ? '[Hoodie]' : '' }</summary>
       <form action=/ticket method=post>
         <input type=hidden name=key value="${ t.key }">
-        <input type=text name=fullName value="${ t.fullName || '' }">
-        <input type=text name=conference value="${ t.conference || '' }">
-        <input type=text name=hoodie value="${ t.hoodie || '' }">
-        <input type=text name=code value="${ t.code || '' }">
+        <input type=text name=fullName placeholder="Full Name" value="${ t.fullName || '' }">
+        <input type=text name=conference placeholder="Conference (Y/N)" value="${ t.conference || '' }">
+        <input type=text name=hoodie placeholder="Hoodie (Y/N)" value="${ t.hoodie || '' }">
+        <input type=text name=code placeholder="Redemption Code" value="${ t.code || '' }">
         <button>Save</button>
       </form>
     </details>`
@@ -54,7 +54,7 @@ function code(c) {
       <summary>${ c.key } ${ c.ticketRef }</summary>
       <form action=/code method=post>
         <input type=hidden name=key value="${ c.key }">
-        <input type=text name=ticketRef value="${ c.ticketRef || '' }">
+        <input type=text name=ticketRef placeholder="Ticket Reference" value="${ c.ticketRef || '' }">
         <button>Save</button>
       </form>
     </details>`
