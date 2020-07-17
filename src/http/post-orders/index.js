@@ -9,8 +9,10 @@ exports.handler = arc.http.async(auth, order)
 async function auth(req) {
   // authenticate the token passed in the header
   console.log(req)
+  let titoSig = req.headers['Tito-Signature']
   let hash = crypto.createHmac("sha256", "qd-TFXvwAHuljC_WpKG6sw").update(JSON.stringify(req.body)).digest("base64")
-  if (hash !== req.headers['tito-signature']) {
+  if (hash !== titoSig) {
+    console.log('Sadly, the Tito sig and the calculated hash value did not match ', titoSig, hash)
     return {
       statusCode: 401,
       body: JSON.stringify({message: "not authorized"})
