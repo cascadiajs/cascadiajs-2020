@@ -16,6 +16,7 @@ This is very time-sensitive! You need to claim this by <span class="highlight wa
 1. Let folks know know about our [Scholarship Program](https://2020.cascadiajs.com/scholarships), it closes <span class="highlight warning">July 24</span>
 1. Get listed in our [Conference Directory](/directory).
 1. [Join the CascadiaJS Slack](https://join.slack.com/t/cascadiajs/shared_invite/enQtNzYzMzYxMTc0OTc5LWM0ZDZiZDc5MDgwMmFkODdlZTdiMGE3NjFhYTZmNWVkMWEwMDcxNWE0Nzg5YTcwOGQzZDk0Y2M3ZWRmN2QwNzU)
+1. [Buy an extra hoodie](https://stores.kotisdesign.com/cascadiajshoodie/products) for a friend or loved one.
 1. [Follow us on Twitter](https://twitter.com/CascadiaJS)
 1. [Stay tuned](http://eepurl.com/dPmCkT) for updates about the event.
 
