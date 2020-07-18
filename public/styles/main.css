@@ -250,11 +250,18 @@ span.highlight {
 
 div.highlight {
     padding: 8px;
+    margin: 4px 0 4px 0;
 }
 
 .warning {
     background-color: rgb(255, 228, 160);
 }
+
+.error {
+    background-color: #f9ecec;
+    color: #e57575;
+}
+
 
 .small {
     font-size: 0.8em;
