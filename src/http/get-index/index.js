@@ -2,7 +2,7 @@
 require = require('esm')(module)
 let arc = require('@architect/functions')
 let assets = require('./_assets')
-let Home = require('@architect/views/home')
+let IndexView = require('@architect/views/index')
 let Page = require('@architect/views/pages')
 let NotFound = require('@architect/views/404')
 const getSpeakerData = require('@architect/shared/data/get-speaker-data')
@@ -15,7 +15,7 @@ const getSpeakerData = require('@architect/shared/data/get-speaker-data')
 
 async function Index (req) {
     if (req.path === '/') {
-        return await Home(await getSpeakerData(req))
+        return await IndexView(await getSpeakerData(req))
     }
     else return
 }
