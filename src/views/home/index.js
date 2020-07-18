@@ -7,7 +7,7 @@ module.exports = async function Index({ ticket }) {
             <div id=page-body class=narrow>
             <h2>Ticket Info</h2>
             <p><b>Type:</b> ${ ticket.ticket }</p>
-            ${ ticket.hoodie === 'Y' ? /*html*/`
+            ${ ticket.hoodie === 'Y' && ticket.code ? /*html*/`
             <h2>Goodie Box Redemption</h2>
             <p>You must redeem your Goodie Box by July 24 if you want to recieve it prior to the conference!</p>
             <form action="https://stores.kotisdesign.com/cascadiajs2020/${ ticket.code }">
