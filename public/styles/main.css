@@ -568,17 +568,21 @@ a.js-topic:hover {
     text-align: left;
 }
 
+#karaoke {
+    margin-bottom: 18px;
+}
+
 #karaoke img {
     height: 100%;
     width: 100%;
 }
 
-#why .headline {
+#karaoke .headline {
     font: canada-type-gibson, sans-serif;
     font-size: 32px;
     line-height: 1.4em;
     font-weight: 700;
-    margin-bottom: 24px;
+    margin-top: 24px;
 }
 
 #why .benefits {
@@ -841,11 +845,16 @@ a.js-topic:hover {
     }
 
     #karaoke {
-        width: 471px; 
+        width: 471px;
+        margin-right: 36px;
     }
 
     #why {
         flex: 1;
+    }
+
+    #why img {
+        width: 600px;
     }
 
     .speaker-info, .speaker-links {

@@ -16,24 +16,22 @@ let Template = function(props) {
         ${ speakersContainer ? `<div id="speakers"><h2>Speakers</h2>${ speakersContainer }</div>` : ``} 
         <div id="attend">
             <div class="container">
-                <div id="karaoke"><img src="/images/karaoke.svg" alt="There WILL be karaoke!"/></div>
+                <div id="karaoke">
+                    <div><img src="/images/karaoke.svg" alt="There WILL be karaoke!"/></div>
+                    <div class="headline">CascadiaJS brings together an amazing group of web developers from across the Pacific Northwest (and beyond) to learn, make friends, and have fun!</div>
+                </div>
                 <div id="why">
-                    <div class="headline">CascadiaJS has always been about bringing together an amazing group of web developers from across the Pacific Northwest (and beyond) to hear great talks, meet amazing people, and have fun.</div>
                     <div class="benefits">
                         When you buy a ticket, you get:
                         <ul>
-                            <li><i class="fas fa-tv"></i> Access to the live stream of talks</li>
-                            <li><i class="fas fa-microphone"></i> Access to speaker Q&A</li>
+                            <li><i class="fas fa-tv"></i> Access to the live stream of talks and speaker Q&amp;A</li>
                             <li><i class="fas fa-briefcase"></i> Access to the Job Fair on August 31st</li>
-                            <li><i class="fas fa-music"></i> Access to both evening social events (Karaoke Night &amp; Game Night)</li>
-                            <li><i class="fas fa-gift"></i> A Goodie Box <u>shipped to you</u> that will include:
-                                <ul>
-                                    <li><i class="fas fa-tshirt"></i> CascadiaJS hoodie</li>
-                                    <li><i class="fas fa-cat"></i> Stickers</li>
-                                    <li><i class="fas fa-smile-wink"></i> Extra surprises!</li>
-                                </ul>
-                            </li>
+                            <li><i class="fas fa-music"></i> Access to both evening social events (Live Music Night &amp; Karaoke Night)</li>
+                            <li><i class="fas fa-gift"></i> A Goodie Box <u>shipped to you</u>!</li>
                         </ul>
+                        <div>
+                            <img src="/images/goodie-box.svg" alt="Goodie Box"/>
+                        </div>
                     </div>
                 </div>
             </div>
