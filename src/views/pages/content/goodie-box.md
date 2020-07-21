@@ -19,6 +19,7 @@ If you registered before July 16, you provided us with a hoodie size and shippin
 - Search your email for "Your CascadiaJS 2020 Ticket"
 - Click the "Change Details" link
 - This will show you what you entered when you registered
+- **Do not** update this form. If you want to make a change, see below.
 
 ### If you want to make a change to your shipping address or hoodie size
 
