@@ -36,3 +36,7 @@ Here are the official sizing guides from the vendor we are using to produce the 
 - Unisex - https://products.kotisdesign.com/size_charts/140
 - Youth - http://www.apparelvideos.com/cs/CatalogBrowser?todo=mm&productId=993B
 
+Notes: 
+
+- These are the same hoodies we’ve used the last two years.
+- The chest measurement for unisex is “single-sided”, while the fitted one is “all around”
