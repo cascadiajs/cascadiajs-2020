@@ -21,9 +21,14 @@ If you registered before July 16, you provided us with a hoodie size and shippin
 - This will show you what you entered when you registered
 - **Do not** update this form. If you want to make a change, see below.
 
-### If you want to make a change to your shipping address or hoodie size
+### If you registered *before* July 16 & you want to make a change to your shipping address or hoodie size
 
 Send an email to info@cascadiajs.com **no later than Thursday, July 23**.
+
+Please include:
+- Your Ticket Reference (i.e. ABCD-1)
+- Hoodie size
+- Shipping address (including phone number for non-US addresses)
 
 ## If you registered on or after July 16
 
