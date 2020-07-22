@@ -75,6 +75,7 @@ let Template = function(props) {
                         <a href="https://developer.salesforce.com"><img src="/images/sponsors/sfdc.svg"/></a>
                     </section>
                     <section id="sponsors-gold">
+                        <a href="https://tagboard.com"><img src="/images/sponsors/tagboard.png" alt="Tagboard logo"/></a>
                         <a href="http://begin.com/"><img src="/images/sponsors/begin.svg" alt="Begin logo"/></a>
                         <a href="https://fizbuz.com"><img src="/images/sponsors/fizbuz.svg" alt="Fizbuz logo"/></a>
                        
@@ -88,6 +89,7 @@ let Template = function(props) {
                     <a href="http://seattlejs.com/"><img src="/images/sponsors/seattlejs.png" alt="SeattleJS logo"/></a>
                     <a href="https://www.meetup.com/ReactJS-Vancouver-Meetup/"><img src="/images/sponsors/reactvancouver.svg" alt="React Vancouver logo"/></a>
                     <a href="https://www.meetup.com/SeattleVueJS/"><img src="/images/sponsors/sea-vuejs.jpg" alt="Seattle Vue.js logo"/></a>
+                    <a href="http://pdxnode.org/"><img src="/images/sponsors/pdx-node.svg" alt="PDXNode logo"/></a>
                 </section>
                 <div class="cta"><a href="/sponsor">Sponsor Info</a></div>
             </div>
