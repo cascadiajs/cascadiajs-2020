@@ -90,6 +90,7 @@ let Template = function(props) {
                     <a href="https://www.meetup.com/ReactJS-Vancouver-Meetup/"><img src="/images/sponsors/reactvancouver.svg" alt="React Vancouver logo"/></a>
                     <a href="https://www.meetup.com/SeattleVueJS/"><img src="/images/sponsors/sea-vuejs.jpg" alt="Seattle Vue.js logo"/></a>
                     <a href="http://pdxnode.org/"><img src="/images/sponsors/pdx-node.svg" alt="PDXNode logo"/></a>
+                    <a href="https://www.meetup.com/Seattle-Node-js/"><img src="/images/sponsors/seattle-node.png" alt="Seattle Node logo"/></a>
                 </section>
                 <div class="cta"><a href="/sponsor">Sponsor Info</a></div>
             </div>
