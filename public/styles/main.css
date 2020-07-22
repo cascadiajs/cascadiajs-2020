@@ -279,7 +279,7 @@ div.highlight {
     background-color: #e1bae1
 }
 
-#sponsors-platinum a, #sponsors-gold a, #sponsors-silver a, #sponsors-community a {
+#sponsors-platinum a, #sponsors-gold a, #sponsors-silver a/*, #sponsors-community a*/ {
     display: block;
 }  
 
@@ -896,19 +896,20 @@ a.js-topic:hover {
         padding: 100px;
     }
     
-    #sponsors-platinum a, #sponsors-gold a, #sponsors-silver a, #sponsors-community a {
+    #sponsors-platinum a, #sponsors-gold a, #sponsors-silver a/*, #sponsors-community a*/ {
         width: 100%;
     }  
 
-    #sponsors-community {
+    /*#sponsors-community {
         display: flex;
 		align-items: center;
         justify-content: center;
-	}
-
-	#sponsors-community img {
-        /*margin: 24px;*/
-        height: 50px;
+        padding: 16px;
+        height: 100px;
+    }*/
+    
+    #sponsors-community img {
+        height: 60px;
     }
 
     #live {
