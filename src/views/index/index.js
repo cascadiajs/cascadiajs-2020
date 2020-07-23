@@ -7,10 +7,10 @@ let Template = function(props) {
     return /*html*/`
     <div id="landing">
         <div id="hero">
-            <div id="hero-logo"><img src="/images/hero-logo.svg" alt="logo"/></div>
+            <div id="hero-logo"><img src="/images/hero-logo.svg" alt="CascadiaJS logo. Sept 1-2, 2020. Cyberspace."/></div>
             <div id="hero-images">
-                <div><img src="/images/hero-illustration-01.svg" alt="list of talks #1"/></div>
-                <div><img src="/images/hero-illustration-02.svg" alt="list of talks #2"/></div>
+                <div><img src="/images/hero-illustration-01.svg" alt="hero image: illustration of man at podium speaking with talk titles swirling around him. CascadiaJS, Sept 1-2 2020, Cyberspace."/></div>
+                <div><img src="/images/hero-illustration-02.svg" alt="hero image: illustration emcee dancing, more talk titles swirling around."/></div>
             </div>
         </div>
         ${ speakersContainer ? `<div id="speakers"><h2>Speakers</h2>${ speakersContainer }</div>` : ``} 
@@ -30,7 +30,7 @@ let Template = function(props) {
                             <li><i class="fas fa-gift"></i> A Goodie Box <u>shipped to you</u>!</li>
                         </ul>
                         <div>
-                            <img src="/images/goodie-box.svg" alt="Goodie Box"/>
+                            <img src="/images/goodie-box.svg" alt="ilustration of Goodie Box (will include hoodie + stickers)"/>
                         </div>
                     </div>
                 </div>
@@ -72,7 +72,7 @@ let Template = function(props) {
                 <h2>Sponsors</h2>
                 <div id="sponsor-container">
                     <section id="sponsors-platinum">
-                        <a href="https://developer.salesforce.com"><img src="/images/sponsors/sfdc.svg"/></a>
+                        <a href="https://developer.salesforce.com"><img src="/images/sponsors/sfdc.svg" alt="Salesforce.com Engineering logo"/></a>
                     </section>
                     <section id="sponsors-gold">
                         <a href="https://tagboard.com"><img src="/images/sponsors/tagboard.png" alt="Tagboard logo"/></a>
@@ -81,8 +81,8 @@ let Template = function(props) {
                        
                     </section>
                     <section id="sponsors-silver">
-                        <a href="https://developer.microsoft.com/en-us/advocates/"><img src="/images/sponsors/microsoft.svg"/></a>
-                        <a href="https://mozilla.com"><img src="/images/sponsors/mozilla.svg"/></a>
+                        <a href="https://developer.microsoft.com/en-us/advocates/"><img src="/images/sponsors/microsoft.svg" alt="Microsoft logo"/></a>
+                        <a href="https://mozilla.com"><img src="/images/sponsors/mozilla.svg" alt="Mozilla logo"/></a>
                     </section>
                 </div>
                 <section id="sponsors-community">    
