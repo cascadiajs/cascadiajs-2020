@@ -3,7 +3,7 @@ title: Sponsor CascadiaJS
 image: https://pbs.twimg.com/media/DtM87aIU0AMyD94.jpg:large
 excerpt: Help support this event and our community!
 ---
-![Amazon at CascadiaJS](https://pbs.twimg.com/media/DtM87aIU0AMyD94.jpg:large)
+![Amazon logo at CascadiaJS 2018](https://pbs.twimg.com/media/DtM87aIU0AMyD94.jpg:large)
 
 The most important thing we do as a conference is bring developers together to meet, build relationships and learn from one another. Many of the attendees who come to CascadiaJS do so because they are trying to learn new skills, become better engineers, build their professional network or find a new job.
 
@@ -15,16 +15,17 @@ CascadiaJS was started in 2012 by web developers in the Pacific Northwest to bet
 
 Here are a few data points on the reach of our conference:
 
-* YouTube: 1200+ subscribers and 8k+ views (last 12 months)
-* Twitch: 2190 viewers during the 2019 live stream
+* YouTube: 1,200+ subscribers and 8k+ views (last 12 months)
+* Twitch: 2,190 viewers during the 2019 live stream
 * Twitter: 3000+ followers and 45k impressions (last 28 days)
-* Expected number of attendees for the 2020 online event = 1000 ticket holders, 3000 total stream viewers
+* Expected number of attendees for the 2020 online event = 700-1000
 
 <div id="carousel">
-  <img src="/images/testimonial-1.png" />
-  <img src="/images/testimonial-2.png" />
-  <img src="/images/testimonial-3.png" />
-  <img src="/images/testimonial-4.png" />
+  <img src="/images/testimonial-1.png" alt="Kiunko Yasuda: I’m missing out the closing party (and anything remaining) but wanted to say that #cjs19 was really a carefully-designed amazing event. Live captioning, emcees, talk topics, attendees, child care etc. Thanks @crtr0 for inviting, and thanks to organizers & sponsors @CascadiaJS❤️"/>
+  <img src="/images/testimonial-2.png" alt="Charlie Gerard: Starting my trip back to Sydney! 👋 Thanks again @CascadiaJS for having me, I had the best time! 😃
+Every conference has a different vibe and you're definitely in my top 3 so, thanks everyone from organisers to speakers & attendees for making it such an awesome event!! ♥️" />
+  <img src="/images/testimonial-3.png" alt="Daria Caraway: Heading home from #cjs19 feeling incredibly grateful for this experience and the new friends made. If you ever have a chance to attend @CascadiaJS in the future, you won’t be disappointed. @crtr0 and all the organizers put their hearts into it and it shows." />
+  <img src="/images/testimonial-4.png" alt="Greg Davidson: Whew #cjs19 was so great 💯 once again. Huge thanks to @crtr0 & team, the speakers and all the folks who attended. Much love to our JS community! 😻💖🤓" />
 </div>
 
 Check out our [testimonial page](/testimonials) for more examples of what our speakers and attendees think of CascadiaJS!
@@ -63,27 +64,27 @@ You will be the sole sponsor of the Live Stream and your logo and copy will most
 
 ## Gold Tier
 
-<div class="sponsor-includes highlight small">Includes: 4 free tickets, website branding, Expo Hall placement, Expo Hall table, email copy, social media and space for a swag item in our Goodie Box</div>
+<div class="sponsor-includes highlight small">Includes: 4 free tickets, website branding, email copy, social media and space for a swag item in our Goodie Box</div>
 
-<h3 id="virtual-booth"><i class="fas fa-chair"></i> Virtual Booth - $5k <span class="highlight info">4 available</span></h3>
+<h3 id="virtual-booth"><i class="fas fa-chair"></i> Virtual Booth - $5k <span class="highlight warning">3 SOLD</span> <span class="highlight info">1 available</span></h3>
 
-We will create a "virtual booth" for your company at CascadiaJS. This will include real estate on the website, a dedicated channel in Slack to engage with attendees, and an invitation to address the audience during the conference!
+We will create a "virtual booth" for your company at CascadiaJS. This will include: an Expo Hall logo placement, an Expo Hall table, a dedicated channel in Slack to engage with attendees and an invitation to address the audience during the conference.
 
-<h3 id="workshop"><i class="fas fa-users-class"></i> Workshop - $5k <span class="highlight info">4 available</span></h2>
+<h3 id="workshop"><i class="fas fa-users-class"></i> Workshop - $5k <span class="highlight warning">3 SOLD</span> <span class="highlight info">1 available</span></h2>
 
 We will help you run a custom online workshop during the conference. There are four slot available (morning/afternoon on each of the two days) and we will work with you to make sure the workshop is of interest to our community and a valuable addition to the conference.
 
-<h3 id="job-fair"><i class="fas fa-handshake"></i> Job Fair - $5k <span class="highlight info">5 available</span></h3>
+<h3 id="job-fair"><i class="fas fa-handshake"></i> Hiring Booth - $4k <span class="highlight warning">2 SOLD</span> <span class="highlight info">8 available</span></h3>
 
-This is perfect if you have open jobs that you're hiring for. We will help you post jobs, connect you with attendees who are interested in learning more and set-up 30 minute "coffee chats" during breaks in the conference schedule.
+This is perfect if you have open jobs that you're hiring for. We will help you post jobs, connect you with attendees who are interested in learning more and set-up 30 minute "coffee chats" during breaks in the conference schedule. We will set you up with a table at our Career Event on August 30th, a table in the Expo Hall for the conference.
 
 ## Silver Tier
 
 <div class="sponsor-includes highlight small">Includes: 2 free tickets, website branding and social media</div>
 
-<h3 id="game-night"><i class="fas fa-gamepad-alt"></i> Game Night - $3k <span class="highlight info">1 available</span></h3>
+<h3 id="game-night"><i class="fas fa-gamepad-alt"></i> Music Night - $3k <span class="highlight info">1 available</span></h3>
 
-Following Day One of CascadiaJS, we are going to host an online Game Night. We haven't worked out all the details, but we are going to find a way to bring the joy of playing games with friends on-line.
+Following Day One of CascadiaJS, we are going to host an online virtual concert with live music!
 
 <h3 id="karaoke"><i class="fas fa-microphone-stand"></i> Karoke  - $3k <span class="highlight info">1 available</span></h3>
 
