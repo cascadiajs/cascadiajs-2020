@@ -3,6 +3,22 @@ title: July Pre-Funk
 image: /images/july-prefunk.jpg
 excerpt: Join us for our first ever CascadiaJS pre-conf meetup featuring ⚡️ talks by Brian Leroux and James Quick!
 ---
+## Talks are Online
+
+We hope you were able to join us for the first-ever CascadiaJS pre-conference meetup. If you weren't, no worries, talks are online!
+
+### Brian Leroux: Intro to Deno
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/XbMShauFiZM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+### James Quick: Static Sites and Serverless Functions - A Dynamic Combination
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/hgcKzcV6km0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<div class="cta"><a href="https://ti.to/event-loop/cascadiajs-2020/">Join us at CascadiaJS 2020</a></div>
+
+---
+
 <img src="/images/july-prefunk.jpg" alt="Brian Leroux and James Quick" style="height:400px;width:400px"/>
 
 Join us for our **first ever** CascadiaJS pre-conference meetup! Hangout with fellow conference attendees and enjoy two awesome Lightning Talks by our friends Brian Leroux and James Quick. Like CascadiaJS 2020, this event will take place in... Cyberspace!
@@ -20,10 +36,6 @@ Join us for our **first ever** CascadiaJS pre-conference meetup! Hangout with fe
 * 18:00 - Q&A
 * 18:15 - Socialize & Network
 * 19:30 - End
-
-<div class="cta"><a href="https://ti.to/event-loop/cjs20-july-prefunk">RSVP to Meetup</a></div>
-
-<div class="cta"><a href="https://ti.to/event-loop/cascadiajs-2020/">Buy Conference Ticket</a></div>
 
 ## How to Participate
 
