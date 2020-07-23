@@ -349,7 +349,7 @@ tr.on-sale {
 }
 
 #hero-logo {
-    margin-bottom: 8px;
+    margin-bottom: 24px;
 }
 
 #hero .buy, #hero .cta {
@@ -823,8 +823,13 @@ a.js-topic:hover {
     }
 
     #hero-logo {
-        width: 670px;
-        margin: 0 auto;
+        /*width: 670px;
+        margin: 0 auto;*/
+        text-align:center;
+    }
+
+    #hero-logo img {
+        width: 640px;
     }
 
     #hero-images {
