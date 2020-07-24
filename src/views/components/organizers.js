@@ -9,10 +9,10 @@ const organizers = [
     {key: 'brenden-niedermeyer', name: 'Brenden Niedermeyer', pronouns: 'He/him',  title: 'New Speaker Lead', place: 'Seattle, WA'},
     {key: 'brian-love', name: 'Brian Love', pronouns: 'He/him',  title: 'New Speaker Support', place: 'Seattle, WA'},
     {key: 'nicole-oliver', name: 'Nicole Oliver', pronouns: 'She/her',  title: 'New Speaker Support', place: 'Seattle, WA'},
-    {key: 'becca-lee', name: 'Becca Lee', pronouns: 'She/her',  title: 'Talk Review Commitee', place: 'Seattle, WA'},
-    {key: 'kate-pond', name: 'Kate Pond', pronouns: 'She/her',  title: 'Talk Review Commitee', place: 'Seattle, WA'},
-    {key: 'kyle-mcleod', name: 'Kyle Mcleod', pronouns: 'He/him',  title: 'Talk Review Commitee', place: 'Bend, OR'},
-    {key: 'brian-gershon', name: 'Brian Gershon', pronouns: 'He/him',  title: 'Talk Review Commitee and Scholarship Organizer', place: 'Seattle, WA'},
+    {key: 'becca-lee', name: 'Becca Lee', pronouns: 'She/her',  title: 'Talk Review Committee', place: 'Seattle, WA'},
+    {key: 'kate-pond', name: 'Kate Pond', pronouns: 'She/her',  title: 'Talk Review Committee', place: 'Seattle, WA'},
+    {key: 'kyle-mcleod', name: 'Kyle Mcleod', pronouns: 'He/him',  title: 'Talk Review Committee', place: 'Bend, OR'},
+    {key: 'brian-gershon', name: 'Brian Gershon', pronouns: 'He/him',  title: 'Talk Review Committee and Scholarship Organizer', place: 'Seattle, WA'},
 ]
 
 module.exports = function OrganizerContainer () {
