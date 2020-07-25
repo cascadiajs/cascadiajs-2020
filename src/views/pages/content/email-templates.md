@@ -39,7 +39,7 @@ The conference will be online, which means that there won't be any need for trav
 
 In addition to the 2 day conference, there are several hands-on workshops being offered following the event, including [JavaScript, Node.js, ReactJS and GraphQL workshops](https://2020.cascadiajs.com/workshops). These workshops are limited to 50 seats each, so each workshop attendee will plenty of opportunities to ask question and interact with the instructors.
 
-Anyway, I already bought my ticket, you should come! The deadline to register and get your swag in time for the conference is **July 24th**. Hope you can join me!
+Anyway, I already bought my ticket, you should come! Hope you can join me!
 
 Sincerely,
 

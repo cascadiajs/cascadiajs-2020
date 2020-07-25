@@ -26,16 +26,17 @@ module.exports = function Layout ({title, content, socialUrl = '/images/cjs19-fa
   <body>
     <div id="root">
       <header>
-        <section class="alert">
+        <!--section class="alert">
           <i class="fas fa-hand-point-right"></i> The deadline to register &amp; receive a Goodie Box in the mail is JULY 24th! <i class="fas fa-hand-point-left"></i>
-        </section>
+        </section-->
         <nav>
           <div class="wide">
             <div id="logo"><a href="/"><img src="/images/icon-green.svg" alt="logo"/></a></div>
             <div><span><a href="/">CascadiaJS</a></span></div>
             <div class="push"><a href="/schedule">Schedule</a></div>
             <div class="spacer"><a href="/accessibility">Accessibility</a></div>
-            <div class="spacer"><a href="/scholarships">Scholarships</a></div>
+            <div class="spacer"><a href="/workshops">Workshops</a></div>
+            <!--div class="spacer"><a href="/scholarships">Scholarships</a></div-->
             <div class="spacer"><a href="/coc">Code of Conduct</a></div>
             <div class="spacer"><a href="https://ti.to/event-loop/cascadiajs-2020/" class="buy">Tickets</a></div>
           </div>
