@@ -891,12 +891,13 @@ a.js-topic:hover {
         display: flex;
         flex-direction: column;
 		align-items: center;
-		justify-content: center;
+        justify-content: space-between;
     }
     
     section#sponsors-platinum {
         padding: 100px;
     }
+
     
     #sponsors-platinum a, #sponsors-gold a, #sponsors-silver a {
         width: 100%;

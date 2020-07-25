@@ -76,10 +76,11 @@ let Template = function(props) {
                     </section>
                     <section id="sponsors-gold">
                         <a href="https://twilio.com"><img src="/images/sponsors/twilio.svg" alt="Twilio logo"/></a>
+                        <a href="https://saucelabs.com"><img src="/images/sponsors/saucelabs.svg" alt="Twilio logo"/></a>
                         <a href="https://tagboard.com"><img src="/images/sponsors/tagboard.png" alt="Tagboard logo"/></a>
-                        <a href="https://fizbuz.com"><img src="/images/sponsors/fizbuz.svg" alt="Fizbuz logo"/></a>
                     </section>
                     <section id="sponsors-silver">
+                        <a href="https://fizbuz.com"><img src="/images/sponsors/fizbuz.svg" alt="Fizbuz logo"/></a>
                         <a href="http://begin.com/"><img src="/images/sponsors/begin.svg" alt="Begin logo"/></a>
                         <a href="https://mozilla.com"><img src="/images/sponsors/mozilla.svg" alt="Mozilla logo"/></a>
                         <a href="https://developer.microsoft.com/en-us/advocates/"><img src="/images/sponsors/microsoft.svg" alt="Microsoft logo"/></a>
