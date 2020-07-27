@@ -84,6 +84,7 @@ let Template = function(props) {
                         <a href="http://begin.com/"><img src="/images/sponsors/begin.svg" alt="Begin logo"/></a>
                         <a href="https://mozilla.com"><img src="/images/sponsors/mozilla.svg" alt="Mozilla logo"/></a>
                         <a href="https://developer.microsoft.com/en-us/advocates/"><img src="/images/sponsors/microsoft.svg" alt="Microsoft logo"/></a>
+                        <a href="/kotis-design"><img src="/images/sponsors/kotis-design-logo-black.svg" alt="Kotis logo"/></a>
                     </section>
                 </div>
                 <section id="sponsors-community">    
