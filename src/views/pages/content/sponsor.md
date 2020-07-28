@@ -66,7 +66,7 @@ You will be the sole sponsor of the Live Stream and your logo and copy will most
 
 <div class="sponsor-includes highlight small">Includes: 4 free tickets, website branding, email copy, social media and space for a swag item in our Goodie Box</div>
 
-<h3 id="graphic-recording"><i class="fas fa-paint-brush"></i> Graphic Recordings - $6k <span class="highlight info">1 available</span></h3>
+<h3 id="graphic-recording"><i class="fas fa-paint-brush"></i> Graphic Recordings - $6k <span class="highlight warning">SOLD OUT</span></h3>
 
 We are going to work with [Mind's Eye Creative](https://www.mindseyecreative.ca) to visualize all 24 of our talks in real-time. Your company's logo will be included on each of the sketches that are produced, which will be distributed to the speakers and all of our attendees. 
 
