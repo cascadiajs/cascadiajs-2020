@@ -1,10 +1,12 @@
 
+let md = require('marked')
 let Layout = require('../layout')
 let SocialLayout = require('../layout/social')
 let assetPath = 'https://create-4jr-staging.begin.app/_static/2020'
 
 let Template = function(speaker) {
     const { key, name, location, company, url, twitter, title, topics, pronouns, abstract } = speaker
+
     return /*html*/`
     <div id="page">
         <div id="page-title">
@@ -32,7 +34,7 @@ let Template = function(speaker) {
                 </div>
                 <h2>${ title }</h2>
                 <div class="topics">${ topics.map(t => `<div class=js-topic>${ t }</div>`).join('') }</div>
-                <div class="abstract">${ abstract }</div>
+                <div class="abstract">${ md(abstract) }</div>
             </section>
         </div>
     </div>
