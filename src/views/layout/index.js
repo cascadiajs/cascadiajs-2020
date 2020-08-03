@@ -2,7 +2,7 @@ function script(source) {
   return `<script src=${source} type=module crossorigin></script>`
 }
 
-module.exports = function Layout ({title, content, socialUrl = '/images/cjs19-family.jpg', scripts = []}) {
+module.exports = function Layout ({title, content, socialUrl = 'https://2020.cascadiajs.com/images/cjs19-family.jpg', scripts = []}) {
   // expand title
   title = `CascadiaJS 2020${ title ? ' - ' + title : '' }`
 
