@@ -1,7 +1,7 @@
 ---
 title: Goodie Box
 image: /images/goodie-box.png
-excerpt: Get a CascadiaJS hoodie & other cool swag delivered to your door in time for the conference!
+excerpt: Get a CascadiaJS hoodie & other cool swag delivered to your door following the conference!
 ---
 Every conference attendee will recieve an awesome Goodie Box that will include a conference hoodie and other fun swag. Here's some important information for how these Goodie Boxes are being delivered to your home.
 

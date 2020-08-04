@@ -1,6 +1,6 @@
 ---
 title: Kotis Design
-image: /images/sponsors/kotis-design-logo-black.svg
+image: /images/goodie-box.png
 excerpt: Make better swag. Manage swag better.
 ---
 ![Kotis Design logo](/images/sponsors/kotis-design-logo-black.svg)
