@@ -377,6 +377,15 @@ tr.on-sale {
     color: #fff;
 }
 
+#attend a, #attend a:visited {
+    color: #fff;
+}
+
+#attend a:hover {
+    background-color: #fff;
+    color: #17C37B;
+}
+
 #schedule, #schedule h2 {
     color: #000;
     background-color: #fff;

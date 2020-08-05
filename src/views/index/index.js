@@ -25,9 +25,10 @@ let Template = function(props) {
                         When you buy a ticket, you get:
                         <ul>
                             <li><i class="fas fa-tv"></i> Access to the live stream of talks and speaker Q&amp;A</li>
-                            <li><i class="fas fa-briefcase"></i> Access to the Job Fair on August 31st</li>
-                            <li><i class="fas fa-music"></i> Access to both evening social events (Live Music Night &amp; Karaoke Night)</li>
-                            <li><i class="fas fa-gift"></i> A Goodie Box <u>shipped to you</u>!</li>
+                            <li><i class="fas fa-briefcase"></i> Access to the evening <a href="/career-night">Career Night</a> on August 31</li>
+                            <li><i class="fas fa-music"></i> Access to the <a href="/opening-party">Opening Party Live Concert</a></li>
+                            <li><i class="fas fa-microphone"></i> Access to <a href="/closing-party">Closing Party Virtual Karaoke</a></li>
+                            <li><i class="fas fa-gift"></i> A <a href="/goodie-box">Goodie Box</a> shipped to you!</li>
                         </ul>
                         <div>
                             <img src="/images/goodie-box.svg" alt="ilustration of Goodie Box (will include hoodie + stickers)"/>

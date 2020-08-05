@@ -82,9 +82,9 @@ We will create a "virtual booth" for your company at CascadiaJS. This will inclu
 
 We will help you run a custom online workshop during the conference. There are four slot available (morning/afternoon on each of the two days) and we will work with you to make sure the workshop is of interest to our community and a valuable addition to the conference.
 
-<h3 id="job-fair"><i class="fas fa-handshake"></i> Hiring Booth - $4k <span class="highlight warning">2 SOLD</span> <span class="highlight info">8 available</span></h3>
+<h3 id="career-night"><i class="fas fa-handshake"></i> Hiring Booth - $4k <span class="highlight warning">2 SOLD</span> <span class="highlight info">8 available</span></h3>
 
-This is perfect if you have open jobs that you're hiring for. We will help you post jobs, connect you with attendees who are interested in learning more and set-up 30 minute "coffee chats" during breaks in the conference schedule. We will set you up with a table at our Career Event on August 30th, a table in the Expo Hall for the conference.
+This is perfect if you have open jobs that you're hiring for. We will help you post jobs, connect you with attendees who are interested in learning more and set-up 30 minute "coffee chats" during breaks in the conference schedule. We will set you up with a table at our [Career Night](/career-night) on August 31st, a table in the Expo Hall for the conference.
 
 ## Silver Tier
 
