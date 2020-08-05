@@ -11,8 +11,8 @@ CascadiaJS is more than just a 2-day conference. We are planning a massive slate
         <tr><td>Wed, July 15</td><td><a href="/july-prefunk">CascadiaJS July Meetup</a></td></tr>
         <tr><td>Wed, August 12</td><td><a href="/august-prefunk">CascadiaJS August Meetup</a></td></tr>
         <tr><td>Mon, August 31</td><td><a href="/career-night">CascadiaJS Career Night</a></td></tr>
-        <tr><td>Tue, September 1</td><td><a href="/">CascadiaJS Conference (Day One)</a></td></tr>
-        <tr><td>Wed, September 2</td><td><a href="/">CascadiaJS Conference (Day Two)</a></td></tr>
+        <tr><td>Tue, September 1</td><td><a href="/">CascadiaJS Conference (Day One)</a> // <a href="/opening-party">Opening Party</a></td></tr>
+        <tr><td>Wed, September 2</td><td><a href="/">CascadiaJS Conference (Day Two)</a> // <a href="/closing-party">Closing Party</a></td></tr>
         <tr><td>Thu, September 3</td><td><a href="/workshop-js">JavaScript Workshop</a></td></tr>
         <tr><td>Fri, September 4</td><td><a href="/workshop-nodejs">Node.js Workshop</a></td></tr>
         <tr><td>Tue, September 8</td><td><a href="/workshop-reactjs">React.js Workshop</a></td></tr>
