@@ -18,7 +18,7 @@ Join us for a CascadiaJS pre-conference meetup, **the last one before our main e
 * 17:30 - Q&A
 * 17:45 - Joe Karlsson: Bechdel.io: How We Used JavaScript To Help Make Film More Inclusive
 * 18:00 - Q&A
-* 18:15 - David Guttman: Junior to Senior
+* 18:15 - David Guttman: js.la to js.online: Meetups & MMORPGs
 * 18:30 - Q&A
 * 18:45 - Socialize & Network
 * 19:30 - End
@@ -45,7 +45,7 @@ Join us for a CascadiaJS pre-conference meetup, **the last one before our main e
 
 ***Bio*** _As a CTO and software architect, David has led teams of engineers to ship projects like ultra-high-scale ad servers handling over 10 billion requests per day, online learning systems, white-label performance marketing SAAS platforms, and Project Matterhorn, the system that would eventually become Disney.com._
 
-***Junior to Senior*** js.la had been a monthly gathering of LA’s most interesting JS devs for 8 years. Once the lockdown hit, we needed to figure out how to keep the community together without losing that special something. Would it be Zoom? Twitch? A bespoke React-based 90’s JRPG engine/audio conference app? I’ll tell you all about it. 
+***js.la to js.online: Meetups & MMORPGs*** js.la had been a monthly gathering of LA’s most interesting JS devs for 8 years. Once the lockdown hit, we needed to figure out how to keep the community together without losing that special something. Would it be Zoom? Twitch? A bespoke React-based 90’s JRPG engine/audio conference app? I’ll tell you all about it. 
 
 
 ## How to Participate
