@@ -21,7 +21,8 @@ module.exports = function Layout ({title, content, socialUrl = 'https://2020.cas
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@cascadiajs">
     <meta name="twitter:title" content="${ title }">
-    <link rel="icon" href="/images/icon.svg">
+    <link id="light-scheme-icon" rel="icon" href="/images/icon.svg">
+    <link id="dark-scheme-icon" rel="icon" href="/images/icon-green.svg">
   </head>
   <body>
     <div id="root">
@@ -94,6 +95,27 @@ module.exports = function Layout ({title, content, socialUrl = 'https://2020.cas
     <!-- End Twitter universal website tag code -->
     <script src="https://kit.fontawesome.com/439d39b111.js" crossorigin="anonymous" async></script>
     ${ scripts.map(s => script(s)) }
+    <script>
+    (function setFavicon() {
+      const lightSchemeIcon = document.querySelector('link#light-scheme-icon');
+      const darkSchemeIcon = document.querySelector('link#dark-scheme-icon');
+      const setLight = () => {
+        document.head.append(lightSchemeIcon);
+        darkSchemeIcon.remove();
+      }
+      const setDark = () => {
+        lightSchemeIcon.remove();
+        document.head.append(darkSchemeIcon);
+      }
+      const onUpdate = () => {
+        if (matcher.matches) setDark();
+        else setLight();
+      }
+      const matcher = window.matchMedia('(prefers-color-scheme:dark)');
+      matcher.addListener(onUpdate);
+      onUpdate();
+    })();
+    </script>
   </body>
 </html>
 `
