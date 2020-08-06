@@ -38,6 +38,7 @@ export default function Speaker(props) {
             ? `${ speaker.company }<br/>${ speaker.location }`
             : ''}
         </div>
+        <div class="speaker-title">${revealed && speaker.title ? `<a href="/speakers/${key}">${speaker.title}</a>` : ''}</div>
         <!-- ${ topics } -->
       </div>
     </div>
