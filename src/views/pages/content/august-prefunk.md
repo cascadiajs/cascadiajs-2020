@@ -1,6 +1,7 @@
 ---
 title: August Pre-Funk
-excerpt: Join us for our second ever CascadiaJS pre-conf meetup! Featuring Timirah James, Joe Karlsson and David Guttman!
+excerpt: Join us for our 2nd ever pre-conf meetup! Featuring Timirah James, Joe Karlsson and David Guttman!
+image: /images/aug-prefunk.jpg
 ---
 
 Join us for a CascadiaJS pre-conference meetup, **the last one before our main event** ! Hangout with fellow conference attendees and enjoy two awesome Lightning Talks by our friends [Timirah James](https://twitter.com/TimirahJ), [Joe Karlsson](https://twitter.com/JoeKarlsson1) and [David Guttman](https://twitter.com/davidguttman). Like CascadiaJS 2020, this event will take place in... Cyberspace!
@@ -20,7 +21,7 @@ Join us for a CascadiaJS pre-conference meetup, **the last one before our main e
 * 18:00 - Q&A
 * 18:15 - David Guttman: js.la to js.online: Meetups & MMORPGs
 * 18:30 - Q&A
-* 18:45 - Socialize & Network
+* 18:45 - Socialize & Karaoke!
 * 19:30 - End
 
 <div class="cta"><a href="https://ti.to/event-loop/cjs20-august-prefunk">RSVP to Meetup</a></div>
@@ -94,6 +95,12 @@ A few tips on getting the most out of the event:
 Rambly is an 8-bit universe where you pick an avatar and walk around having audio-only conversations. 
 
 ![Rambly](/images/rambly.png)
+
+#### Karaoke
+
+![voicebox logo](/images/voicebox-logo.svg)
+
+More info on how to participate in Karaoke by Voicebox will be emailed to you.
 
 #### Links
 
