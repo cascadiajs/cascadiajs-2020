@@ -28,22 +28,25 @@ Join us for a CascadiaJS pre-conference meetup, **the last one before our main e
 <div class="cta"><a href="https://ti.to/event-loop/cascadiajs-2020/">Buy Conference Ticket</a></div>
 
 ## Timirah James (she/her)
-![Timirah James](/images/timirahjames.jpg)
+<img src=/images/tjames.jpg alt="joekarlsson" width="200" style="float:left; padding-right: 20px"/>
 
-***Bio*** _Timirah James is a Developer Advocate at Cloudinary and an influencer in the evangelism space, creating awareness around STEM and diversity in tech as well as helping others build great technical skills and become great developers. She is an active contributor in the mobile and server less community and is best known for being a leader in the Los Angeles and Silicon Beach tech community and mentoring through TechniGal LA, her meetup group for women exploring the world of STEM. Teaching young girls and now women of all ages how to code. Showing and teaching them all the avenues in technology. Giving technical talks in iOS, Swift workshops for beginners and mid-level engineers._
+***Bio*** _Timirah James is a Technology Evangelist and influencer creating awareness around STEM and diversity in tech as well as helping others build great technical skills and become great developers. She’s best known for being a leader in the Los Angeles and Silicon Beach tech community, her active roles in the hackathon realm, the mobile and serverless community, and mentoring through TechniGal LA, her meetup for women exploring the world of STEM._ 
+
+_Fun fact: She is also a noted singer-songwriter and recently released “Coderitis,” a song about her love for technology and innovation, which can be found on SoundCloud and Spotify._
 
 
 ## Joe Karlsson(he/they)
-![Joe Karlsson](/images/joekarlsson.jpg)
+<img src=/images/joekarlsson.jpg alt="joekarlsson" width="200" style="float:left; padding-right: 20px"/>
 
-***Bio*** _Joe Karlsson is a software engineer turned Developer Advocate at MongoDB. He comes from the frozen tundra of Minneapolis, Minnesota (and yes, it does get really cold here, and no, not everyone here has the accent from the movie, Fargo 😝). Joe has been primarily a Node and JavaScript engineer. He has been writing, teaching, and talking about code his entire career. Sharing what he knows and continuing to learn about programming is truly the thing he loves doing the most.   Joe is the co-creator of open source software, including bechdel.io, a web app that tells you if a movie script passes the Bechdel Test or not. In his free time, he is usually drinking Gin and Tonics, eating at a new restaurant, or tinkering on a new art project or open source project._
+***Bio*** _Joe Karlsson is a software engineer turned Developer Advocate at MongoDB. He comes from the frozen tundra of Minneapolis, Minnesota (and yes, it does get really cold here, and no, not everyone here has the accent from the movie, Fargo 😝). Joe has been primarily a Node and JavaScript engineer. He has been writing, teaching, and talking about code his entire career. Sharing what he knows and continuing to learn about programming is truly the thing he loves doing the most. Joe is the co-creator of open source software, including bechdel.io, a web app that tells you if a movie script passes the Bechdel Test or not. In his free time, he is usually drinking Gin and Tonics, eating at a new restaurant, or tinkering on a new art project or open source project._
+
 
 ***Bechdel.io: How We Used JavaScript To Help Make Film More Inclusive*** This collaborative digital humanities project is the product of a shared passion for film, feminism, and the creative potential of technology. By combining the talents and interests of a scholar and a software engineer, we’ve created an innovative data mining tool for feminist film analysis.
 
 ## David Guttman(he/him)
-![David Guttman](/images/davidguttman.jpeg)
+<img src=/images/davidguttman.jpeg alt="davidguttman" width="200" style="float: left; padding-right: 20px"/>
 
-***Bio*** _As a CTO and software architect, David has led teams of engineers to ship projects like ultra-high-scale ad servers handling over 10 billion requests per day, online learning systems, white-label performance marketing SAAS platforms, and Project Matterhorn, the system that would eventually become Disney.com._
+***Bio*** _David is the author of two popular JavaScript books: Fullstack React and Fullstack Node.js and many widely-used open-source projects. He has over 90 open-source packages on npm and over 130 repositories on Github. David has given talks at many tech events and conferences like JSConf and JSFest. As a CTO and software architect, David has led teams of engineers to ship projects like ultra-high-scale ad servers handling over 10 billion requests per day, online learning systems, white-label performance marketing SAAS platforms, and Project Matterhorn, the system that would eventually become Disney.com._
 
 ***js.la to js.online: Meetups & MMORPGs*** js.la had been a monthly gathering of LA’s most interesting JS devs for 8 years. Once the lockdown hit, we needed to figure out how to keep the community together without losing that special something. Would it be Zoom? Twitch? A bespoke React-based 90’s JRPG engine/audio conference app? I’ll tell you all about it. 
 
