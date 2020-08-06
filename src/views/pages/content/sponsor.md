@@ -34,7 +34,7 @@ Contact us at sponsorships@cascadiajs.com if you'd like to learn more!
 
 ## Virtual Expo Hall
 
-We will be using a platform called [Remo](https://remo.co) for the Job Fair (Aug 30) and the portion of the conference (Sept 1-2) where attendees are networking and interacting with sponsors. 
+We will be using a platform called [Remo](https://remo.co) for the [Career Night](/career-night) on (Aug 31) and the portion of the conference (Sept 1-2) where attendees are networking and interacting with sponsors. 
 
 ![Remo floor view](/images/remo-floor.png)
 
