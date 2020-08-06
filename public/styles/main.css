@@ -524,6 +524,24 @@ footer {
     text-decoration: none;
 }
 
+#speaker-list .speaker-title {
+    font-family: ibm-plex-mono, sans-serif;
+    color: #17c37b;
+    flex-grow: 1;
+    margin-top: 5px;
+}
+
+#speaker-list .speaker-title a {
+    color: #17c37b;
+    line-height: 1em;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+#speaker-list .speaker:hover .speaker-title a {
+    color: #1bea94;
+}
+
 #speaker-list .speaker-misc, #organizer-list .organizer-misc {
     font-size: 16px;
 	color: #112378;
@@ -560,6 +578,10 @@ a.js-topic:hover {
 .topic-selected {
     background-color: #FFD007;
     color: #0033FF;
+}
+
+#speaker h2 {
+    color: #17c37b;
 }
 
 #speaker h3 {
