@@ -14,15 +14,17 @@ Join us for a CascadiaJS pre-conference meetup, **the last one before our main e
 
 ## Agenda
 
-* 17:00 - Greetings & Kick-off
-* 17:15 - Timirah James: TBA
-* 17:30 - Q&A
-* 17:45 - Joe Karlsson: Bechdel.io: How We Used JavaScript To Help Make Film More Inclusive
-* 18:00 - Q&A
-* 18:15 - David Guttman: js.la to js.online: Meetups & MMORPGs
-* 18:30 - Q&A
-* 18:45 - Socialize & Karaoke!
-* 19:30 - End
+* 17:00 - Networking in Remo
+* 17:30 - Greetings & Kick-off
+* 17:40 - Timirah James: TBA
+* 17:55 - Q&A
+* 18:00 - Joe Karlsson: Bechdel.io: How We Used JavaScript To Help Make Film More Inclusive
+* 18:15 - Q&A
+* 18:20 - David Guttman: js.la to js.online: Meetups & MMORPGs
+* 18:35 - Q&A
+* 18:40 - Farewell
+* 18:45 - Karaoke!
+* 19:45 - End
 
 <div class="cta"><a href="https://ti.to/event-loop/cjs20-august-prefunk">RSVP to Meetup</a></div>
 
