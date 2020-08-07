@@ -78,7 +78,7 @@ We are going to work with [Mind's Eye Creative](https://www.mindseyecreative.ca)
 
 We will create a "virtual booth" for your company at CascadiaJS. This will include: an Expo Hall logo placement, an Expo Hall table, a dedicated channel in Slack to engage with attendees and an invitation to address the audience during the conference.
 
-<h3 id="workshop"><i class="fas fa-users-class"></i> Workshop - $5k <span class="highlight warning">3 SOLD</span> <span class="highlight info">1 available</span></h2>
+<h3 id="workshop"><i class="fas fa-users-class"></i> Workshop - $5k <span class="highlight warning">SOLD OUT</span></h2>
 
 We will help you run a custom online workshop during the conference. There are four slot available (morning/afternoon on each of the two days) and we will work with you to make sure the workshop is of interest to our community and a valuable addition to the conference.
 
@@ -92,11 +92,11 @@ This is perfect if you have open jobs that you're hiring for. We will help you p
 
 <h3 id="game-night"><i class="fas fa-gamepad-alt"></i> Music Night - $3k <span class="highlight info">1 available</span></h3>
 
-Following Day One of CascadiaJS, we are going to host an online virtual concert with live music!
+Following Day One of CascadiaJS, we are going to host an [online Virtual Concert](/opening-party) with live music! Your company will be the sole sponsor of this performance.
 
 <h3 id="karaoke"><i class="fas fa-microphone-stand"></i> Karoke  - $3k <span class="highlight info">1 available</span></h3>
 
-Closing out Day Two of CascadiaJS, as tradition demands, we will host a Karaoke Party. We are going to fuse an elite-grade karaoke DJ with the power of online video conferencing to create the biggest and best karaoke experience ever.
+Closing out Day Two of CascadiaJS, as tradition demands, we will host a [Virtual Karaoke Party](/closing-party). We are bringing in [Voicebox Karaoke](https://voiceboxkaraoke.com) to run this experience and your company will be the sole sponsor of this amazing event!
 
 <h3 id="captions"><i class="fas fa-closed-captioning"></i> Captioning - $3k <span class="highlight warning">SOLD OUT</span></h3>
 
@@ -106,7 +106,7 @@ We will be live captioning all talks. Your logo will be included on the site we 
 
 <div class="sponsor-includes highlight small">Includes: 1 free ticket, website branding, social media promotion</div>
 
-<h3 id="scholarships"><i class="fas fa-hand-holding-heart"></i> Scholarships - $1k <span class="highlight info">unlimited</span></h3>
+<h3 id="scholarships"><i class="fas fa-hand-holding-heart"></i> Scholarships - $1k <span class="highlight warning">SOLD OUT</span></h3>
 
 Help us fund scholarships to CascadiaJS this year!
 
