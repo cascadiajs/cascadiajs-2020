@@ -17,8 +17,8 @@ Here are a few data points on the reach of our conference:
 
 * YouTube: 1,200+ subscribers and 8k+ views (last 12 months)
 * Twitch: 2,190 viewers during the 2019 live stream
-* Twitter: 3000+ followers and 45k impressions (last 28 days)
-* Expected number of attendees for the 2020 online event = 700-1000
+* Twitter: 3321 followers and 220k impressions (last 28 days)
+* Expected number of attendees for the 2020 online event = 600-700
 
 <div id="carousel">
   <img src="/images/testimonial-1.png" alt="Kiunko Yasuda: I’m missing out the closing party (and anything remaining) but wanted to say that #cjs19 was really a carefully-designed amazing event. Live captioning, emcees, talk topics, attendees, child care etc. Thanks @crtr0 for inviting, and thanks to organizers & sponsors @CascadiaJS❤️"/>
@@ -34,7 +34,7 @@ Contact us at sponsorships@cascadiajs.com if you'd like to learn more!
 
 ## Virtual Expo Hall
 
-We will be using a platform called [Remo](https://remo.co) for the [Career Night](/career-night) on (Aug 31) and the portion of the conference (Sept 1-2) where attendees are networking and interacting with sponsors. 
+We will be using a platform called [Remo](https://remo.co) for the [Career Night](/career-night) (Aug 31) and the portion of the conference (Sept 1-2) where attendees are networking and interacting with sponsors. 
 
 ![Remo floor view](/images/remo-floor.png)
 
@@ -84,7 +84,7 @@ We will help you run a custom online workshop during the conference. There are f
 
 <h3 id="career-night"><i class="fas fa-handshake"></i> Hiring Booth - $4k <span class="highlight warning">2 SOLD</span> <span class="highlight info">8 available</span></h3>
 
-This is perfect if you have open jobs that you're hiring for. We will help you post jobs, connect you with attendees who are interested in learning more and set-up 30 minute "coffee chats" during breaks in the conference schedule. We will set you up with a table at our [Career Night](/career-night) on August 31st, a table in the Expo Hall for the conference.
+This is perfect if you have open jobs that you're hiring for. We will help you post jobs, connect you with attendees who are interested in learning more and set-up 30 minute "coffee chats" during the conference. We will set you up with a table at our [Career Night](/career-night) on August 31st and a table in the Expo Hall for the duration of the conference.
 
 ## Silver Tier
 
