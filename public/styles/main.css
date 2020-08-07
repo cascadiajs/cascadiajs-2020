@@ -70,6 +70,10 @@ header>section.alert {
     font-size: 24px;
 }
 
+header>section.alert a, header>section.alert a:visited {
+    color: #112378;
+}
+
 nav a, a.buy {
     display: inline-block;
     margin: 4px;

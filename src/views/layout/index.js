@@ -26,9 +26,9 @@ module.exports = function Layout ({title, content, socialUrl = 'https://2020.cas
   <body>
     <div id="root">
       <header>
-        <!--section class="alert">
-          <i class="fas fa-hand-point-right"></i> The deadline to register &amp; receive a Goodie Box in the mail is JULY 24th! <i class="fas fa-hand-point-left"></i>
-        </section-->
+        <section class="alert">
+          <i class="fas fa-hand-point-right"></i> Join us for the our <a href="/august-prefunk">last pre-conf meetup on August 12</a>. It's FREE! <i class="fas fa-hand-point-left"></i>
+        </section>
         <nav>
           <div class="wide">
             <div id="logo"><a href="/"><img src="/images/icon-green.svg" alt="logo"/></a></div>
