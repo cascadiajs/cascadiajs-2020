@@ -896,7 +896,7 @@ a.js-topic:hover {
     #sponsor-container {
 		display: grid;
 		grid-template-rows: 100%;
-		grid-template-columns: 4fr 3fr 2fr;
+		grid-template-columns: 3fr 2fr 1fr;
         grid-gap: 8px;
         margin-bottom: 8px;
     }
