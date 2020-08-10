@@ -76,6 +76,7 @@ let Template = function(props) {
                         <a href="https://developer.salesforce.com"><img src="/images/sponsors/sfdc.svg" alt="Salesforce.com Engineering logo"/></a>
                     </section>
                     <section id="sponsors-gold">
+                        <a href="https://launchdarkly.com"><img src="/images/sponsors/ld.svg" alt="Launch Darkly logo"/></a>
                         <a href="https://heroku.com"><img src="/images/sponsors/heroku.svg" alt="Heroku logo"/></a>    
                         <a href="https://auth0.com"><img src="/images/sponsors/auth0.svg" alt="Auth0 logo"/></a>
                         <a href="https://circleci.com/"><img src="/images/sponsors/circle-ci.png" alt="Circle CI logo"/></a>
