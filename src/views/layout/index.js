@@ -28,7 +28,7 @@ module.exports = function Layout ({title, content, socialUrl = 'https://2020.cas
     <div id="root">
       <header>
         <section class="alert">
-          <i class="fas fa-hand-point-right"></i> Join us for the our <a href="/august-prefunk">last pre-conf meetup on August 12</a>. It's FREE! <i class="fas fa-hand-point-left"></i>
+          <i class="fas fa-hand-point-right"></i> <a href="https://ti.to/event-loop/cascadiajs-2020/">More tickets released</a>, including online-only tickets for $59 <i class="fas fa-hand-point-left"></i>
         </section>
         <nav>
           <div class="wide">
