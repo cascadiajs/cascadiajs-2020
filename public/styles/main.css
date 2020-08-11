@@ -286,14 +286,19 @@ div.highlight {
 
 #sponsors-platinum a, #sponsors-gold a, #sponsors-silver a, #sponsors-community a {
     display: block;
+    width: 100%;
 }  
 
-#sponsors-platinum img, #sponsors-gold img, #sponsors-silver img {
+#sponsors-platinum img, #sponsors-gold img {
     width: 100%;
 }
 
 .sponsor-community {
     background-color: #b3cfff;
+}
+
+#sponsors-community {
+    display: none;
 }
 
 #sponsors section {
@@ -302,8 +307,7 @@ div.highlight {
 }
 
 #sponsors section a {
-    padding: 16px;
-    text-align: center;
+    padding-bottom: 16px;
 }
 
 table {
@@ -896,36 +900,57 @@ a.js-topic:hover {
     #sponsor-container {
 		display: grid;
 		grid-template-rows: 100%;
-		grid-template-columns: 3fr 2fr 1fr;
+		grid-template-columns: 3fr 2fr;
         grid-gap: 8px;
         margin-bottom: 8px;
     }
 
-	#sponsor-container section {
+    #sponsors-left, #sponsors-right {
+        display: flex;
+        flex-direction: column;
+    }
+
+    section#sponsors-platinum {
+        padding: 100px;
+    }
+
+	#sponsors-gold {
         display: flex;
         flex-direction: column;
 		align-items: center;
         justify-content: space-between;
     }
-    
-    section#sponsors-platinum {
-        padding: 100px;
-    }
 
-    
-    #sponsors-platinum a, #sponsors-gold a, #sponsors-silver a {
-        width: 100%;
-    }  
-
-    #sponsors-community {
+    #sponsors-silver, #sponsors-community {
+        margin-top: 8px;
         display: flex;
 		align-items: center;
-        justify-content: center;
-        height: 100px;
+        justify-content: space-around;
+    }
+
+    #sponsors-gold, #sponsors-silver {
+        flex-grow: 1;
+    }
+
+    #sponsors-silver {
+        flex-wrap: wrap;
+    }
+
+    #sponsors-silver a {
+        display: inline;
+        width: auto;
+    }
+
+    #sponsors-silver img {
+        height: 75px;
+    }
+
+    #sponsors-community {
+        display: auto;
     }
 
     #sponsors-community img {
-        max-height: 84px;
+        max-height: 75px;
     }
 
     #live {
