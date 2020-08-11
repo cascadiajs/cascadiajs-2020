@@ -954,33 +954,28 @@ a.js-topic:hover {
     }
 
     #live {
-        display: flex;
-        /*display: table;
-        width: 100%;*/
+        display: grid;
+        grid-template-rows: 100%;
+        grid-template-columns: 3fr 1fr;
     }
 
     #live #stream {
-        /*display: table-cell;*/
-        width: 65%;
-        margin: 8px 0 8px 8px;
+
     }
 
     #live #chat {
-        /*display: table-cell;
-        width: 35%;*/
-        flex: 1;
         padding: 8px;
-        margin: 8px 8px 8px 0;
         border: 4px solid #17C37B;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
+        position:relative;
     }
 
     #chat-slackview {
         display: block;
-        padding: 8px;
-        height: 60vh;
+        position:absolute;
+        top:0;
+        left:0;
+        right:0;
         overflow-y: scroll;
+        max-height:100%;
     }
 }
