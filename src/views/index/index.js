@@ -93,7 +93,7 @@ let Template = function(props) {
                     </div>
                     <div id="sponsors-right">
                         <section id="sponsors-gold">
-                            <a href="https://launchdarkly.com"><img src="/images/sponsors/ld.svg" alt="Launch Darkly logo"/></a>
+                            <a href="https://launchdarkly.com/solutions/development-teams/?utm_source=sponsored_corporate&utm_medium=Events_Conferences&utm_campaign=cascadiajs"><img src="/images/sponsors/ld.svg" alt="Launch Darkly logo"/></a>
                             <a href="https://heroku.com"><img src="/images/sponsors/heroku.svg" alt="Heroku logo"/></a>    
                             <a href="https://auth0.com"><img src="/images/sponsors/auth0.svg" alt="Auth0 logo"/></a>
                             <a href="https://circleci.com/"><img src="/images/sponsors/circle-ci.png" alt="Circle CI logo"/></a>
