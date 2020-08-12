@@ -7,7 +7,17 @@ window.clapping = {
     audio: false
 }
 
-function clap() {
+function visualClap() {
+    floating({
+        content: "👏",
+        number: 1,
+        repeat: 1,
+        duration: 10,
+        size: [2, 4]
+      });
+}
+
+function audioClap() {
     const source = window.clapping.context.createBufferSource();
     source.buffer = window.clapping.buffer;
     // Set volume to 50%
@@ -16,6 +26,13 @@ function clap() {
     gainNode.connect(window.clapping.context.destination);
     gainNode.gain.value = 0.1;
     source.start();
+}
+
+function clap() {
+    visualClap()
+    if (window.clapping.audio) {
+        audioClap()
+    }
 }
 
 function loadClapping() {      
@@ -56,13 +73,6 @@ window.onload = function() {
         slackview.configure(token, {logLevel: 'debug'})
         slackview.listen(msg => {
             if (msg.rawText.indexOf(':clap:') !== -1) {
-                floating({
-                    content: "👏",
-                    number: 1,
-                    repeat: 1,
-                    duration: 10,
-                    size: [2, 4]
-                  }); 
                 clap();
             }
         });
