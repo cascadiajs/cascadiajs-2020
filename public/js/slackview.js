@@ -84,10 +84,9 @@ window.onload = function() {
         const streamId = 'TObfd0ab2772a04cb68098c8deca374878';   // the #live channel
         //const streamId = 'TOed3c03eb7d39493585f2a35b580b5d20'; // the test channel
         const teamId = 'T02QDM2DV';
-        const hidePoweredBy = true;
-        const hideJoinSlack = true;
         const logLevel = 'warn';
-        slackview.configure({streamId, teamId, logLevel, hidePoweredBy, hideJoinSlack}).then(() => {
+        const joinUrl = 'https://join.slack.com/t/cascadiajs/shared_invite/enQtNzYzMzYxMTc0OTc5LWM0ZDZiZDc5MDgwMmFkODdlZTdiMGE3NjFhYTZmNWVkMWEwMDcxNWE0Nzg5YTcwOGQzZDk0Y2M3ZWRmN2QwNzU';
+        slackview.configure({streamId, teamId, logLevel, joinUrl}).then(() => {
             slackview.listen(msg => {
                 if (msg.rawText.indexOf(':clap:') !== -1) {
                     clap(msg.rawText);
