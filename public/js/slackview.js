@@ -7,9 +7,9 @@ window.clapping = {
     audio: false
 }
 
-function visualClap() {
+function visualClap(content) {
     floating({
-        content: "👏",
+        content,
         number: 1,
         repeat: 1,
         duration: 10,
@@ -28,8 +28,21 @@ function audioClap() {
     source.start();
 }
 
-function clap() {
-    visualClap()
+const claps = [
+    '👏',
+    '👏🏻',
+    '👏🏼',
+    '👏🏽',
+    '👏🏾',
+    '👏🏿',
+];
+
+function clap(content) {
+    const regex = /\:clap\:(?:\:skin-tone-([0-6])\:)?/ig;
+    const matches = regex.exec(content);
+    const emoji = matches[1] && claps[matches[1] - 1] ? claps[matches[1] - 1] : claps[0];
+
+    visualClap(emoji)
     if (window.clapping.audio) {
         audioClap()
     }
@@ -68,15 +81,18 @@ window.onload = function() {
     if (slackview) {
         loadClapping();
         handleAudioButtonClick();
-        //const token = 'TObfd0ab2772a04cb68098c8deca374878'
-        const token = 'TOed3c03eb7d39493585f2a35b580b5d20'
-        slackview.configure(token, {logLevel: 'debug'})
-        slackview.listen(msg => {
-            if (msg.rawText.indexOf(':clap:') !== -1) {
-                clap();
-            }
+        //const token = 'TObfd0ab2772a04cb68098c8deca374878';
+        const streamId = 'TOed3c03eb7d39493585f2a35b580b5d20';
+        const teamId = 'T02QDM2DV';
+        slackview.configure({streamId, teamId, logLevel: 'debug'}).then(() => {
+            slackview.listen(msg => {
+                if (msg.rawText.indexOf(':clap:') !== -1) {
+                    clap(msg.rawText);
+                }
+            });
+
+            slackview.render(document.getElementById('chat-slackview'))
         });
-        slackview.render(document.getElementById('chat-slackview'))
     }
     else {
         console.log('Slackview global not initialized :(')
