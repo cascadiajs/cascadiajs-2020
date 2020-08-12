@@ -12,6 +12,8 @@ Join us for a CascadiaJS pre-conference meetup, **the last one before our main e
 * **Time:** 4:30pm - 8:15pm PST
 * **RSVP:** Open to everyone (deadline to RSVP is <span class="highlight warning">3pm PST</span>)
 
+<span class="highlight warning">Links to Remo/Rambly/Karaoke were emailed to everyone who registered.</span>
+
 ## Agenda
 
 * 16:30 - Doors open in Remo
