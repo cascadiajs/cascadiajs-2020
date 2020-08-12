@@ -23,6 +23,7 @@ module.exports = function Layout ({title, content, socialUrl = 'https://2020.cas
     <meta name="twitter:title" content="${ title }">
     <link id="light-scheme-icon" rel="icon" href="/images/icon.svg">
     <link id="dark-scheme-icon" rel="icon" href="/images/icon-green.svg">
+    <script src="https://unpkg.com/floating.js"></script>
   </head>
   <body>
     <div id="root">
