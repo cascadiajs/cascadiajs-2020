@@ -18,6 +18,10 @@ module.exports = async function Index({ ticket }) {
                 <p>We have your information and your Goodie Box will be delivered to the address provided prior to Sept 1.</p>
                 ` }
             ` : '' }
+            ${ ticket.conference === 'Y' ? /*html*/`
+            <h2>Live Stream</h2>
+            <div class="cta"><a href="/live">Live Stream</a></div>
+            ` : '' }
             <h2>Reset Session</h2>
             <p>If you need to use a different Ticket Reference, just reset the session and start over.
             <form action=/home method=post>

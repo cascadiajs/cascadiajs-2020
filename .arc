@@ -13,6 +13,7 @@ get /modules/:type/:module
 get /speakers
 get /speakers/:key
 get /home
+get /live
 post /login
 post /upsert
 post /delete
