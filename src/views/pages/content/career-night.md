@@ -8,10 +8,10 @@ excerpt: Join us for a pre-conf evening event where we explore find a job and ma
 Join us for a pre-conf event event where we explore managing your career and mentorship.
 
 * **Date:** Monday, August 31st
-* **Time:** 4:30pm - 8pm PST
+* **Time:** 4:30pm - 8pm PDT (UTC-7)
 * **RSVP:** Open to all CascadiaJS 2020 attendees
 
-## Agenda
+## Agenda (all times in PDT)
 
 <pre>
 * 16:30 - Networking
@@ -22,15 +22,23 @@ Join us for a pre-conf event event where we explore managing your career and men
 * 20:00 - End
 </pre>
 
+Career Night is open to all registered attendees of CascadiaJS 2020. Once you register, you will be emailed a link that you can use to RSVP for this event.
+
 <div class="cta"><a href="https://ti.to/event-loop/cascadiajs-2020/">Buy Conference Ticket</a></div>
 
-## Mentorship Chat
+## Hiring
 
-More info coming soon!
+Over 56% of attendees to CascadiaJS are actively looking for a job or open to interesting opportunities. If your team is hiring and are interested in setting-up a table at our Career Night and/or the conference itself, please let us know by filling-out the form below!
+
+<span class="cta"><a href="https://forms.gle/ypvAZKPpe4ZzdMfRA">Request More Info</a></span>
+
+## Mentorship Panel
+
+New to tech? Or maybe experienced and also searching for someone who can mentor you and help you grow? We will host a panel of experts that will answer your questions and then break-up into smaller groups (< 6 people) where a wonderful group of mentors from our community will continue the conversation.
 
 ## Venturing Out
 
-More info coming soon!
+Have you ever thought about leaving "Big Tech" and starting a company, but you didn't know how? Ken Horenstein from [Venture Out](https://ventureoutstartups.com/) will host a fireside chat with an engineer who left their job at a big tech company and they will share their experience venturing out and starting something new!
 
 <img src="/images/vo-logo.png" width="200" alt="Venture Out logo"/>
 
