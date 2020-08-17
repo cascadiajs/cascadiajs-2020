@@ -99,6 +99,7 @@ let Template = function(props) {
                             <a href="https://circleci.com/"><img src="/images/sponsors/circle-ci.png" alt="Circle CI logo"/></a>
                             <a href="https://twilio.com"><img src="/images/sponsors/twilio.svg" alt="Twilio logo"/></a>
                             <a href="https://saucelabs.com"><img src="/images/sponsors/saucelabs.svg" alt="Twilio logo"/></a>
+                            <a href="https://imgix.com"><img src="/images/sponsors/imgix.png" alt="Imgix logo"/></a>
                             <a href="https://tagboard.com"><img src="/images/sponsors/tagboard.png" alt="Tagboard logo"/></a>
                         </section>
                     </div>
