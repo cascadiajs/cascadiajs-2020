@@ -1,25 +1,25 @@
 ---
 title: Career Night
 image: /images/career-night.jpg
-excerpt: Join us for a pre-conf event event where we explore managing your career and mentorship.
+excerpt: Join us for a pre-conf evening event where we explore find a job and managing your career.
 ---
 ![Folks sitting down and talking at an evening event](/images/career-night.jpg)
 
 Join us for a pre-conf event event where we explore managing your career and mentorship.
 
 * **Date:** Monday, August 31st
-* **Time:** 5pm - 8pm PST
-* **RSVP:** Open to all CascadiaJS attendees
+* **Time:** 4:30pm - 8pm PST
+* **RSVP:** Open to all CascadiaJS 2020 attendees
 
 ## Agenda
 
 <pre>
-17:00 - Hangout & socialize
-17:30 - Kick-off (10 min)
-18:00 - Mentorship Chat (15 min)
-18:45 - Venturing Out Chat (15 min)
-19:45 - Farewell (10 min)
-20:00 - End
+* 16:30 - Networking
+* 17:30 - Greetings & Kick-off
+* 17:40 - Mentorship (15 minutes)
+* 18:40 - Venturing Out (15 minutes)
+* 19:40 - Wrap Up
+* 20:00 - End
 </pre>
 
 <div class="cta"><a href="https://ti.to/event-loop/cascadiajs-2020/">Buy Conference Ticket</a></div>
