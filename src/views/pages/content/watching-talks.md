@@ -1,12 +1,12 @@
 ---
-title: Listening to the talks
+title: How to Watch the Talks
 ---
 
 The live stream of talks will take place on here on our website.
 
 <div class="cta"><a href="/live">Tune-In to the Live Stream</a></div>
 
-We also encourage you to join the **#live** channel on [our Slack](https://join.slack.com/t/cascadiajs/shared_invite/enQtNzYzMzYxMTc0OTc5LWM0ZDZiZDc5MDgwMmFkODdlZTdiMGE3NjFhYTZmNWVkMWEwMDcxNWE0Nzg5YTcwOGQzZDk0Y2M3ZWRmN2QwNzU). That's where you will be able to hang out with fellow attendees and ask questions during the Q&A portion.
+We also encourage you to join the **#live** channel on [our Slack](https://join.slack.com/t/cascadiajs/shared_invite/zt-gxn6l31s-Grym6ikdMaTcNMe26iOUjw). That's where you will be able to hang out with fellow attendees and ask questions during the Q&A portion.
 
 For your convenience, we will also be displaying the Slack chat conversation on the website in read-only mode next to the live stream.
 

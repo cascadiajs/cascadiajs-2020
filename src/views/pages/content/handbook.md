@@ -6,5 +6,5 @@ CascadiaJS is online this year and we're using a variety of sites and tools to o
 
 This guide provides details on how to use these tools.
 
-- [Listening to the talks](listening-to-talks)
+- [How to watch the the Live Stream](watching-talks)
 - [How to participate in Karaoke](/karaoke)
