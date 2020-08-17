@@ -21,7 +21,7 @@ If you feel uncomfortable, are being harassed, notice that someone else is being
 
 **Within Remo and Slack** Conference Staff are identified online with *(Organizer)* in their username. 
 
-For immediate help, you can reach any Organizer on our [Slack group](https://join.slack.com/t/cascadiajs/shared_invite/enQtNzYzMzYxMTc0OTc5LWM0ZDZiZDc5MDgwMmFkODdlZTdiMGE3NjFhYTZmNWVkMWEwMDcxNWE0Nzg5YTcwOGQzZDk0Y2M3ZWRmN2QwNzU) with a Direct Message. If you would prefer, you can also send an email to [info@cascadiajs.com](mailto:info@cascadiajs.com) and we will make sure to address your concerns ASAP.
+For immediate help, you can reach any Organizer on our conference Slack with a Direct Message. If you would prefer, you can also send an email to [info@cascadiajs.com](mailto:info@cascadiajs.com) and we will make sure to address your concerns ASAP.
 
 ## Enforcement
 

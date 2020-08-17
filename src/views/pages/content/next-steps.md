@@ -14,7 +14,7 @@ Note: if you registered after July 24th, your Goodie Box will be delivered follo
 1. [RSVP](/august-prefunk) for the August 12 CascadiaJS Pre-Conf Meetup.
 1. [Help us spread the word](https://2020.cascadiajs.com/email-templates#friend-or-colleague-email) and offer your friends a [10% discount](https://ti.to/event-loop/cascadiajs-2020/discount/BFF) with code **BFF**.
 1. Get listed in our [Conference Directory](/directory).
-1. [Join the CascadiaJS Slack](https://join.slack.com/t/cascadiajs/shared_invite/enQtNzYzMzYxMTc0OTc5LWM0ZDZiZDc5MDgwMmFkODdlZTdiMGE3NjFhYTZmNWVkMWEwMDcxNWE0Nzg5YTcwOGQzZDk0Y2M3ZWRmN2QwNzU)
+1. [Join the CascadiaJS Slack](https://join.slack.com/t/cascadiajs/shared_invite/zt-gxn6l31s-Grym6ikdMaTcNMe26iOUjw)
 1. [Buy an extra hoodie](https://stores.kotisdesign.com/cascadiajshoodie/products) for a friend or loved one.
 1. [Follow us on Twitter](https://twitter.com/CascadiaJS)
 1. [Stay tuned](http://eepurl.com/dPmCkT) for updates about the event.
