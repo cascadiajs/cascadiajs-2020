@@ -21,6 +21,8 @@ module.exports = async function Index({ ticket }) {
                 ` }
             ` : '' }
             ${ ticket.conference === 'Y' ? /*html*/`
+            <h2>Career Night (8/31)</h2>
+            <div class="cta"><a href="${ process.env.CAREER_NIGHT_URL }">RSVP</a></div>
             <h2>Conference Live Stream (9/1 &amp; 9/2)</h2>
             <div class="cta"><a href="/live">Live Stream</a></div>
             ` : '' }
