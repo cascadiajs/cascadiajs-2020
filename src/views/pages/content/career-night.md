@@ -1,7 +1,7 @@
 ---
 title: Career Night
 image: /images/career-night.jpg
-excerpt: Join us for a pre-conf evening event where we explore find a job and managing your career.
+excerpt: Join us for a pre-conf evening event on 8/31 where we explore finding a job and managing your career.
 ---
 ![Folks sitting down and talking at an evening event](/images/career-night.jpg)
 
@@ -38,9 +38,14 @@ New to tech? Or maybe experienced and also searching for someone who can mentor 
 
 ## Venturing Out
 
+<img src="/images/vo-logo.png" width="200" alt="Venture Out logo"/>
+
 Have you ever thought about leaving "Big Tech" and starting a company, but you didn't know how? Ken Horenstein from [Venture Out](https://ventureoutstartups.com/) will host a fireside chat with an engineer who left their job at a big tech company and they will share their experience venturing out and starting something new!
 
-<img src="/images/vo-logo.png" width="200" alt="Venture Out logo"/>
+For folks who are already going down this path:
+
+1. Applications are open for the [Launch Lab](https://ventureoutstartups.com/launch).
+2. Join the [Founder's Forum](https://ventureoutstartups.com/founder-forums) to connect with a community of founders who support each other.
 
 ## Remo
 
