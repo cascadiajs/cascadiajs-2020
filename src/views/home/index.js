@@ -6,20 +6,22 @@ module.exports = async function Index({ ticket }) {
             <div id=page-title><div><h1>Hello${ ticket.fullName ? ', ' + ticket.fullName : '' }!</h1></div></div>
             <div id=page-body class=narrow>
             <h2>Ticket Info</h2>
-            <p><b>Type:</b> ${ ticket.ticket }</p>
+            <ul>
+                <li><b>Ticket Type:</b> ${ ticket.ticket }</li>
+                <li><b>Conference:</b> ${ ticket.conference == 'Y' ? "Yes" : "No" }</li>
+                <li><b>Goodie Box:</b> ${ ticket.hoodie === 'Y' ? "Yes" : "No" }</li>
+            </ul>
             ${ ticket.hoodie === 'Y' ? /*html*/`
             <h2>Goodie Box</h2>
                 ${ ticket.code ? /*html*/`
-                <!--p>Disclaimer: Your Goodie Box may not arrive in time for the conference, but it will arrive</p-->
-                <form action="https://stores.kotisdesign.com/cascadiajs2020/${ ticket.code }">
-                    <button>Redeem Goodie Box</button>
-                </form>`
+                <div class="highlight warning">You must redeem this by Friday, August 28</div>
+                <div class="cta"><a href="https://stores.kotisdesign.com/cascadiajs2020/${ ticket.code }">Redeem Goodie Box</a></div>`
                 : /*html*/`
-                <p>We have your information and your Goodie Box will be delivered to the address provided prior to Sept 1.</p>
+                <p>We have your information and your Goodie Box will be delivered to the address provided during registration.</p>
                 ` }
             ` : '' }
             ${ ticket.conference === 'Y' ? /*html*/`
-            <h2>Live Stream</h2>
+            <h2>Conference Live Stream (9/1 &amp; 9/2)</h2>
             <div class="cta"><a href="/live">Live Stream</a></div>
             ` : '' }
             <h2>Reset Session</h2>
