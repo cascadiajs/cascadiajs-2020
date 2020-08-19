@@ -77,6 +77,7 @@ function speaker(person) {
     <input type=text name=url value="${ person ? person.url  : ''}" placeholder="URL" required>
     <input type=text name=company value="${ person ? person.company  : ''}" placeholder="Company" required>
     <textarea name=abstract value="${ person ? person.abstract : '' }" placeholder="VB.NET and C# go on a date with Java and JavaScript …" required>${ person ? person.abstract : '' }</textarea>
+    <input type=text name=track value="${ person ? person.track  : ''}" placeholder="Track" required>
     <button>Save</button>
   </form>
   <form action=/delete method=post>

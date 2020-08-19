@@ -1,60 +1,412 @@
 [
-  {
-    "table": "speakers",
-    "key": "test",
-    "pixelated": "cb56752477cae6405f85b131872c60d21b967c6a",
-    "name": "Aha Aha",
-    "location": "Starship Earth",
-    "title": "How to make the best conference ever",
-    "reveal": "2020-07-18T14:22:00-07:00",
-    "topics": [
-      "tropical",
-      "people",
-      "fun",
-      "laughter",
-      "learning",
-      "yellow-possum"
-    ],
-    "email": "carter@fizbuz.com",
-    "pronouns": ["he", "him"],
-    "twitter": "@crtr0",
-    "url": "https://2020.cascadiajs.com/",
-    "company": "Fizbuz",
-    "track": "main",
-    "abstract": "Do eet!"
-  },
-  {
-    "table": "speakers",
-    "key": "asp",
-    "pixelated": "5a7351cbc341ee86247c69489a37f7b1d2574d4e",
-    "name": "Ahoo Hoo",
-    "location": "The Pacific North West",
-    "title": "Cheddar Goblin",
-    "reveal": "2020-06-19T13:30:00-07:00",
-    "topics": ["chemistry", "chainsaw", "laughter", "vodka"],
-    "email": "nick@loggers.com",
-    "pronouns": ["he", "him"],
-    "twitter": "@n",
-    "url": "https://loggers.com",
-    "company": "Loggers",
-    "track": "main",
-    "abstract": "Sometimes a chainsaw comes in handy."
-  },
-  {
-    "table": "speakers",
-    "key": "",
-    "pixelated": "79bd990d98b39128a4b6bd3bf03b777cfbd4128f",
-    "name": "El Barbón",
-    "location": "Iceland",
-    "title": "Turing for fun and profit",
-    "reveal": "2020-06-20T13:30:00-07:00",
-    "topics": ["ai", "dancing", "machine-learning"],
-    "email": "nathan@bluebook.com",
-    "pronouns": ["he", "him"],
-    "twitter": "@barbon",
-    "url": "https://ava-sessions.com",
-    "company": "Blue Book",
-    "track": "main",
-    "abstract": "Isn't it strange, to create something that hates you?"
-  }
-]
+    {
+      "table": "speakers",
+      "key": "april-speight",
+      "pixelated": "5a7351cbc341ee86247c69489a37f7b1d2574d4e",
+      "name": "April Speight",
+      "location": "Los Angeles, CA",
+      "title": "My Assistant Misty",
+      "reveal": "2020-06-22T15:10:00-07:00",
+      "topics": [
+        "Hardware",
+        "API"
+      ],
+      "pronouns": "she/her",
+      "twitter": "vogueandcode",
+      "company": "Microsoft",
+      "abstract": "Explore how to take AI assistants to a new level by programming a robot as your personal assistant. Learn about Misty Robotics and how to program a robot with JavaScript!",
+      "track": "lightning"
+    },
+    {
+      "table": "speakers",
+      "key": "will-klein",
+      "pixelated": "99aed75532b7eae628698e05f41a8e7f304ed60b",
+      "name": "Will Klein",
+      "location": "Longmont, CO",
+      "title": "Memory Leaks and the Havoc They Wreak",
+      "reveal": "2020-06-23T09:30:00-07:00",
+      "topics": [
+        "Debugging"
+      ],
+      "pronouns": "he/him",
+      "twitter": "WillsLab",
+      "company": "Workday",
+      "abstract": "Managing memory in our applications can be a real challenge, unless we use JavaScript, which does it for us. Then it can be an absolute mystery! Let's discover how memory leaks can happen to us, and explore how memory management and garbage collection really work."
+    },
+    {
+      "table": "speakers",
+      "key": "najla-elmachtoub",
+      "pixelated": "83adcfe6570fe2aebe17bf1affec77ead77c3ea8",
+      "name": "Najla Elmachtoub",
+      "location": "Brooklyn, NY",
+      "title": "The Human Side of Operability",
+      "reveal": "2020-06-23T12:30:00-07:00",
+      "topics": [
+        "DevOps",
+        "Mental Health"
+      ],
+      "pronouns": "she/her",
+      "twitter": "najtube",
+      "company": "Etsy",
+      "abstract": "In a \"move fast and break things!\" world, what happens when the things we’re breaking are our people and teams? In this talk, we’ll walk through a real example of my team’s on-call process, where alarm and burnout became the norm in the midst of revenue-driven deadlines. We’ll discuss how taking a human-centered and data-driven approach to resolve this process debt resulted in a happier team and more robust software, and how this framework can be applied more generally."
+    },
+    {
+      "table": "speakers",
+      "key": "romulo-cintra",
+      "pixelated": "08dc534ca089669bfe2052d451ca72a4b86d981c",
+      "name": "Romulo Cintra Espirito Santo",
+      "location": "Barcelona, Spain",
+      "title": "i18n | l10n - The Principles for a More Accessible Web",
+      "reveal": "2020-06-23T14:30:00-07:00",
+      "topics": [
+        "a11y",
+        "i18n",
+        "l10n"
+      ],
+      "pronouns": "he/him",
+      "twitter": "romulocintra",
+      "company": "Silk - CaixaBank",
+      "abstract": "The present and the future of i18n and l10n in the browser."
+    },
+    {
+      "table": "speakers",
+      "key": "jemima-abu",
+      "pixelated": "fc7f8bbeb8195509be4f86b1010cffb9652fda9f",
+      "name": "Jemima Abu",
+      "location": "Kaunas, Lithuania",
+      "title": "Understanding Accessibility as a Concept",
+      "reveal": "2020-06-24T09:30:00-07:00",
+      "topics": [
+        "a11y"
+      ],
+      "pronouns": "she/her",
+      "twitter": "jemimaabu",
+      "company": "Telesoftas",
+      "abstract": "Knowing how to build accessible products is important but it's just as important to know why we build products to be accessible. Basic human decency aside, there's a plethora of reasons for building products that everyone can use. In this talk, we'll explore the concept of accessibility in order to better understand its necessity and the ramifications involved in building non accessible products. We'll also answer pressing questions like \"How do I know if this thing I built is accessible?\" and \"Whose job is it to ensure accessibility?\" (Spoiler: it's everyone's job)"
+    },
+    {
+      "table": "speakers",
+      "key": "kyle-simpson",
+      "pixelated": "3bee2692a747351de30c82e32c2db1f9cacec8e5",
+      "name": "Kyle Simpson",
+      "location": "Austin, TX",
+      "title": "Types: The JS Way",
+      "reveal": "2020-06-24T14:30:00-07:00",
+      "topics": [
+        "JavaScript"
+      ],
+      "pronouns": "he/him",
+      "twitter": "getify",
+      "company": "Getify Solutions",
+      "abstract": "Everybody claims TypeScript is the \"right way\" to write JS with types. But, TypeScript is more like C# (or other statically-typed languages) masquerading as JS. There's another option: the JS way. Let's talk about formalizing our  types while keeping what's great about JS's type system. We'll need a different tool, though."
+    },
+    {
+      "table": "speakers",
+      "key": "tom-preston-werner",
+      "pixelated": "c8c7419b58a35357fc572bcd0ef02ced3318e029",
+      "name": "Tom Preston-Werner",
+      "location": "San Francisco, CA",
+      "title": "FIX",
+      "reveal": "2020-09-03T14:30:00-07:00",
+      "topics": [
+        "JAM Stack"
+      ],
+      "pronouns": "he/him",
+      "twitter": "mojombo",
+      "company": "Chatterbug",
+      "abstract": "FIX"
+    },
+    {
+      "table": "speakers",
+      "key": "amber-hoak",
+      "pixelated": "79bd990d98b39128a4b6bd3bf03b777cfbd4128f",
+      "name": "Amber Hoak",
+      "location": "Silverdale, WA",
+      "title": "SVG, Canvas, and WebGL: The Power, the Beauty, and the Cost",
+      "reveal": "2020-06-25T14:30:00-07:00",
+      "topics": [
+        "SVG",
+        "Canvas",
+        "WebGL",
+        "DataViz"
+      ],
+      "pronouns": "she/her",
+      "twitter": "amber_hoak",
+      "company": "Microsoft Research",
+      "abstract": "Do you want to tell meaningful stories with your data? We will explore the path towards building gpu-performant custom visuals, overcoming pain points, and navigating the tooling landscape in SVG, canvas, and webGL."
+    },
+    {
+      "table": "speakers",
+      "key": "shawn-wang",
+      "pixelated": "4760c439cf17d51c245433db152fc35ada848781",
+      "name": "Shawn Wang",
+      "location": "Singapore",
+      "title": "The Operating System of You",
+      "reveal": "2020-06-26T09:30:00-07:00",
+      "topics": [
+        "Career",
+        "Coding"
+      ],
+      "pronouns": "he/him",
+      "twitter": "swyx",
+      "company": "AWS",
+      "abstract": "Developers are mostly humans that run the same \"hardware\". Therefore most performance differences, especially the ones we can control, are down to our \"OS\" - our conscious prioritization and processing - and \"firmware\" - our unconscious personality and reactions. What can we do to better take care of our \"hardware\", and what does running better \"software\" look like?"
+    },
+    {
+      "table": "speakers",
+      "key": "evan-tahler",
+      "pixelated": "4aae8b7e108679dd38f6c6273d2e15cbb88c2fad",
+      "name": "Evan Tahler",
+      "location": "Seattle, WA",
+      "title": "How I learned to Stop Worrying and Let the Robot Publish to NPM",
+      "reveal": "2020-06-26T14:30:00-07:00",
+      "topics": [
+        "TypeScript",
+        "Monorepo",
+        "npm"
+      ],
+      "pronouns": "he/him",
+      "twitter": "evantahler",
+      "company": "Grouparoo",
+      "abstract": "As professional developers, we /probably/ don’t deploy code directly to production and we /usually/ test things first.  There’s a whole world of tools and best practices like Git Flow, Continuous Integration, and Review Apps to help us build and deploy our apps and websites… but what about the tools we use every day?  This talk will focus on how to parallel some of these same best-practices when making developer tools and frameworks.  Together we will build a CI/CD pipeline for publishing to packages to NPM."
+    },
+    {
+      "table": "speakers",
+      "key": "tianyu-pu",
+      "pixelated": "983dcdb0fb053d84a839a1734ea9df65b22e3d31",
+      "name": "Tianyu Pu",
+      "location": "Amsterdam",
+      "title": "The Zen of Git",
+      "reveal": "2020-06-27T09:30:00-07:00",
+      "topics": [
+        "Git"
+      ],
+      "twitter": "tianyupu",
+      "company": "Booking.com",
+      "abstract": "Git is a version control system that's widely used and often misunderstood. Is it possible to really understand how it works, and maybe, just maybe, enjoy using it? This talk is for anyone who has used Git before and would like to learn more about how it actually works. I plan to talk about the internals of Git, including how objects are stored, and how things like branches and tags fit into this representation. With this foundation, I also want to deep-dive and examine how commonly used commands (like git reset, git checkout, git merge and git rebase, among many others) can be understood in terms of what has already been covered in the talk."
+    },
+    {
+      "table": "speakers",
+      "key": "sangeetha-kp",
+      "pixelated": "fa1f3d5978c0d1c6037679a2ff09d3310069a8e0",
+      "name": "Sangeetha KP",
+      "location": "Seattle, WA",
+      "title": "The ACID/BASE Conundrum",
+      "reveal": "2020-06-27T14:30:00-07:00",
+      "topics": [
+        "Databases"
+      ],
+      "pronouns": "she/her",
+      "twitter": "sangee_kp",
+      "company": "Amazon",
+      "abstract": "When we start a new project, we are often posed with the task of setting up a data store. The arises the inevitable question \"Should I use a SQL based store or NOSQL one\". We might tend to lean towards SQL due to it's familiarity and ubiquity; or lean towards NoSQL due to its ease and low setup cost. In this talk, we will look at database choices through a different lens. Taking inspiration from CAP theorem we will understand the ACID/BASE properties of datatbases that will act as guiding principles for choosing database."
+    },
+    {
+      "table": "speakers",
+      "key": "scott-ammon",
+      "pixelated": "224392287703d5c64c9a2abc2845a3c699691242",
+      "name": "Scott Ammon",
+      "location": "Seattle, WA",
+      "title": "Musical Creativity in the Browser",
+      "reveal": "2020-06-28T09:30:00-07:00",
+      "topics": [
+        "Music",
+        "WebMIDI"
+      ],
+      "pronouns": "he/him/his",
+      "url": "https://www.linkedin.com/in/scottammon/",
+      "company": "Slalom Build",
+      "abstract": "This talk will explore how digital musical instruments can interface with the web using MIDI to expand hardware hacking abilities. We’ll explore many ways to harness the power of the web to expand our musical and software creativity."
+    },
+    {
+      "table": "speakers",
+      "key": "myriam-walden-duarte",
+      "pixelated": "24c68fad6ea56ca99b33aa7ed7ff96488bb00d93",
+      "name": "Myriam E Walden-Duarte",
+      "location": "Seattle, WA",
+      "title": "Relax, it's IoTea Time!",
+      "reveal": "2020-06-28T14:30:00-07:00",
+      "topics": [
+        "Hardware",
+        "API",
+        "IoT"
+      ],
+      "pronouns": "she/her",
+      "url": "https://myriamwd.com",
+      "company": "Self-Employed",
+      "abstract": "If, like me, you thought that IoT is only for people who have tons of experience with electronics and are geniuses of software development, I want to share with you how that statement is false, and how adventuring with IoT has helped me during the pandemic times."
+    },
+    {
+      "table": "speakers",
+      "key": "rahat-chowdhury",
+      "pixelated": "fdef1e4c6a171f0c9e2fb0c9a556cc0070f2aac3",
+      "name": "Rahat Chowdhury",
+      "location": "New York City",
+      "title": "Building Better Communities with Mental Health Support",
+      "reveal": "2020-06-29T09:30:00-07:00",
+      "topics": [
+        "Mental Health"
+      ],
+      "pronouns": "he/him",
+      "twitter": "rahatcodes",
+      "company": "American Express",
+      "abstract": "Navigating through communities in tech can be a stressful experience, especially to those who live with a mental illness. In this talk Rahat explores why it is important to begin a conversation about Mental Health and acknowledging some of the things that need to change in the current culture of tech communities with a focus on Bootcamps and Tech Events."
+    },
+    {
+      "table": "speakers",
+      "key": "kelsey-breseman",
+      "pixelated": "6ef8a1d6aec0c61be735d173554da18f3d799ab2",
+      "name": "Kelsey Breseman",
+      "location": "Seattle, WA",
+      "title": "Saving Data to the DWeb: A Primer and a Practical Perspective",
+      "reveal": "2020-06-29T14:30:00-07:00",
+      "topics": [
+        "Dweb",
+        "IPFS",
+        "Dat"
+      ],
+      "pronouns": "she/her",
+      "twitter": "ifoundtheme",
+      "url": "http://ifoundthemeaningoflife.com",
+      "company": "Environmental Data & Governance Initiative",
+      "abstract": "The Environmental Data & Governance Initiative monitors how the state presents (or fails to present) environmental data to the public. This is the perspective from which we approach the decentralized web: public ownership of public data. In this beginner-friendly talk, we walk through each step in the technical process of uploading data into IPFS and Dat: how it works, and how it's important to stewardship of critical data."
+    },
+    {
+      "table": "speakers",
+      "key": "fred-k-schott",
+      "pixelated": "3f3e1141ae7e9176d9fa526f5b90c7bd429ea8f0",
+      "name": "Fred K Schott",
+      "location": "San Francisco, CA",
+      "title": "Snowpack, Webpack and the Third Age of JavaScript",
+      "reveal": "2020-06-30T09:30:00-07:00",
+      "topics": [
+        "ES Modules"
+      ],
+      "pronouns": "he/him",
+      "twitter": "FredKSchott",
+      "company": "Pika",
+      "abstract": "The JavaScript ecosystem is about to change in a big way. New technologies like ES Modules (aka ESM), HTTP/3 and WASM are all coming together to re-define how you build for the web and beyond. This talk explores these new technologies, their impact, and how Internet Explorer may be involved in the most influential evolution of all."
+    },
+    {
+      "table": "speakers",
+      "key": "joel-hooks",
+      "pixelated": "4446a9f80b4f7fa15fd80a423d1c804ff1be8210",
+      "name": "Joel Hooks",
+      "location": "Vancouver, WA",
+      "title": "Developing Your Community Brand",
+      "reveal": "2020-06-30T14:30:00-07:00",
+      "topics": [
+        "Career"
+      ],
+      "pronouns": "he/they",
+      "twitter": "jhooks",
+      "company": "Egghead.io",
+      "abstract": "Your community brand is your reputation and it can happen by accident or it can be designed. If you are intentional and thoughtful about how you create and interact with your community will play a huge role in your career and potential opportunities. Being intentional and following a few simple patterns can take your career to the next level and help you achieve your potential."
+    },
+    {
+      "table": "speakers",
+      "key": "kj",
+      "pixelated": "a73901e50ba4d1cba91d9762e6ec84a3435a6fa5",
+      "name": "Kristofer Joseph",
+      "location": "San Francisco, CA",
+      "title": "You Might Not Need a Build Step",
+      "reveal": "2020-07-01T09:30:00-07:00",
+      "topics": [
+        "ES Modules",
+        "Bundling"
+      ],
+      "pronouns": "he/him",
+      "twitter": "dam",
+      "company": "Begin",
+      "abstract": "Use the current web platform to live in a build step free future today."
+    },
+    {
+      "table": "speakers",
+      "key": "james-steinbach",
+      "pixelated": "6f833820958f1e797517f53db34de604d54d1df5",
+      "name": "James Steinbach",
+      "location": "Denver, CO",
+      "title": "Modal Windows for Everyone",
+      "reveal": "2020-07-01T14:30:00-07:00",
+      "topics": [
+        "a11y",
+        "UI"
+      ],
+      "pronouns": "he/him/his",
+      "twitter": "jdsteinbach",
+      "url": "https://jdsteinbach.com",
+      "company": "Dockyard",
+      "abstract": "Modal windows are a complicated yet common UI component. Most helper libraries solve issues like styles, portals, or state. We're going to dig into major accessibility needs for modal windows."
+    },
+    {
+      "table": "speakers",
+      "key": "rachelle-rathbone",
+      "pixelated": "15a338a84e94e0b53b3ee4d51ee83534aa8e3ece",
+      "name": "Rachelle Rathbone",
+      "location": "Seattle, WA",
+      "title": "Oh Sweet, Gif",
+      "reveal": "2020-07-02T09:30:00-07:00",
+      "topics": [
+        "Gifs",
+        "Side Projects"
+      ],
+      "pronouns": "she/her",
+      "twitter": "coding_love",
+      "url": "https://www.rachellerathbone.com",
+      "company": "Nordstrom",
+      "abstract": "For over 30 years GIFs have brought life to the internet, but some are unable to enjoy their magic, irony and humor. Others simply despise them. Hear how I built a GIF sharing site that attacks that problem head on by building an app that will make GIFs accessible for all, while getting a free SEO boost from Google."
+    },
+    {
+      "table": "speakers",
+      "key": "pantelis-kalogiros",
+      "pixelated": "fb0b053576ffc70dc91b447782752a3f0bb718bc",
+      "name": "Pantelis Kalogiros",
+      "location": "San Francisco, CA",
+      "title": "Complex Geometry in HTML! A story of Constrained Creativity",
+      "reveal": "2020-07-02T14:30:00-07:00",
+      "topics": [
+        "CSS",
+        "3-D",
+        "Perf"
+      ],
+      "pronouns": "he/him",
+      "twitter": "pkalogiros",
+      "company": "Fyusion Inc.",
+      "abstract": "We have all seen rotating cubes and used transformZ(0) for some quick boost in performance. But what else are 3d transforms good for? Let's see how we can construct complex geometry, and build a full first person game rendered entirely in html/css and js! Pushing the limits of what a technology is supposed to do, can unlock a world of creativity and out of the box thinking."
+    },
+    {
+      "table": "speakers",
+      "key": "tiger-oakes",
+      "pixelated": "1054bfa70bd30c69c8122ab0f9cf548f60037e16",
+      "name": "Tiger Oakes",
+      "location": "Vancouver, BC",
+      "title": "The Past, Present, and Future of Favicons",
+      "reveal": "2020-07-03T09:30:00-07:00",
+      "topics": [
+        "Web Platform"
+      ],
+      "pronouns": "he/him",
+      "twitter": "Not_Woods",
+      "url": "https://tigeroakes.com",
+      "company": "Mozilla",
+      "abstract": "Favicons are everywhere, representing your site on tabs, bookmarks, home screens, and more. Did you know favicons were snuck into Internet Explorer, how Apple was once a major proponent for web apps, or that a single icon design can automatically fit alongside other mobile apps on any device? Let's dive into the history and future of website icons, and show you how to make your website and PWA icons shine on a variety of screens."
+    },
+    {
+      "table": "speakers",
+      "key": "dan-mckeon",
+      "pixelated": "b864eb120708884256a72cebd855af93b6f8ecab",
+      "name": "Dan McKeon",
+      "location": "Seattle, WA",
+      "title": "How I Graduated from React to Vanilla JavaScript",
+      "reveal": "2020-06-25T09:30:00-07:00",
+      "topics": [
+        "JavaScript",
+        "React"
+      ],
+      "pronouns": "he/him",
+      "twitter": "dan_mckeon",
+      "company": "Avalara",
+      "abstract": "After falling in love with React, I found myself thrust into the seemingly boring world of vanilla JavaScript. While at first I missed the conveniences of modern JS frameworks, it turned out I found a certain beauty in vanilla. Learn how how we use vanilla JavaScript to build a cross-framework, accessible design system, and the insights we’ve gathered along the way."
+    }
+  ]
+  

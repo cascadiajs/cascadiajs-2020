@@ -394,9 +394,89 @@ tr.on-sale {
     color: #17C37B;
 }
 
-#schedule, #schedule h2 {
-    color: #000;
-    background-color: #fff;
+/* Schedule styles */
+
+#schedule {
+    text-align: left;
+}
+
+#schedule #schedule h2, .what .title, .what .title a:link, .what .title a:visited {
+    font-family: mono45-headline, monospace;
+    font-weight: 300;
+    font-style: normal;
+    text-decoration: none;
+    margin: 0;
+	color: #112378;
+}
+
+#schedule aside {
+    color: #112378;
+    text-transform: uppercase;
+}
+
+#schedule h3, #schedule h3 a:link, #schedule h3 a:visited {
+    font-family: ibm-plex-mono, sans-serif;
+    font-style: normal;
+    text-decoration: none;
+    margin: 0 0 8px 0;
+    color: #112378;
+}
+
+#schedule h3 a:hover {
+    text-decoration: underline;
+    color: #0033FF;
+}
+
+.day-header {
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #112378;
+}
+
+.track {
+    padding:8px;
+}
+
+#schedule .day-date {
+    font-size: 28px;
+    line-height: 1em;
+    margin: 0 16px 0 0;
+}
+
+#schedule .day-timezone {
+    font-size: 18px;
+}
+
+.day-timezone {
+    flex: 1;
+}
+
+#schedule h3 {
+    font-size: 24px;
+    margin-bottom: 24px;
+}
+
+.show-item {
+    display: flex;
+    margin-bottom: 24px;
+}
+
+.when {
+    width: 70px;
+}
+
+.what {
+    flex: 1;
+}
+
+.what .title {
+    font-size: 22px;
+}
+
+.what .title a:hover {
+    text-decoration: underline;
+    color: #0033FF;
 }
 
 footer {
@@ -977,5 +1057,18 @@ a.js-topic:hover {
         right:0;
         overflow-y: scroll;
         max-height:100%;
+    }
+    
+    .day-content {
+        display: flex;
+    }
+
+    .track {
+        flex: 33%;
+    }
+
+    .hallway, .workshops {
+        border-left: 1px solid #112378;
+        padding-left: 8px;
     }
 }

@@ -8,7 +8,7 @@ excerpt: Following Day One, get ready for an awesome Virtual Concert experience!
 ## Details
 
 * Date: Tuesday, Sept 1
-* Time: 6pm PST
+* Time: 5pm PDT
 * Where: Cyberspace
 
 

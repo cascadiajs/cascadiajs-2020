@@ -1,9 +1,10 @@
 let Layout = require('../layout')
 let SpeakerContainer = require('../components/speakers')
 let OrganizerContainer = require('../components/organizers')
+let ScheduleContainer = require('../components/schedule')
 
 let Template = function(props) {
-    let { speakersContainer, organizerContainer } = props
+    let { speakersContainer, organizerContainer, scheduleContainer } = props
     return /*html*/`
     <div id="landing">
         <div id="hero">
@@ -13,7 +14,12 @@ let Template = function(props) {
                 <div><img src="/images/hero-illustration-02.svg" alt="hero image: illustration emcee dancing, more talk titles swirling around."/></div>
             </div>
         </div>
-        ${ speakersContainer ? `<div id="speakers"><h2>Speakers</h2>${ speakersContainer }</div>` : ``} 
+        <div id="schedule-landing">
+            <div class="wide">    
+                 <h2>Schedule</h2>
+                ${ scheduleContainer }
+            </div>
+        </div>
         <div id="attend">
             <div class="container">
                 <div id="karaoke">
@@ -118,10 +124,11 @@ let Template = function(props) {
 
 module.exports = async function Index({ speakers, topics, selectedTopics }) {
     let organizerContainer = OrganizerContainer()
+    let scheduleContainer = ScheduleContainer({ speakers })
     let speakersContainer
     if (speakers && speakers.length >= 1)
         speakersContainer = SpeakerContainer({ speakers, topics, selectedTopics })
-    let content = Template({ speakersContainer, organizerContainer })
-    let html = Layout({content, scripts: ['modules/entry/speakers.js', '/js/attendees.js']})
+    let content = Template({ speakersContainer, organizerContainer, scheduleContainer })
+    let html = Layout({content, scripts: ['/js/attendees.js']})
     return { html }
 }

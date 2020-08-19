@@ -8,7 +8,7 @@ excerpt: Following Day Two, join us for Virtual Karaoke powered by VoiceBox!
 ## Details
 
 * Date: Wednesday, Sept 2
-* Time: 6pm PST
+* Time: 7pm PDT
 * Where: Cyberspace
 
 ##  Featuring:
