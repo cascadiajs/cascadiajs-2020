@@ -1,10 +1,9 @@
 let Layout = require('../layout')
-let SpeakerContainer = require('../components/speakers')
 let OrganizerContainer = require('../components/organizers')
 let ScheduleContainer = require('../components/schedule')
 
 let Template = function(props) {
-    let { speakersContainer, organizerContainer, scheduleContainer } = props
+    let { organizerContainer, scheduleContainer } = props
     return /*html*/`
     <div id="landing">
         <div id="hero">
@@ -122,13 +121,10 @@ let Template = function(props) {
 `
 }
 
-module.exports = async function Index({ speakers, topics, selectedTopics }) {
+module.exports = async function Index({ speakers }) {
     let organizerContainer = OrganizerContainer()
     let scheduleContainer = ScheduleContainer({ speakers })
-    let speakersContainer
-    if (speakers && speakers.length >= 1)
-        speakersContainer = SpeakerContainer({ speakers, topics, selectedTopics })
-    let content = Template({ speakersContainer, organizerContainer, scheduleContainer })
+    let content = Template({ organizerContainer, scheduleContainer })
     let html = Layout({content, scripts: ['/js/attendees.js']})
     return { html }
 }
