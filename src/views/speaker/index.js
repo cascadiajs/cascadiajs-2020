@@ -9,12 +9,12 @@ let Template = function(speaker) {
 
     return /*html*/`
     <div id="page">
-        <div id="page-title">
+        <div class="page-title">
             <div>
                 <h1>Speakers</h1>
             </div>
         </div>
-        <div id="page-body">
+        <div class="page-body">
             <section id="speaker">
                 <h1>${ name }</h1>
                 <div class="speaker-info">

@@ -401,6 +401,10 @@ section .cta {
     text-align: left;
 }
 
+.track {
+    padding:8px;
+}
+
 .day h2, .what .title, .what .title a:link, .what .title a:visited {
     font-family: mono45-headline, monospace;
     font-weight: 300;
@@ -426,15 +430,21 @@ aside.day-timezone {
     text-transform: uppercase;
 }
 
-.day h3, .day h3 a:link, .day h3 a:visited {
+.day .track h3 {
     font-family: ibm-plex-mono, sans-serif;
     font-style: normal;
-    text-decoration: none;
     margin: 0 0 8px 0;
+    color: #112378;
+    font-size: 24px;
+    margin-bottom: 24px;
+}
+
+.day .track h3 a:link, .day .track h3 a:visited {
+    text-decoration: none;
     color: #112378;
 }
 
-.day h3 a:hover {
+.day .track h3 a:hover {
     text-decoration: underline;
     color: #0033FF;
 }
@@ -444,16 +454,6 @@ aside.day-timezone {
     align-items: flex-end;
     padding-bottom: 8px;
     border-bottom: 1px solid #112378;
-}
-
-.track {
-    padding:8px;
-}
-
-
-.day h3 {
-    font-size: 24px;
-    margin-bottom: 24px;
 }
 
 .show-item {
