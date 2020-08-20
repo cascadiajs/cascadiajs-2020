@@ -1,25 +1,25 @@
 let Layout = require('../layout')
 let OrganizerContainer = require('../components/organizers')
-let ScheduleContainer = require('../components/schedule')
+let { ConfSchedule } = require('../components/schedule')
 
 let Template = function(props) {
     let { organizerContainer, scheduleContainer } = props
     return /*html*/`
     <div id="landing">
-        <div id="hero">
+        <section id="hero" class="landing">
             <div id="hero-logo"><img src="/images/hero-logo.svg" alt="CascadiaJS logo. Sept 1-2, 2020. Cyberspace."/></div>
             <div id="hero-images">
                 <div><img src="/images/hero-illustration-01.svg" alt="hero image: illustration of man at podium speaking with talk titles swirling around him. CascadiaJS, Sept 1-2 2020, Cyberspace."/></div>
                 <div><img src="/images/hero-illustration-02.svg" alt="hero image: illustration emcee dancing, more talk titles swirling around."/></div>
             </div>
-        </div>
-        <div id="schedule-landing">
+        </section>
+        <section id="schedule" class="landing">
             <div class="wide">    
                  <h2>Schedule</h2>
                 ${ scheduleContainer }
             </div>
-        </div>
-        <div id="attend">
+        </section>
+        <section id="attend" class="landing">
             <div class="container">
                 <div id="karaoke">
                     <div><img src="/images/karaoke.svg" alt="There WILL be karaoke!"/></div>
@@ -41,17 +41,17 @@ let Template = function(props) {
                     </div>
                 </div>
             </div>
-        </div>
-        <div id="coc">
+        </section>
+        <section id="coc" class="landing">
             <div class="narrow">
                 <h2>Code of Conduct</h2>
                 <p>Everyone , including attendees, sponsors, speakers, and organizers - is required to agree to and follow our Code of Conduct. Inappropriate behavior or harassment of any kind is not tolerated. If you feel uncomfortable, are being harassed, notice that someone else is being harassed, or have any other concerns, please contact a member of conference staff immediately. Conference Staff are identified by red STAFF badges. You can also send an email to info@cascadiajs.com.</p>
                 <div class="cta"><a href="/coc">Read the Code of Conduct</a></div>
             </div>
-        </div>
-        <div id="workshops">
+        </section>
+        <section id="workshops" class="landing">
             <div class="narrow">
-                <h2>Workshops</h2>
+                <h2>Post-Conf Workshops</h2>
                 <h3>JavaScript: The Recent Parts</h3>
                 <h4>Sept 3</h4>
                 <p>Kyle Simpson will walk us through the newest additions to JavaScript, including: spread/rest, destructuring, template literals, iterators, generators, Array.includes, string padding, async-await, RegExp improvements, async generators/iteration and more.</p>
@@ -66,14 +66,14 @@ let Template = function(props) {
                 <p>Eve Porcello will cover the following in this intermediate GraphQL workshop: Unions & Interfaces, Error Handling, Microservices with Apollo Federation, Graph Manager and Relay.</p>
                 <div class="cta"><a href="/workshops">Workshops Info</a></div>
             </div>
-        </div>
-        <div id="organizers">
+        </section>
+        <section id="organizers" class="landing">
             <div class="wide">
                 <h2>Organizers</h2>
                 ${ organizerContainer }
             </div>
-        </div>
-        <div id="sponsors">
+        </section>
+        <section id="sponsors" class="landing">
             <div>
                 <h2>Sponsors</h2>
                 <div id="sponsor-container">
@@ -111,19 +111,19 @@ let Template = function(props) {
                 </div>
                 <div class="cta"><a href="/sponsor">Sponsor Info</a></div>
             </div>
-        </div>
-        <div id="attendees">
+        </section>
+        <section id="attendees" class="landing">
             <h2>Who's Coming?</h2>
             <div id="attendees-pics"></div>
             <div><a href="/directory">Add your profile to the Conference Directory</a></div>
-        </div>
+        </section>
     </div>
 `
 }
 
 module.exports = async function Index({ speakers }) {
     let organizerContainer = OrganizerContainer()
-    let scheduleContainer = ScheduleContainer({ speakers })
+    let scheduleContainer = ConfSchedule({ speakers })
     let content = Template({ organizerContainer, scheduleContainer })
     let html = Layout({content, scripts: ['/js/attendees.js']})
     return { html }

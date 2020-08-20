@@ -1,5 +1,5 @@
 ---
-title: Workshops
+title: Post-Conf Workshops
 ---
 
 ### JavaScript: The Recent Parts

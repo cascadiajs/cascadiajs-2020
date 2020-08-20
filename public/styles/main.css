@@ -180,22 +180,22 @@ footer {
     text-align: center;
 }
 
-#page-title {
+#page .page-title {
     background-color: #17C37B;
 }
 
-#page-title div {
+#page .page-title div {
     padding: 16px;
 }
 
-#page-title div h1 {
+#page .page-title div h1 {
     font-family: mono45-headline, monospace;
     font-weight: 500;
     color: #fff;
     margin: 8px 0;
 }
 
-#page-body {
+#page .page-body {
     padding: 16px;
 }
 
@@ -328,14 +328,18 @@ tr.on-sale {
 
 /* Landing page */
 
-#landing h2 {
+section.landing  {
+    padding: 32px 16px;
+}
+
+section.landing h2 {
     font-family: mono45-headline, monospace;
     font-weight: 500;
     font-size: 48px;
     margin: 0 0 32px 0;
 }
 
-#landing h3 { 
+section.landing h3 { 
     font-size: 32px; 
     color: #112378;
     font-weight: 700;
@@ -343,20 +347,17 @@ tr.on-sale {
     margin-bottom: 0;
 }
 
-#landing h4 {
+section.landing h4 {
     font-size: 28px; 
     color: #fff;
     font-weight: 400;
     margin-top: 4px;
 }
 
-#landing .cta {
+section .cta {
     margin: 32px 0 0 0;
 }    
 
-#landing>div  {
-    padding: 32px 16px;
-}
 
 #hero-logo {
     margin-bottom: 24px;
@@ -396,11 +397,11 @@ tr.on-sale {
 
 /* Schedule styles */
 
-#schedule {
+#landing .day {
     text-align: left;
 }
 
-#schedule #schedule h2, .what .title, .what .title a:link, .what .title a:visited {
+.day h2, .what .title, .what .title a:link, .what .title a:visited {
     font-family: mono45-headline, monospace;
     font-weight: 300;
     font-style: normal;
@@ -409,12 +410,23 @@ tr.on-sale {
 	color: #112378;
 }
 
-#schedule aside {
+.day h2.day-date {
+    font-size: 28px;
+    line-height: 1em;
+    margin: 0 16px 0 0;
+}
+
+.day aside.day-timezone {
+    font-size: 18px;
+}
+
+aside.day-timezone {
+    flex: 1;
     color: #112378;
     text-transform: uppercase;
 }
 
-#schedule h3, #schedule h3 a:link, #schedule h3 a:visited {
+.day h3, .day h3 a:link, .day h3 a:visited {
     font-family: ibm-plex-mono, sans-serif;
     font-style: normal;
     text-decoration: none;
@@ -422,7 +434,7 @@ tr.on-sale {
     color: #112378;
 }
 
-#schedule h3 a:hover {
+.day h3 a:hover {
     text-decoration: underline;
     color: #0033FF;
 }
@@ -438,21 +450,8 @@ tr.on-sale {
     padding:8px;
 }
 
-#schedule .day-date {
-    font-size: 28px;
-    line-height: 1em;
-    margin: 0 16px 0 0;
-}
 
-#schedule .day-timezone {
-    font-size: 18px;
-}
-
-.day-timezone {
-    flex: 1;
-}
-
-#schedule h3 {
+.day h3 {
     font-size: 24px;
     margin-bottom: 24px;
 }
@@ -478,6 +477,8 @@ tr.on-sale {
     text-decoration: underline;
     color: #0033FF;
 }
+
+/* end schedule */
 
 footer {
     color:  #fff;
@@ -846,9 +847,13 @@ a.js-topic:hover {
         width: 392px;
     }
 
-    #page-body, #page-title div {
+    #page .page-body, #page .page-title div {
         width: 50%;
         margin: 0 auto;
+    }
+
+    #page .page-body.wide, #page .page-title div.wide {
+        width: 70%;
     }
 
     #page {
@@ -903,7 +908,7 @@ a.js-topic:hover {
         margin-right: 40px;
     }
 
-    #landing {
+    section.landing {
         text-align: center;
     }
     

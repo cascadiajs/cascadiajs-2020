@@ -14,6 +14,7 @@ get /speakers
 get /speakers/:key
 get /home
 get /live
+get /schedule
 post /login
 post /upsert
 post /delete

@@ -9,7 +9,7 @@ function renderSpeaker(time, speaker = {}) {
     </div>`
 }
 
-function renderDayZero() {
+function DayZero() {
     return /*html*/`
     <div class="day">
         <div class="day-header">
@@ -53,7 +53,7 @@ function renderDayZero() {
 `
 }
 
-function renderDayOne({ speakers }) {
+function DayOne({ speakers }) {
     return /*html*/`
     <div class="day">
         <div class="day-header">
@@ -111,9 +111,9 @@ function renderDayOne({ speakers }) {
             </div>
             <div class="workshops track">
                 <h3>Workshop Track</h3>
-                <div class="what"><div class="title">Morning Workshop</div></div>
+                <div class="what"><div class="title">Sauce Labs Workshop</div></div>
                 <p>More info coming soon!</p>
-                <div class="what"><div class="title">Afternoon Workshop</div></div>
+                <div class="what"><div class="title">Launch Darkly Workshop</div></div>
                 <p>More info coming soon!</p>
             </div>
         </div>
@@ -121,7 +121,7 @@ function renderDayOne({ speakers }) {
 `
 }
 
-function renderDayTwo({ speakers }) {
+function DayTwo({ speakers }) {
     return /*html*/`
     <div class="day">
         <div class="day-header">
@@ -183,9 +183,9 @@ function renderDayTwo({ speakers }) {
             </div>
             <div class="workshops track">
                 <h3>Workshop Track</h3>
-                <div class="what"><div class="title">Morning Workshop</div></div>
+                <div class="what"><div class="title">Twilio Workshop</div></div>
                 <p>More info coming soon!</p>
-                <div class="what"><div class="title">Afternoon Workshop</div></div>
+                <div class="what"><div class="title">Heroku Workshop</div></div>
                 <p>More info coming soon!</p>
             </div>
         </div>
@@ -193,11 +193,18 @@ function renderDayTwo({ speakers }) {
 `
 }
 
-module.exports = function ScheduleContainer ({ speakers }) {
+function ConfSchedule ({ speakers }) {
     return /*html*/`
-    <div id="schedule">
-        ${ renderDayZero() }
-        ${ renderDayOne({ speakers }) }
-        ${ renderDayTwo({ speakers }) }
+    <div id="conf-schedule">
+        ${ DayZero() }
+        ${ DayOne({ speakers }) }
+        ${ DayTwo({ speakers }) }
     </div>`
+}
+
+module.exports = {
+    ConfSchedule,
+    DayZero,
+    DayOne,
+    DayTwo
 }

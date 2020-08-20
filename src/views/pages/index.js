@@ -12,7 +12,15 @@ function MarkdownTemplate({title, body}) {
   body = body.replace(/\$\{CAREER_NIGHT_URL\}/g, process.env.CAREER_NIGHT_URL)
   body = body.replace(/\$\{SLACK_JOIN_URL\}/g, process.env.SLACK_JOIN_URL)
   /* end hack */
-  return `<div id="page"><div id="page-title"><div><h1>${title}</h1></div></div><div id="page-body">${md(body)}</div></div>`
+  return /*html*/`
+    <div id="page">
+      <div class="page-title">
+        <div><h1>${title}</h1></div>
+      </div>
+      <div class="page-body">
+        ${md(body)}
+      </div>
+    </div>`
 }
 
 /**
