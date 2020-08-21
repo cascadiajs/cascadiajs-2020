@@ -1077,3 +1077,21 @@ a.js-topic:hover {
         padding-left: 8px;
     }
 }
+
+@media print {
+    header, footer, .page-title {
+        display: none;
+    }
+
+    @page {
+        size: 8.5in 11in;
+        margin: 0.25in;
+    }
+    /*.day {
+        page-break-before: always;
+    }*/
+
+    .day-header, .show-item {
+        page-break-inside: avoid;
+    }
+}
