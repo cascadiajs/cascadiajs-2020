@@ -9,12 +9,15 @@ fingerprint true
 get /
 get /admin.php
 get /api
+get /clear-questions
 get /modules/:type/:module
 get /speakers
 get /speakers/:key
 get /home
 get /live
 get /schedule
+get /questions
+post /ask
 post /login
 post /upsert
 post /delete

@@ -818,6 +818,39 @@ a.js-topic:hover {
 
 }
 
+/* Q&A styles */
+#qa-container{
+    display:flex;
+    align-items: flex-start;
+    max-height: 20vh;
+    width: 60%;
+}
+
+#qa-questions-container {
+}
+
+#qa-questions {
+    list-style: none;
+    overflow: scroll;
+    max-height: 10vh;
+}
+
+.qa-question {
+    font-size: .75rem;
+    display: flex;
+    align-items: center;
+}
+
+.qa-question-text {
+    color: red;
+    font-weight: bold;
+    word-wrap: break-word;
+}
+
+.qa-inc-button {
+    margin-right: 5px;
+}
+
 @media only screen and (min-width: 768px) {
 
     #root {
