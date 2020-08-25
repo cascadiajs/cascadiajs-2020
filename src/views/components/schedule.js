@@ -106,15 +106,41 @@ function DayOne({ speakers }) {
             </div>
             <div class="hallway track">
                 <h3>Hallway Track</h3>
-                <div class="what"><div class="title">Remo</div></div>
-                <p>More info coming soon!</p>
+                <div class="show-item">       
+                    <div class="when">10:00</div>
+                    <div class="what">
+                        <div class="title">Remo Doors Open</div>
+                    </div>
+                </div>
+                <div class="show-item">       
+                    <div class="when">15:00</div>
+                    <div class="what">
+                        <div class="title">Remo Doors Close</div>
+                    </div>
+                </div>
             </div>
             <div class="workshops track">
                 <h3>Workshop Track</h3>
-                <div class="what"><div class="title">Sauce Labs Workshop</div></div>
-                <p>More info coming soon!</p>
-                <div class="what"><div class="title">Launch Darkly Workshop</div></div>
-                <p>More info coming soon!</p>
+                <div class="show-item">       
+                    <div class="when">10:30</div>
+                    <div class="what">
+                        <div class="title"><a href="/workshop-twilioquest">UI Testing Workshop</a></div>
+                        <div class="speaker">
+                            <p>Dig into the most popular UI web testing frameworks with Sauce Labs.</p>
+                            <p><img src="/images/sponsors/saucelabs.svg" alt="Sauce Labs logo" width="150"/></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="show-item">       
+                    <div class="when">14:00</div>
+                    <div class="what">
+                        <div class="title">Launch Darkly Workshop</div>
+                        <div class="speaker">
+                            <p>More info coming soon!</p>
+                            <p><img src="/images/sponsors/ld.svg" alt="Launch Darkly logo" width="150"/></p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -178,15 +204,41 @@ function DayTwo({ speakers }) {
             </div>
             <div class="hallway track">
                 <h3>Hallway Track</h3>
-                <div class="what"><div class="title">Remo</div></div>
-                <p>More info coming soon!</p>
+                <div class="show-item">       
+                    <div class="when">10:00</div>
+                    <div class="what">
+                        <div class="title">Remo Doors Open</div>
+                    </div>
+                </div>
+                <div class="show-item">       
+                    <div class="when">15:00</div>
+                    <div class="what">
+                        <div class="title">Remo Doors Close</div>
+                    </div>
+                </div>
             </div>
             <div class="workshops track">
                 <h3>Workshop Track</h3>
-                <div class="what"><div class="title">Twilio Workshop</div></div>
-                <p>More info coming soon!</p>
-                <div class="what"><div class="title">Heroku Workshop</div></div>
-                <p>More info coming soon!</p>
+                <div class="show-item">       
+                    <div class="when">10:30</div>
+                    <div class="what">
+                        <div class="title"><a href="/workshop-ui-testing">TwilioQuest Workshop</a></div>
+                        <div class="speaker">
+                            <p>You are invited to play TwilioQuest, a PC RPG inspired by classics of the 16-bit era!</p>
+                            <p><img src="/images/sponsors/twilioquest.svg" alt="TwilioQuest logo" width="150"/></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="show-item">       
+                    <div class="when">14:00</div>
+                    <div class="what">
+                        <div class="title"><a href="/workshop-ui-testing">IoT Workshop</a></div>
+                        <div class="speaker">
+                            <p>Get hands-on experience building IoT apps with Heroku and the pre-release Explore IoT Kit from Arduino!</p>
+                            <p><img src="/images/sponsors/heroku.svg" alt="Heroku logo" width="150"/></p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

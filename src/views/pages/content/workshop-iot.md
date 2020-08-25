@@ -1,5 +1,5 @@
 ---
-title: Workshop - IoT
+title: IoT Workshop
 image: /images/arduino.png
 excerpt: Get hands-on experience building IoT apps with Heroku and the pre-release Explore IoT Kit from Arduino!
 ---
