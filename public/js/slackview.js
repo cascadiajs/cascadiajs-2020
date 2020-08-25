@@ -79,23 +79,22 @@ function handleAudioButtonClick() {
 window.onload = function() {
     // Attach builtin widget to your page
     if (slackview) {
-        loadClapping();
-        handleAudioButtonClick();
-        const streamId = 'TObfd0ab2772a04cb68098c8deca374878';   // the #live channel
-        //const streamId = 'TOed3c03eb7d39493585f2a35b580b5d20'; // the test channel
+        //loadClapping();
+        //handleAudioButtonClick();
+        //const streamId = 'TObfd0ab2772a04cb68098c8deca374878';   // the #live channel
+        const streamId = 'TOed3c03eb7d39493585f2a35b580b5d20'; // the test channel
         const teamId = 'T02QDM2DV';
-        const hidePoweredBy = true;
+        const hidePoweredBy = false;
         const hideJoinSlack = true;
-        const logLevel = 'warn';
+        const logLevel = 'debug';
         slackview.configure({streamId, teamId, logLevel, hidePoweredBy, hideJoinSlack}).then(() => {
-            slackview.listen(msg => {
+            /*slackview.listen(msg => {
                 if (msg.rawText.indexOf(':clap:') !== -1) {
                     clap(msg.rawText);
                 }
-            });
-
-            slackview.render(document.getElementById('chat-slackview'))
-        });
+            });*/
+            slackview.render(document.getElementById('chat-slackview'));
+        })
     }
     else {
         console.log('Slackview global not initialized :(')
