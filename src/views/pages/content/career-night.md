@@ -38,14 +38,14 @@ New to tech? Or maybe experienced and also searching for someone who can mentor 
 
 ## Venturing Out
 
-<img src="/images/vo-logo.png" width="200" alt="Venture Out logo"/>
+<table class="profiles">
+    <tr><td><img src="/images/ken.jpg" alt="Ken Horenstein"/></td><td><img src="/images/ondrej.jpg" alt="Ondrej Hrebicek"/></td></tr>
+    <tr><td><b>Ken Horenstein</b><br/>Co-Founder, Venture Out</td><td><b>Ondrej Hrebicek</b><br/>Co-Founder & CTO, Iteratively</td></tr>  
+</table>
 
-Have you ever thought about leaving "Big Tech" and starting a company, but you didn't know how? Ken Horenstein from [Venture Out](https://ventureoutstartups.com/) will host a fireside chat with an engineer who left their job at a big tech company and they will share their experience venturing out and starting something new!
+Have you ever thought about leaving "Big Tech" and starting a company, but you didn't know how? Ken Horenstein from [Venture Out](https://ventureoutstartups.com/) will host a fireside chat with Ondrej Hrebicek, an engineer who left their job at Atlassian and they will share his experience venturing out and starting something new!
 
-For folks who are already going down this path:
-
-1. Applications are open for the [Launch Lab](https://ventureoutstartups.com/launch).
-2. Join the [Founder's Forum](https://ventureoutstartups.com/founder-forums) to connect with a community of founders who support each other.
+For folks who are already going down this path, applications are open for the [Launch Lab](https://ventureoutstartups.com/launch) and check-out the [Founder's Forum](https://ventureoutstartups.com/founder-forums) to connect with a community of founders who support each other.
 
 ## Remo
 
