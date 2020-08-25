@@ -238,6 +238,10 @@ span.cta {
 	text-decoration: underline;
 }
 
+.cta.nope {
+	color: #000;
+	background-color: #ccc;
+}
 
 .highlight {
     border-radius: 4px;

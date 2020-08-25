@@ -29,4 +29,4 @@ Be one of the first to gain hands-on experience with the not-yet-released new Ex
 
 Fill out this Registration Form and tell us what you would build using the Explore IoT Kit from Arduino and Heroku.
 
-<div class="cta"><a href="https://forms.gle/4arQw1sAGSj2Bhcy5">Register</a></div>
+<div class="cta nope">Registration Closed</div>

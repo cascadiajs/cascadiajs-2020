@@ -232,7 +232,7 @@ function DayTwo({ speakers }) {
                 <div class="show-item">       
                     <div class="when">14:00</div>
                     <div class="what">
-                        <div class="title"><a href="/workshop-ui-testing">IoT Workshop</a></div>
+                        <div class="title"><a href="/workshop-iot">IoT Workshop</a></div>
                         <div class="speaker">
                             <p>Get hands-on experience building IoT apps with Heroku and the pre-release Explore IoT Kit from Arduino!</p>
                             <p><img src="/images/sponsors/heroku.svg" alt="Heroku logo" width="150"/></p>
