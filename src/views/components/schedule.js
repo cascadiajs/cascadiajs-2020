@@ -124,7 +124,7 @@ function DayOne({ speakers }) {
                 <div class="show-item">       
                     <div class="when">10:30</div>
                     <div class="what">
-                        <div class="title"><a href="/workshop-twilioquest">UI Testing Workshop</a></div>
+                        <div class="title"><a href="/workshop-ui-testing">UI Testing Workshop</a></div>
                         <div class="speaker">
                             <p>Dig into the most popular UI web testing frameworks with Sauce Labs.</p>
                             <p><img src="/images/sponsors/saucelabs.svg" alt="Sauce Labs logo" width="150"/></p>
@@ -222,7 +222,7 @@ function DayTwo({ speakers }) {
                 <div class="show-item">       
                     <div class="when">10:30</div>
                     <div class="what">
-                        <div class="title"><a href="/workshop-ui-testing">TwilioQuest Workshop</a></div>
+                        <div class="title"><a href="/workshop-twilioquest">TwilioQuest Workshop</a></div>
                         <div class="speaker">
                             <p>You are invited to play TwilioQuest, a PC RPG inspired by classics of the 16-bit era!</p>
                             <p><img src="/images/sponsors/twilioquest.svg" alt="TwilioQuest logo" width="150"/></p>
