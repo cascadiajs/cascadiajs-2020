@@ -50,10 +50,6 @@ blockquote {
 
 /* header styles */
 
-header {
-    z-index: 2;
-}
-
 header nav {
     padding: 8px 0;
     text-align: center;
@@ -827,10 +823,29 @@ a.js-topic:hover {
         grid-template-rows: auto 1fr auto;
     }
 
-    header {
+    /*header {
         position: sticky;
-        /*width: 100%;*/
+        z-index: 2;
         top: 0;
+    }
+
+    header#live-header {
+        position: absolute;
+        top: auto;
+        width: 100%;
+        z-index: auto;
+    }*/
+
+    header#live-header {
+        height: 40px;
+    }
+
+    header#live-header nav {
+        padding: 3px 0 0 0;
+    }
+
+    header#live-header img{
+        height: 30px;
     }
 
     .narrow {
@@ -1041,16 +1056,26 @@ a.js-topic:hover {
     #live {
         display: grid;
         grid-template-rows: 100%;
-        grid-template-columns: 3fr 1fr;
+        grid-template-columns: 2fr 200px 1fr;
     }
 
     #live #stream {
+        padding: 8px;
+        border: 4px solid #17C37B;
+    }
 
+    #live #controls {
+        padding: 8px;
+        border-top: 4px solid #17C37B;
+        border-bottom: 4px solid #17C37B;
+        border-right: 4px solid #17C37B;      
     }
 
     #live #chat {
         padding: 8px;
-        border: 4px solid #17C37B;
+        border-top: 4px solid #17C37B;
+        border-bottom: 4px solid #17C37B;
+        border-right: 4px solid #17C37B; 
         position:relative;
     }
 

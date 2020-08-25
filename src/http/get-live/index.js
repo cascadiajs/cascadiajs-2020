@@ -1,5 +1,6 @@
 let arc = require('@architect/functions')
 const data = require('@begin/data')
+let getSpeakerData = require('@architect/shared/data/get-speaker-data')
 const LiveView = require('@architect/views/live')
 
 // check for session
@@ -14,8 +15,8 @@ async function unauthenticated(req) {
 // display live stream page
 async function authenticated(req) {
   const ticket = await data.get({ table: 'tickets', key: req.session.ticketRef })
-  if (ticket.conference === 'Y') {
-    return LiveView()
+  if (ticket && ticket.conference === 'Y') {
+    return LiveView(await getSpeakerData(req))
   }
   else {
     let location = "/home?noTicket=true"

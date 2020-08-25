@@ -5,7 +5,7 @@ let assets = require('./_assets')
 let IndexView = require('@architect/views/index')
 let Page = require('@architect/views/pages')
 let NotFound = require('@architect/views/404')
-const getSpeakerData = require('@architect/shared/data/get-speaker-data')
+let getSpeakerData = require('@architect/shared/data/get-speaker-data')
 
 /**
  * Index & page views

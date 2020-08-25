@@ -1,6 +1,8 @@
-let Layout = require('../layout')
+let LiveLayout = require('../layout/live')
+let { ConfSchedule } = require('../components/schedule')
 
-module.exports = async function Live() {
+module.exports = async function Live({ speakers }) {
+    let scheduleContainer = ConfSchedule({ speakers })
     let content = /*html*/`
     <div id="live">
         <section id="stream"> 
@@ -14,32 +16,26 @@ module.exports = async function Live() {
                     allowfullscreen="allowfullscreen">
                 </iframe>
             </div>
+            <iframe id="stFrame" 
+                src="//www.streamtext.net/player/?event=IHaveADream&header=false&footer=false&scroll=false&chat=false" 
+                style="width:100%;height:200px"> </iframe>
+        </section>
+        <section id="controls">
+            <!--div><button id="audio_switch">Turn Clapping Audio On</button></div-->
+            <p>On Stage: foo bar bat</p>
+            <p>Coming Up: blah blee bloo</p>
         </section>
         <section id="chat">
             <div id="chat-slackview"></div>
         </section>
     </div>
     <div id="live-more">
-        <div><button id="audio_switch">Turn Clapping Audio On</button></div>
-        <!--div><span class="cta"><a href="/coc">Please Read our Code of Conduct</a></span></div-->
-        <h2>Agenda</h2>
-        <ul>
-            <li>16:30 - Networking in Remo</li>
-            <li>17:30 - Greetings & Kick-off</li>
-            <li>17:40 - Timirah James</li>
-            <li>17:55 - Q&A</li>
-            <li>18:00 - Joe Karlsson: Bechdel.io: How We Used JavaScript To Help Make Film More Inclusive</li>
-            <li>18:15 - Q&A</li>
-            <li>18:20 - David Guttman: js.la to js.online: Meetups & MMORPGs</li>
-            <li>18:35 - Q&A</li>
-            <li>18:40 - Farewell</li>
-            <li>18:45 - Karaoke &amp; Rambly</li>
-            <li>20:00 - End</li>
-        </ul>
+        ${ scheduleContainer }
         <h2>Accessing Remo/Rambly/Karaoke</h2>
         <p>Links to the these platforms were sent out in an email to everyone who registered for the meetup.</p>
     </div>
     `
-    let html = Layout({ content })
+    let scripts = ['https://slackview.app/slackview.js', '/js/slackview.js']
+    let html = LiveLayout({ content, scripts })
     return { html }
 }

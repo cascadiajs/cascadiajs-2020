@@ -61,14 +61,9 @@ module.exports = async function Page (req) {
     else {
       content = body
     }
-    // HACK for Slackview on /live page!!!
-    let scripts = []
-    if (page === 'live') {
-      scripts = ['https://slackview.app/slackview.js', '/js/slackview.js']
-    }
 
     let socialUrl = `https://${ process.env.NODE_ENV === 'staging' ? 'staging.' : '' }2020.cascadiajs.com/images/social/${ page }-share.png`
-    html = Layout({ title, content, socialUrl,scripts })
+    html = Layout({ title, content, socialUrl })
   }
 
   return {

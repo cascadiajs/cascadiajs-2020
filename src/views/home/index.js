@@ -3,8 +3,8 @@ let Layout = require('../layout')
 module.exports = async function Index({ ticket }) {
     let content = /*html*/`
         <div id=page>
-            <div id=page-title><div><h1>Hello${ ticket.fullName ? ', ' + ticket.fullName : '' }!</h1></div></div>
-            <div id=page-body class=narrow>
+            <div class=page-title><div><h1>Hello${ ticket.fullName ? ', ' + ticket.fullName : '' }!</h1></div></div>
+            <div class=page-body class=narrow>
             <h2>Ticket Info</h2>
             <ul>
                 <li><b>Ticket Type:</b> ${ ticket.ticket }</li>
