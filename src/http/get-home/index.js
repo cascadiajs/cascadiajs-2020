@@ -19,7 +19,7 @@ async function unauthenticated(req) {
 async function authenticated(req) {
   const ticket = await data.get({ table: 'tickets', key: req.session.ticketRef })
   if (!ticket) {
-    message = 'We could not find that Ticket Reference. Please reach out in #help-questions in our Slack.'
+    let message = 'We could not find that Ticket Reference. Please reach out in #help-questions in our Slack.'
     return FormView({ message })
   }
   else {
