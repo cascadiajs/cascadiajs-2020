@@ -18,8 +18,13 @@ async function unauthenticated(req) {
 // display the ticket information
 async function authenticated(req) {
   const ticket = await data.get({ table: 'tickets', key: req.session.ticketRef })
-  return HomeView({ ticket })
-
+  if (!ticket) {
+    message = 'We could not find that Ticket Reference. Please reach out in #help-questions in our Slack.'
+    return FormView({ message })
+  }
+  else {
+    return HomeView({ ticket })
+  }
 }
 
 exports.handler = arc.http.async(unauthenticated, authenticated)
