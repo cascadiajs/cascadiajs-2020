@@ -28,13 +28,22 @@ Career Night is open to all registered attendees of CascadiaJS 2020. Once you re
 
 ## Hiring
 
-Over 56% of attendees to CascadiaJS are actively looking for a job or open to interesting opportunities. If your team is hiring and are interested in setting-up a table at our Career Night and/or the conference itself, please let us know by filling-out the form below!
+Over 56% of attendees to CascadiaJS are actively looking for a job or open to interesting opportunities. Companies joining us include:
+
+![Ridwell](/images/ridwell.png) ![Later](/images/later.png) ![Avalara](/images/avalara.png)
+
+If your team is hiring and are interested in setting-up a table at our Career Night and/or the conference itself, please let us know by filling-out the form below!
 
 <span class="cta"><a href="https://forms.gle/ypvAZKPpe4ZzdMfRA">Request More Info</a></span>
 
 ## Mentorship Panel
 
-New to tech? Or maybe experienced and also searching for someone who can mentor you and help you grow? We will host a panel of experts that will answer your questions and then break-up into smaller groups (< 6 people) where a wonderful group of mentors from our community will continue the conversation.
+<table class="profiles">
+    <tr><td><img src="/images/kallie-2.jpg" alt="Kallie Riff"/></td><td><img src="/images/miguel.jpg" alt="Miguel Fernandez"/></td></tr>
+    <tr><td><b>Kallie Riff</b><br/>Software Engineer Instructor, Cerner<br/>Presentation Director for Coding & Cocktails</td><td><b>Miguel Fernandez</b><br/>Associate Senior Software Engineer, Cerner<br/>VP of the Black Family Technology Awareness Association of Kansas City</td></tr>  
+</table>
+
+New to tech? Or maybe experienced and also searching for someone who can mentor you and help you grow? Kallie and Miguel that will answer your questions and then we will break-up into smaller groups (< 6 people) where a wonderful group of mentors from our community will continue the conversation.
 
 ## Venturing Out
 

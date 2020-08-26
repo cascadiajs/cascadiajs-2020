@@ -134,10 +134,9 @@ function DayOne({ speakers }) {
                 <div class="show-item">       
                     <div class="when">14:00</div>
                     <div class="what">
-                        <div class="title">Launch Darkly Workshop</div>
+                        <div class="title">TBD</div>
                         <div class="speaker">
                             <p>More info coming soon!</p>
-                            <p><img src="/images/sponsors/ld.svg" alt="Launch Darkly logo" width="150"/></p>
                         </div>
                     </div>
                 </div>
