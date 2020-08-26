@@ -30,6 +30,14 @@ module.exports = async function Live({ speakers }) {
         </section>
     </div>
     <div id="live-more">
+        <div class="q-and-a">
+            <iframe src="https://draw-3sk.begin.app/"
+                    height="400"
+                    width="310"
+                    frameborder="0"
+                    scrolling="yes">
+            </iframe> 
+        </div>
         ${ scheduleContainer }
         <h2>Accessing Remo/Rambly/Karaoke</h2>
         <p>Links to the these platforms were sent out in an email to everyone who registered for the meetup.</p>
