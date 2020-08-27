@@ -12,6 +12,14 @@ module.exports = async function Live({ speakers }) {
             <p><button id="slack-view-button">Toggle Slack View</button></p>
             <p><button id="stream-text-button">Toggle Stream Text</button></p>
             <p><button id="clapping-audio-button">Toggle Clapping Audio</button></p>
+            <div id="q-and-a">
+                <iframe src="https://draw-3sk.begin.app/"
+                        height="400"
+                        width="100%"
+                        frameborder="0"
+                        scrolling="yes">
+                </iframe> 
+            </div>
             <p><emote-widget talk-id="cjs20-test" position="bottom-left"></emote-widget></p>
         </section>
         <section id="stream"> 

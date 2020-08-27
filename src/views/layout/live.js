@@ -5,7 +5,7 @@ let bodyScripts = require('./scripts')
 module.exports = function Layout ({title, content, socialUrl = 'https://2020.cascadiajs.com/images/cjs19-family.jpg' }) {
   // expand title
   title = `CascadiaJS 2020${ title ? ' - ' + title : '' }`
-  let scripts = ['https://slackview.app/slackview.js', '/js/slackview.js', '/js/live.js', '/js/emote.js']
+  let scripts = ['https://slackview.app/slackview.js', '/js/slackview.js', '/js/live.js', 'https://cascadiajs-emote-server.herokuapp.com/emote.js']
   return /*html*/`
   <!doctype html>
   <html lang=en>

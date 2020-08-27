@@ -773,9 +773,21 @@ a.js-topic:hover {
     height: 100px;
 }
 
-/*#live iframe {
-    width: 100%;
-}*/
+#live {
+    display:block;
+}
+
+#live #chat {
+    display: none;
+}
+
+#live .stream-text-true {
+    display: block;
+}
+
+#live .stream-text-false {
+    display: none;
+}
 
 #live-more {
     padding:16px;
@@ -791,10 +803,6 @@ a.js-topic:hover {
 }
 
 /* Slackview styles */
-
-#chat-slackview {
-    display: none;
-}
 
 .sv-message {
     margin-bottom: 4px;
@@ -836,6 +844,14 @@ emote-widget {
     display: none;
 }
 
+#home ul {
+	padding: 0;
+}
+
+#home li {
+    list-style: none;
+    margin: 0 0 16px 0;
+}
 
 @media only screen and (min-width: 768px) {
 
@@ -1075,25 +1091,28 @@ emote-widget {
         grid-template-rows: 100%;
     }
 
-    #live.slack-view-true {
-        grid-template-columns: 200px 3fr 1fr;
-    }
-
-    #live.slack-view-false {
-        grid-template-columns: 200px 1fr;
-    }
-
-    #live .stream-text-true {
+    #live #chat {
         display: block;
     }
 
-    #live .stream-text-false {
-        display: none;
+    #live #controls {
+        padding: 8px;
+        border: 4px solid #17C37B;
+    }
+
+    #live.slack-view-true {
+        grid-template-columns: 300px 3fr 1fr;
+    }
+
+    #live.slack-view-false {
+        grid-template-columns: 300px 1fr;
     }
 
     #live #stream {
         padding: 8px;
-        border: 4px solid #17C37B;
+        border-top: 4px solid #17C37B;
+        border-bottom: 4px solid #17C37B;
+        border-right: 4px solid #17C37B;     
     }
 
     #stream .inner {
@@ -1111,13 +1130,6 @@ emote-widget {
     #stream-text {
         flex: 1;
         padding: 10px;
-    }
-
-    #live #controls {
-        padding: 8px;
-        border-top: 4px solid #17C37B;
-        border-bottom: 4px solid #17C37B;
-        border-right: 4px solid #17C37B;      
     }
 
     #live #chat {
@@ -1143,7 +1155,7 @@ emote-widget {
         display: block;
         position: absolute;
         z-index: 10;
-        left: 10px;
+        left: 0;
         bottom: 0;
     }
     
