@@ -11,7 +11,7 @@ module.exports = async function Live({ speakers }) {
             <div id="graphic-recording">
                 <div class="video-container">
                 <iframe
-                    src="https://player.twitch.tv/?channel=cascadiajs&parent=localhost"
+                    src="https://player.twitch.tv/?channel=cascadiajs&parent=localhost&parent=2020.cascadiajs.com"
                     height="<height>"
                     width="<width>"
                     frameborder="<frameborder>"
