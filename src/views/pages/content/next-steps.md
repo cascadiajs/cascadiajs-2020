@@ -1,15 +1,15 @@
 ---
 title: Registration Next Steps
 ---
-Thanks for buying a ticket to CascadiaJS 2020. We're so excited that you're going to join us. We know it's weird that things have moved on-line, but we ask you to **trust us**. We are going to make this online edition of CascadiaJS amazing for you, we promise!
+Thanks for buying a ticket to CascadiaJS 2020. We're so excited that you're going to join us in Cyberspace this year!
 
-## If your ticket comes with a Goodie Box, please claim it!
+## First, verify your access code
 
-Note: if you registered after July 24th, your Goodie Box will be delivered following the conference.
+In order to participate in the conference (watch the Live Stream, hang out with people in Remo, etc) you will need to log-in to the Conference Dashboard using an Access Code. Please ensure that you are able to log-in prior to Sept 1 so that there is time to sort out any issues before the conference begins!
 
 <div class="cta"><a href="/home">Log-in to your Conference Dashboard</a></div>
 
-## Gear up for a 💯 conference experience:
+## Next, get set-up for a 💯 conference experience
 
 1. [RSVP](${CAREER_NIGHT_URL}) for the August 31 CascadiaJS Pre-Conf Career Night.
 1. [Join the CascadiaJS Slack](${SLACK_JOIN_URL})
