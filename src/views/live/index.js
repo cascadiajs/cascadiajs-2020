@@ -4,26 +4,27 @@ let { ConfSchedule } = require('../components/schedule')
 module.exports = async function Live({ speakers }) {
     let scheduleContainer = ConfSchedule({ speakers })
     let content = /*html*/`
-    <div id="live">
-        <section id="stream"> 
-            <div class="video-container">
-                <iframe
-                    src="https://player.twitch.tv/?channel=cascadiajs&parent=localhost&parent=staging.2020.cascadiajs.com&parent=2020.cascadiajs.com"
-                    height="560"
-                    width="315"
-                    frameborder="0"
-                    scrolling="no"
-                    allowfullscreen="allowfullscreen">
-                </iframe>
-            </div>
-            <iframe id="stFrame" 
-                src="//www.streamtext.net/player/?event=IHaveADream&header=false&footer=false&scroll=false&chat=false" 
-                style="width:100%;height:200px"> </iframe>
-        </section>
+    <div id="live" class="slack-view-true">
         <section id="controls">
             <!--div><button id="audio_switch">Turn Clapping Audio On</button></div-->
-            <p>On Stage: foo bar bat</p>
+            <p>On Now: foo bar bat</p>
             <p>Coming Up: blah blee bloo</p>
+            <p><button id="slack-view-button">Toggle Slack View</button></p>
+            <p><button id="stream-text-button">Toggle Stream Text</button></p>
+            <p><button id="clapping-audio-button">Toggle Clapping Audio</button></p>
+            <p><emote-widget talk-id="cjs20-test" position="bottom-left"></emote-widget></p>
+        </section>
+        <section id="stream"> 
+            <div class="inner">                
+                <div id="stream-video" class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/O9UgHFDntrQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div id="stream-text" class="stream-text-true">
+                    <iframe id="stFrame" 
+                        src="//www.streamtext.net/player/?event=IHaveADream&header=false&footer=false&scroll=false&chat=false&fs=25" 
+                        style="width:100%;height:95%"> </iframe>
+                </div>
+            </div>
         </section>
         <section id="chat">
             <div id="chat-slackview"></div>
@@ -35,7 +36,6 @@ module.exports = async function Live({ speakers }) {
         <p>Links to the these platforms were sent out in an email to everyone who registered for the meetup.</p>
     </div>
     `
-    let scripts = ['https://slackview.app/slackview.js', '/js/slackview.js']
-    let html = LiveLayout({ content, scripts })
+    let html = LiveLayout({ content })
     return { html }
 }

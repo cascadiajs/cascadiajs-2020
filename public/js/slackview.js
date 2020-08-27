@@ -76,7 +76,7 @@ function handleAudioButtonClick() {
     audioButton.onclick = () => toggleAudio();
 }
 
-window.onload = function() {
+document.addEventListener('DOMContentLoaded', async function main() {
     // Attach builtin widget to your page
     if (slackview) {
         //loadClapping();
@@ -86,7 +86,7 @@ window.onload = function() {
         const teamId = 'T02QDM2DV';
         const hidePoweredBy = false;
         const hideJoinSlack = true;
-        const logLevel = 'debug';
+        const logLevel = 'warn';
         slackview.configure({streamId, teamId, logLevel, hidePoweredBy, hideJoinSlack}).then(() => {
             /*slackview.listen(msg => {
                 if (msg.rawText.indexOf(':clap:') !== -1) {
@@ -99,4 +99,4 @@ window.onload = function() {
     else {
         console.log('Slackview global not initialized :(')
     }
-}
+}, false)

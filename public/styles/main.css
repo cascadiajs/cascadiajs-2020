@@ -152,6 +152,7 @@ footer a, footer a:visited {
 	height: 100%;
 }
 
+
 /* layout styles */
 
 #root {
@@ -818,8 +819,21 @@ a.js-topic:hover {
 
 }
 
+.sv-powered-wrap {
+    padding: 0px 5px 0px 10px; 
+    font-size: 42%; 
+    position: absolute; 
+    top: 0px; 
+    right: 0px;
+    height: 25px;
+}
+
 table.profiles {
     width: auto;
+}
+
+emote-widget {
+    display: none;
 }
 
 
@@ -845,17 +859,10 @@ table.profiles {
         z-index: auto;
     }*/
 
-    header#live-header {
-        height: 40px;
+    section#live-header {
+        display: none;
     }
 
-    header#live-header nav {
-        padding: 3px 0 0 0;
-    }
-
-    header#live-header img{
-        height: 30px;
-    }
 
     .narrow {
         margin: 0 auto;
@@ -1063,14 +1070,47 @@ table.profiles {
     }
 
     #live {
+        height: 100vh;
         display: grid;
         grid-template-rows: 100%;
-        grid-template-columns: 2fr 200px 1fr;
+    }
+
+    #live.slack-view-true {
+        grid-template-columns: 200px 3fr 1fr;
+    }
+
+    #live.slack-view-false {
+        grid-template-columns: 200px 1fr;
+    }
+
+    #live .stream-text-true {
+        display: block;
+    }
+
+    #live .stream-text-false {
+        display: none;
     }
 
     #live #stream {
         padding: 8px;
         border: 4px solid #17C37B;
+    }
+
+    #stream .inner {
+        max-width: 1200px;
+        margin: 0 auto; 
+        display:flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    #stream-video {
+        flex: 1;
+    }
+
+    #stream-text {
+        flex: 1;
+        padding: 10px;
     }
 
     #live #controls {
@@ -1096,6 +1136,15 @@ table.profiles {
         right:0;
         overflow-y: scroll;
         max-height:100%;
+        padding-top: 20px;
+    }
+
+    emote-widget {
+        display: block;
+        position: absolute;
+        z-index: 10;
+        left: 10px;
+        bottom: 0;
     }
     
     .day-content {
