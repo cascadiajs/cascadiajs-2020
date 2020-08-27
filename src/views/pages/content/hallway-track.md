@@ -8,7 +8,7 @@ We couldn't imagine having CascadiaJS without a great Hallway Track, so we hope 
 
 ## Small-group video chat (powered by Remo)
 
-![Remo Layout](/images/remo-floor-2.png)
+![Remo Layout](/images/remo-floor.png)
 
 From 10am PDT to 3pm PDT on both days, we will have a virtual meeting space up and running powered by [Remo](https://remo.co).
 

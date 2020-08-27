@@ -13,7 +13,32 @@ module.exports = function Layout ({title, content, socialUrl = 'https://2020.cas
     <body>
       <div id="root">
         <section id="live-header">
-        <!-- nothing to display -->
+          <div id="logo">
+            <a href="/"><img src="/images/icon-green.svg" alt="CascadiaJS logo"/></a>
+          </div>
+          <div id="settings">
+            <div class="label">Slack View</div>
+            <div>
+            <label class="switch">
+              <input id="slack-view-button" type="checkbox" checked>
+              <span class="slider"></span>
+            </label>
+            </div>
+            <div class="label">Stream Text</div>
+            <div>
+            <label class="switch">
+              <input id="stream-text-button" type="checkbox" checked>
+              <span class="slider"></span>
+            </label>
+            </div>
+            <div class="label">Clapping Audio</div>
+            <div>
+            <label class="switch">
+              <input id="clapping-audio-button" type="checkbox" checked>
+              <span class="slider"></span>
+            </label>
+            </div>
+          </div>
         </section>
         <div id="content">
           ${ content }

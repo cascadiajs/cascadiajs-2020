@@ -777,8 +777,23 @@ a.js-topic:hover {
     display:block;
 }
 
+#live h2 {
+    font-size: 24px;
+    margin: 0;
+    font-family: mono45-headline, monospace;
+    font-weight: 500;
+}
+
 #live #chat {
     display: none;
+}
+
+#stream-text {
+    background-color: #fff;
+}
+
+#q-and-a {
+    background-color: #fff;
 }
 
 #live .stream-text-true {
@@ -875,10 +890,33 @@ emote-widget {
         z-index: auto;
     }*/
 
-    section#live-header {
-        display: none;
+    #live-header {
+        height: 30px;
+        background-color: #112378;
+        padding: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
+    #live-header #logo {
+        flex: 1;
+    }
+
+    #live-header #logo img {
+        height: 30px;
+    }
+
+    #live-header #settings {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #live-header #settings .label {
+        color: #fff;
+        margin: 0 10px 0 10px;
+    }
 
     .narrow {
         margin: 0 auto;
@@ -1086,33 +1124,35 @@ emote-widget {
     }
 
     #live {
-        height: 100vh;
+        height: calc(100vh - 46px);
         display: grid;
         grid-template-rows: 100%;
+        background-color: #eee;
     }
 
     #live #chat {
-        display: block;
+        display: flex;
+        flex-direction: column;
     }
 
     #live #controls {
         padding: 8px;
-        border: 4px solid #17C37B;
+        /*border: 4px solid #17C37B;*/
     }
 
     #live.slack-view-true {
-        grid-template-columns: 300px 3fr 1fr;
+        grid-template-columns: 1fr 3fr 1fr;
     }
 
     #live.slack-view-false {
-        grid-template-columns: 300px 1fr;
+        grid-template-columns: 1fr 2fr;
     }
 
     #live #stream {
         padding: 8px;
-        border-top: 4px solid #17C37B;
+        /*border-top: 4px solid #17C37B;
         border-bottom: 4px solid #17C37B;
-        border-right: 4px solid #17C37B;     
+        border-right: 4px solid #17C37B;*/
     }
 
     #stream .inner {
@@ -1134,21 +1174,27 @@ emote-widget {
 
     #live #chat {
         padding: 8px;
-        border-top: 4px solid #17C37B;
+        /*border-top: 4px solid #17C37B;
         border-bottom: 4px solid #17C37B;
-        border-right: 4px solid #17C37B; 
+        border-right: 4px solid #17C37B;*/
         position:relative;
     }
 
     #chat-slackview {
         display: block;
-        position:absolute;
+        flex: 1;
+        background-color: #fff;
+        /*position:absolute;
         top:0;
         left:0;
-        right:0;
+        right:0;*/
         overflow-y: scroll;
-        max-height:100%;
-        padding-top: 20px;
+        /*max-height:100%;
+        padding-top: 20px;*/
+    }
+
+    #graphic-recording {
+        
     }
 
     emote-widget {
@@ -1170,6 +1216,62 @@ emote-widget {
     .hallway, .workshops {
         border-left: 1px solid #112378;
         padding-left: 8px;
+    }
+
+    /* toggle switch CSS */
+
+    /* The switch - the box around the slider */
+    .switch {
+        position: relative;
+        display: inline-block;
+        width: 60px;
+        height: 30px;
+    }
+  
+    /* Hide default HTML checkbox */
+    .switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+    
+    /* The slider */
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+    
+    .slider:before {
+        position: absolute;
+        content: "";
+        height: 22px;
+        width: 22px;
+        left: 4px;
+        bottom: 4px;
+        background-color: white;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+    
+    input:checked + .slider {
+        background-color: #17C37B;;
+    }
+    
+    input:focus + .slider {
+        box-shadow: 0 0 1px #17C37B;;
+    }
+    
+    input:checked + .slider:before {
+        -webkit-transform: translateX(26px);
+        -ms-transform: translateX(26px);
+        transform: translateX(26px);
     }
 }
 
