@@ -24,7 +24,7 @@ module.exports = function Layout ({title, content, socialUrl = 'https://2020.cas
               <span class="slider"></span>
             </label>
             </div>
-            <div class="label">Stream Text</div>
+            <div class="label">Captions</div>
             <div>
             <label class="switch">
               <input id="stream-text-button" type="checkbox" checked>

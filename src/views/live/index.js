@@ -1,7 +1,7 @@
 let LiveLayout = require('../layout/live')
 let { ConfSchedule } = require('../components/schedule')
 
-module.exports = async function Live({ speakers }) {
+module.exports = async function Live({ speakers, ticket }) {
     let scheduleContainer = ConfSchedule({ speakers })
     let content = /*html*/`
     <div id="live" class="slack-view-true">
@@ -11,18 +11,18 @@ module.exports = async function Live({ speakers }) {
                 <div class="video-container">
                     <iframe
                         src="https://player.twitch.tv/?channel=cascadiajs&parent=localhost&parent=2020.cascadiajs.com"
-                        height="<height>"
-                        width="<width>"
-                        frameborder="<frameborder>"
-                        scrolling="<scrolling>"
-                        allowfullscreen="<allowfullscreen>">
+                        height="100%"
+                        width="100%"
+                        frameborder="no"
+                        scrolling="no"
+                        allowfullscreen="allowfullscreen">
                     </iframe>
                 </div>
             </div>
             <div id="q-and-a">
                 <h2>Q&A</h2>
                 <div class="container">
-                    <iframe src="https://draw-3sk.begin.app/"
+                    <iframe src="https://draw-3sk.begin.app/#${ ticket.key }"
                             height="100%"
                             width="100%"
                             frameborder="0"
