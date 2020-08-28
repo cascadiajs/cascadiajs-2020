@@ -13,11 +13,11 @@ document.addEventListener('DOMContentLoaded', async function main() {
     function audioClap() {
         const source = state.clappingContext.createBufferSource();
         source.buffer = state.clappingBuffer;
-        // Set volume to 50%
+        // Set volume to 10%
         const gainNode = state.clappingContext.createGain();
         source.connect(gainNode);
         gainNode.connect(state.clappingContext.destination);
-        gainNode.gain.value = 0.1;
+        gainNode.gain.value = 0.01;
         source.start();
     }
     
@@ -55,9 +55,9 @@ document.addEventListener('DOMContentLoaded', async function main() {
     };
 
     document.querySelector('emote-widget').onEmote((event) => {
-        if (CLAPPABLE.includes(event.data)) {
+        if (CLAPPABLE.includes(event.data) && state.clapping) {
             audioClap()
-        }  
+        } 
     });
 
     document.getElementById('clapping-audio-button').onclick = () => toggleAudio()

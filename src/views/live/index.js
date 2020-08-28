@@ -5,31 +5,34 @@ module.exports = async function Live({ speakers }) {
     let scheduleContainer = ConfSchedule({ speakers })
     let content = /*html*/`
     <div id="live" class="slack-view-true">
-        <section id="controls">
-            <!--div><button id="audio_switch">Turn Clapping Audio On</button></div-->
-            <h2>Talk Illustrations</h2>
+        <section id="left-pane">
             <div id="graphic-recording">
+                <h2>Talk Illustrations</h2>
                 <div class="video-container">
-                <iframe
-                    src="https://player.twitch.tv/?channel=cascadiajs&parent=localhost&parent=2020.cascadiajs.com"
-                    height="<height>"
-                    width="<width>"
-                    frameborder="<frameborder>"
-                    scrolling="<scrolling>"
-                    allowfullscreen="<allowfullscreen>">
-                </iframe>
+                    <iframe
+                        src="https://player.twitch.tv/?channel=cascadiajs&parent=localhost&parent=2020.cascadiajs.com"
+                        height="<height>"
+                        width="<width>"
+                        frameborder="<frameborder>"
+                        scrolling="<scrolling>"
+                        allowfullscreen="<allowfullscreen>">
+                    </iframe>
                 </div>
             </div>
-            <h2>Q&A</h2>
             <div id="q-and-a">
-                <iframe src="https://draw-3sk.begin.app/"
-                        height="400"
-                        width="100%"
-                        frameborder="0"
-                        scrolling="yes">
-                </iframe> 
+                <h2>Q&A</h2>
+                <div class="container">
+                    <iframe src="https://draw-3sk.begin.app/"
+                            height="100%"
+                            width="100%"
+                            frameborder="0"
+                            scrolling="yes">
+                    </iframe> 
+                </div>
             </div>
-            <p><emote-widget talk-id="cjs20-test" position="bottom-left"></emote-widget></p>
+            <div id="emote">
+                <emote-widget talk-id="cjs20-test" position="bottom-left" open="false"></emote-widget>
+            </div>
         </section>
         <section id="stream"> 
             <div class="inner">            

@@ -24,8 +24,8 @@ module.exports = async function Index({ ticket }) {
                 ${ ticket.conference === 'Y' ? /*html*/`
                 <h2>Career Night (8/31)</h2>
                 <ul>
-                    <li><span class="cta"><a href="${ process.env.CAREER_NIGHT_URL }" target="_hallway">RSVP</a></span></li>
-                    <li><span class="cta"><a href="${ process.env.REMO_CAREER_URL }">Attend / Remo (8/31)</a></span></li>
+                    <li><span class="cta"><a href="${ process.env.CAREER_NIGHT_URL }" target="_rsvp">RSVP</a></span></li>
+                    <li><span class="cta"><a href="${ process.env.REMO_CAREER_URL }" target="_hallway">Attend / Remo (8/31)</a></span></li>
                 </ul>
                 <h2>Conference (9/1 &amp; 9/2)</h2>
                 <ul>

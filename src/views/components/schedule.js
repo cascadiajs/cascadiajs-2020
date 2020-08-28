@@ -131,7 +131,7 @@ function DayOne({ speakers }) {
                         </div>
                     </div>
                 </div>
-                <div class="show-item">       
+                <!--div class="show-item">       
                     <div class="when">14:00</div>
                     <div class="what">
                         <div class="title">TBD</div>
@@ -139,7 +139,7 @@ function DayOne({ speakers }) {
                             <p>More info coming soon!</p>
                         </div>
                     </div>
-                </div>
+                </div-->
             </div>
         </div>
     </div>
@@ -228,7 +228,7 @@ function DayTwo({ speakers }) {
                         </div>
                     </div>
                 </div>
-                <div class="show-item">       
+                <!--div class="show-item">       
                     <div class="when">14:00</div>
                     <div class="what">
                         <div class="title"><a href="/workshop-iot">IoT Workshop</a></div>
@@ -237,7 +237,7 @@ function DayTwo({ speakers }) {
                             <p><img src="/images/sponsors/heroku.svg" alt="Heroku logo" width="150"/></p>
                         </div>
                     </div>
-                </div>
+                </div-->
             </div>
         </div>
     </div>

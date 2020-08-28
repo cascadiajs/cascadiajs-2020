@@ -14,7 +14,7 @@ module.exports = function Layout ({title, content, socialUrl = 'https://2020.cas
       <div id="root">
         <header>
           <section class="alert">
-            <i class="fas fa-hand-point-right"></i> Last Call! 🚂 Ticket sales end Friday, August 28th <i class="fas fa-hand-point-left"></i>
+            We are <u>SOLD OUT</u> of Conference tickets & Workshops are filling up! See you next week!
           </section>
           <nav>
             <div class="wide">

@@ -1,6 +1,7 @@
 /* eslint-disable no-undef */
 
 // feel bad polluting the window object :(
+/*
 window.clapping = {
     context: new AudioContext(),
     buffer: null,
@@ -75,6 +76,7 @@ function handleAudioButtonClick() {
     const audioButton = document.querySelector('#audio_switch');
     audioButton.onclick = () => toggleAudio();
 }
+*/
 
 document.addEventListener('DOMContentLoaded', async function main() {
     // Attach builtin widget to your page
