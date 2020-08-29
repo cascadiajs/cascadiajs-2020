@@ -47,51 +47,64 @@ const agenda = [
     { when: '2020-09-02T17:00:00-07:00', what: 'day-two-over'},
 ]
 
-document.addEventListener('DOMContentLoaded', async function main() {
+document.addEventListener('DOMContentLoaded', async function main() {    
     // set initial state
     const state = {
         slackView: true,
         liveText: true,
         clapping: true,
-        clappingContext: new AudioContext(),
+        clappingContext: undefined,
         clappingBuffer: null,
         agendaIndex: undefined
+    }
+
+    // check for audio
+    try {
+        window.AudioContext = window.AudioContext || window.webkitAudioContext;
+        state.clappingContext = new AudioContext();
+    }
+    catch(e) {
+        console.log('Web Audio API is not supported in this browser');
     }
 
     const CLAPPABLE = ['celebrate', 'heart', 'plusone', 'clap', 'smile']
     
     function audioClap() {
-        const source = state.clappingContext.createBufferSource();
-        source.buffer = state.clappingBuffer;
-        // Set volume to 10%
-        const gainNode = state.clappingContext.createGain();
-        source.connect(gainNode);
-        gainNode.connect(state.clappingContext.destination);
-        gainNode.gain.value = 0.1;
-        source.start();
+        if (state.clappingContext) {
+            const source = state.clappingContext.createBufferSource();
+            source.buffer = state.clappingBuffer;
+            // Set volume to 10%
+            const gainNode = state.clappingContext.createGain();
+            source.connect(gainNode);
+            gainNode.connect(state.clappingContext.destination);
+            gainNode.gain.value = 0.1;
+            source.start();
+        }
     }
     
     function toggleAudio() {
         state.clapping = !state.clapping;
-        if (state.clapping) {
-            state.clappingContext.resume();
+        if (state.clappingContext) {
+            if (state.clapping) {
+                state.clappingContext.resume();
+            }
+            else {
+                state.clappingContext.suspend();
+            }
         }
-        else {
-            state.clappingContext.suspend();
-        }
-        //const audioButton = document.getElementById('clapping-audio-button');
-        //audioButton.innerHTML = `Turn Clapping Audio ${ state.clapping ? 'Off' : 'On' }`;
     }
 
-    // load clapping audio
-    const URL = '/sounds/applause-8.mp3';
+    // load clapping audio if we have access to the Web Audio API
+    if (state.clappingContext) {
+        const URL = '/sounds/applause-8.mp3';
       
-    window.fetch(URL)
-        .then(response => response.arrayBuffer())
-        .then(arrayBuffer => state.clappingContext.decodeAudioData(arrayBuffer))
-        .then(audioBuffer => {
-            state.clappingBuffer = audioBuffer;
-    });
+        window.fetch(URL)
+            .then(response => response.arrayBuffer())
+            .then(arrayBuffer => state.clappingContext.decodeAudioData(arrayBuffer))
+            .then(audioBuffer => {
+                state.clappingBuffer = audioBuffer;
+        });        
+    }
 
     // wire-up controls
     document.getElementById('slack-view-button').onclick = () => {
@@ -109,8 +122,6 @@ document.addEventListener('DOMContentLoaded', async function main() {
             audioClap()
         } 
     });
-
-    //document.getElementById("draw-3sk").setAttribute('src', "https://2019.cascadiajs.com")
 
     document.getElementById('clapping-audio-button').onclick = () => toggleAudio()
 
