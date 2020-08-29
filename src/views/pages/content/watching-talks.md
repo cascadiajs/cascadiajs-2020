@@ -10,30 +10,30 @@ You'll also be able to ask questions and show your appreciation on the live stre
 
 ![Watching the live stream](/images/watch-stream.png)
 
-## How do I show my appreciation?
+## How do I show my appreciation at the end of the talk?
 
-When you're physically together, everyone hears you clap in appreciation at the end of a talk.
+When we're physically together, everyone hears your clap in appreciation.
 
 We've brought this experience online!
 
 * Click on the Smiley Face widget in the bottom left corner of the window. The "Share how you feel!" dialog pops up.
 
-* Click on any of the icons to show your appreciation. You (and all attendees) will hear your clap, and the widget keeps track of appreciations for that talk.
+* Click on any of the icons to show your appreciation. You (and all attendees) will hear your clap, and the widget keeps track of appreciations for that talk as well.
 
-* If you want to toggle the clapping audio on/off, see the `Clapping Audio` toggle in the top right of the window.
+* To toggle the clapping audio on/off, see the `Clapping Audio` toggle in the top right of the window.
 
 ## Adjusting your view
 
-If you want to maximize the video window, you can hide the `Slack View` on the right, or the `Captions view` on the bottom. See the toggles in the top right of the window.
+To maximize the video window, you can hide the `Slack View` on the right, or the `Captions view` on the bottom. See the toggles in the top right of the window.
 
 ## How do I ask questions?
 
-You can ask a question in the Q&A widget on the left side of the window. Type your question, or up-vote an existing question.
+Ask a question in the Q&A widget on the left side of the window. Type your question, or up-vote an existing question.
 
 ## What is Talk Illustrations?
 
-You'll notice a window in the top left corner. We've hired an artist to illustrate each talk.
+We've hired an artist to illustrate each talk.
 
 ## It would be nice to see the schedule!
 
-Indeed! Our schedule is actually below the live talks, though you may miss it because the video window auto-sizes. Just use the vertical scrollbar to scroll down to the schedule.
+Indeed! Our schedule is actually below the live talks though you may miss it because the video window auto-sizes. Just use the vertical scrollbar to scroll down to the schedule.
