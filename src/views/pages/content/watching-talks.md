@@ -4,32 +4,36 @@ title: How to Watch the Talks
 
 The live stream of talks will take place on here on our website.
 
+You'll also be able to ask questions and show your appreciation on the live stream page.
+
 <div class="cta"><a href="/live">Tune-In to the Live Stream</a></div>
 
-We also encourage you to join the **#live** channel on [our Slack](https://join.slack.com/t/cascadiajs/shared_invite/zt-gxn6l31s-Grym6ikdMaTcNMe26iOUjw). That's where you will be able to hang out with fellow attendees and ask questions during the Q&A portion.
+![Watching the live stream](/images/watch-stream.png)
 
-For your convenience, we will also be displaying the Slack chat conversation on the website in read-only mode next to the live stream.
+## How do I show my appreciation at the end of the talk?
 
-![Using Slack while watching the live stream](/images/stream-slack.png)
+When we're physically together, everyone hears your clap in appreciation.
 
-## Turning on Audio
+We've brought this experience online!
 
-### Unmute Stream Audio
+* Click on the Smiley Face widget in the bottom left corner of the window. The "Share how you feel!" dialog pops up.
 
-The video stream by default is muted. Unmute in the bottom left. See "play" button in screenshot below.
+* Click on any of the icons to show your appreciation. You (and all attendees) will hear your clap, and the widget keeps track of appreciations for that talk as well.
 
-### Turn on Audio for Clapping
+* To toggle the clapping audio on/off, see the `Clapping Audio` toggle in the top right of the window.
 
-There's a new feature that lets you clap to show your appreciation.
+## Adjusting your view
 
-In the Slack **#live** channel, when you use the emoji `:clap:` all viewers will see an animation on the site as well as hear a clap noise.
+To maximize the video window, you can hide the `Slack View` on the right, or the `Captions view` on the bottom. See the toggles in the top right of the window.
 
-To hear the noise yourself, you need to enable the audio for this feature.
+## How do I ask questions?
 
-Directly underneath the talk videos, you'll see **Turn Clapping Audio On** button.
+Ask a question in the Q&A widget on the left side of the window. Type your question, or up-vote an existing question.
 
-_Note that if your browser window is wide, you may not see the button due to the auto-sizing of the video window. In this case, just scroll down a bit to see the button._
+## What is Talk Illustrations?
 
-See "Turn Clapping Audio On" button in screenshot.
+We've hired an artist to illustrate each talk.
 
-![Turning on audio for stream and for clapping feature](/images/stream-audio.png)
+## It would be nice to see the schedule!
+
+Indeed! Our schedule is actually below the live talks though you may miss it because the video window auto-sizes. Just use the vertical scrollbar to scroll down to the schedule.
