@@ -72,35 +72,35 @@ function DayOne({ speakers, ticket = undefined }) {
                     <div class="what"><div class="title"><i class="fas fa-door-open"></i> Conference Opens</div></div>
                 </div>
                 ${ renderSpeaker("09:20", speakers.find(s => s.key === 'claudius-mbemba'))}
-                ${ renderSpeaker("09:30", speakers.find(s => s.key === 'kyle-simpson'))}
-                ${ renderSpeaker("10:00", speakers.find(s => s.key === 'james-steinbach'))}
+                ${ renderSpeaker("09:25", speakers.find(s => s.key === 'kyle-simpson'))}
+                ${ renderSpeaker("09:54", speakers.find(s => s.key === 'james-steinbach'))}
                 <div class="show-item">       
                     <div class="when">10:15</div>
                     <div class="what"><div class="title"><i class="fas fa-coffee"></i> Break</div></div>
                 </div>
-                ${ renderSpeaker("10:50", speakers.find(s => s.key === 'tiger-oakes'))}
-                ${ renderSpeaker("11:15", speakers.find(s => s.key === 'romulo-cintra'))}
-                ${ renderSpeaker("11:40", speakers.find(s => s.key === 'jemima-abu'))}
+                ${ renderSpeaker("10:48", speakers.find(s => s.key === 'tiger-oakes'))}
+                ${ renderSpeaker("11:10", speakers.find(s => s.key === 'romulo-cintra'))}
+                ${ renderSpeaker("11:37", speakers.find(s => s.key === 'jemima-abu'))}
                 <div class="show-item">       
                     <div class="when">12:00</div>
                     <div class="what"><div class="title"><i class="fas fa-taco"></i> Lunch</div></div>
                 </div>
-                ${ renderSpeaker("13:40", speakers.find(s => s.key === 'will-klein'))}
-                ${ renderSpeaker("14:05", speakers.find(s => s.key === 'kelsey-breseman'))}
-                ${ renderSpeaker("14:30", speakers.find(s => s.key === 'najla-elmachtoub'))}
+                ${ renderSpeaker("13:28", speakers.find(s => s.key === 'will-klein'))}
+                ${ renderSpeaker("13:48", speakers.find(s => s.key === 'kelsey-breseman'))}
+                ${ renderSpeaker("14:14", speakers.find(s => s.key === 'najla-elmachtoub'))}
                 <div class="show-item">       
-                    <div class="when">15:00</div>
+                    <div class="when">14:35</div>
                     <div class="what"><div class="title"><i class="fas fa-popcorn"></i> Break</div></div>
                 </div>
-                ${ renderSpeaker("15:25", speakers.find(s => s.key === 'joel-hooks'))}
-                ${ renderSpeaker("15:50", speakers.find(s => s.key === 'sangeetha-kp'))}
-                ${ renderSpeaker("16:10", speakers.find(s => s.key === 'shawn-wang'))}
+                ${ renderSpeaker("15:12", speakers.find(s => s.key === 'joel-hooks'))}
+                ${ renderSpeaker("15:37", speakers.find(s => s.key === 'sangeetha-kp'))}
+                ${ renderSpeaker("15:51", speakers.find(s => s.key === 'shawn-wang'))}
                 <div class="show-item">       
-                    <div class="when">16:35</div>
+                    <div class="when">16:20</div>
                     <div class="what"><div class="title"><i class="fas fa-door-closed"></i> Conference Close</div></div>
                 </div>
                 <div class="show-item">       
-                    <div class="when">16:50</div>
+                    <div class="when">16:30</div>
                     <div class="what"><div class="title"><i class="fas fa-turntable"></i> <a href="/opening-party">Live Music Show</a></div></div>
                 </div>
             </div>
@@ -127,6 +127,7 @@ function DayOne({ speakers, ticket = undefined }) {
                         <div><img src="/images/sponsors/imgix.svg" width="150" alt="Imgix logo"/></div>
                         <div><img src="/images/sponsors/auth0.svg" width="150" alt="Auth0 logo"/></div>
                         <div><img src="/images/sponsors/tagboard.png" width="150" alt="Tagboard logo"/></div>
+                        <div><img src="/images/sponsors/ld.svg" width="150" alt="Launch Darkly logo"/></div>
                     </div>
                 </div>
                 <div class="show-item">       
@@ -247,36 +248,36 @@ function DayTwo({ speakers, ticket = undefined }) {
                     <div class="when">09:00</div>
                     <div class="what"><div class="title"><i class="fas fa-door-open"></i> Conference Opens</div></div>
                 </div>
-                ${ renderSpeaker("09:20", speakers.find(s => s.key === 'evan-tahler'))}
-                ${ renderSpeaker("09:50", speakers.find(s => s.key === 'tianyu-pu'))}
-                ${ renderSpeaker("10:20", speakers.find(s => s.key === 'scott-ammon'))}
+                ${ renderSpeaker("09:24", speakers.find(s => s.key === 'evan-tahler'))}
+                ${ renderSpeaker("09:49", speakers.find(s => s.key === 'tianyu-pu'))}
+                ${ renderSpeaker("10:13", speakers.find(s => s.key === 'scott-ammon'))}
                 <div class="show-item">       
-                    <div class="when">10:35</div>
+                    <div class="when">10:32</div>
                     <div class="what"><div class="title"><i class="fas fa-coffee"></i> Break</div></div>
                 </div>
-                ${ renderSpeaker("11:05", speakers.find(s => s.key === 'pantelis-kalogiros'))}
-                ${ renderSpeaker("11:35", speakers.find(s => s.key === 'amber-hoak'))}
+                ${ renderSpeaker("11:07", speakers.find(s => s.key === 'pantelis-kalogiros'))}
+                ${ renderSpeaker("11:34", speakers.find(s => s.key === 'amber-hoak'))}
                 ${ renderSpeaker("12:00", speakers.find(s => s.key === 'rahat-chowdhury'))}
                 <div class="show-item">       
                     <div class="when">12:20</div>
                     <div class="what"><div class="title"><i class="fas fa-burger-soda"></i> Lunch</div></div>
                 </div>
-                ${ renderSpeaker("13:55", speakers.find(s => s.key === 'kj'))}
-                ${ renderSpeaker("14:25", speakers.find(s => s.key === 'april-speight'))}
-                ${ renderSpeaker("14:50", speakers.find(s => s.key === 'myriam-walden-duarte'))}
+                ${ renderSpeaker("13:56", speakers.find(s => s.key === 'kj'))}
+                ${ renderSpeaker("14:21", speakers.find(s => s.key === 'april-speight'))}
+                ${ renderSpeaker("14:47", speakers.find(s => s.key === 'myriam-walden-duarte'))}
                 <div class="show-item">       
-                    <div class="when">15:10</div>
+                    <div class="when">15:04</div>
                     <div class="what"><div class="title"><i class="fas fa-pie"></i> Break</div></div>
                 </div>
-                ${ renderSpeaker("15:40", speakers.find(s => s.key === 'dan-mckeon'))}
-                ${ renderSpeaker("16:10", speakers.find(s => s.key === 'rachelle-rathbone'))}
-                ${ renderSpeaker("16:25", speakers.find(s => s.key === 'fred-k-schott'))}
+                ${ renderSpeaker("15:42", speakers.find(s => s.key === 'dan-mckeon'))}
+                ${ renderSpeaker("16:01", speakers.find(s => s.key === 'rachelle-rathbone'))}
+                ${ renderSpeaker("16:16", speakers.find(s => s.key === 'fred-k-schott'))}
                 <div class="show-item">       
-                    <div class="when">16:50</div>
+                    <div class="when">16:45</div>
                     <div class="what"><div class="title"><i class="fas fa-door-closed"></i> Conference Close</div></div>
                 </div>
                 <div class="show-item">       
-                    <div class="when">17:05</div>
+                    <div class="when">17:00</div>
                     <div class="what"><div class="title"><i class="fas fa-utensils-alt"></i> Dinner Break</div></div>
                 </div>
                 <div class="show-item">       
@@ -316,6 +317,7 @@ function DayTwo({ speakers, ticket = undefined }) {
                         <div><img src="/images/sponsors/imgix.svg" width="150" alt="Imgix logo"/></div>
                         <div><img src="/images/sponsors/auth0.svg" width="150" alt="Auth0 logo"/></div>
                         <div><img src="/images/sponsors/tagboard.png" width="150" alt="Tagboard logo"/></div>
+                        <div><img src="/images/sponsors/ld.svg" width="150" alt="Launch Darkly logo"/></div>
                     </div>
                 </div>
                 <div class="show-item">       

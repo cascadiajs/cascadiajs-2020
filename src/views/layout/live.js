@@ -17,8 +17,8 @@ module.exports = function Layout ({title, content, socialUrl = 'https://2020.cas
             <a href="/"><img src="/images/icon-green.svg" alt="CascadiaJS logo"/></a>
           </div>
           <div id="settings">
-            <div class="label">Slack View</div>
-            <div>
+            <div id="settings-label-slackview" class="label">Slack View</div>
+            <div id="settings-switch-slackview">
             <label class="switch">
               <input id="slack-view-button" type="checkbox" checked>
               <span class="slider"></span>

@@ -89,14 +89,19 @@ document.addEventListener('DOMContentLoaded', async function main() {
         const hidePoweredBy = false;
         const hideJoinSlack = true;
         const logLevel = 'warn';
-        slackview.configure({streamId, teamId, logLevel, hidePoweredBy, hideJoinSlack}).then(() => {
-            /*slackview.listen(msg => {
-                if (msg.rawText.indexOf(':clap:') !== -1) {
-                    clap(msg.rawText);
-                }
-            });*/
-            slackview.render(document.getElementById('chat-slackview'));
-        })
+        try {
+            slackview.configure({streamId, teamId, logLevel, hidePoweredBy, hideJoinSlack}).then(() => {
+                /*slackview.listen(msg => {
+                    if (msg.rawText.indexOf(':clap:') !== -1) {
+                        clap(msg.rawText);
+                    }
+                });*/
+                slackview.render(document.getElementById('chat-slackview'));
+            })
+        }
+        catch(err) {
+            console.log("Sadly, SlackView / Twilio Sync failed to initialize. Try re-loading the page?")
+        }
     }
     else {
         console.log('Slackview global not initialized :(')
