@@ -2,7 +2,7 @@ let LiveLayout = require('../layout/live')
 let { ConfSchedule } = require('../components/schedule')
 
 module.exports = async function Live({ speakers, ticket }) {
-    let scheduleContainer = ConfSchedule({ speakers })
+    let scheduleContainer = ConfSchedule({ speakers, ticket })
     let content = /*html*/`
     <div id="live" class="slack-view-true">
         <section id="left-pane">
@@ -22,7 +22,7 @@ module.exports = async function Live({ speakers, ticket }) {
             <div id="q-and-a">
                 <h2>Q&A</h2>
                 <div class="container">
-                    <iframe src="https://draw-3sk.begin.app/#${ ticket.key }"
+                    <iframe id="draw-3sk" src="https://draw-3sk.begin.app/#${ ticket.key }"
                             height="100%"
                             width="100%"
                             frameborder="0"
@@ -41,7 +41,7 @@ module.exports = async function Live({ speakers, ticket }) {
                 </div>
                 <div id="stream-text" class="stream-text-true">
                     <iframe id="stFrame" 
-                        src="//www.streamtext.net/player/?event=IHaveADream&header=false&footer=false&scroll=false&chat=false&fs=25" 
+                        src="//www.streamtext.net/player/?event=IHaveADream&header=true&footer=false&scroll=false&chat=false" 
                         style="width:100%;height:95%" frameborder="0"></iframe>
                 </div>
             </div>
@@ -53,8 +53,6 @@ module.exports = async function Live({ speakers, ticket }) {
     </div>
     <div id="live-more">
         ${ scheduleContainer }
-        <h2>Accessing Remo/Rambly/Karaoke</h2>
-        <p>Links to the these platforms were sent out in an email to everyone who registered for the meetup.</p>
     </div>
     `
     let html = LiveLayout({ content })

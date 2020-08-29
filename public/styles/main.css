@@ -281,7 +281,7 @@ div.highlight {
     background-color: #b1ecb5;
 }
 
-.sponsor-hiring {
+.sponsor-hiring, .info2 {
     background-color: #e1bae1
 }
 
@@ -434,10 +434,9 @@ aside.day-timezone {
 .day .track h3 {
     font-family: ibm-plex-mono, sans-serif;
     font-style: normal;
-    margin: 0 0 8px 0;
+    margin: 0 0 24px 0;
     color: #112378;
     font-size: 24px;
-    margin-bottom: 24px;
 }
 
 .day .track h3 a:link, .day .track h3 a:visited {
@@ -448,6 +447,14 @@ aside.day-timezone {
 .day .track h3 a:hover {
     text-decoration: underline;
     color: #0033FF;
+}
+
+.day .track h4 {
+    font-family: ibm-plex-mono, sans-serif;
+    font-style: normal;
+    margin: 0 0 2px 0;
+    color: #112378;
+    font-size: 22px;
 }
 
 .day-header {
@@ -1129,6 +1136,7 @@ emote-widget {
     #q-and-a {
         background-color: #fff;
         flex: 1;
+        min-height: 140px;
     }
     
     #q-and-a .container {
@@ -1158,11 +1166,11 @@ emote-widget {
         bottom: 0;
     }
     
-    #live .stream-text-true {
+    #live #stream-text.stream-text-true {
         display: block;
     }
     
-    #live .stream-text-false {
+    #live #stream-text.stream-text-false {
         display: none;
     }
 

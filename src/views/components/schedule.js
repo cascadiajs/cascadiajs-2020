@@ -9,7 +9,7 @@ function renderSpeaker(time, speaker = {}) {
     </div>`
 }
 
-function DayZero() {
+function DayZero({ ticket = undefined }) {
     return /*html*/`
     <div class="day">
         <div class="day-header">
@@ -53,7 +53,7 @@ function DayZero() {
 `
 }
 
-function DayOne({ speakers }) {
+function DayOne({ speakers, ticket = undefined }) {
     return /*html*/`
     <div class="day">
         <div class="day-header">
@@ -106,16 +106,99 @@ function DayOne({ speakers }) {
             </div>
             <div class="hallway track">
                 <h3>Hallway Track</h3>
+                <h4>Video Chat</h4>
+                ${ ticket && ticket.conference === 'Y'
+                    ? `<div class="cta"><a href="${ process.env.REMO_DAYONE_URL }" target="_hallway">Join</a></div>` 
+                    : ``}
                 <div class="show-item">       
-                    <div class="when">10:00</div>
                     <div class="what">
-                        <div class="title">Remo Doors Open</div>
+                        <div class="title">Remo Doors Open at 10:00</div>
                     </div>
                 </div>
                 <div class="show-item">       
-                    <div class="when">15:00</div>
                     <div class="what">
-                        <div class="title">Remo Doors Close</div>
+                        <div class="title">Enter the #CJS20 Day One Raffle!</div>
+                        <p>More info about this coming soon!</p>
+                    </div>
+                </div>
+                <div class="show-item">       
+                    <div class="what">
+                        <div class="title">Booth Sponsors</div>
+                        <div><img src="/images/sponsors/imgix.svg" width="150" alt="Imgix logo"/></div>
+                        <div><img src="/images/sponsors/auth0.svg" width="150" alt="Auth0 logo"/></div>
+                        <div><img src="/images/sponsors/tagboard.png" width="150" alt="Tagboard logo"/></div>
+                    </div>
+                </div>
+                <div class="show-item">       
+                    <div class="what">
+                        <p class="title">Birds of a Feather Tables</p>
+                        <p><b>All Floors</b></p>
+                        <p>
+                            <span class="highlight info">JavaScript</span>
+                            <span class="highlight info">Node.js</span>
+                            <span class="highlight info">React.js</span>
+                            <span class="highlight info">Vue.js</span>
+                            <span class="highlight info">Angular.js</span>
+                            <span class="highlight info">Serverless</span>
+                            <span class="highlight info">CSS</span>
+                            <span class="highlight info">Open Source</span>
+                            <span class="highlight info2">Seattle, WA</span>
+                            <span class="highlight info2">Portland, OR</span>
+                            <span class="highlight info2">Vancouver, BC</span>
+                            <span class="highlight info2">Bend, OR</span>
+                        </p>
+                        <p><b>2nd Floor</b></p>
+                        <p>
+                            <span class="highlight info">dweb</span>
+                            <span class="highlight info">IoT</span>
+                            <span class="highlight info">Web Components</span>
+                            <span class="highlight info">JAM Stack</span>
+                            <span class="highlight info">Deno</span>
+                            <span class="highlight info">UI / Design</span>
+                        </p>
+                        <p><b>3rd Floor</b></p>
+                        <p>
+                            <span class="highlight info">Ionic</span>
+                            <span class="highlight info">React Native</span>
+                            <span class="highlight info">Testing</span>
+                            <span class="highlight info">NLP</span>
+                            <span class="highlight info">ML / AI</span>
+                            <span class="highlight info">Accessibility</span>
+                        </p>
+                        <p><b>4th Floor</b></p>
+                        <p>
+                            <span class="highlight info">APIs</span>
+                            <span class="highlight info">NoSQL</span>
+                            <span class="highlight info">DevOps</span>
+                            <span class="highlight info">Git</span>
+                            <span class="highlight info">Hardware</span>
+                            <span class="highlight info">Mental Health</span>
+                        </p>
+                        <p><b>5th Floor</b></p>
+                        <p>
+                            <span class="highlight info">Career</span>
+                            <span class="highlight info">Perf</span>
+                            <span class="highlight info">TypeScript</span>
+                            <span class="highlight info">SVG</span>
+                            <span class="highlight info">Canvas</span>
+                            <span class="highlight info">Web MIDI</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="show-item">
+                    <div class="what">
+                        <div class="title">Remo Doors Close at 15:00</div>
+                    </div>
+                </div>
+                <h4>Audio Chat</h4>
+                ${ ticket && ticket.conference == 'Y' 
+                    ? `<div class="cta"><a href="${ process.env.RAMBLY_URL }" target="_rambly">Join</a></div>` 
+                    : ``}
+                <div class="show-item">
+                    <div class="what">
+                        <div class="title">Rambly</div>
+                        <p>Rambly is an 8-bit universe where you pick an avatar and walk around having audio-only conversations.</p>
+                        <p>The volume for each participants is dependent on how close you are to them, so listen for the murmurs of a group and wander over to join them!</p>
                     </div>
                 </div>
             </div>
@@ -146,7 +229,7 @@ function DayOne({ speakers }) {
 `
 }
 
-function DayTwo({ speakers }) {
+function DayTwo({ speakers, ticket = undefined }) {
     return /*html*/`
     <div class="day">
         <div class="day-header">
@@ -198,21 +281,113 @@ function DayTwo({ speakers }) {
                 </div>
                 <div class="show-item">       
                     <div class="when">19:00</div>
-                    <div class="what"><div class="title"><i class="fas fa-microphone"></i> <a href="/closing-party">Karaoke Party</a></div></div>
+                    <div class="what">
+                        <div class="title">
+                            <i class="fas fa-microphone"></i> <a href="/closing-party">Karaoke Party</a>
+                        </div>
+                        <p>
+                        ${ ticket && ticket.conference === 'Y' 
+                        ? `<div class="cta"><a href="${ process.env.KARAOKE_URL_1 }" target="_karaoke">Room #1</a></div> <div class="cta"><a href="${ process.env.KARAOKE_URL_2 }" target="_karaoke">Room #2</a></div>`
+                        : ``}
+                        </p>
+                    </div>
                 </div>
             </div>
             <div class="hallway track">
                 <h3>Hallway Track</h3>
+                <h4>Video Chat</h4>
+                ${ ticket && ticket.conference === 'Y'
+                    ? `<div class="cta"><a href="${ process.env.REMO_DAYONE_URL }" target="_hallway">Join</a></div>` 
+                    : ``}
                 <div class="show-item">       
-                    <div class="when">10:00</div>
                     <div class="what">
-                        <div class="title">Remo Doors Open</div>
+                        <div class="title">Remo Doors Open at 10:00</div>
                     </div>
                 </div>
                 <div class="show-item">       
-                    <div class="when">15:00</div>
                     <div class="what">
-                        <div class="title">Remo Doors Close</div>
+                        <div class="title">Enter the #CJS20 Day Two Raffle!</div>
+                        <p>More info about this coming soon!</p>
+                    </div>
+                </div>
+                <div class="show-item">       
+                    <div class="what">
+                        <div class="title">Booth Sponsors</div>
+                        <div><img src="/images/sponsors/imgix.svg" width="150" alt="Imgix logo"/></div>
+                        <div><img src="/images/sponsors/auth0.svg" width="150" alt="Auth0 logo"/></div>
+                        <div><img src="/images/sponsors/tagboard.png" width="150" alt="Tagboard logo"/></div>
+                    </div>
+                </div>
+                <div class="show-item">       
+                    <div class="what">
+                        <p class="title">Birds of a Feather Tables</p>
+                        <p><b>All Floors</b></p>
+                        <p>
+                            <span class="highlight info">JavaScript</span>
+                            <span class="highlight info">Node.js</span>
+                            <span class="highlight info">React.js</span>
+                            <span class="highlight info">Vue.js</span>
+                            <span class="highlight info">Angular.js</span>
+                            <span class="highlight info">Serverless</span>
+                            <span class="highlight info">CSS</span>
+                            <span class="highlight info">Open Source</span>
+                            <span class="highlight info2">Seattle, WA</span>
+                            <span class="highlight info2">Portland, OR</span>
+                            <span class="highlight info2">Vancouver, BC</span>
+                            <span class="highlight info2">Bend, OR</span>
+                        </p>
+                        <p><b>2nd Floor</b></p>
+                        <p>
+                            <span class="highlight info">dweb</span>
+                            <span class="highlight info">IoT</span>
+                            <span class="highlight info">Web Components</span>
+                            <span class="highlight info">JAM Stack</span>
+                            <span class="highlight info">Deno</span>
+                            <span class="highlight info">UI / Design</span>
+                        </p>
+                        <p><b>3rd Floor</b></p>
+                        <p>
+                            <span class="highlight info">Ionic</span>
+                            <span class="highlight info">React Native</span>
+                            <span class="highlight info">Testing</span>
+                            <span class="highlight info">NLP</span>
+                            <span class="highlight info">ML / AI</span>
+                            <span class="highlight info">Accessibility</span>
+                        </p>
+                        <p><b>4th Floor</b></p>
+                        <p>
+                            <span class="highlight info">APIs</span>
+                            <span class="highlight info">NoSQL</span>
+                            <span class="highlight info">DevOps</span>
+                            <span class="highlight info">Git</span>
+                            <span class="highlight info">Hardware</span>
+                            <span class="highlight info">Mental Health</span>
+                        </p>
+                        <p><b>5th Floor</b></p>
+                        <p>
+                            <span class="highlight info">Career</span>
+                            <span class="highlight info">Perf</span>
+                            <span class="highlight info">TypeScript</span>
+                            <span class="highlight info">SVG</span>
+                            <span class="highlight info">Canvas</span>
+                            <span class="highlight info">Web MIDI</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="show-item">
+                    <div class="what">
+                        <div class="title">Remo Doors Close at 15:00</div>
+                    </div>
+                </div>
+                <h4>Audio Chat</h4>
+                ${ ticket && ticket.conference == 'Y' 
+                    ? `<div class="cta"><a href="${ process.env.RAMBLY_URL }" target="_rambly">Join</a></div>` 
+                    : ``}
+                <div class="show-item">
+                    <div class="what">
+                        <div class="title">Rambly</div>
+                        <p>Rambly is an 8-bit universe where you pick an avatar and walk around having audio-only conversations.</p>
+                        <p>The volume for each participants is dependent on how close you are to them, so listen for the murmurs of a group and wander over to join them!</p>
                     </div>
                 </div>
             </div>
@@ -244,12 +419,12 @@ function DayTwo({ speakers }) {
 `
 }
 
-function ConfSchedule ({ speakers }) {
+function ConfSchedule ({ speakers, ticket = undefined }) {
     return /*html*/`
     <div id="conf-schedule">
-        ${ DayZero() }
-        ${ DayOne({ speakers }) }
-        ${ DayTwo({ speakers }) }
+        ${ DayZero({ ticket }) }
+        ${ DayOne({ speakers, ticket }) }
+        ${ DayTwo({ speakers, ticket }) }
     </div>`
 }
 
