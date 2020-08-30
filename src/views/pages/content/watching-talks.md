@@ -24,16 +24,16 @@ We've brought this experience online!
 
 ## Adjusting your view
 
-To maximize the video window, you can hide the `Slack View` on the right, or the `Captions view` on the bottom. See the toggles in the top right of the window.
+To maximize the video window, you can hide the `Slack View` on the right of the video, or hide the `Captions` below the video. See the toggles in the top right of the window.
 
 ## How do I ask questions?
 
 Ask a question in the Q&A widget on the left side of the window. Type your question, or up-vote an existing question.
 
-## What is Talk Illustrations?
+## What are Talk Illustrations?
 
-We've hired an artist to illustrate each talk.
+Each talk has an associated illustration created by [Mind's Eye Creative](https://www.mindseyecreative.ca).
 
-## It would be nice to see the schedule!
+## Can I easily view the talk schedule from the Live Stream page?
 
-Indeed! Our schedule is actually below the live talks though you may miss it because the video window auto-sizes. Just use the vertical scrollbar to scroll down to the schedule.
+A copy of the schedule is below the Live Stream. It's a bit hidden due to auto-sizing of the page. Just use the vertical scrollbar to scroll down to the schedule.
