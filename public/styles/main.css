@@ -449,12 +449,29 @@ aside.day-timezone {
     color: #0033FF;
 }
 
-.day .track h4 {
+.day .track h4, .day .track h5 {
     font-family: ibm-plex-mono, sans-serif;
     font-style: normal;
-    margin: 0 0 2px 0;
     color: #112378;
+}
+
+.day .track h4 {
+    margin: 0 0 2px 0;
     font-size: 22px;
+}
+
+.day .track h5 {
+    margin: 0 0 16px 0;
+    font-size: 20px;
+}
+
+.hallway-sponsors {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hallway-sponsors>div {
+    margin: 16px;
 }
 
 .day-header {
@@ -484,6 +501,45 @@ aside.day-timezone {
 .what .title a:hover {
     text-decoration: underline;
     color: #0033FF;
+}
+
+.title.karaoke {
+    display: flex;
+    align-items: center;
+}
+
+.title.karaoke>div {
+    margin-right: 8px;
+}
+
+.title.karaoke .cta a:link {
+    color: #fff;
+}
+
+.boaf {
+    font-size: 0.75em;
+    padding: 2px;
+    line-height: 1em;
+    background-color: #b1ecb5;
+}
+
+.hallway-option {
+    padding: 16px;
+    background-color: #eee;
+    margin-bottom: 24px;
+}
+
+.hallway-option-header {
+    display: flex;
+    margin-bottom:16px;
+}
+
+.day .cta {
+    font-size: 24px;
+}
+
+.hallway-option-title {
+    flex: 1;
 }
 
 /* end schedule */
@@ -1200,8 +1256,9 @@ input:checked + .slider:before {
 
     #stream-text {
         background-color: #fff;
+        height: auto;
     }
-    
+
     #q-and-a {
         flex: 1;
         min-height: 140px;
