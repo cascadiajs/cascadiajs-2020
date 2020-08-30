@@ -22,7 +22,7 @@ module.exports = async function Live({ speakers, ticket }) {
             <div id="q-and-a">
                 <h2>Q&A</h2>
                 <div id="q-a-container">
-                    <iframe id="draw-3sk" src="https://draw-3sk.begin.app/#${ ticket.key }"
+                    <iframe id="draw-3sk" src="https://draw-3sk.begin.app/?user=${ ticket.key }"
                             height="100%"
                             width="100%"
                             frameborder="0"

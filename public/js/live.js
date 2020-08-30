@@ -1,4 +1,7 @@
 const agenda = [
+    // testing / rehearsal
+    { when: '2020-08-30T10:50:00-07:00', what: 'test-foo'},
+    { when: '2020-08-30T10:51:00-07:00', what: 'test-bar'},
     // day one
     { when: '2020-09-01T09:00:00-07:00', what: 'day-one-open'},
     { when: '2020-09-01T09:18:00-07:00', what: 'day-one-cassidy-open'},
@@ -145,6 +148,12 @@ document.addEventListener('DOMContentLoaded', async function main() {
             console.log("A new agenda item!", current)
             // reset the emote counter by pointing it at the new agenda item
             document.querySelector('emote-widget').setAttribute('talk-id', current.what)
+            // reset the Q&A widget
+            let src =  document.getElementById('draw-3sk').getAttribute('src')
+            let queryString = src.split("?")[1]
+            let queryParams = new URLSearchParams(queryString);
+            let ticketKey = queryParams.get("user")
+            document.getElementById('draw-3sk').setAttribute('src', `https://draw-3sk.begin.app/?user=${ ticketKey }&talk=${ current.what }`)
             // reset index
             state.agendaIndex = currentAgendaIndex
         }
@@ -153,7 +162,7 @@ document.addEventListener('DOMContentLoaded', async function main() {
             // if the show hasn't started yet OR isn't over yet, keep checking for a new agenda item
             setTimeout(() => {
                 checkForNewAgendaItem()
-            }, 1000 * 60 /* re-run in one minute */)
+            }, 1000 * 20 /* re-run once every 20 seconds */)
         }
         else {
             console.log("No more agenda items, the show must be over! Thanks for attending CascadiaJS :)")
