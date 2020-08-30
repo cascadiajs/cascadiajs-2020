@@ -875,6 +875,10 @@ a.js-topic:hover {
     display: none;
 }
 
+#settings .cta {
+    margin: 0;
+}
+
 #stream-text {
     height: 300px;
 }

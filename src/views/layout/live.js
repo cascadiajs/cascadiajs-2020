@@ -17,26 +17,29 @@ module.exports = function Layout ({title, content, socialUrl = 'https://2020.cas
             <a href="/"><img src="/images/icon-green.svg" alt="CascadiaJS logo"/></a>
           </div>
           <div id="settings">
+            <div>
+              <span class="cta"><a href="/handbook" target="_handbook">Handbook</a></span>
+            </div>
             <div id="settings-label-slackview" class="label">Slack View</div>
             <div id="settings-switch-slackview">
-            <label class="switch">
-              <input id="slack-view-button" type="checkbox" checked>
-              <span class="slider"></span>
-            </label>
+              <label class="switch">
+                <input id="slack-view-button" type="checkbox" checked>
+                <span class="slider"></span>
+              </label>
             </div>
             <div class="label">Captions</div>
             <div>
-            <label class="switch">
-              <input id="stream-text-button" type="checkbox" checked>
-              <span class="slider"></span>
-            </label>
+              <label class="switch">
+                <input id="stream-text-button" type="checkbox" checked>
+                <span class="slider"></span>
+              </label>
             </div>
             <div class="label">Clapping Audio</div>
             <div>
-            <label class="switch">
-              <input id="clapping-audio-button" type="checkbox" checked>
-              <span class="slider"></span>
-            </label>
+              <label class="switch">
+                <input id="clapping-audio-button" type="checkbox" checked>
+                <span class="slider"></span>
+              </label>
             </div>
           </div>
         </section>

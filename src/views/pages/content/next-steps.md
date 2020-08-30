@@ -3,7 +3,7 @@ title: Registration Next Steps
 ---
 Thanks for buying a ticket to CascadiaJS 2020. We're so excited that you're going to join us in Cyberspace this year!
 
-## First, verify your access code
+## First, verify your Access Code
 
 In order to participate in the conference (watch the Live Stream, hang out with people in Remo, etc) you will need to log-in to the Conference Dashboard using an Access Code. Please ensure that you are able to log-in prior to Sept 1 so that there is time to sort out any issues before the conference begins!
 
@@ -11,7 +11,6 @@ In order to participate in the conference (watch the Live Stream, hang out with 
 
 ## Next, get set-up for a 💯 conference experience
 
-1. [RSVP](${CAREER_NIGHT_URL}) for the August 31 CascadiaJS Pre-Conf Career Night.
 1. [Join the CascadiaJS Slack](${SLACK_JOIN_URL})
 1. [Help us spread the word](https://2020.cascadiajs.com/email-templates#friend-or-colleague-email) and offer your friends a [10% discount](https://ti.to/event-loop/cascadiajs-2020/discount/BFF) with code **BFF**.
 1. Get listed in our [Conference Directory](/directory).
