@@ -6,47 +6,15 @@ let Template = function(props) {
     let { organizerContainer, scheduleContainer } = props
     return /*html*/`
     <div id="landing">
-        <section id="hero" class="landing">
-            <div id="hero-logo"><img src="/images/hero-logo.svg" alt="CascadiaJS logo. Sept 1-2, 2020. Cyberspace."/></div>
-            <div id="hero-images">
-                <div><img src="/images/hero-illustration-01.svg" alt="hero image: illustration of man at podium speaking with talk titles swirling around him. CascadiaJS, Sept 1-2 2020, Cyberspace."/></div>
-                <div><img src="/images/hero-illustration-02.svg" alt="hero image: illustration emcee dancing, more talk titles swirling around."/></div>
+        <section>
+            <div>
+                <img src="/images/website-hero.svg" alt="the show begins on Sept 1 at 9am PDT"/>
             </div>
         </section>
         <section id="schedule" class="landing">
             <div class="wide">    
                  <h2>Schedule</h2>
                 ${ scheduleContainer }
-            </div>
-        </section>
-        <section id="attend" class="landing">
-            <div class="container">
-                <div id="karaoke">
-                    <div><img src="/images/karaoke.svg" alt="There WILL be karaoke!"/></div>
-                    <div class="headline">CascadiaJS brings together an amazing group of web developers from across the Pacific Northwest (and beyond) to learn, make friends, and have fun!</div>
-                </div>
-                <div id="why">
-                    <div class="benefits">
-                        When you buy a ticket, you get:
-                        <ul>
-                            <li><i class="fas fa-tv"></i> Access to the live stream of talks and speaker Q&amp;A</li>
-                            <li><i class="fas fa-briefcase"></i> Access to the evening <a href="/career-night">Career Night</a> on August 31</li>
-                            <li><i class="fas fa-music"></i> Access to the <a href="/opening-party">Opening Party Live Concert</a></li>
-                            <li><i class="fas fa-microphone"></i> Access to <a href="/closing-party">Closing Party Virtual Karaoke</a></li>
-                            <li><i class="fas fa-gift"></i> A <a href="/goodie-box">Goodie Box</a> shipped to you!</li>
-                        </ul>
-                        <div>
-                            <img src="/images/goodie-box.svg" alt="ilustration of Goodie Box (will include hoodie + stickers)"/>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="coc" class="landing">
-            <div class="narrow">
-                <h2>Code of Conduct</h2>
-                <p>Everyone , including attendees, sponsors, speakers, and organizers - is required to agree to and follow our Code of Conduct. Inappropriate behavior or harassment of any kind is not tolerated. If you feel uncomfortable, are being harassed, notice that someone else is being harassed, or have any other concerns, please contact a member of conference staff immediately. Conference Staff are identified by red STAFF badges. You can also send an email to info@cascadiajs.com.</p>
-                <div class="cta"><a href="/coc">Read the Code of Conduct</a></div>
             </div>
         </section>
         <section id="workshops" class="landing">
