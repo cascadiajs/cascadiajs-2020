@@ -44,4 +44,4 @@ Check this board out for tips and updates.
 
 **7. Onboarding video**
 
-You can re-watch the onboarding video [here](https://youtu.be/P01JxUBNU2Y) in case you forget how something works! 
+You can re-watch the [onboarding video](https://www.youtube.com/watch?v=aclQ759xj9s) in case you forget how something works! 
