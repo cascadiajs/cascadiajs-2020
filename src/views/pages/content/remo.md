@@ -12,7 +12,7 @@ Remo is the platform we are using for face-to-face video chat in our Hallway Tra
     - Location tables (i.e. Vancouver, BC).
 - Many tables are un-labeled, so talk about whatever you like!
 
-Here is a list of [supported browsers](https://help.remo.co/support/solutions/articles/63000250999-what-mobile-devices-and-browsers-are-supported-on-remo-conference-) for Remo.
+Here is a list of [supported desktop browsers](https://help.remo.co/support/solutions/articles/63000241111-checklist-before-attending-a-remo-event) and [supported mobile browsers](https://help.remo.co/support/solutions/articles/63000250999-what-mobile-devices-and-browsers-are-supported-on-remo-conference-) for Remo.
 
 ## Tips on using Remo
 
