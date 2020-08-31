@@ -4,3 +4,5 @@ node_modules
 public/static.json
 data/production
 data/staging
+npm-debug.log
+
