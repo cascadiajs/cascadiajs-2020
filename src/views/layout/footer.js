@@ -4,6 +4,7 @@ module.exports = function Footer () {
         <div class="wide">
           <section id="when-where">
             <h2>CascadiaJS<br/>Sep 1-2, 2020<br/>Cyberspace</h2>
+            <a href="http://carrie.rabasa.com"><img src="/images/logo-carrie-rabasa.svg" width="150" height="48"/></a>
           </section>
           <section id="stay-connected" class="push">
             <h2>Stay Connected</h2>
