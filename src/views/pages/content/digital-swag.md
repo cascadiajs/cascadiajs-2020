@@ -14,11 +14,11 @@ Anytime you're in an experience with your camera on (Remo, Karaoke, etc) you can
 
 ### Background Lens
 
-`https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=f29d3ff57cfa4fc2afd0a15681b1edd0&metadata=01`
+`https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=b1559e79ff724ac0abb138282994d642&metadata=01`
 
 ### Baseball Cap Lens
 
-`https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=b1559e79ff724ac0abb138282994d642&metadata=01`
+`https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=f29d3ff57cfa4fc2afd0a15681b1edd0&metadata=01`
 
 ### Hair Lens
 
