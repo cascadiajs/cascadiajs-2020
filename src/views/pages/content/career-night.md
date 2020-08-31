@@ -28,24 +28,33 @@ Career Night is open to all registered attendees of CascadiaJS 2020. Once you re
 
 ## Hiring
 
-Over 56% of attendees to CascadiaJS are actively looking for a job or open to interesting opportunities. If your team is hiring and are interested in setting-up a table at our Career Night and/or the conference itself, please let us know by filling-out the form below!
+Over 56% of attendees to CascadiaJS are actively looking for a job or open to interesting opportunities. Companies joining us include:
+
+![Ridwell](/images/ridwell.png) ![Later](/images/later.png) ![Avalara](/images/avalara.png)
+
+If your team is hiring and are interested in setting-up a table at our Career Night and/or the conference itself, please let us know by filling-out the form below!
 
 <span class="cta"><a href="https://forms.gle/ypvAZKPpe4ZzdMfRA">Request More Info</a></span>
 
 ## Mentorship Panel
 
-New to tech? Or maybe experienced and also searching for someone who can mentor you and help you grow? We will host a panel of experts that will answer your questions and then break-up into smaller groups (< 6 people) where a wonderful group of mentors from our community will continue the conversation.
+<table class="profiles">
+    <tr><td><img src="/images/kallie-2.jpg" alt="Kallie Riff"/></td><td><img src="/images/miguel.jpg" alt="Miguel Fernandez"/></td></tr>
+    <tr><td><b>Kallie Riff</b><br/>Software Engineer Instructor, Cerner<br/>Presentation Director for Coding & Cocktails</td><td><b>Miguel Fernandez</b><br/>Associate Senior Software Engineer, Cerner<br/>VP of the Black Family Technology Awareness Association of Kansas City</td></tr>  
+</table>
+
+New to tech? Or maybe experienced and also searching for someone who can mentor you and help you grow? Kallie and Miguel that will answer your questions and then we will break-up into smaller groups (< 6 people) where a wonderful group of mentors from our community will continue the conversation.
 
 ## Venturing Out
 
-<img src="/images/vo-logo.png" width="200" alt="Venture Out logo"/>
+<table class="profiles">
+    <tr><td><img src="/images/ken.jpg" alt="Ken Horenstein"/></td><td><img src="/images/ondrej.jpg" alt="Ondrej Hrebicek"/></td></tr>
+    <tr><td><b>Ken Horenstein</b><br/>Co-Founder, Venture Out</td><td><b>Ondrej Hrebicek</b><br/>Co-Founder & CTO, Iteratively</td></tr>  
+</table>
 
-Have you ever thought about leaving "Big Tech" and starting a company, but you didn't know how? Ken Horenstein from [Venture Out](https://ventureoutstartups.com/) will host a fireside chat with an engineer who left their job at a big tech company and they will share their experience venturing out and starting something new!
+Have you ever thought about leaving "Big Tech" and starting a company, but you didn't know how? Ken Horenstein from [Venture Out](https://ventureoutstartups.com/) will host a fireside chat with Ondrej Hrebicek, an engineer who left their job at Atlassian and they will share his experience venturing out and starting something new!
 
-For folks who are already going down this path:
-
-1. Applications are open for the [Launch Lab](https://ventureoutstartups.com/launch).
-2. Join the [Founder's Forum](https://ventureoutstartups.com/founder-forums) to connect with a community of founders who support each other.
+For folks who are already going down this path, applications are open for the [Launch Lab](https://ventureoutstartups.com/launch) and check-out the [Founder's Forum](https://ventureoutstartups.com/founder-forums) to connect with a community of founders who support each other.
 
 ## Remo
 

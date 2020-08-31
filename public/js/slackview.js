@@ -1,6 +1,7 @@
 /* eslint-disable no-undef */
 
 // feel bad polluting the window object :(
+/*
 window.clapping = {
     context: new AudioContext(),
     buffer: null,
@@ -75,8 +76,9 @@ function handleAudioButtonClick() {
     const audioButton = document.querySelector('#audio_switch');
     audioButton.onclick = () => toggleAudio();
 }
+*/
 
-window.onload = function() {
+document.addEventListener('DOMContentLoaded', async function main() {
     // Attach builtin widget to your page
     if (slackview) {
         //loadClapping();
@@ -86,17 +88,22 @@ window.onload = function() {
         const teamId = 'T02QDM2DV';
         const hidePoweredBy = false;
         const hideJoinSlack = true;
-        const logLevel = 'debug';
-        slackview.configure({streamId, teamId, logLevel, hidePoweredBy, hideJoinSlack}).then(() => {
-            /*slackview.listen(msg => {
-                if (msg.rawText.indexOf(':clap:') !== -1) {
-                    clap(msg.rawText);
-                }
-            });*/
-            slackview.render(document.getElementById('chat-slackview'));
-        })
+        const logLevel = 'warn';
+        try {
+            slackview.configure({streamId, teamId, logLevel, hidePoweredBy, hideJoinSlack}).then(() => {
+                /*slackview.listen(msg => {
+                    if (msg.rawText.indexOf(':clap:') !== -1) {
+                        clap(msg.rawText);
+                    }
+                });*/
+                slackview.render(document.getElementById('chat-slackview'));
+            })
+        }
+        catch(err) {
+            console.log("Sadly, SlackView / Twilio Sync failed to initialize. Try re-loading the page?")
+        }
     }
     else {
         console.log('Slackview global not initialized :(')
     }
-}
+}, false)

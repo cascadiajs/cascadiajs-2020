@@ -10,7 +10,7 @@ async function validate(req) {
     session = {}
   }
   else {
-    let ticketRef = req.body.ticketRef
+    let ticketRef = req.body.ticketRef.trim()
     // see if this ticket ref exists in our system
     let doc = await data.get({ table: 'tickets', key: ticketRef })
     // if it does, add it to the session

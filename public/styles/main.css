@@ -152,6 +152,7 @@ footer a, footer a:visited {
 	height: 100%;
 }
 
+
 /* layout styles */
 
 #root {
@@ -238,6 +239,10 @@ span.cta {
 	text-decoration: underline;
 }
 
+.cta.nope {
+	color: #000;
+	background-color: #ccc;
+}
 
 .highlight {
     border-radius: 4px;
@@ -276,7 +281,7 @@ div.highlight {
     background-color: #b1ecb5;
 }
 
-.sponsor-hiring {
+.sponsor-hiring, .info2 {
     background-color: #e1bae1
 }
 
@@ -429,10 +434,9 @@ aside.day-timezone {
 .day .track h3 {
     font-family: ibm-plex-mono, sans-serif;
     font-style: normal;
-    margin: 0 0 8px 0;
+    margin: 0 0 24px 0;
     color: #112378;
     font-size: 24px;
-    margin-bottom: 24px;
 }
 
 .day .track h3 a:link, .day .track h3 a:visited {
@@ -443,6 +447,31 @@ aside.day-timezone {
 .day .track h3 a:hover {
     text-decoration: underline;
     color: #0033FF;
+}
+
+.day .track h4, .day .track h5 {
+    font-family: ibm-plex-mono, sans-serif;
+    font-style: normal;
+    color: #112378;
+}
+
+.day .track h4 {
+    margin: 0 0 2px 0;
+    font-size: 22px;
+}
+
+.day .track h5 {
+    margin: 0 0 16px 0;
+    font-size: 20px;
+}
+
+.hallway-sponsors {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hallway-sponsors>div {
+    margin: 16px;
 }
 
 .day-header {
@@ -472,6 +501,45 @@ aside.day-timezone {
 .what .title a:hover {
     text-decoration: underline;
     color: #0033FF;
+}
+
+.title.karaoke {
+    display: flex;
+    align-items: center;
+}
+
+.title.karaoke>div {
+    margin-right: 8px;
+}
+
+.title.karaoke .cta a:link {
+    color: #fff;
+}
+
+.boaf {
+    font-size: 0.75em;
+    padding: 2px;
+    line-height: 1em;
+    background-color: #b1ecb5;
+}
+
+.hallway-option {
+    padding: 16px;
+    background-color: #eee;
+    margin-bottom: 24px;
+}
+
+.hallway-option-header {
+    display: flex;
+    margin-bottom:16px;
+}
+
+.day .cta {
+    font-size: 24px;
+}
+
+.hallway-option-title {
+    flex: 1;
 }
 
 /* end schedule */
@@ -768,9 +836,67 @@ a.js-topic:hover {
     height: 100px;
 }
 
-/*#live iframe {
-    width: 100%;
-}*/
+/* live page */
+
+#live {
+    display:block;
+}
+
+#live-header {
+    background-color: #112378;
+    padding: 8px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#live-header #logo {
+    flex: 1;
+}
+
+#live-header #logo img {
+    height: 30px;
+}
+
+#live-header #settings {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#live-header #settings .label {
+    font-size: 0.75em;
+    color: #fff;
+    margin: 0 10px 0 10px;
+}
+
+#settings-label-slackview, #settings-switch-slackview, #graphic-recording, #q-and-a, #chat {
+    display: none;
+}
+
+#settings .cta {
+    margin: 0;
+}
+
+#stream-text {
+    height: 300px;
+}
+
+#stream-text.stream-text-true {
+    display: block;
+}
+
+#stream-text.stream-text-false {
+    display: none;
+}
+
+#live h2 {
+    font-size: 24px;
+    margin: 0;
+    font-family: mono45-headline, monospace;
+    font-weight: 500;
+}
 
 #live-more {
     padding:16px;
@@ -785,11 +911,11 @@ a.js-topic:hover {
     margin: 8px;
 }
 
-/* Slackview styles */
-
-#chat-slackview {
-    display: none;
+#graphic-recording {
+    margin-bottom: 8px;
 }
+
+/* Slackview styles */
 
 .sv-message {
     margin-bottom: 4px;
@@ -814,6 +940,88 @@ a.js-topic:hover {
 
 }
 
+.sv-powered-wrap {
+    padding: 0px 5px 0px 10px; 
+    font-size: 42%; 
+    position: absolute; 
+    top: 0px; 
+    right: 0px;
+    height: 25px;
+}
+
+table.profiles {
+    width: auto;
+}
+
+emote-widget {
+    display: none;
+}
+
+#home ul {
+	padding: 0;
+}
+
+#home li {
+    list-style: none;
+    margin: 0 0 16px 0;
+}
+
+/* toggle switch CSS */
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 22px;
+    width: 22px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #17C37B;;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #17C37B;;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
 @media only screen and (min-width: 768px) {
 
     #root {
@@ -821,31 +1029,6 @@ a.js-topic:hover {
         min-height: 100%;
         grid-template-columns: 100%;
         grid-template-rows: auto 1fr auto;
-    }
-
-    /*header {
-        position: sticky;
-        z-index: 2;
-        top: 0;
-    }
-
-    header#live-header {
-        position: absolute;
-        top: auto;
-        width: 100%;
-        z-index: auto;
-    }*/
-
-    header#live-header {
-        height: 40px;
-    }
-
-    header#live-header nav {
-        padding: 3px 0 0 0;
-    }
-
-    header#live-header img{
-        height: 30px;
     }
 
     .narrow {
@@ -1054,39 +1237,104 @@ a.js-topic:hover {
     }
 
     #live {
+        height: calc(100vh - 46px);
         display: grid;
         grid-template-rows: 100%;
-        grid-template-columns: 2fr 200px 1fr;
+        background-color: #eee;
+    }
+
+    #graphic-recording, #q-and-a, #stream-text, #chat, #settings-label-slackview, #settings-switch-slackview {
+        display: block;
+    }
+
+    #live #chat {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #live #left-pane {
+        padding: 8px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #stream-text {
+        background-color: #fff;
+        height: auto;
+    }
+
+    #q-and-a {
+        flex: 1;
+        min-height: 140px;
+    }
+    
+    #q-a-container {
+        background-color: #fff;
+        height: calc(100% - 27px);
+        position: relative;
+        overflow: hidden;
+    }
+    
+    #q-and-a iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+    }
+    
+    #emote {
+        flex-basis: 150px;
+    }
+
+    emote-widget {
+        display: block;
+        position: absolute;
+        z-index: 10;
+        left: 0;
+        bottom: 0;
+    }
+
+    #live.slack-view-true {
+        grid-template-columns: 1fr 3fr 1fr;
+    }
+
+    #live.slack-view-false {
+        grid-template-columns: 1fr 2fr;
     }
 
     #live #stream {
         padding: 8px;
-        border: 4px solid #17C37B;
     }
 
-    #live #controls {
-        padding: 8px;
-        border-top: 4px solid #17C37B;
-        border-bottom: 4px solid #17C37B;
-        border-right: 4px solid #17C37B;      
+    #stream .inner {
+        max-width: 1200px;
+        margin: 0 auto; 
+        display:flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    #stream-video {
+        flex: 1;
+    }
+
+    #stream-text {
+        flex: 1;
+        padding: 10px;
     }
 
     #live #chat {
         padding: 8px;
-        border-top: 4px solid #17C37B;
-        border-bottom: 4px solid #17C37B;
-        border-right: 4px solid #17C37B; 
         position:relative;
     }
 
     #chat-slackview {
         display: block;
-        position:absolute;
-        top:0;
-        left:0;
-        right:0;
+        flex: 1;
+        background-color: #fff;
         overflow-y: scroll;
-        max-height:100%;
     }
     
     .day-content {
@@ -1095,12 +1343,13 @@ a.js-topic:hover {
 
     .track {
         flex: 33%;
+        padding: 16px;
     }
 
     .hallway, .workshops {
         border-left: 1px solid #112378;
-        padding-left: 8px;
     }
+
 }
 
 @media print {

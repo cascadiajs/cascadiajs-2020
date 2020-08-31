@@ -13,19 +13,17 @@ module.exports = function Layout ({title, content, socialUrl = 'https://2020.cas
     <body>
       <div id="root">
         <header>
-          <section class="alert">
-            <i class="fas fa-hand-point-right"></i> <a href="https://ti.to/event-loop/cascadiajs-2020/">More tickets released</a>, including online-only tickets for $59 <i class="fas fa-hand-point-left"></i>
-          </section>
+          <!--section class="alert">
+            We are <u>SOLD OUT</u> of Conference tickets & Workshops are filling up! See you next week!
+          </section-->
           <nav>
             <div class="wide">
               <div id="logo"><a href="/"><img src="/images/icon-green.svg" alt="logo"/></a></div>
               <div><span><a href="/">CascadiaJS</a></span></div>
               <div class="push"><a href="/schedule">Schedule</a></div>
               <div class="spacer"><a href="/workshops">Workshops</a></div>
-              <div class="spacer"><a href="/accessibility">Accessibility</a></div>
-              <div class="spacer"><a href="/faq">FAQ</a></div>
               <div class="spacer"><a href="/coc">Code of Conduct</a></div>
-              <div class="spacer"><a href="https://ti.to/event-loop/cascadiajs-2020/" class="buy">Tickets</a></div>
+              <div class="spacer"><a href="/home" class="buy">Enter Show</a></div>
             </div>
           </nav>
         </header>
