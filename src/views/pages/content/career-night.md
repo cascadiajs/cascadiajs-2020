@@ -30,11 +30,13 @@ Career Night is open to all registered attendees of CascadiaJS 2020. Once you re
 
 Over 56% of attendees to CascadiaJS are actively looking for a job or open to interesting opportunities. Companies joining us include:
 
-![Ridwell](/images/ridwell.png) ![Later](/images/later.png) ![Avalara](/images/avalara.png)
+![Ridwell](/images/ridwell.png) ![Later](/images/later.png) ![Avalara](/images/avalara.png) ![VMLY&R logo](/images/VMLY&R.png)
 
+<!--
 If your team is hiring and are interested in setting-up a table at our Career Night and/or the conference itself, please let us know by filling-out the form below!
 
 <span class="cta"><a href="https://forms.gle/ypvAZKPpe4ZzdMfRA">Request More Info</a></span>
+-->
 
 ## Mentorship Panel
 
