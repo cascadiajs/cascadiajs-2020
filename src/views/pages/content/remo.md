@@ -40,8 +40,8 @@ There are 7 floors in this space. Go exploring and see who else you meet.
 
 **6. Tips**
 
-Check this board out for tips and updates.
+Check this board out for tips and updates. 
 
 **7. Onboarding video**
 
-You can re-watch the onboarding video here in case you forget how something works!
+You can re-watch the onboarding video [here](https://youtu.be/P01JxUBNU2Y) in case you forget how something works! 

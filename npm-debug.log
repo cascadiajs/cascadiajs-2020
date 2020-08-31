@@ -1,0 +1,47 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/Users/heidilaursen/.nvm/versions/node/v6.3.1/bin/node',
+1 verbose cli   '/Users/heidilaursen/.nvm/versions/node/v6.3.1/bin/npm',
+1 verbose cli   'start' ]
+2 info using npm@3.10.3
+3 info using node@v6.3.1
+4 verbose run-script [ 'prestart', 'start', 'poststart' ]
+5 info lifecycle cascadiajs-2020@0.2.0~prestart: cascadiajs-2020@0.2.0
+6 silly lifecycle cascadiajs-2020@0.2.0~prestart: no script for prestart, continuing
+7 info lifecycle cascadiajs-2020@0.2.0~start: cascadiajs-2020@0.2.0
+8 verbose lifecycle cascadiajs-2020@0.2.0~start: unsafe-perm in lifecycle true
+9 verbose lifecycle cascadiajs-2020@0.2.0~start: PATH: /Users/heidilaursen/.nvm/versions/node/v6.3.1/lib/node_modules/npm/bin/node-gyp-bin:/Users/heidilaursen/cascadiajs-2020/node_modules/.bin:/Users/heidilaursen/.nvm/versions/node/v6.3.1/bin:/Users/heidilaursen/.nvm/versions/node/v6.3.1/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+10 verbose lifecycle cascadiajs-2020@0.2.0~start: CWD: /Users/heidilaursen/cascadiajs-2020
+11 silly lifecycle cascadiajs-2020@0.2.0~start: Args: [ '-c', 'cross-env NODE_ENV=testing npx sandbox' ]
+12 silly lifecycle cascadiajs-2020@0.2.0~start: Returned: code: 1  signal: null
+13 info lifecycle cascadiajs-2020@0.2.0~start: Failed to exec start script
+14 verbose stack Error: cascadiajs-2020@0.2.0 start: `cross-env NODE_ENV=testing npx sandbox`
+14 verbose stack Exit status 1
+14 verbose stack     at EventEmitter.<anonymous> (/Users/heidilaursen/.nvm/versions/node/v6.3.1/lib/node_modules/npm/lib/utils/lifecycle.js:242:16)
+14 verbose stack     at emitTwo (events.js:106:13)
+14 verbose stack     at EventEmitter.emit (events.js:191:7)
+14 verbose stack     at ChildProcess.<anonymous> (/Users/heidilaursen/.nvm/versions/node/v6.3.1/lib/node_modules/npm/lib/utils/spawn.js:40:14)
+14 verbose stack     at emitTwo (events.js:106:13)
+14 verbose stack     at ChildProcess.emit (events.js:191:7)
+14 verbose stack     at maybeClose (internal/child_process.js:852:16)
+14 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:215:5)
+15 verbose pkgid cascadiajs-2020@0.2.0
+16 verbose cwd /Users/heidilaursen/cascadiajs-2020
+17 error Darwin 17.7.0
+18 error argv "/Users/heidilaursen/.nvm/versions/node/v6.3.1/bin/node" "/Users/heidilaursen/.nvm/versions/node/v6.3.1/bin/npm" "start"
+19 error node v6.3.1
+20 error npm  v3.10.3
+21 error code ELIFECYCLE
+22 error cascadiajs-2020@0.2.0 start: `cross-env NODE_ENV=testing npx sandbox`
+22 error Exit status 1
+23 error Failed at the cascadiajs-2020@0.2.0 start script 'cross-env NODE_ENV=testing npx sandbox'.
+23 error Make sure you have the latest version of node.js and npm installed.
+23 error If you do, this is most likely a problem with the cascadiajs-2020 package,
+23 error not with npm itself.
+23 error Tell the author that this fails on your system:
+23 error     cross-env NODE_ENV=testing npx sandbox
+23 error You can get information on how to open an issue for this project with:
+23 error     npm bugs cascadiajs-2020
+23 error Or if that isn't available, you can get their info via:
+23 error     npm owner ls cascadiajs-2020
+23 error There is likely additional logging output above.
+24 verbose exit [ 1, true ]
