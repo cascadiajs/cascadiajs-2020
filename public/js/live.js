@@ -1,7 +1,7 @@
 const agenda = [
     // testing / rehearsal
-    { when: '2020-08-30T10:50:00-07:00', what: 'test-foo'},
-    { when: '2020-08-30T10:51:00-07:00', what: 'test-bar'},
+    //{ when: '2020-08-30T10:50:00-07:00', what: 'test-foo'},
+    //{ when: '2020-08-30T10:51:00-07:00', what: 'test-bar'},
     // day one
     { when: '2020-09-01T09:00:00-07:00', what: 'day-one-open'},
     { when: '2020-09-01T09:18:00-07:00', what: 'day-one-cassidy-open'},

@@ -19,7 +19,8 @@ module.exports = async function Live({ speakers, ticket }) {
                     </iframe>
                 </div>
             </div>
-            <div id="q-and-a">
+            ${ process.env.QA_WIDGET === 'on' ? 
+            /*html*/`<div id="q-and-a">
                 <h2>Q&A</h2>
                 <div id="q-a-container">
                     <iframe id="draw-3sk" src="https://draw-3sk.begin.app/?user=${ ticket.key }"
@@ -29,7 +30,8 @@ module.exports = async function Live({ speakers, ticket }) {
                             scrolling="yes">
                     </iframe> 
                 </div>
-            </div>
+            </div>`
+            : ``}
             <div id="emote">
                 <emote-widget talk-id="cjs20-test" position="bottom-left" open="false"></emote-widget>
             </div>
@@ -37,7 +39,7 @@ module.exports = async function Live({ speakers, ticket }) {
         <section id="stream"> 
             <div class="inner">            
                 <div id="stream-video" class="video-container">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/rbRgs20BB_k?autoplay=1&mute=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Zsw637CCejI?autoplay=1&mute=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
                 <div id="stream-text" class="stream-text-true">
                     <iframe id="stFrame" 
