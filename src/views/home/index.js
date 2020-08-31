@@ -29,9 +29,10 @@ module.exports = async function Index({ ticket }) {
                 <h2>Conference (9/1 &amp; 9/2)</h2>
                 <ul>
                     <!--li><span class="cta"><a href="/live" target="_live">Live Stream Track</a></span></li-->
-                    <li><span class="cta"><a href="${ process.env.RAMBLY_URL }" target="_rambly">Hallway Track / Rambly</a></span></li>
+                    <li><span class="cta"><a href="${ process.env.SLACK_JOIN_URL }" target="_slack">Hallway Track / Slack</a></span></li>
                     <li><span class="cta"><a href="${ process.env.REMO_DAYONE_URL }" target="_hallway">Hallway Track / Remo (Sept 1)</a></span></li>
                     <li><span class="cta"><a href="${ process.env.REMO_DAYTWO_URL }" target="_hallway">Hallway Track / Remo (Sept 2)</a></span></li>
+                    <li><span class="cta"><a href="${ process.env.RAMBLY_URL }" target="_rambly">Hallway Track / Rambly</a></span></li>
                     <li><span class="cta"><a href="${ process.env.KARAOKE_URL_1 }" target="_karaoke">Karaoke Room #1 / Zoom (Sept 2)</a></span></li>
                     <li><span class="cta"><a href="${ process.env.KARAOKE_URL_1 }" target="_karaoke">Karaoke Room #2 / Zoom (Sept 2)</a></span></li>
                 </ul>
