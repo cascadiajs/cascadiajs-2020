@@ -119,7 +119,8 @@ function DayOne({ speakers, ticket = undefined }) {
                     </div>
                     <div class="show-item">       
                         <div class="what">
-                            <p>More info about the Raffle here!</p>
+                            <h5>Day One Raffle</h5>
+                            <p>We're giving away an Arduino IoT kit and exclusive CascadiaJS gear! <a href="/raffle">Learn More!</a></p>
                         </div>
                     </div>
                     <div class="show-item">       
@@ -313,7 +314,8 @@ function DayTwo({ speakers, ticket = undefined }) {
                     </div>
                     <div class="show-item">       
                         <div class="what">
-                            <p>More info about the Raffle here!</p>
+                            <h5>Day Two Raffle</h5>
+                            <p>We're giving away an Arduino IoT kit and exclusive CascadiaJS gear! <a href="/raffle">Learn More!</a></p>
                         </div>
                     </div>
                     <div class="show-item">       
