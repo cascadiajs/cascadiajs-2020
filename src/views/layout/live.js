@@ -40,7 +40,7 @@ module.exports = function Layout ({title, content, socialUrl = 'https://2020.cas
             <div class="label">Clapping Audio</div>
             <div>
               <label class="switch">
-                <input id="clapping-audio-button" type="checkbox" checked>
+                <input id="clapping-audio-button" type="checkbox">
                 <span class="slider"></span>
               </label>
             </div>

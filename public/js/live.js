@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', async function main() {
     const state = {
         slackView: true,
         liveText: true,
-        clapping: true,
+        clapping: false,
         clappingContext: undefined,
         clappingBuffer: null,
         agendaIndex: undefined
