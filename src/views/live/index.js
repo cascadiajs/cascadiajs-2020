@@ -49,7 +49,7 @@ module.exports = async function Live({ speakers, ticket }) {
                 </div>
             </div>
         </section>
-        <section id="chat" class="slack-view-true">
+        <section id="chat">
             <h2>Slack View</h2>
             <div id="chat-slackview"></div>
         </section>
