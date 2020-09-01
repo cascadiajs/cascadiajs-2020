@@ -1263,6 +1263,7 @@ input:checked + .slider:before {
     #live #chat {
         display: flex;
         flex-direction: column;
+        max-width: 500px;
     }
 
     #live #left-pane {
