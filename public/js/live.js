@@ -113,7 +113,6 @@ document.addEventListener('DOMContentLoaded', async function main() {
     document.getElementById('slack-view-button').onclick = () => {
         state.slackView = !state.slackView
         document.getElementById('live').classList.replace(`slack-view-${ !state.slackView }`, `slack-view-${ state.slackView }`)
-        document.getElementById('chat').classList.replace(`slack-view-${ !state.slackView }`, `slack-view-${ state.slackView }`)
     };
 
     document.getElementById('stream-text-button').onclick = () => {
