@@ -891,6 +891,10 @@ a.js-topic:hover {
     display: none;
 }
 
+#live-header #handbook-link, #live-header #leaderboard-link {
+    display: none;
+}
+
 #live h2 {
     font-size: 24px;
     margin: 0;
@@ -1242,6 +1246,15 @@ input:checked + .slider:before {
         grid-template-rows: 100%;
         background-color: #eee;
     }
+
+    #live-header #handbook-link, #live-header #leaderboard-link {
+        display: block;
+    }
+
+    #live-header #leaderboard-link {
+        margin-left: 8px;
+    }
+
 
     #graphic-recording, #q-and-a, #stream-text, #chat, #settings-label-slackview, #settings-switch-slackview {
         display: block;

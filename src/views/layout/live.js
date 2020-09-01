@@ -17,10 +17,10 @@ module.exports = function Layout ({title, content, socialUrl = 'https://2020.cas
             <a href="/"><img src="/images/icon-green.svg" alt="CascadiaJS logo"/></a>
           </div>
           <div id="settings">
-            <div>
+            <div id="handbook-link">
               <span class="cta"><a href="/handbook" target="_handbook">Handbook</a></span>
             </div>
-            <div style="margin-left:8px;">
+            <div id="leaderboard-link">
               <span class="cta"><a href="https://www.twilio.com/quest/events/CascadiaJS/players" target="_twilioquest">TwilioQuest Leaderboard</a></span>
             </div>
             <div id="settings-label-slackview" class="label">Slack View</div>
