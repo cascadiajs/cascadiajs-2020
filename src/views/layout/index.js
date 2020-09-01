@@ -13,9 +13,9 @@ module.exports = function Layout ({title, content, socialUrl = 'https://2020.cas
     <body>
       <div id="root">
         <header>
-          <!--section class="alert">
-            We are <u>SOLD OUT</u> of Conference tickets & Workshops are filling up! See you next week!
-          </section-->
+          <section class="alert">
+            We are <u>SOLD OUT</u> of Conference tickets & Workshops are filling up!
+          </section>
           <nav>
             <div class="wide">
               <div id="logo"><a href="/"><img src="/images/icon-green.svg" alt="logo"/></a></div>
