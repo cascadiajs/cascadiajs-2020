@@ -1,8 +1,9 @@
 let LiveLayout = require('../layout/live')
-let { ConfSchedule } = require('../components/schedule')
+let { DayOne, DayTwo } = require('../components/schedule')
 
 module.exports = async function Live({ speakers, ticket }) {
-    let scheduleContainer = ConfSchedule({ speakers, ticket })
+    let dayOneContainer = DayOne({ speakers, ticket })
+    let dayTwoContainer = DayTwo({ speakers, ticket })
     let content = /*html*/`
     <div id="live" class="slack-view-true">
         <section id="left-pane">
@@ -54,7 +55,10 @@ module.exports = async function Live({ speakers, ticket }) {
         </section>
     </div>
     <div id="live-more">
-        ${ scheduleContainer }
+        <div id="conf-schedule">
+            ${ dayOneContainer }
+            ${ dayTwoContainer }
+        </div>
     </div>
     `
     let html = LiveLayout({ content })
