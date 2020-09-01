@@ -83,8 +83,8 @@ document.addEventListener('DOMContentLoaded', async function main() {
     if (slackview) {
         //loadClapping();
         //handleAudioButtonClick();
-        //const streamId = 'TObfd0ab2772a04cb68098c8deca374878';   // the #live channel
-        const streamId = 'TOed3c03eb7d39493585f2a35b580b5d20'; // the test channel
+        const streamId = 'TObfd0ab2772a04cb68098c8deca374878';   // the #live channel
+        //const streamId = 'TOed3c03eb7d39493585f2a35b580b5d20'; // the test channel
         const teamId = 'T02QDM2DV';
         const hidePoweredBy = false;
         const hideJoinSlack = true;
