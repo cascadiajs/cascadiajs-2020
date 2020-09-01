@@ -1317,6 +1317,14 @@ input:checked + .slider:before {
         grid-template-columns: 1fr 2fr;
     }
 
+    #live #chat.slack-view-true {
+        display: flex;
+    }
+
+    #live #chat.slack-view-false {
+        display: none;
+    }
+
     #live #stream {
         padding: 8px;
     }
