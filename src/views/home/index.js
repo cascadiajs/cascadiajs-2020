@@ -5,10 +5,6 @@ module.exports = async function Index({ ticket }) {
         <div id=page>
             <div class=page-title><div><h1>Hello${ ticket.fullName ? ', ' + ticket.fullName : '' }!</h1></div></div>
             <div id="home" class="page-body narrow">
-                <span class="highlight warning">PLEASE READ: IMPORTANT NOTE FOR ALL ATTENDEES</span>
-                <p>The URLs below are <em>private</em> and only meant for use by registered attendees of CascadiaJS 2020.</p>
-                <p><b>Sharing these links with anyone who is not a registered attendee will be considered a <a href="/coc">Code of Conduct</a> violation.</b></p>
-                <p>If you see anyone sharing or distributing these links, please let an organizer know. Help us keep CascadiaJS a <span class="highlight info">safe place</span> for everyone.</p>
                 <h2>Ticket Info</h2>
                 ${ ticket.hoodie && ticket.code ? '<p><em>Note: Deadline to redeem Goodie Box is Wed, 9/2</em></p>' : ''}
                 <ul>
@@ -26,16 +22,22 @@ module.exports = async function Index({ ticket }) {
                 <ul>
                     <li><span class="cta"><a href="${ process.env.REMO_CAREER_URL }" target="_hallway">Join / Remo (8/31 @ 4:30pm PDT)</a></span></li>
                 </ul-->
-                <h2>Conference (9/1 &amp; 9/2)</h2>
+                <h2>Conference Links (9/1 &amp; 9/2)</h2>
+                <span class="highlight warning">PLEASE READ: IMPORTANT NOTE FOR ALL ATTENDEES</span>
+                <p>The URLs below are <em>private</em> and only meant for use by registered attendees of CascadiaJS 2020.</p>
+                <p><b>Sharing these links with anyone who is not a registered attendee will be considered a <a href="/coc">Code of Conduct</a> violation.</b></p>
+                <p>If you see anyone sharing or distributing these links, please let an organizer know. Help us keep CascadiaJS a <span class="highlight info">safe place</span> for everyone.</p>
                 <ul>
                     <li><span class="cta"><a href="/live" target="_live">Live Stream Track</a></span></li>
                     <li><span class="cta"><a href="${ process.env.SLACK_JOIN_URL }" target="_slack">Hallway Track / Slack</a></span></li>
                     <li><span class="cta"><a href="${ process.env.REMO_DAYONE_URL }" target="_hallway">Hallway Track / Remo (Sept 1)</a></span></li>
-                    <li><span class="cta"><a href="${ process.env.REMO_DAYTWO_URL }" target="_hallway">Hallway Track / Remo (Sept 2)</a></span></li>
+                    <!--li><span class="cta"><a href="${ process.env.REMO_DAYTWO_URL }" target="_hallway">Hallway Track / Remo (Sept 2)</a></span></li-->
                     <li><span class="cta"><a href="${ process.env.RAMBLY_URL }" target="_rambly">Hallway Track / Rambly</a></span></li>
-                    <li><span class="cta"><a href="${ process.env.FAMILY_PHOTO_URL }" target="_family">Family Photo App</a></span></li>
-                    <li><span class="cta"><a href="${ process.env.KARAOKE_URL_1 }" target="_karaoke">Karaoke Room #1 / Zoom (Sept 2)</a></span></li>
-                    <li><span class="cta"><a href="${ process.env.KARAOKE_URL_1 }" target="_karaoke">Karaoke Room #2 / Zoom (Sept 2)</a></span></li>
+                    ${ process.env.FAMILY_PHOTO_URL !== "off" 
+                        ? `<li><span class="cta"><a href="${ process.env.FAMILY_PHOTO_URL }" target="_family">Family Photo App</a></span></li>`
+                        : `` }
+                    <!--li><span class="cta"><a href="${ process.env.KARAOKE_URL_1 }" target="_karaoke">Karaoke Room #1 / Zoom (Sept 2)</a></span></li>
+                    <li><span class="cta"><a href="${ process.env.KARAOKE_URL_1 }" target="_karaoke">Karaoke Room #2 / Zoom (Sept 2)</a></span></li-->
                 </ul>
                 ` : '' }
                 
