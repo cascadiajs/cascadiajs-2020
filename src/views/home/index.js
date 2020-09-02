@@ -38,6 +38,7 @@ module.exports = async function Index({ ticket }) {
                         : `` }
                     <li><span class="cta"><a href="${ process.env.KARAOKE_URL_1 }" target="_karaoke">Karaoke Room #1 / Zoom (Sept 2)</a></span></li>
                     <li><span class="cta"><a href="${ process.env.KARAOKE_URL_1 }" target="_karaoke">Karaoke Room #2 / Zoom (Sept 2)</a></span></li>
+                    <li><span class="cta"><a href="${ process.env.REMO_SOCIAL_URL }" target="_karaoke">Evening Social / Remo (Sept 2)</a></span></li>
                 </ul>
                 ` : '' }
                 
