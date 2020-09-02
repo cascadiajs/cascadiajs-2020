@@ -1,8 +1,7 @@
 let LiveLayout = require('../layout/live')
-let { DayOne, DayTwo } = require('../components/schedule')
+let { DayTwo } = require('../components/schedule')
 
 module.exports = async function Live({ speakers, ticket }) {
-    let dayOneContainer = DayOne({ speakers, ticket })
     let dayTwoContainer = DayTwo({ speakers, ticket })
     let content = /*html*/`
     <div id="live" class="slack-view-true">
@@ -40,7 +39,7 @@ module.exports = async function Live({ speakers, ticket }) {
         <section id="stream"> 
             <div class="inner">            
                 <div id="stream-video" class="video-container">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Zsw637CCejI?autoplay=1&mute=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/YMJ3pAX_0_U?autoplay=1&mute=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
                 <div id="stream-text" class="stream-text-true">
                     <iframe id="stFrame" 
@@ -56,7 +55,6 @@ module.exports = async function Live({ speakers, ticket }) {
     </div>
     <div id="live-more">
         <div id="conf-schedule">
-            ${ dayOneContainer }
             ${ dayTwoContainer }
         </div>
     </div>
