@@ -21,7 +21,7 @@ Any participant asked to stop any harassing behavior is expected to **comply imm
 
 ## Reporting
 
-If you feel uncomfortable, are being harassed, notice that someone else is being harassed, or have any other concerns, please contact a member of conference staff immediately. 
+If you feel uncomfortable, are being harassed, notice that someone else is being harassed, or have any other concerns, please contact a member of conference staff immediately through a private message. We want to hear about the problem, we will handle it privately with respect to all people involved and not publicly shaming anyone (through Slack, Twitter, etc).
 
 For immediate help, please contact us in Slack. Send a DM to one of the following Organizers:
 
