@@ -503,16 +503,16 @@ aside.day-timezone {
     color: #0033FF;
 }
 
-.title.karaoke {
+.title.karaoke, .title.evening {
     display: flex;
     align-items: center;
 }
 
-.title.karaoke>div {
+.title.karaoke>div, .title.evening>div {
     margin-right: 8px;
 }
 
-.title.karaoke .cta a:link {
+.title.karaoke .cta a:link, .title.evening .cta a:link {
     color: #fff;
 }
 

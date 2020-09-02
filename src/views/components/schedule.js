@@ -285,7 +285,14 @@ function DayTwo({ speakers, ticket = undefined }) {
                 </div>
                 <div class="show-item">       
                     <div class="when">17:00</div>
-                    <div class="what"><div class="title"><i class="fas fa-utensils-alt"></i> Dinner Break</div></div>
+                    <div class="what">
+                        <div class="evening title">
+                            <div><i class="fas fa-cocktail"></i> Evening Social</div>
+                            ${ ticket && ticket.conference === 'Y' 
+                                ? `<div><span class="cta"><a href="${ process.env.REMO_EVENING_URL }" target="_remo">Join Remo</a></span></div>`
+                                : ``}
+                        </div>
+                    </div>
                 </div>
                 <div class="show-item">       
                     <div class="when">19:00</div>
