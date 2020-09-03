@@ -8,7 +8,7 @@ let Template = function(props) {
     <div id="landing">
         <section>
             <div>
-                <img src="/images/website-hero.svg" alt="the show begins on Sept 1 at 9am PDT"/>
+                <img src="/images/website-hero-game-over.svg" alt="the show has ended, see you in 2021!"/>
             </div>
         </section>
         <section id="schedule" class="landing">
