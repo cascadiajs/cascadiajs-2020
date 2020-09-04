@@ -14,7 +14,7 @@ module.exports = function Layout ({title, content, socialUrl = 'https://2020.cas
       <div id="root">
         <header>
           <section class="alert">
-            We are <u>SOLD OUT</u> of Conference tickets & Workshops are filling up!
+            React.js (Sept 8) and GraphQL (Sept 9) Workshops are filling up!
           </section>
           <nav>
             <div class="wide">
@@ -23,7 +23,7 @@ module.exports = function Layout ({title, content, socialUrl = 'https://2020.cas
               <div class="push"><a href="/schedule">Schedule</a></div>
               <div class="spacer"><a href="/workshops">Workshops</a></div>
               <div class="spacer"><a href="/coc">Code of Conduct</a></div>
-              <div class="spacer"><a href="/home" class="buy">Enter Show</a></div>
+              <div class="spacer"><a href="https://ti.to/event-loop/cascadiajs-2020" class="buy">Tickets</a></div>
             </div>
           </nav>
         </header>

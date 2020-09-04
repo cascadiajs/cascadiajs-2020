@@ -1,12 +1,12 @@
 let arc = require('@architect/functions')
-const data = require('@begin/data')
+const getSpeakerData = require('@architect/shared/data/get-speaker-data')
 const SpeakerView = require('@architect/views/speaker')
 
 async function Speaker(req) {
   const { key } = req.params
   const { social } = req.queryStringParameters
-  const table = 'speakers'
-  const speaker = await data.get({ table, key })
+  const { speakers } = await getSpeakerData(req)
+  const speaker = speakers.find(s => s.key === key) 
 
   return await SpeakerView({speaker, social})
 
