@@ -25,8 +25,7 @@ async function unauthenticated(req) {
 async function authenticated(req) {
   let speakerData = await data.get({ table: 'speakers', limit: 24 })
   if (req.query.export === 'speakers') {
-    let json = JSON.stringify(speakerData)
-    return { json }
+    return { json: speakerData }
   }
   else {
     let codeData = await data.get( {table: 'codes', limit: 1000 })
