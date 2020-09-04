@@ -24,15 +24,21 @@ async function unauthenticated(req) {
 /** render the speaker list/form */
 async function authenticated(req) {
   let speakerData = await data.get({ table: 'speakers', limit: 24 })
-  let codeData = await data.get( {table: 'codes', limit: 1000 })
-  let ticketData = await data.get( {table: 'tickets', limit: 1000 })
-  let newSpeaker = speaker()
-  let speakers =  speakerData.map(speaker).join('')
-  let speakersSection = `<h2>Speakers</h2>${ newSpeaker + speakers }`
-  let ticketsSection = `<h2>Tickets</h2>${ ticketData.map(ticket).join('') }`
-  let codesSection = `<h2>Redemption Codes</h2>${ codeData.map(code).join('') }`
-  let html = layout(speakersSection + ticketsSection + codesSection)
-  return { html }
+  if (req.query.export === 'speakers') {
+    let json = JSON.stringify(speakerData)
+    return { json }
+  }
+  else {
+    let codeData = await data.get( {table: 'codes', limit: 1000 })
+    let ticketData = await data.get( {table: 'tickets', limit: 1000 })
+    let newSpeaker = speaker()
+    let speakers =  speakerData.map(speaker).join('')
+    let speakersSection = `<h2>Speakers</h2>${ newSpeaker + speakers }`
+    let ticketsSection = `<h2>Tickets</h2>${ ticketData.map(ticket).join('') }`
+    let codesSection = `<h2>Redemption Codes</h2>${ codeData.map(code).join('') }`
+    let html = layout(speakersSection + ticketsSection + codesSection)
+    return { html }
+  }
 }
 
 function ticket(t) {
