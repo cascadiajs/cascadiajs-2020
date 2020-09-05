@@ -6,7 +6,7 @@ const isXHR = require('@architect/shared/utils/is-xhr')
 const SpeakersView = require('@architect/views/speakers')
 
 async function Speakers(req) {
-  const { speakers, topics, selectedTopics } = await getSpeakerData(req)
+  const { speakers, topics, selectedTopics } = getSpeakerData(req)
   // If this is an XHR request respond with JSON
   if (isXHR(req)) {
     let body = JSON.stringify({ speakers, selectedTopics, topics })

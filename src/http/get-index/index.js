@@ -15,7 +15,8 @@ let getSpeakerData = require('@architect/shared/data/get-speaker-data')
 
 async function Index (req) {
     if (req.path === '/') {
-        return await IndexView(await getSpeakerData(req))
+        let { speakers, selectedTopics, topics } = getSpeakerData(req)
+        return await IndexView({ speakers, selectedTopics, topics })
     }
     else return
 }

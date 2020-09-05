@@ -1,9 +1,8 @@
-let speakers = require('./speakers.json')
-//console.log("outside function: ", speakers)
-module.exports = async function GetSpeakerData (req) {  
-  //console.log("inside function: ", speakers)
+const speakerList = require('./speakers.json')
+
+module.exports = function GetSpeakerData (req) {
   // scrub info for non-revealed speakers (only include reveal & pixelated props)
-  speakers = speakers.map(s => ((new Date(s.reveal)).getTime() <= Date.now() ? s : { reveal: s.reveal, pixelated: s.pixelated, topics: s.topics }))
+  let speakers = speakerList.map(s => ((new Date(s.reveal)).getTime() <= Date.now() ? s : { reveal: s.reveal, pixelated: s.pixelated, topics: s.topics }))
   // Collect all the speakers topics into an array with no duplicate topics
   let topics = speakers.reduce((a, r) => [...new Set(a.concat(r.topics))].sort(), [])
   let params = req.queryStringParameters || {}
@@ -20,6 +19,5 @@ module.exports = async function GetSpeakerData (req) {
       return speakerTopics.some(speakerTopic => selectedTopics.some(selectedTopic => speakerTopic === selectedTopic))
     })
   }
-
   return { speakers, selectedTopics, topics }
 }

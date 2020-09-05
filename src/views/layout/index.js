@@ -20,7 +20,8 @@ module.exports = function Layout ({title, content, socialUrl = 'https://2020.cas
             <div class="wide">
               <div id="logo"><a href="/"><img src="/images/icon-green.svg" alt="logo"/></a></div>
               <div><span><a href="/">CascadiaJS</a></span></div>
-              <div class="push"><a href="/schedule">Schedule</a></div>
+              <div class="push"><a href="/speakers">Speakers</a></div>
+              <div class="spacer"><a href="/schedule">Schedule</a></div>
               <div class="spacer"><a href="/workshops">Workshops</a></div>
               <div class="spacer"><a href="/coc">Code of Conduct</a></div>
               <div class="spacer"><a href="https://ti.to/event-loop/cascadiajs-2020" class="buy">Tickets</a></div>
