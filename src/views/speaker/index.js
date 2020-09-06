@@ -35,6 +35,15 @@ let Template = function(speaker) {
                 <h2>${ title }</h2>
                 <div class="topics">${ topics.map(t => `<div class=js-topic>${ t }</div>`).join('') }</div>
                 <div class="abstract">${ md(abstract) }</div>
+                <div class="illustration">
+                    <img src="/images/speakers/${ key }-illustration.png" alt="talk illustration"/><br/>
+                    <p><small><i>Illustrations made posible by our friends at <a href="https://circleci.com/signup">CircleCI</a> ❤️</i></small></p>
+                </div>
+                <div class="illustration">
+                    <h3>Talk Recording</h3>
+                    Coming Soon!
+                </div>
+
             </section>
         </div>
     </div>
