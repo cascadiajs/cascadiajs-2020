@@ -1,6 +1,6 @@
 {
   "name": "cascadiajs-2020",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "CascadiaJS 2020 website",
   "scripts": {
     "lint": "eslint src --ignore-pattern node_modules --fix",
