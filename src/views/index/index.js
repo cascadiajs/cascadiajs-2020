@@ -11,28 +11,10 @@ let Template = function(props) {
                 <img src="/images/website-hero-game-over.svg" alt="the show has ended, see you in 2021!"/>
             </div>
         </section>
-        <section id="schedule" class="landing">
+        <section id="newsletter" class="landing">
             <div class="wide">    
-                 <h2>Schedule</h2>
-                ${ scheduleContainer }
-            </div>
-        </section>
-        <section id="workshops" class="landing">
-            <div class="narrow">
-                <h2>Post-Conf Workshops</h2>
-                <h3>JavaScript: The Recent Parts</h3>
-                <h4>Sept 3</h4>
-                <p>Kyle Simpson will walk us through the newest additions to JavaScript, including: spread/rest, destructuring, template literals, iterators, generators, Array.includes, string padding, async-await, RegExp improvements, async generators/iteration and more.</p>
-                <h3>Digging Into Node</h3>
-                <h4>Sept 4</h4>
-                <p>Kyle Simpson will spend a day Digging Into Node, including: building CLI tools (parameters, I/O, etc), file system operations, async, streams, HTTP handling, Express.js routing, SQLite databases, child processes and more.</p>
-                <h3>React: Beyond the Basics</h3>
-                <h4>Sept 8</h4>
-                <p>Eve Porcello will cover the following in this intermediate React.js workshop: Hooks, Creating Custom Hooks, State Machines, Suspense Preview and Ecosystem APIs like React Router, Next.js, and more!</p>
-                <h3>GraphQL: The Next Steps</h3>
-                <h4>Sept 9</h4>
-                <p>Eve Porcello will cover the following in this intermediate GraphQL workshop: Unions & Interfaces, Error Handling, Microservices with Apollo Federation, Graph Manager and Relay.</p>
-                <div class="cta"><a href="/workshops">Workshops Info</a></div>
+                <h2>Upcoming CascadiaJS events</h2>
+                <div>form</div>
             </div>
         </section>
         <section id="organizers" class="landing">
