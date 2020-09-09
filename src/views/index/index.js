@@ -5,15 +5,15 @@ let Template = function(props) {
     let { organizerContainer } = props
     return /*html*/`
     <div id="landing">
-        <section>
+        <section id="hero">
             <div>
                 <img src="/images/website-hero-game-over.svg" alt="the show has ended, see you in 2021!"/>
             </div>
         </section>
         <section id="newsletter" class="landing">
             <div class="wide">    
-                <h2>Upcoming CascadiaJS events</h2>
-                <div>form</div>
+                <h2>Sign-up for Info on Upcoming Events</h2>
+                <div class="cta"><a href="http://eepurl.com/dPmCkT">Join Our Mailing List</a></div>
             </div>
         </section>
         <section id="organizers" class="landing">

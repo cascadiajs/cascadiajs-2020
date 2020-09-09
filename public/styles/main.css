@@ -382,16 +382,16 @@ section .cta {
     color: #17C37B;
 }
 
-#hero, #attend, #workshops, #workshops h2, #sponsors, #sponsors h2 {
+#hero, #attend, #workshops, #workshops h2, #sponsors, #sponsors h2, #newsletter, #newsletter h2 {
     background-color: #17C37B;
     color: #fff;
 }
 
-#attend a, #attend a:visited {
+#attend a, #attend a:visited, #newsletter a, #newsletter a:visited {
     color: #fff;
 }
 
-#attend a:hover {
+#attend a:hover, #newsletter a:hover {
     background-color: #fff;
     color: #17C37B;
 }

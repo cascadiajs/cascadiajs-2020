@@ -13,9 +13,9 @@ module.exports = function Layout ({title, content, socialUrl = 'https://2020.cas
     <body>
       <div id="root">
         <header>
-          <section class="alert">
-            React.js (Sept 8) and GraphQL (Sept 9) Workshops are filling up!
-          </section>
+          <!--section class="alert">
+            See you in 2021!
+          </section-->
           <nav>
             <div class="wide">
               <div id="logo"><a href="/"><img src="/images/icon-green.svg" alt="logo"/></a></div>
