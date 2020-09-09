@@ -326,7 +326,12 @@
     "reveal": "2020-06-26T09:30:00-07:00",
     "title": "The Operating System of You",
     "key": "shawn-wang",
-    "table": "speakers"
+    "table": "speakers",
+    "resources": [
+      {"title": "Slides", "url": "https://docs.google.com/presentation/d/1z43axgETtWGqPFlRDmqU11gb3aJnEH0y3MgSV5fchpM/edit?usp=sharing"},
+      {"title": "Book version with other ideas", "url": "https://www.learninpublic.org/"},
+      {"title": "Twitter feedback", "url": "https://twitter.com/swyx/status/1300938821207384065?s=20"}
+    ]
   },
   {
     "location": "Amsterdam",
