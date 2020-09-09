@@ -10,9 +10,9 @@ module.exports = async function Index({ ticket }) {
                 <ul>
                     <li><b>Ticket Type:</b> ${ ticket.ticket }</li>
                     <li><b>Conference:</b> ${ ticket.conference == 'Y' ? "Yes" : "No" }</li>
-                    <li><b>Goodie Box:</b> ${ ticket.hoodie === 'Y' 
+                    <li><b>Goodie Box:</b> ${ ticket.hoodie === 'Y'
                         ? ticket.code
-                            ? `<a href="https://stores.kotisdesign.com/cascadiajs2020/${ ticket.code }">Redeem Goodie Box</a>` 
+                            ? `<a href="https://stores.kotisdesign.com/cascadiajs2020/${ ticket.code }">Redeem Goodie Box</a>`
                             : "Yes"
                         : "No" }
                     </li>
@@ -33,7 +33,7 @@ module.exports = async function Index({ ticket }) {
                     <!--li><span class="cta"><a href="${ process.env.REMO_DAYONE_URL }" target="_hallway">Hallway Track / Remo (Sept 1)</a></span></li-->
                     <li><span class="cta"><a href="${ process.env.REMO_DAYTWO_URL }" target="_hallway">Hallway Track / Remo (Sept 2)</a></span></li>
                     <li><span class="cta"><a href="${ process.env.RAMBLY_URL }" target="_rambly">Hallway Track / Rambly</a></span></li>
-                    ${ process.env.FAMILY_PHOTO_URL !== "off" 
+                    ${ process.env.FAMILY_PHOTO_URL !== "off"
                         ? `<li><span class="cta"><a href="${ process.env.FAMILY_PHOTO_URL }" target="_family">Family Photo App</a></span></li>`
                         : `` }
                     <li><span class="cta"><a href="${ process.env.KARAOKE_URL_1 }" target="_karaoke">Karaoke Room #1 / Zoom (Sept 2)</a></span></li>

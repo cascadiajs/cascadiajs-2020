@@ -114,7 +114,7 @@ function DayOne({ speakers, ticket = undefined }) {
                             <p>Open from 10:00 - 15:00</p>
                         </div>
                         ${ ticket && ticket.conference === 'Y'
-                            ? `<div><span class="cta"><a href="${ process.env.REMO_DAYONE_URL }" target="_hallway">Join</a></span></div>` 
+                            ? `<div><span class="cta"><a href="${ process.env.REMO_DAYONE_URL }" target="_hallway">Join</a></span></div>`
                             : ``}
                     </div>
                     <div class="show-item">       
@@ -198,7 +198,7 @@ function DayOne({ speakers, ticket = undefined }) {
                             <p>Open all the time!</p>
                         </div>
                         ${ ticket && ticket.conference === 'Y'
-                            ? `<div><span class="cta"><a href="${ process.env.RAMBLY_URL }" target="_hallway">Join</a></span></div>` 
+                            ? `<div><span class="cta"><a href="${ process.env.RAMBLY_URL }" target="_hallway">Join</a></span></div>`
                             : ``}
                     </div>
                     <div class="show-item">
@@ -288,7 +288,7 @@ function DayTwo({ speakers, ticket = undefined }) {
                     <div class="what">
                         <div class="evening title">
                             <div><i class="fas fa-cocktail"></i> Evening Social</div>
-                            ${ ticket && ticket.conference === 'Y' 
+                            ${ ticket && ticket.conference === 'Y'
                                 ? `<div><span class="cta"><a href="${ process.env.REMO_EVENING_URL }" target="_remo">Join Remo</a></span></div>`
                                 : ``}
                         </div>
@@ -299,7 +299,7 @@ function DayTwo({ speakers, ticket = undefined }) {
                     <div class="what">
                         <div class="karaoke title">
                             <div><i class="fas fa-microphone"></i> <a href="/closing-party">Karaoke Party</a></div>
-                            ${ ticket && ticket.conference === 'Y' 
+                            ${ ticket && ticket.conference === 'Y'
                                 ? `<div><span class="cta"><a href="${ process.env.KARAOKE_URL_1 }" target="_karaoke">Room #1</a></span> <span class="cta"><a href="${ process.env.KARAOKE_URL_2 }" target="_karaoke">Room #2</a></span></div>`
                                 : ``}
                         </div>
@@ -316,7 +316,7 @@ function DayTwo({ speakers, ticket = undefined }) {
                             <p>Open from 10:00 - 15:00</p>
                         </div>
                         ${ ticket && ticket.conference === 'Y'
-                            ? `<div><span class="cta"><a href="${ process.env.REMO_DAYTWO_URL }" target="_hallway">Join</a></span></div>` 
+                            ? `<div><span class="cta"><a href="${ process.env.REMO_DAYTWO_URL }" target="_hallway">Join</a></span></div>`
                             : ``}
                     </div>
                     <div class="show-item">       
@@ -400,7 +400,7 @@ function DayTwo({ speakers, ticket = undefined }) {
                             <p>Open all the time!</p>
                         </div>
                         ${ ticket && ticket.conference === 'Y'
-                            ? `<div><span class="cta"><a href="${ process.env.RAMBLY_URL }" target="_hallway">Join</a></span></div>` 
+                            ? `<div><span class="cta"><a href="${ process.env.RAMBLY_URL }" target="_hallway">Join</a></span></div>`
                             : ``}
                     </div>
                     <div class="show-item">

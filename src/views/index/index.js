@@ -1,9 +1,8 @@
 let Layout = require('../layout')
 let OrganizerContainer = require('../components/organizers')
-let { ConfSchedule } = require('../components/schedule')
 
 let Template = function(props) {
-    let { organizerContainer, scheduleContainer } = props
+    let { organizerContainer } = props
     return /*html*/`
     <div id="landing">
         <section>
@@ -71,10 +70,9 @@ let Template = function(props) {
 `
 }
 
-module.exports = async function Index({ speakers }) {
+module.exports = async function Index() {
     let organizerContainer = OrganizerContainer()
-    let scheduleContainer = ConfSchedule({ speakers })
-    let content = Template({ organizerContainer, scheduleContainer })
+    let content = Template({ organizerContainer })
     let html = Layout({content, scripts: ['/js/attendees.js']})
     return { html }
 }

@@ -19,7 +19,7 @@ module.exports = async function Live({ speakers, ticket }) {
                     </iframe>
                 </div>
             </div>
-            ${ process.env.QA_WIDGET === 'on' ? 
+            ${ process.env.QA_WIDGET === 'on' ?
             /*html*/`<div id="q-and-a">
                 <h2>Q&A</h2>
                 <div id="q-a-container">

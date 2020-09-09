@@ -45,10 +45,10 @@ let Template = function(speaker) {
                 </div>
                 <div class="resources">
                     <h3>Talk Resources</h3>
-                    ${ resources ? 
-                        /*html*/`<ul>${resources.map(r => 
-                            /*html*/`<li><a href="${ r.url }">${ r.title }</a></li>`).join("")}</ul>` 
-                    
+                    ${ resources ?
+                        /*html*/`<ul>${resources.map(r =>
+                            /*html*/`<li><a href="${ r.url }">${ r.title }</a></li>`).join("")}</ul>`
+
                     : /*html*/`<p>Coming Soon!</p>` }
                 </div>
             </section>
