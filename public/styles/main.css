@@ -391,7 +391,7 @@ section .cta {
     color: #fff;
 }
 
-#attend a:hover, #newsletter a:hover {
+#attend a:hover {
     background-color: #fff;
     color: #17C37B;
 }

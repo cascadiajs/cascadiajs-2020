@@ -1,14 +1,18 @@
 let Layout = require('../layout')
 let OrganizerContainer = require('../components/organizers')
+let SpeakersContainer = require('../components/speakers')
 
 let Template = function(props) {
-    let { organizerContainer } = props
+    let { organizerContainer, speakersContainer } = props
     return /*html*/`
     <div id="landing">
         <section id="hero">
             <div>
                 <img src="/images/website-hero-game-over.svg" alt="the show has ended, see you in 2021!"/>
             </div>
+        </section>
+        <section id="speakers" class="landing">
+            ${ speakersContainer }
         </section>
         <section id="newsletter" class="landing">
             <div class="wide">    
@@ -70,9 +74,10 @@ let Template = function(props) {
 `
 }
 
-module.exports = async function Index() {
+module.exports = async function Index({ speakers }) {
     let organizerContainer = OrganizerContainer()
-    let content = Template({ organizerContainer })
+    let speakersContainer = SpeakersContainer({ speakers })
+    let content = Template({ organizerContainer, speakersContainer })
     let html = Layout({content, scripts: ['/js/attendees.js']})
     return { html }
 }
