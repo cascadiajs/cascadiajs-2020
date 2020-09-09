@@ -69,7 +69,7 @@
     "track": "main",
     "topics": ["TypeScript", "Monorepo", "npm"],
     "pixelated": "4aae8b7e108679dd38f6c6273d2e15cbb88c2fad",
-    "abstract": "As professional developers, we /probably/ don’t deploy code directly to production and we /usually/ test things first.  There’s a whole world of tools and best practices like Git Flow, Continuous Integration, and Review Apps to help us build and deploy our apps and websites… but what about the tools we use every day?  This talk will focus on how to parallel some of these same best-practices when making developer tools and frameworks.  Together we will build a CI/CD pipeline for publishing to packages to NPM.",
+    "abstract": "As professional developers, we /probably/ don’t deploy code directly to production and we /usually/ test things first.  There’s a whole world of tools and best practices like Git Flow, Continuous Integration, and Review Apps to help us build and deploy our apps and websites... but what about the developer tools we use every day?  This talk will focus on how to parallel some of these same best-practices when making developer tools and frameworks.  Together we will build a CI/CD pipeline for publishing to packages to NPM.",
     "name": "Evan Tahler",
     "twitter": "evantahler",
     "company": "Grouparoo",
@@ -77,7 +77,8 @@
     "reveal": "2020-06-26T14:30:00-07:00",
     "title": "How I learned to Stop Worrying and Let the Robot Publish to NPM",
     "key": "evan-tahler",
-    "table": "speakers"
+    "table": "speakers",
+    "resources": [{"title": "slides", "url": "https://2020.cascadiajs.com/speakers/evan-tahler"}, {"title": "cascadiajs npm package", "url": "https://github.com/evantahler/cascadiajs"}]
   },
   {
     "location": "San Francisco, CA",
