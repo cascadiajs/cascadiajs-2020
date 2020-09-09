@@ -186,7 +186,11 @@
     "reveal": "2020-06-24T14:30:00-07:00",
     "title": "Mo'Problems, Mo'Nads",
     "key": "kyle-simpson",
-    "table": "speakers"
+    "table": "speakers",
+    "resources": [
+      {"title": "Slides", "url": "https://speakerdeck.com/getify/moproblems-monads"},
+      {"title": "Monio (monad library for JS)", "url": "https://github.com/getify/monio"}
+    ]
   },
   {
     "location": "Seattle, WA",
