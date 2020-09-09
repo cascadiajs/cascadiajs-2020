@@ -43,7 +43,10 @@
     "reveal": "2020-08-10T10:00:00-07:00",
     "title": "Secret Talk",
     "key": "claudius-mbemba",
-    "table": "speakers"
+    "table": "speakers",
+    "resources": [
+      {"title": "We All Have a Voice", "url": "https://claudiusmbemba.com/we-all-have-a-voice/"}
+    ]
   },
   {
     "location": "Seattle, WA",

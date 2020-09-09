@@ -5,7 +5,7 @@ let SocialLayout = require('../layout/social')
 let assetPath = 'https://create-4jr-staging.begin.app/_static/2020'
 
 let Template = function(speaker) {
-    const { key, name, location, company, url, twitter, title, topics, pronouns, abstract } = speaker
+    const { key, name, location, company, url, twitter, title, topics, pronouns, abstract, resources } = speaker
 
     return /*html*/`
     <div id="page">
@@ -39,11 +39,18 @@ let Template = function(speaker) {
                     <img src="/images/speakers/${ key }-illustration.png" alt="talk illustration"/><br/>
                     <p><small><i>Illustrations made posible by our friends at <a href="https://circleci.com/signup">CircleCI</a> ❤️</i></small></p>
                 </div>
-                <div class="illustration">
+                <div class="video">
                     <h3>Talk Recording</h3>
-                    Coming Soon!
+                    <p>Coming Soon!</p>
                 </div>
-
+                <div class="resources">
+                    <h3>Talk Resources</h3>
+                    ${ resources ? 
+                        /*html*/`<ul>${resources.map(r => 
+                            /*html*/`<li><a href="${ r.url }">${ r.title }</a></li>`)}</ul>` 
+                    
+                    : /*html*/`<p>Coming Soon!</p>` }
+                </div>
             </section>
         </div>
     </div>
