@@ -62,7 +62,8 @@
     "reveal": "2020-06-25T09:30:00-07:00",
     "title": "How I Graduated from React to Vanilla JavaScript",
     "key": "dan-mckeon",
-    "table": "speakers"
+    "table": "speakers",
+    "resources": [{"title": "Slides", "url": "https://speakerdeck.com/dpmckeon/how-i-graduated-from-react-to-vanilla-javascript"}]
   },
   {
     "location": "Seattle, WA",
