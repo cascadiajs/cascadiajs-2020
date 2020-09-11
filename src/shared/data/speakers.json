@@ -62,7 +62,14 @@
     "reveal": "2020-06-25T09:30:00-07:00",
     "title": "How I Graduated from React to Vanilla JavaScript",
     "key": "dan-mckeon",
-    "table": "speakers"
+    "table": "speakers",
+    "resources": [
+      {"title": "Presentation slides", "url": "https://speakerdeck.com/dpmckeon/how-i-graduated-from-react-to-vanilla-javascript"},
+      {"title": "MDN web docs", "url": "https://developer.mozilla.org/en-US/"},
+      {"title": "WAI-ARIA authoring practices", "url": "https://www.w3.org/TR/wai-aria-practices-1.1/"},
+      {"title": "Google web fundamentals", "url": "https://developers.google.com/web/fundamentals"},
+      {"title": "Introduction to custom elements", "url": "https://developers.google.com/web/fundamentals/web-components/customelements"}
+    ]
   },
   {
     "location": "Seattle, WA",
