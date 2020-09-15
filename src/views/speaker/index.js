@@ -5,7 +5,7 @@ let SocialLayout = require('../layout/social')
 let assetPath = 'https://create-4jr-staging.begin.app/_static/2020'
 
 let Template = function(speaker) {
-    const { key, name, location, company, url, twitter, title, topics, pronouns, abstract, resources } = speaker
+    const { key, name, location, company, url, twitter, title, topics, pronouns, abstract, resources, ytId } = speaker
 
     return /*html*/`
     <div id="page">
@@ -41,15 +41,16 @@ let Template = function(speaker) {
                 </div>
                 <div class="video">
                     <h3>Talk Recording</h3>
-                    <p>Coming Soon!</p>
+                    ${ ytId ?
+                        /*html*/`<div class="video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/${ ytId }" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>`
+                    : /*html*/`<p>Coming Soon!</p>`}
                 </div>
+                <div class="cta"><a href="http://eepurl.com/dPmCkT">Sign-Up for Updates on CascadiaJS 2021</a></div>
                 <div class="resources">
-                    <h3>Talk Resources</h3>
                     ${ resources ?
-                        /*html*/`<ul>${resources.map(r =>
+                        /*html*/`<h3>Talk Resources</h3><ul>${resources.map(r =>
                             /*html*/`<li><a href="${ r.url }">${ r.title }</a></li>`).join("")}</ul>`
-
-                    : /*html*/`<p>Coming Soon!</p>` }
+                    : `` }
                 </div>
             </section>
         </div>
