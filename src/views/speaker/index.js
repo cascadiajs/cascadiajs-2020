@@ -3,6 +3,7 @@ let md = require('marked')
 let Layout = require('../layout')
 let SocialLayout = require('../layout/social')
 let assetPath = 'https://create-4jr-staging.begin.app/_static/2020'
+let baseUrl = require('@architect/shared/utils/base-url')()
 
 let Template = function(speaker) {
     const { key, name, location, company, url, twitter, title, topics, pronouns, abstract, resources, ytId } = speaker
@@ -67,7 +68,7 @@ module.exports = async function Speaker({speaker, social}) {
     else {
         let content = Template(speaker)
         //let socialUrl = `${ assetPath }/${ speaker.key }-social.png`
-        let socialUrl = `/images/speakers/${ speaker.key }-illustration.png`
+        let socialUrl = `${ baseUrl }/images/speakers/${ speaker.key }-illustration.png`
         let title = `${ speaker.name } | ${ speaker.title }`
         html = Layout({ content, title, socialUrl })
     }
