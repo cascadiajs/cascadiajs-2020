@@ -369,7 +369,12 @@
     "reveal": "2020-07-03T09:30:00-07:00",
     "title": "The Past, Present, and Future of Favicons",
     "key": "tiger-oakes",
-    "table": "speakers"
+    "table": "speakers",
+    "resources": [
+      {"title": "Slides", "url": "https://docs.google.com/presentation/d/1Lj7xbupCTA2jHv5-ve4XLNHAulG0K-7Nx5gsZqb0qU4/edit"},
+      {"title": "Maskable.app", "url": "https://maskable.app"},
+      {"title": "Monochrome.fyi", "url": "https://monochrome.fyi"}
+    ]
   },
   {
     "location": "Longmont, CO",
