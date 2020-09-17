@@ -321,6 +321,7 @@
     "pronouns": "he/him/his",
     "reveal": "2020-06-28T09:30:00-07:00",
     "title": "Musical Creativity in the Browser",
+    "ytId": "MIFg1DGNWI4",
     "key": "scott-ammon",
     "table": "speakers"
   },
@@ -362,7 +363,7 @@
   {
     "location": "Vancouver, BC",
     "track": "main",
-    "topics": ["Web-Platform"],
+    "topics": ["Web Platform"],
     "url": "https://tigeroakes.com",
     "pixelated": "1054bfa70bd30c69c8122ab0f9cf548f60037e16",
     "abstract": "Favicons are everywhere, representing your site on tabs, bookmarks, home screens, and more. Did you know favicons were snuck into Internet Explorer, how Apple was once a major proponent for web apps, or that a single icon design can automatically fit alongside other mobile apps on any device? Let's dive into the history and future of website icons, and show you how to make your website and PWA icons shine on a variety of screens.",
@@ -372,6 +373,7 @@
     "pronouns": "he/him",
     "reveal": "2020-07-03T09:30:00-07:00",
     "title": "The Past, Present, and Future of Favicons",
+    "ytId": "F_UIPs0umnE",
     "key": "tiger-oakes",
     "table": "speakers",
     "resources": [
