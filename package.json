@@ -4,21 +4,21 @@
   "description": "CascadiaJS 2020 website",
   "scripts": {
     "lint": "eslint src --ignore-pattern node_modules --fix",
-    "start": "cross-env NODE_ENV=testing npx sandbox",
+    "start": "cross-env NODE_ENV=testing ARC_API_TYPE=rest npx sandbox",
     "test": "cross-env NODE_ENV=testing PORT=6666 tape test/*-test.js ./test/**/*-test.js | tap-spec",
     "social": "node scripts/create-social-sharing-images",
     "prod": "npm version patch && git push origin master"
   },
   "devDependencies": {
-    "@architect/architect": "^6.4.1",
-    "@architect/sandbox": "^1.12.0",
+    "@architect/architect": "^7.0.2",
+    "@architect/sandbox": "^2.0.0",
     "@begin/data": "latest",
     "cross-env": "^7.0.2",
-    "eslint": "^7.0.0",
+    "eslint": "^7.9.0",
     "node-fetch": "^2.6.1",
-    "puppeteer": "^4.0.1",
+    "puppeteer": "^5.3.1",
     "tap-spec": "^5.0.0",
-    "tape": "^5.0.0",
-    "tiny-json-http": "^7.2.0"
+    "tape": "^5.0.1",
+    "tiny-json-http": "^7.2.2"
   }
 }
