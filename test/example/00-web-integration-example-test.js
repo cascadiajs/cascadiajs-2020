@@ -12,11 +12,11 @@ test('Set up env', t => {
   t.ok(sandbox, 'sandbox loaded')
 })
 
-let end // Saves a reference to be used later to shut down the sandbox
+//let end // Saves a reference to be used later to shut down the sandbox
 test('Start sandbox', async t => {
   t.plan(1)
-  end = await sandbox.start()
-  t.ok(end, 'Sandbox started!')
+  await sandbox.start()
+  t.ok('Sandbox started!')
 })
 
 test('get / (continuation-passing style)', t => {
@@ -54,7 +54,7 @@ test('get / (async/await style)', async t => {
 
 test('Shut down sandbox', t=> {
   t.plan(1)
-  end()
+  sandbox.end()
   tiny.get({url},
   function win (err, result) {
     if (err) {

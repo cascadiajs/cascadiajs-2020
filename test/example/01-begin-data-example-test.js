@@ -18,8 +18,8 @@ test('Set up env', t => {
 let end // Saves a reference to be used later to shut down the sandbox
 test('Start sandbox', async t=> {
   t.plan(1)
-  end = await sandbox.start()
-  t.ok(end, 'Sandbox started!')
+  await sandbox.start()
+  t.ok('Sandbox started!')
 })
 
 test('data.set (one document)', async t => {
@@ -121,6 +121,6 @@ test('data.get can read an entire table', async t => {
 
 test('Shut down sandbox', async t=> {
   t.plan(1)
-  end()
+  sandbox.end()
   t.ok(true, 'shutdown')
 })
