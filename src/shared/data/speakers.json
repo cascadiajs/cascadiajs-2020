@@ -84,6 +84,7 @@
     "pronouns": "he/him",
     "reveal": "2020-06-26T14:30:00-07:00",
     "title": "How I learned to Stop Worrying and Let the Robot Publish to NPM",
+    "ytId": "rM5PxymAJY8",
     "key": "evan-tahler",
     "table": "speakers",
     "resources": [{"title": "slides", "url": "https://2020.cascadiajs.com/speakers/evan-tahler"}, {"title": "cascadiajs npm package", "url": "https://github.com/evantahler/cascadiajs"}]
