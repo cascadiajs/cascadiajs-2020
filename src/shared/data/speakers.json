@@ -2,7 +2,7 @@
   {
     "location": "Silverdale, WA",
     "track": "main",
-    "topics": ["SVG", "Canvas", "WebGL", "DataViz"],
+    "topics": ["svg", "canvas", "webgl", "dataviz"],
     "pixelated": "79bd990d98b39128a4b6bd3bf03b777cfbd4128f",
     "abstract": "Do you want to tell meaningful stories with your data? We will explore the path towards building gpu-performant custom visuals, overcoming pain points, and navigating the tooling landscape in SVG, canvas, and webGL.",
     "name": "Amber Hoak",
@@ -11,13 +11,14 @@
     "pronouns": "she/her",
     "reveal": "2020-06-25T14:30:00-07:00",
     "title": "SVG, Canvas, and WebGL: The Power, the Beauty, and the Cost",
+    "ytId": "wjtfQ8NI2T8",
     "key": "amber-hoak",
     "table": "speakers"
   },
   {
     "location": "Los Angeles, CA",
     "track": "main",
-    "topics": ["Hardware", "API"],
+    "topics": ["hardware", "api"],
     "pixelated": "5a7351cbc341ee86247c69489a37f7b1d2574d4e",
     "abstract": "Explore how to take AI assistants to a new level by programming a robot as your personal assistant. Learn about Misty Robotics and how to program a robot with JavaScript!",
     "name": "April Speight",
@@ -52,7 +53,7 @@
   {
     "location": "Seattle, WA",
     "track": "main",
-    "topics": ["JavaScript", "React"],
+    "topics": ["javascript", "react.js"],
     "url": "http://www.danmckeon.com",
     "pixelated": "b864eb120708884256a72cebd855af93b6f8ecab",
     "abstract": "After falling in love with React, I found myself thrust into the seemingly boring world of vanilla JavaScript. While at first I missed the conveniences of modern JS frameworks, it turned out I found a certain beauty in vanilla. Learn how we use vanilla JavaScript to build a cross-framework, accessible design system, and the insights we’ve gathered along the way.",
@@ -75,7 +76,7 @@
   {
     "location": "Seattle, WA",
     "track": "main",
-    "topics": ["TypeScript", "Monorepo", "npm"],
+    "topics": ["typescript", "devops", "npm"],
     "pixelated": "4aae8b7e108679dd38f6c6273d2e15cbb88c2fad",
     "abstract": "As professional developers, we /probably/ don’t deploy code directly to production and we /usually/ test things first.  There’s a whole world of tools and best practices like Git Flow, Continuous Integration, and Review Apps to help us build and deploy our apps and websites... but what about the developer tools we use every day?  This talk will focus on how to parallel some of these same best-practices when making developer tools and frameworks.  Together we will build a CI/CD pipeline for publishing to packages to NPM.",
     "name": "Evan Tahler",
@@ -92,7 +93,7 @@
   {
     "location": "San Francisco, CA",
     "track": "main",
-    "topics": ["ES-Modules"],
+    "topics": ["es modules"],
     "pixelated": "3f3e1141ae7e9176d9fa526f5b90c7bd429ea8f0",
     "abstract": "The JavaScript ecosystem is about to change in a big way. New technologies like ES Modules (aka ESM), HTTP/3 and WASM are all coming together to re-define how you build for the web and beyond. This talk explores these new technologies, their impact, and how Internet Explorer may be involved in the most influential evolution of all.",
     "name": "Fred K Schott",
@@ -108,7 +109,7 @@
   {
     "location": "Denver, CO",
     "track": "lightning",
-    "topics": ["a11y", "UI"],
+    "topics": ["accessibility", "ui"],
     "url": "https://jdsteinbach.com",
     "pixelated": "6f833820958f1e797517f53db34de604d54d1df5",
     "abstract": "Modal windows are a complicated yet common UI component. Most helper libraries solve issues like styles, portals, or state. We're going to dig into major accessibility needs for modal windows.",
@@ -125,7 +126,7 @@
   {
     "location": "Kaunas, Lithuania",
     "track": "lightning",
-    "topics": ["a11y"],
+    "topics": ["accessibility"],
     "pixelated": "fc7f8bbeb8195509be4f86b1010cffb9652fda9f",
     "abstract": "Knowing how to build accessible products is important but it's just as important to know why we build products to be accessible. Basic human decency aside, there's a plethora of reasons for building products that everyone can use. In this talk, we'll explore the concept of accessibility in order to better understand its necessity and the ramifications involved in building non accessible products. We'll also answer pressing questions like \"How do I know if this thing I built is accessible?\" and \"Whose job is it to ensure accessibility?\" (Spoiler: it's everyone's job)",
     "name": "Jemima Abu",
@@ -141,7 +142,7 @@
   {
     "location": "Vancouver, WA",
     "track": "main",
-    "topics": ["Career"],
+    "topics": ["career"],
     "pixelated": "4446a9f80b4f7fa15fd80a423d1c804ff1be8210",
     "abstract": "Your community brand is your reputation and it can happen by accident or it can be designed. If you are intentional and thoughtful about how you create and interact with your community will play a huge role in your career and potential opportunities. Being intentional and following a few simple patterns can take your career to the next level and help you achieve your potential.",
     "name": "Joel Hooks",
@@ -157,7 +158,7 @@
   {
     "location": "Seattle, WA",
     "track": "main",
-    "topics": ["Dweb", "IPFS", "Dat"],
+    "topics": ["dweb", "ipfs", "dat"],
     "url": "http://ifoundthemeaningoflife.com",
     "pixelated": "6ef8a1d6aec0c61be735d173554da18f3d799ab2",
     "abstract": "The Environmental Data & Governance Initiative monitors how the state presents (or fails to present) environmental data to the public. This is the perspective from which we approach the decentralized web: public ownership of public data. In this beginner-friendly talk, we walk through each step in the technical process of uploading data into IPFS and Dat: how it works, and how it's important to stewardship of critical data.",
@@ -174,7 +175,7 @@
   {
     "location": "San Francisco, CA",
     "track": "main",
-    "topics": ["ES-Modules", "Bundling"],
+    "topics": ["es modules", "bundling"],
     "pixelated": "a73901e50ba4d1cba91d9762e6ec84a3435a6fa5",
     "abstract": "Use the current web platform to live in a build step free future today.",
     "name": "Kristofer Joseph",
@@ -189,7 +190,7 @@
   {
     "location": "Austin, TX",
     "track": "main",
-    "topics": ["JavaScript", "Functional Programming"],
+    "topics": ["javascript", "functional programming"],
     "url": "https://me.getify.com",
     "pixelated": "3bee2692a747351de30c82e32c2db1f9cacec8e5",
     "abstract": "Monads; just that word alone probably either made you shudder or roll your eyes. But don't run away!\r\n\r\nFunctional Programming (FP) offers many benefits to our programs, even in a loose/flexible language like JS. But we often avoid them just because of intimidating terminology, notation, and math theory. Rarely is this more prevalent than with monads.\r\n\r\nThis talk is not a dissertation on monads and broader category theory. We're merely dipping our toe into the shallow end here, not plunging head first into the deep end. But I hope maybe it entices you to swim around, because the water's actually quite pleasant!\r\n\r\nWe'll look at familiar problems in code that we typically solve imperatively, and then see how some of the de-mystified behaviors associated with monads (and friends!) can help. After this talk, I hope you'll look more closely at monads and other algebraic structures.\r\n\r\nTopics illustrated: selecting values with conditional logic, forking behavior on exceptions, and juggling asynchronous side effects.",
@@ -210,7 +211,7 @@
   {
     "location": "Seattle, WA",
     "track": "lightning",
-    "topics": ["Hardware", "API", "IoT"],
+    "topics": ["hardware", "api", "iot"],
     "url": "https://myriamwd.com",
     "pixelated": "24c68fad6ea56ca99b33aa7ed7ff96488bb00d93",
     "abstract": "If, like me, you thought that IoT is only for people who have tons of experience with electronics and are geniuses of software development, I want to share with you how that statement is false, and how adventuring with IoT has helped me during the pandemic times.",
@@ -225,7 +226,7 @@
   {
     "location": "Brooklyn, NY",
     "track": "lightning",
-    "topics": ["DevOps", "Mental-Health"],
+    "topics": ["devops", "mental health"],
     "pixelated": "83adcfe6570fe2aebe17bf1affec77ead77c3ea8",
     "name": "Najla Elmachtoub",
     "abstract": "In a \"move fast and break things!\" world, what happens when the things we’re breaking are our people and teams? In this talk, we’ll walk through a real example of my team’s on-call process, where alarm and burnout became the norm in the midst of revenue-driven deadlines. We’ll discuss how taking a human-centered and data-driven approach to resolve this process debt resulted in a happier team and more robust software, and how this framework can be applied more generally.",
@@ -241,7 +242,7 @@
   {
     "location": "San Francisco, CA",
     "track": "main",
-    "topics": ["CSS", "3-D", "Perf"],
+    "topics": ["css", "3d", "performance"],
     "pixelated": "fb0b053576ffc70dc91b447782752a3f0bb718bc",
     "abstract": "We have all seen rotating cubes and used transformZ(0) for some quick boost in performance. But what else are 3d transforms good for? Let's see how we can construct complex geometry, and build a full first person game rendered entirely in html/css and js! Pushing the limits of what a technology is supposed to do, can unlock a world of creativity and out of the box thinking.",
     "name": "Pantelis Kalogiros",
@@ -257,7 +258,7 @@
   {
     "location": "Seattle, WA",
     "track": "lightning",
-    "topics": ["Gifs", "Side-Projects"],
+    "topics": ["gifs", "side projects"],
     "url": "https://www.rachellerathbone.com",
     "pixelated": "15a338a84e94e0b53b3ee4d51ee83534aa8e3ece",
     "abstract": "For over 30 years GIFs have brought life to the internet, but some are unable to enjoy their magic, irony and humor. Others simply despise them. Hear how I built a GIF sharing site that attacks that problem head on by building an app that will make GIFs accessible for all, while getting a free SEO boost from Google.",
@@ -273,7 +274,7 @@
   {
     "location": "New York City",
     "track": "lightning",
-    "topics": ["Mental-Health"],
+    "topics": ["mental health"],
     "pixelated": "fdef1e4c6a171f0c9e2fb0c9a556cc0070f2aac3",
     "abstract": "Navigating through communities in tech can be a stressful experience, especially to those who live with a mental illness. In this talk Rahat explores why it is important to begin a conversation about Mental Health and acknowledging some of the things that need to change in the current culture of tech communities with a focus on Bootcamps and Tech Events.",
     "name": "Rahat Chowdhury",
@@ -288,7 +289,7 @@
   {
     "location": "Barcelona, Spain",
     "track": "main",
-    "topics": ["a11y", "i18n", "l10n"],
+    "topics": ["accessibility", "internationalization", "localization"],
     "pixelated": "08dc534ca089669bfe2052d451ca72a4b86d981c",
     "abstract": "The present and the future of i18n and l10n in the browser.",
     "name": "Romulo Cintra Espirito Santo",
@@ -304,7 +305,7 @@
   {
     "location": "Seattle, WA",
     "track": "lightning",
-    "topics": ["Databases"],
+    "topics": ["databases"],
     "pixelated": "fa1f3d5978c0d1c6037679a2ff09d3310069a8e0",
     "abstract": "When we start a new project, we are often posed with the task of setting up a data store. The arises the inevitable question \"Should I use a SQL based store or NOSQL one\". We might tend to lean towards SQL due to it's familiarity and ubiquity; or lean towards NoSQL due to its ease and low setup cost. In this talk, we will look at database choices through a different lens. Taking inspiration from CAP theorem we will understand the ACID/BASE properties of datatbases that will act as guiding principles for choosing database.",
     "name": "Sangeetha KP",
@@ -320,7 +321,7 @@
   {
     "location": "Seattle, WA",
     "track": "lightning",
-    "topics": ["Music", "WebMIDI"],
+    "topics": ["music", "web midi"],
     "url": "https://www.linkedin.com/in/scottammon/",
     "pixelated": "224392287703d5c64c9a2abc2845a3c699691242",
     "abstract": "This talk will explore how digital musical instruments can interface with the web using MIDI to expand hardware hacking abilities. We’ll explore many ways to harness the power of the web to expand our musical and software creativity.",
@@ -336,7 +337,7 @@
   {
     "location": "Singapore",
     "track": "main",
-    "topics": ["Career", "Coding"],
+    "topics": ["career", "coding"],
     "pixelated": "4760c439cf17d51c245433db152fc35ada848781",
     "abstract": "Developers are mostly humans that run the same \"hardware\". Therefore most performance differences, especially the ones we can control, are down to our \"OS\" - our conscious prioritization and processing - and \"firmware\" - our unconscious personality and reactions. What can we do to better take care of our \"hardware\", and what does running better \"software\" look like?",
     "name": "Shawn Wang",
@@ -357,7 +358,7 @@
   {
     "location": "Amsterdam",
     "track": "main",
-    "topics": ["Git"],
+    "topics": ["git"],
     "pixelated": "983dcdb0fb053d84a839a1734ea9df65b22e3d31",
     "abstract": "Git is a version control system that's widely used and often misunderstood. Is it possible to really understand how it works, and maybe, just maybe, enjoy using it? This talk is for anyone who has used Git before and would like to learn more about how it actually works. I plan to talk about the internals of Git, including how objects are stored, and how things like branches and tags fit into this representation. With this foundation, I also want to deep-dive and examine how commonly used commands (like git reset, git checkout, git merge and git rebase, among many others) can be understood in terms of what has already been covered in the talk.",
     "name": "Tianyu Pu",
@@ -373,7 +374,7 @@
   {
     "location": "Vancouver, BC",
     "track": "main",
-    "topics": ["Web Platform"],
+    "topics": ["web platform"],
     "url": "https://tigeroakes.com",
     "pixelated": "1054bfa70bd30c69c8122ab0f9cf548f60037e16",
     "abstract": "Favicons are everywhere, representing your site on tabs, bookmarks, home screens, and more. Did you know favicons were snuck into Internet Explorer, how Apple was once a major proponent for web apps, or that a single icon design can automatically fit alongside other mobile apps on any device? Let's dive into the history and future of website icons, and show you how to make your website and PWA icons shine on a variety of screens.",
@@ -395,7 +396,7 @@
   {
     "location": "Longmont, CO",
     "track": "main",
-    "topics": ["Debugging"],
+    "topics": ["debugging"],
     "url": "http://willklein.co",
     "pixelated": "99aed75532b7eae628698e05f41a8e7f304ed60b",
     "abstract": "Managing memory in our applications can be a real challenge, unless we use JavaScript, which does it for us. Then it can be an absolute mystery! Let's discover how memory leaks can happen to us, and explore how memory management and garbage collection really work.",
