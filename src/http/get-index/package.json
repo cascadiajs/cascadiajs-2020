@@ -5,6 +5,6 @@
     "@begin/data": "latest",
     "esm": "^3.2.25",
     "front-matter": "^3.1.0",
-    "marked": "^0.8.2"
+    "marked": "^4.0.10"
   }
 }
