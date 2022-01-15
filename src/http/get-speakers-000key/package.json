@@ -6,7 +6,7 @@
   "dependencies": {
     "@architect/functions": "^3.12.1",
     "@begin/data": "^1.2.2",
-    "marked": "^0.8.2"
+    "marked": "^4.0.10"
   },
   "devDependencies": {},
   "scripts": {
